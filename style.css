@@ -23,11 +23,11 @@ Version: 7.0
 
 @font-face {
     font-family: 'BebasNeueRegular';
-    src: url('/wp-content/themes/version7/images/BebasNeue-webfont.eot');
-    src: url('/wp-content/themes/version7/images/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/wp-content/themes/version7/images/BebasNeue-webfont.woff') format('woff'),
-         url('/wp-content/themes/version7/images/BebasNeue-webfont.ttf') format('truetype'),
-         url('/wp-content/themes/version7/images/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    src: url('http://media.insidepulse.com/shared/images/v7/BebasNeue-webfont.eot');
+    src: url('http://media.insidepulse.com/shared/images/v7/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://media.insidepulse.com/shared/images/v7/BebasNeue-webfont.woff') format('woff'),
+         url('http://media.insidepulse.com/shared/images/v7/BebasNeue-webfont.ttf') format('truetype'),
+         url('http://media.insidepulse.com/shared/images/v7/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -69,10 +69,24 @@ a:hover{
 .font3{
 	font-family:'Arial Narrow';
 }
+/*** start colors **/
 
 .color1{
 	color:#ad151d;
 }
+
+.article_body a{
+	color:#ad151d;
+}
+
+.topstory_scroll_cell .on{
+	border:1px solid #ff0000;
+}
+
+.tab_on{
+	color:#ff0000;
+}
+/*** end colors **/
 
 .clear{
 	clear:both;
@@ -111,7 +125,7 @@ a:hover{
 }
 
 h3.icon1{
-	background:url('/wp-content/themes/version7/images/icon4x2.png') no-repeat top left;
+	background:url('http://media.insidepulse.com/shared/images/v7/icon4x2.png') no-repeat top left;
 	height:20px;
 	padding-left:25px;
 	font-size:1.3em;
@@ -124,7 +138,7 @@ h3.icon1{
 
 /*** top nav **/
 .top{
-	background:url('/wp-content/themes/version7/images/top_bg_red.png') repeat-x;
+	background:url('http://media.insidepulse.com/shared/images/v7/top_bg_red.png') repeat-x;
 	height:40px;
 	width:100%;
 
@@ -141,7 +155,6 @@ h3.icon1{
 	width:200px;
 	float:right;
 	height:40px;
-	overflow:hidden;
 }
 
 .top_sub{
@@ -155,48 +168,64 @@ h3.icon1{
 .submenu{
 	color:#ffffff;
 	font-weight:bold;
-	font-size:.775em;
-	width:990px;
+	font-size:.7em;
+	padding-left:30px;
+	width:960px;
 	height:30px;
 }
 
 .submenu a{
 	color:#ffffff;
+	padding-right:20px;
 }
 
 .submenu li{
 	list-style:none;
 	margin:0px;
 	padding:0px;
-	margin-left:10px;
+	padding-top:2px;
+	padding-left:20px;
 	float:left;
-
 }
 
 /*** logo bar **/
 .bar{
-	background:url('/wp-content/themes/version7/images/bar.png') repeat-x;
+	background:url('http://media.insidepulse.com/shared/images/v7/bar.png') repeat-x;
 	height:110px;
 	width:100%;
 }
 
 .bar_logo{
 	width:240px;
-	height:110px;
 	text-align:center;
 	float:left;
 }
 
-.bar_logo img{
+.bar_logo_insidepulse{
 	padding-top:40px;
 	height:40px;
+}
+
+.bar_logo_insidefights{
+	padding-top:0px;
+	height:110px;
+}
+
+.bar_logo_comicsnexus{
+	padding-top:0px;
+	height:110px;
+	z-index:10;
+}
+
+.bar_logo_diehardgamefan{
+	padding-top:30px;
+	height:54px;
 }
 
 .bar_ad{
 	width:730px;
 	float:right;
 	height:100px;
-	padding-top:10px;
 }
 
 
@@ -221,7 +250,7 @@ h3.icon1{
 
 .content_left{
 	width:660px;
-	background:url('/wp-content/themes/version7/images/whitebg.png') bottom left no-repeat #ffffff;
+	background:url('http://media.insidepulse.com/shared/images/v7/whitebg.png') bottom left no-repeat #ffffff;
 	float:left;
 }
 
@@ -275,7 +304,7 @@ h3.icon1{
 
 
 .tab_cell_nav_on .left{
-	background:url('/wp-content/themes/version7/images/tableftplus.png') no-repeat bottom left;
+	background:url('http://media.insidepulse.com/shared/images/v7/tableftplus.png') no-repeat bottom left;
 	text-align:center;
 	color:#ffffff;
 	height:40px;
@@ -284,7 +313,7 @@ h3.icon1{
 }
 
 .tab_cell_nav_on .right{
-	background:url('/wp-content/themes/version7/images/tabright.png') no-repeat bottom left;
+	background:url('http://media.insidepulse.com/shared/images/v7/tabright.png') no-repeat bottom left;
 	height:40px;
 	width:26px;
 	float:left;
@@ -304,6 +333,68 @@ h3.icon1{
 	width:26px;
 	float:left;
 }
+
+
+
+
+/*** more dropdown **/
+
+#jsddm{
+margin: 0;
+padding: 0;
+color:#666666;
+z-index:1000;
+}
+
+#jsddm li{
+float: left;
+list-style: none;
+}
+
+#jsddm li a{
+margin: 0;
+padding: 0;
+padding-top:2px;
+padding-left:10px;
+display: block;
+width: 70px;
+white-space: nowrap
+}
+
+#jsddm li a:hover{
+}
+
+#jsddm li ul{
+margin: 0;
+padding: 0;
+position: absolute;
+visibility: hidden;
+}
+
+#jsddm li ul li{
+float: none;
+display: inline
+margin: 0;
+padding: 0;
+text-align:left;
+}
+
+#jsddm li ul li a{
+margin: 0;
+padding: 0;
+width: auto;
+background: #000000;
+color: #ffffff;
+padding-left:20px;
+padding-right:10px;
+font-size:1.2em;
+}
+
+#jsddm li ul li a:hover{
+background: #000000;
+color: #ff0000;
+}
+
 
 /*** top story **/
 .topstory{
@@ -398,11 +489,11 @@ h3.icon1{
 
 .topstory_scroll_cell img{
 	width:140px;
+	border:1px solid #f4f4f4;
 	height:70px;
-	padding:5px;
-	padding-top:10px;
+	margin:4px;
+	margin-top:10px;
 }
-
 
 
 
@@ -416,7 +507,9 @@ h3.icon1{
 
 .subtop_cell{
 	width:320px;
-	height:100px;
+	min-height: 100px;
+	height: auto !important;
+	height: 100px;
 	float:left;
 	border-bottom:1px solid #dbdbdb;
 }
@@ -457,25 +550,25 @@ h3.icon1{
 /*** featured_tabs **/
 
 .featured_tabs{
-	background:url('/wp-content/themes/version7/images/featured_tabs3_1.png') top left no-repeat;
+	background:url('http://media.insidepulse.com/shared/images/v7/featured_tabs3_1.png') top left no-repeat;
 	width:660px;
 	height:33px;
 }
 
 .featured_tabs1{
-	background:url('/wp-content/themes/version7/images/featured_tabs3_1.png') top left no-repeat;
+	background:url('http://media.insidepulse.com/shared/images/v7/featured_tabs3_1.png') top left no-repeat;
 	width:660px;
 	height:33px;
 }
 
 .featured_tabs2{
-	background:url('/wp-content/themes/version7/images/featured_tabs3_2.png') top left no-repeat;
+	background:url('http://media.insidepulse.com/shared/images/v7/featured_tabs3_2.png') top left no-repeat;
 	width:660px;
 	height:33px;
 }
 
 .featured_tabs3{
-	background:url('/wp-content/themes/version7/images/featured_tabs3_3.png') top left no-repeat;
+	background:url('http://media.insidepulse.com/shared/images/v7/featured_tabs3_3.png') top left no-repeat;
 	width:660px;
 	height:33px;
 }
@@ -490,6 +583,7 @@ h3.icon1{
 	font-weight:bold;
 	float:left;
 	text-align:center;
+	text-transform:uppercase;
 }
 
 .featured_tab2{
@@ -500,6 +594,7 @@ h3.icon1{
 	font-weight:bold;
 	float:left;
 	text-align:center;
+	text-transform:uppercase;
 }
 
 .featured_tab3{
@@ -510,11 +605,9 @@ h3.icon1{
 	font-weight:bold;
 	float:left;
 	text-align:center;
+	text-transform:uppercase;
 }
 
-.tab_on{
-	color:#ff0000;
-}
 
 
 /*** 4x2 grid **/
@@ -774,7 +867,6 @@ h3.icon1{
 	width:300px;
 	height:20px;
 	float:right;
-	display:block;
 }
 
 .article_body{
@@ -782,6 +874,27 @@ h3.icon1{
 	font-size:.8em;
 	line-height:1.5em;
 }
+
+
+.article_body img{
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.article_body blockquote{
+	
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .article_box_header{
 	width:660px;
@@ -813,7 +926,8 @@ h3.icon1{
 /* similar to topstory_scroll */
 .article_box_body{
 	width:660px;
-	height:150px;
+	height:200px;
+	overflow:hidden;
 	background:#f4f4f4;
 	border-top:1px #d7d7d7 solid;
 	border-bottom:1px #d7d7d7 solid;
@@ -857,36 +971,29 @@ h3.icon1{
 /*** article_authorbox **/
 .article_authorbox_body{
 	width:660px;
-	height:150px;
+	min-height: 150px;
+	height: auto !important;
+	height: 150px;
 	background:#f4f4f4;
 	border-top:1px #d7d7d7 solid;
 	border-bottom:1px #d7d7d7 solid;
 	margin-top:10px;
 	margin-bottom:10px;
+	background:url('http://media.insidepulse.com/shared/images/v7/greybg.png') top right no-repeat #f4f4f4;
+	font-size:.825em;
 }
 
 
-.article_authorbox_left{
-	width:100px;
-	height:150px;
+
+.article_authorbox_img{
+	width:80px;
+	height:80px;
 	padding-left:30px;
 	padding-right:30px;
 	padding-top:10px;
 	float:left;
 }
 
-.article_authorbox_left img{
-	width:80px;
-	height:80px;
-}
-
-.article_authorbox_right{
-	width:480px;
-	height:150px;
-	float:right;
-	font-size:.825em;
-	background:url('/wp-content/themes/version7/images/greybg.png') top right no-repeat;
-}
 
 .article_authorbox_right h3{
 	font-size:1.1em;
@@ -936,19 +1043,19 @@ h3.icon1{
 /*** sidetabs **/
 
 .sidetabs_tabs, .sidetabs2_tabs{
-	background:url('/wp-content/themes/version7/images/featured_tabs2_1.png') top left no-repeat;
+	background:url('http://media.insidepulse.com/shared/images/v7/featured_tabs2_1.png') top left no-repeat;
 	width:320px;
 	height:32px;
 }
 
 .sidetabs_tabs1, .sidetabs2_tabs1{
-	background:url('/wp-content/themes/version7/images/featured_tabs2_1.png') top left no-repeat;
+	background:url('http://media.insidepulse.com/shared/images/v7/featured_tabs2_1.png') top left no-repeat;
 	width:320px;
 	height:32px;
 }
 
 .sidetabs_tabs2, .sidetabs2_tabs2{
-	background:url('/wp-content/themes/version7/images/featured_tabs2_2.png') top left no-repeat;
+	background:url('http://media.insidepulse.com/shared/images/v7/featured_tabs2_2.png') top left no-repeat;
 	width:320px;
 	height:32px;
 }
@@ -963,6 +1070,7 @@ h3.icon1{
 	font-weight:bold;
 	float:left;
 	text-align:center;
+	text-transform:uppercase;
 }
 
 .sidetabs_tab2, .sidetabs2_tab2{
@@ -973,12 +1081,7 @@ h3.icon1{
 	font-weight:bold;
 	float:left;
 	text-align:center;
-}
-
-
-
-.tab_on{
-	color:#ff0000;
+	text-transform:uppercase;
 }
 
 
@@ -1113,21 +1216,25 @@ h3.icon1{
 }
 
 .comments_cell_left{
-	width:100px;
+	width:60px;
+	border-bottom:1px solid #eeeeee;
+	margin-bottom:5px;
 	float:left;
 }
 
 .comments_cell_left img{
-	width:90px;
-	height:90px;
+	width:50px;
+	height:50px;
 	padding:5px;
 }
 
 .comments_cell_right{
-	width:560px;
+	width:590px;
+	padding-left:10px;
 	border-bottom:1px solid #eeeeee;
-	float:right;
-	font-size:.75em;
+	margin-bottom:5px;
+	float:left;
+	font-size:.65em;
 }
 
 
@@ -1139,7 +1246,7 @@ h3.icon1{
 
 
 h3.icon1m{
-	background:url('/wp-content/themes/version7/images/rightgreyicon1.png') no-repeat top left;
+	background:url('http://media.insidepulse.com/shared/images/v7/rightgreyicon1.png') no-repeat top left;
 	padding-left:60px;
 	padding-top:15px;
 	padding-bottom:10px;
@@ -1150,7 +1257,7 @@ h3.icon1m{
 }
 
 h3.icon2m{
-	background:url('/wp-content/themes/version7/images/rightgreyicon2.png') no-repeat top left;
+	background:url('http://media.insidepulse.com/shared/images/v7/rightgreyicon2.png') no-repeat top left;
 	padding-left:60px;
 	padding-top:15px;
 	padding-bottom:10px;
@@ -1210,3 +1317,178 @@ h3.icon2m{
 	float:right;
 	text-align:right;
 }
+
+
+/*** listing_cell **/
+
+.listing_cell{
+	width:660px;
+	padding:0px;
+	margin-bottom:10px;
+	border-top:1px #eeeeee solid;
+}
+
+.listing_cell_left{
+	width:110px;
+	float:left;
+}
+
+.listing_cell_left img{
+	width:90px;
+	height:90px;
+	padding:10px;
+}
+
+.listing_cell_right{
+	width:500px;
+	padding:20px;
+	padding-top:10px;
+	float:right;
+}
+
+.listing_cell_right a{
+	font-size:1em;
+}
+
+.listing_cell_right p{
+	font-size:.8em;
+}
+
+
+.listing_cell_byline{
+	color:#999999;
+	font-size:.75em;
+}
+
+
+
+/*** author **/
+
+.authortop{
+	width:650px;
+	height:325px;
+	border: 3px #333333 solid;
+	margin-top:-2px;
+}
+
+.authorbottom{
+	width:360px;
+	height:120px;
+	padding:20px;
+	padding-top:1px;
+	background:#ffffff;
+	border: 1px #666666 solid;
+	margin-top:-80px;
+	margin-left:50px;
+	font-size:.7em;
+	color:#333333;
+	opacity: .8;
+	filter: alpha(opacity=80);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	float:left;
+
+}
+
+
+.authorbottomimg{
+	float:left;
+	height:120px;
+	width:120px;
+	margin-top:-60px;
+	margin-left:50px;
+	border: 3px #333333 solid;
+}
+
+
+
+
+.author_column{
+	width:330px;
+}
+.author_column p{
+	font-size:.875em;
+}
+
+.author_cell{
+	width:320px;
+	padding:5px;
+	border-top:1px #999999 solid;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.author_cell img{
+	width:250px;
+	height:125px;
+}
+
+
+.author_cell a{
+	font-size:1em;
+}
+
+.author_cell p{
+	font-size:.8em;
+}
+
+.author_cell_readmore{
+	text-align:right;
+	font-size:.6em;
+}
+
+/*** right_greybox_author **/
+
+
+.right_greybox_author{
+	width:310px;
+	height:90px;
+	font-size:.75em;
+	color:#666666;
+	background:#f2f2f2;
+	border-bottom:1px #cccccc solid;
+	margin-bottom:5px;
+}
+
+.right_greybox_author li{
+	font-size:.8em;
+	list-style:none;
+	margin:0;
+	padding:0;
+	text-align:right;
+}
+
+.right_greybox_author a{
+	color:#000000;
+}
+
+.right_greybox_author h3{
+	margin:1px;
+	padding:0;
+	font-size:1.25em;
+	font-weight:normal;
+	color:#000000;
+	text-align:right;
+}
+
+.right_greybox_authorleft{
+	width:240px;
+	padding-left:10px;
+	padding-right:10px;
+	height:90px;
+	float:left;
+}
+
+
+.right_greybox_authorright{
+	width:50px;
+	height:90px;
+	float:left;
+}
+
+.right_greybox_authorright img{
+	width:50px;
+	height:50px;
+	padding:5px;
+	float:left;
+}
+

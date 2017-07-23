@@ -22,8 +22,9 @@ if(is_page('staff')){
 		$thisdisplay_name = $eachauthorarray['display_name'];
 		$thisuser_nicename = $eachauthorarray['user_nicename'];
 		$thisavatar120 = $eachauthorarray['avatar120'];
-		if(!$thisavatar120){
-			$thisavatar120 = $default120avatarurl;
+
+		if($thisavatar120==""){
+			$thisavatar120 = defaultimage("avatar", "thisavatar120");
 		}
 		echo "
 			<div style=\"width:130px; float:left;margin-bottom:20px; overflow:hidden;\">
@@ -45,9 +46,9 @@ if(is_page('staff')){
 <?php endif; ?>
 
 
-<?php get_sidebar(); ?>
+<?php include('sidebar.php'); ?>
 
 
 
 
-<?php get_footer(); ?>
+<?php include('footer.php'); ?>

@@ -36,14 +36,14 @@
 				</div>
 		</div>
 		<div class="subfooter_column2b">
-			<img class="subscribe_newsletter" src="/wp-content/themes/version7/images/newsletter.png">
+			<!--<img class="subscribe_newsletter" src="http://media.insidepulse.com/shared/images/v7/newsletter.png">-->
 		</div>
 		<div class="subfooter_column2c">
 
-			<input type="text" class="enter_email">
+			<!--<input type="text" class="enter_email">-->
 		</div>
 		<div class="subfooter_column2d">
-			<img src="/wp-content/themes/version7/images/signup.png">
+			<!--<img src="http://media.insidepulse.com/shared/images/v7/signup.png">-->
 		</div>
 
 
@@ -58,68 +58,67 @@
 
 	<div class="inner">
 		<div class="footer_column8">
-			<a href="#"><h4 class="font3 color1">Movies</h4></a>
+			<a href="http://<?php echo $homeurl; ?>/movies/"><h4 class="font3 color1">Movies</h4></a>
 
-			<a href="#">News</a><br>
-			<a href="#">Reviews</a><br>
-			<a href="#">Columns</a><br>
+			<a href="http://<?php echo $homeurl; ?>/category/theatrical-reviews/">Movie Reviews</a><br>
+			<a href="http://<?php echo $homeurl; ?>/category/blu-ray-reviews/">Blu Ray Reviews</a><br>
+			<a href="http://<?php echo $homeurl; ?>/category/dvd-reviews/">DVD Reviews</a><br>
+			<a href="http://<?php echo $homeurl; ?>/tag/box-office/">Box Office</a>
+		</div>
+		<div class="footer_column8">
+			<a href="http://<?php echo $homeurl; ?>/tv/"><h4 class="font3 color1">TV</h4></a>
+
+			<a href="http://<?php echo $homeurl; ?>/latest-updates/?zone=tv&cat=news">News</a><br>
+			<a href="http://<?php echo $homeurl; ?>/latest-updates/?zone=tv&cat=reviews">Reviews</a><br>
+			<a href="http://<?php echo $homeurl; ?>/latest-updates/?zone=tv&cat=spoilers">Spoilers</a><br>
+			<a href="http://<?php echo $homeurl; ?>/latest-updates/?zone=tv&cat=features">Features</a>
+		</div>
+		<div class="footer_column8">
+			<a href="http://<?php echo $homeurl; ?>/comics-nexus/"><h4 class="font3 color1">Comics</h4></a>
+
+			<a href="http://<?php echo $homeurl; ?>/tag/marvel/">Marvel</a><br>
+			<a href="http://<?php echo $homeurl; ?>/tag/dc-comics/">DC Comics</a><br>
+			<a href="#">Figures</a><br>
 			<a href="#">Features</a>
 		</div>
 		<div class="footer_column8">
-			<a href="#"><h4 class="font3 color1">TV</h4></a>
-
-			<a href="#">News</a><br>
-			<a href="#">Reviews</a><br>
-			<a href="#">Columns</a><br>
-			<a href="#">Features</a>
+			<a href="http://<?php echo $wrestlingurl; ?>/"><h4 class="font3 color1">Wrestling</h4></a>
+			<a href="http://<?php echo $wrestlingurl; ?>/category/news/">News</a><br>
+			<a href="http://<?php echo $wrestlingurl; ?>/category/recaps__reviews/">Reviews</a><br>
+			<a href="http://<?php echo $wrestlingurl; ?>/category/commentary/">Columns</a><br>
+			<a href="http://<?php echo $wrestlingurl; ?>/category/features/">Features</a>
 		</div>
 		<div class="footer_column8">
-			<a href="#"><h4 class="font3 color1">Comics</h4></a>
+			<a href="http://<?php echo $insidefightsurl; ?>/"><h4 class="font3 color1">MMA/Boxing</h4></a>
 
-			<a href="#">News</a><br>
-			<a href="#">Reviews</a><br>
-			<a href="#">Columns</a><br>
-			<a href="#">Features</a>
+			<a href="http://<?php echo $insidefightsurl; ?>/category/mma-news/">MMA News</a><br>
+			<a href="http://<?php echo $insidefightsurl; ?>/category/mma-columns/">MMA Columns</a><br>
+			<a href="http://<?php echo $insidefightsurl; ?>/category/boxing-news/">Boxing News</a><br>
+			<a href="http://<?php echo $insidefightsurl; ?>/category/boxing-columns/">Boxing Columns</a><br>
 		</div>
 		<div class="footer_column8">
-			<a href="#"><h4 class="font3 color1">Wrestling</h4></a>
+			<a href="http://<?php echo $diehardgamefanurl; ?>/"><h4 class="font3 color1">Video Games</h4></a>
 
-			<a href="#">News</a><br>
-			<a href="#">Reviews</a><br>
-			<a href="#">Columns</a><br>
-			<a href="#">Features</a>
+			<a href="http://<?php echo $diehardgamefanurl; ?>/category/reviews/">Reviews</a><br>
+			<a href="http://<?php echo $diehardgamefanurl; ?>/category/neviews/">News</a><br>
+			<a href="http://<?php echo $diehardgamefanurl; ?>/category/columns/">Columns</a><br>
+			<a href="http://<?php echo $diehardgamefanurl; ?>/category/features/">Features</a>
 		</div>
 		<div class="footer_column8">
-			<a href="#"><h4 class="font3 color1">MMA/Boxing</h4></a>
+			<a href="http://<?php echo $homeurl; ?>/sports/"><h4 class="font3 color1">Sports</h4></a>
 
-			<a href="#">News</a><br>
-			<a href="#">Reviews</a><br>
-			<a href="#">Columns</a><br>
-			<a href="#">Features</a>
+			<a href="http://<?php echo $homeurl; ?>/latest-updates/?zone=sports&cat=news">News</a><br>
+			<a href="http://<?php echo $homeurl; ?>/latest-updates/?zone=sports&cat=reviews">Reviews</a><br>
+			<a href="http://<?php echo $homeurl; ?>/latest-updates/?zone=sports&cat=columns">Columns</a><br>
+			<a href="http://<?php echo $homeurl; ?>/latest-updates/?zone=sports&cat=features">Features</a>
 		</div>
 		<div class="footer_column8">
-			<a href="#"><h4 class="font3 color1">Video Games</h4></a>
+			<a href="http://<?php echo $homeurl; ?>/music/"><h4 class="font3 color1">More</h4></a>
 
-			<a href="#">News</a><br>
-			<a href="#">Reviews</a><br>
-			<a href="#">Columns</a><br>
-			<a href="#">Features</a>
-		</div>
-		<div class="footer_column8">
-			<a href="#"><h4 class="font3 color1">Music</h4></a>
-
-			<a href="#">News</a><br>
-			<a href="#">Reviews</a><br>
-			<a href="#">Columns</a><br>
-			<a href="#">Features</a>
-		</div>
-		<div class="footer_column8">
-			<a href="#"><h4 class="font3 color1">Sports</h4></a>
-
-			<a href="#">News</a><br>
-			<a href="#">Reviews</a><br>
-			<a href="#">Columns</a><br>
-			<a href="#">Features</a>
+			<a href="http://<?php echo $homeurl; ?>/figures">Figures</a><br>
+			<a href="http://<?php echo $homeurl; ?>/music">Music</a><br>
+			<a href="http://<?php echo $homeurl; ?>/games">Games</a><br>
+			<a href="http://<?php echo $homeurl; ?>/celebrities">Celebrities</a>
 		</div>
 	</div>
 
@@ -133,26 +132,28 @@
 <div class="footer" style="height:120px">
 	<div class="inner">
 		<div class="footer_column3a">
-			<a href="/about/">About Us</a> &middot;
-			<a href="/contact/">Contact Us</a> &middot;
-			<a href="/advertising/">Advertise</a> &middot;
-			<a href="/contribute/">Contribute</a> &middot;
-			<a href="/media-kit/">Media</a> &middot;
-			<a href="/staff/">Staff</a> &middot;
-			<a href="/privacy/">Privacy</a>
+			<a href="http://<?php echo $homeurl; ?>/contact/">Contact Us</a> &middot;
+			<a href="http://<?php echo $homeurl; ?>/staff/">Staff</a> &middot;
+			<a href="http://<?php echo $homeurl; ?>	/privacy/">Privacy</a>
+<!--
+			<a href="http://<?php echo $homeurl; ?>/about/">About Us</a> &middot;
+			<a href="http://<?php echo $homeurl; ?>/advertising/">Advertise</a> &middot;
+			<a href="http://<?php echo $homeurl; ?>/contribute/">Contribute</a> &middot;
+			<a href="http://<?php echo $homeurl; ?>/media-kit/">Media</a> &middot;
+-->
 			<br><br>
-			&copy; 2011 Inside Pulse, a division of <a href="#">Digital Grout LLC</a>
+			&copy; 2011 Inside Pulse
 
 		</div>
 		<div class="footer_column3b ac">
-			<a href="#"><img src="/wp-content/themes/version7/images/stayconnected.png" align="left" style="padding-right:25px;"></a>
-			<a href="#"><img src="/wp-content/themes/version7/images/facebook.png" align="left" style="padding-right:5px;"></a>
-			<a href="#"><img src="/wp-content/themes/version7/images/twitter.png" align="left" style="padding-right:5px;"></a>
-			<a href="#"><img src="/wp-content/themes/version7/images/rss.png" align="left" style="padding-right:5px;"></a>
+			<img src="http://media.insidepulse.com/shared/images/v7/stayconnected.png" align="left" style="padding-right:25px;">
+			<a href="http://facebook.com/insidepulse/"><img src="http://media.insidepulse.com/shared/images/v7/facebook.png" align="left" style="padding-right:5px;"></a>
+			<a href="http://twitter.com/insidepulse/"><img src="http://media.insidepulse.com/shared/images/v7/twitter.png" align="left" style="padding-right:5px;"></a>
+			<a href="http://insidepulse.com/feed/"><img src="http://media.insidepulse.com/shared/images/v7/rss.png" align="left" style="padding-right:5px;"></a>
 
 		</div>
 		<div class="footer_column3c">
-			<a href="#"><img src="/wp-content/themes/version7/images/logo.png"></a>
+			<a href="http://insidepulse.com/"><img src="http://media.insidepulse.com/shared/images/v7/logo.png"></a>
 		</div>
 
 
@@ -161,6 +162,15 @@
 </div>
 
 
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-346209-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
 
 
 
@@ -195,9 +205,11 @@ jQuery(document).ready(function($){ //fire on DOM ready
 
 
 </script>
+<script src="http://www8.glam.com/js/widgets/comscore_beacon.js"></script>
 
-
-
+<div style="height:1px;overflow:hidden;background:#000000;">
+<?php wp_footer(); ?>
+</div>
 	<div id="fb-root"></div>
 
 

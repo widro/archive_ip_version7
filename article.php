@@ -10,7 +10,7 @@
 				by <a href=<?php echo $authorlink ?>><?php echo $insider_display_name ?></a> on <?php the_time('F j, Y'); ?>  | <a href="mailto:<?php the_author_email(); ?>">Email the author</a> <?php edit_post_link('Edit Post','| ',' '); ?>	<?php if($show_twitter){echo $show_twitter_text;	}?>
 			</div>
 			<div class="article_subheadline_right">
-				<img class="subscribe_newsletter" src="/wp-content/themes/version7/images/sharethistemp.png">
+				<img class="subscribe_newsletter" src="http://media.insidepulse.com/shared/images/v7/sharethistemp.png">
 			</div>
 
 		</div>
@@ -33,19 +33,19 @@
 		<div class="article_box_body">
 
 			<div class="article_box_cell">
-				<a href="#"><img src="/wp-content/themes/version7/images/temp/morningbacklash500.jpg"><br>incredible headline because it is all the best of what we have to offer</a>
+				<a href="#"><img src="http://media.insidepulse.com/shared/images/v7/temp/morningbacklash500.jpg"><br>incredible headline because it is all the best of what we have to offer</a>
 			</div>
 
 			<div class="article_box_cell">
-				<a href="#"><img src="/wp-content/themes/version7/images/temp/morningbacklash500.jpg"><br>incredible headline because it is all the best of what we have to offer</a>
+				<a href="#"><img src="http://media.insidepulse.com/shared/images/v7/temp/morningbacklash500.jpg"><br>incredible headline because it is all the best of what we have to offer</a>
 			</div>
 
 			<div class="article_box_cell">
-				<a href="#"><img src="/wp-content/themes/version7/images/temp/morningbacklash500.jpg"><br>incredible headline because it is all the best of what we have to offer</a>
+				<a href="#"><img src="http://media.insidepulse.com/shared/images/v7/temp/morningbacklash500.jpg"><br>incredible headline because it is all the best of what we have to offer</a>
 			</div>
 
 			<div class="article_box_cell">
-				<a href="#"><img src="/wp-content/themes/version7/images/temp/morningbacklash500.jpg"><br>incredible headline because it is all the best of what we have to offer</a>
+				<a href="#"><img src="http://media.insidepulse.com/shared/images/v7/temp/morningbacklash500.jpg"><br>incredible headline because it is all the best of what we have to offer</a>
 			</div>
 
 
@@ -53,7 +53,7 @@
 		</div>
 
 
-<?php get_sidebar(); ?>
+<?php include('sidebar.php'); ?>
 
 
-<?php get_footer(); ?>
+<?php include('footer.php'); ?>

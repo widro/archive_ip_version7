@@ -2,7 +2,7 @@
 	<div class="content_right">
 
 		<div class="right_container" style="margin-top:20px;">
-			<a href="#"><img src="/wp-content/themes/version7/images/ad300.png"></a>
+			<a href="#"><img src="http://media.insidepulse.com/shared/images/v7/ad300.png"></a>
 		</div>
 
 		<div class="clear" style="height:30px;"></div>
@@ -10,26 +10,26 @@
 		<div class="right_container greybox">
 			<h3 class="icon2m bold">Social <span class="color1">Pulse</span></h3>
 			<div class="right_greybox_row">
-				<img class="right_greybox_icon" src="/wp-content/themes/version7/images/icon_greybox_facebook.png">
+				<img class="right_greybox_icon" src="http://media.insidepulse.com/shared/images/v7/icon_greybox_facebook.png">
 				<a href="#">Facebook</a><br>
 				Check our page and Like us!
 			</div>
 
 			<div class="right_greybox_row">
-				<img class="right_greybox_icon" src="/wp-content/themes/version7/images/icon_greybox_twitter.png">
+				<img class="right_greybox_icon" src="http://media.insidepulse.com/shared/images/v7/icon_greybox_twitter.png">
 				<a href="#">Facebook</a><br>
 				Check our page and Like us!
 			</div>
 
 			<div class="right_greybox_row">
-				<img class="right_greybox_icon" src="/wp-content/themes/version7/images/icon_greybox_rss.png">
+				<img class="right_greybox_icon" src="http://media.insidepulse.com/shared/images/v7/icon_greybox_rss.png">
 				<a href="#">Facebook</a><br>
 				Check our page and Like us!
 			</div>
 
 
 		</div>
-
+<!--
 		<div class="clear" style="height:30px;"></div>
 
 		<div class="right_container greybox">
@@ -67,6 +67,7 @@
 		</div>
 
 		<div class="right_container" style="margin-top:20px;">
-			<a href="#"><img src="/wp-content/themes/version7/images/ad300.png"></a>
+			<a href="#"><img src="http://media.insidepulse.com/shared/images/v7/ad300.png"></a>
 		</div>
 
+-->

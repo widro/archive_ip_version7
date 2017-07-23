@@ -1,4 +1,45 @@
+function age_check(){
 
+	var is_18 = false;
+
+	var d = new Date();
+	var curr_month = d.getMonth()+1;
+	var curr_day = d.getDate();
+	var curr_year = d.getFullYear();
+
+	var ageform_month_val = $("#ageform_month").val();
+	var ageform_day_val = $("#ageform_day").val();
+	var ageform_year_val = $("#ageform_year").val();
+
+	if((ageform_month_val=="")||(ageform_day_val=="")||(ageform_year_val=="")){
+		$("#ageform_error").html("Please fill out the full form")
+		return;
+	}
+
+	if(curr_year-ageform_year_val>18){
+		is_18 = true;
+	}
+	else if(curr_year-ageform_year_val==18){
+		if(ageform_month_val<curr_month){
+			is_18 = true;
+		}
+		else if(ageform_month_val==curr_month){
+			if(ageform_day_val<=curr_day){
+				is_18 = true;
+			}
+		}
+	}
+
+	if(is_18){
+		$("#ageform").hide();
+		$(".article_body").show();
+	}
+	else{
+		window.location = "/";
+	}
+
+
+}
 
 function theRotator() {
 	//Set the opacity of all images to 0
@@ -15,7 +56,8 @@ function theRotator() {
 }
 
 function rotate(direction) {
-
+	var loopvalue = 4;
+	
 	//Get the first image
 
 	var current = ($('.topstory_left li.show')?  $('.topstory_left li.show') : $('.topstory_left li:first'));
@@ -65,16 +107,46 @@ function rotate(direction) {
 
 
 	if(currentvalue==1){
-		prevvalue = 5;
+		prevvalue = loopvalue;
 		nextvalue = currentvalue+1;
 	}
-	else if(currentvalue==5){
+	else if(currentvalue==loopvalue){
 		nextvalue = 1;
 		prevvalue = currentvalue-1;
 	}
 	else{
 		prevvalue = currentvalue-1;
 		nextvalue = currentvalue+1;
+	}
+	var currentthumb = "#topstorythumb_" + currentvalue;
+	var prevthumb = "#topstorythumb_" + prevvalue;
+	var nextthumb = "#topstorythumb_" + nextvalue;
+
+	
+	if(direction=="backwards"){
+		$(currentthumb).removeClass("on");
+
+		$(prevthumb).addClass("on");
+
+		if(currentvalue==1){
+			currentvalue = loopvalue;
+		}
+		else{
+			currentvalue--;
+		}
+
+	}
+	else{
+		$(currentthumb).removeClass("on");
+		$(nextthumb).addClass("on");
+
+		if(currentvalue==loopvalue){
+			currentvalue = 1;
+		}
+		else{
+			currentvalue++;
+		}
+
 	}
 
 	
@@ -167,3 +239,31 @@ jQuery(document).ready(function($){ //fire on DOM ready
 	}
 
 });
+
+
+
+var timeout    = 500;
+var closetimer = 0;
+var ddmenuitem = 0;
+
+function jsddm_open()
+{  jsddm_canceltimer();
+   jsddm_close();
+   ddmenuitem = $(this).find('ul').css('visibility', 'visible');}
+
+function jsddm_close()
+{  if(ddmenuitem) ddmenuitem.css('visibility', 'hidden');}
+
+function jsddm_timer()
+{  closetimer = window.setTimeout(jsddm_close, timeout);}
+
+function jsddm_canceltimer()
+{  if(closetimer)
+   {  window.clearTimeout(closetimer);
+      closetimer = null;}}
+
+$(document).ready(function()
+{  $('#jsddm > li').bind('mouseover', jsddm_open)
+   $('#jsddm > li').bind('mouseout',  jsddm_timer)});
+
+document.onclick = jsddm_close;

@@ -6,8 +6,7 @@
 
 			</div>
 			<div class="article_box_header_right">
-				comments!
-			</div>
+'			</div>
 		</div>
 		<div class="clear"></div>
 
@@ -25,15 +24,13 @@
 			</div>
 			<div class="comments_cell_right">
 				<?php if ($comment->comment_approved == '0') : ?>
-
-				<em>Your comment is awaiting moderation.</em>
-
+					<em>Your comment is awaiting moderation.</em>
 				<?php endif; ?>
-					<?php comment_text() ?>
-				<br><br>
-				Posted by <span class="commentauthor"><?php comment_author_link() ?></span> | <a href="#comment-<?php comment_ID() ?>" title=""><?php comment_date('F j, Y') ?>, <?php comment_time() ?></a> <?php edit_comment_link('edit','| ',''); ?>
+				<?php comment_text() ?>
+				<p>Posted by <span class="commentauthor"><?php comment_author_link() ?></span> | <a href="#comment-<?php comment_ID() ?>" title=""><?php comment_date('F j, Y') ?>, <?php comment_time() ?></a> <?php edit_comment_link('edit','| ',''); ?></p>
 			</div>
 		</div>
+		<div class="clear"></div>
 
 
 	<?php endforeach; /* end for each comment */ ?>

@@ -1,15 +1,18 @@
 <?php
 
-if(is_page('movies')){
-	include('zone.php');
+//zone pages
+if(is_page('home')||is_page('pulsecasts')||is_page('movies')||is_page('tv')||is_page('sports')||is_page('comics-nexus')||is_page('comics')||is_page('music')||is_page('commercials')||is_page('games')||is_page('figures')){
+	include('page_zone.php');
 }
 
-
-//movies zone
-elseif(is_page('movies')){
-	include('zone.php');
+//video pages
+elseif(is_page('new-video')){
+	include('page_alphabird.php');
 }
 
+elseif(is_page('the-ride-season-3-the-game-ifeadi-odenigbo')){
+	include('page_alphabird.php');
+}
 
 
 

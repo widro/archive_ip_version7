@@ -59,13 +59,189 @@ if(!$insider_avatar120){
 	$insider_avatar120 = $default120avatarurl;
 }
 
+//list terms in taxonomy
+// go thru zones of this article
+$types[0] = 'zone';
+foreach ($types as $type) {
+	$taxonomy = $type;
+	$terms = wp_get_object_terms( $post->ID, $taxonomy, '' );
+	//if zones, what?
+	if ($terms) {
+
+	}
+}
+
+// check categories for article
+foreach((get_the_category()) as $category) {
+	$thiscatslug = $category->slug;
+	$thiscatname = $category->name;
+}
+
+
+// get tags for use in auto images and related posts
+$posttags = get_the_tags();
+if($posttags){
+	$checktagarray = array();
+	$tags_count = count($posttags);
+
+	foreach($posttags as $tag) {
+		$checktagarray[] = $tag->slug;
+		$thistagname = $tag->name;
+		$thistagslug = $tag->slug;
+		$thistagcount = $tag->count;
+	}
+}
+
+else{
+	$checktagarray[0] = "n";
+}
+
+//include auto images file
+include_once('autoimages.php');
+
+//set 120 and 500 images to blank
+$topstory120x120 = "";
+$topstory500x250 = "";
+
+//check if there is meta data for 120 and 500
+$topstory120x120 = get_post_meta($post->ID, 'topstory120x120', true);
+$topstory500x250 = get_post_meta($post->ID, 'topstory500x250', true);
+
+//do auto images loop
+$autoimages_count = count($autoimages_cats);
+for($i=0;$i<$autoimages_count;$i++){
+	if (( in_category($autoimages_cats[$i]))  || (in_array($autoimages_tags[$i], $checktagarray))) {
+		if(!$topstory500x250){
+			$topstory500x250 = $autoimages_topstory500x250[$i];
+			if($topstory500x250!=""){
+				$addmeta1 = add_post_meta($post->ID, 'topstory500x250', $topstory500x250, true);
+			}
+		}
+
+		if(!$topstory120x120){
+			$topstory120x120 = $autoimages_topstory120x120[$i];
+			if($topstory120x120!=""){
+				$addmeta1 = add_post_meta($post->ID, 'topstory120x120', $topstory120x120, true);
+			}
+		}
+	}
+
+
+}
+
+
+//check if there is credit link
+$creditlink = get_post_meta($post->ID, 'creditlink', true);
+$credittext = get_post_meta($post->ID, 'credittext', true);
+$amazon_link = get_post_meta($post->ID, 'amazon_link', true);
+
+// for movies reviews
+$star_rating = get_post_meta($post->ID, 'star_rating', true);
+$review_poster = get_post_meta($post->ID, 'review_poster', true);
+$review_poster_link = get_post_meta($post->ID, 'review_poster_link', true);
+$review_youtube = get_post_meta($post->ID, 'review_youtube', true);
+//new movie reviews thangs
+$content_rating = get_post_meta($post->ID, 'content_rating', true);
+$extras_rating = get_post_meta($post->ID, 'extras_rating', true);
+$replay_rating = get_post_meta($post->ID, 'replay_rating', true);
+
+
+if($content_rating&&$extras_rating&&$replay_rating){
+	$movie_review = "yes";
+
+}
+
+if($review_poster){
+	$review_poster_image = "<img border=0 src=$review_poster>";
+}
+
+
+if($review_poster_link){
+	$review_poster_image = "<a href=$review_poster_link>$review_poster_image</a>";
+}
+
+
+if($review_youtube){
+	$review_youtube_embed = "
+	<center><object width=\"560\" height=\"340\"><param name=\"movie\" value=\"http://www.youtube.com/v/$review_youtube&hl=en_US&fs=1&color1=0x2b405b&#038;color2=0x6b8ab6\"></param><param name=\"allowFullScreen\" value=\"true\"></param><param name=\"allowscriptaccess\" value=\"always\"></param><embed src=\"http://www.youtube.com/v/$review_youtube&hl=en_US&fs=1&color1=0x2b405b&#038;color2=0x6b8ab6\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" width=\"560\" height=\"340\"></embed></object></center>
+	";
+}
+
+
+//Zero Stars:
+if($star_rating=="0"){
+$star_image = "
+<img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/blank.gif\" alt=\"blank\" title=\"blank\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179300\" /><img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/blank.gif\" alt=\"blank\" title=\"blank\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179300\" /><img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/blank.gif\" alt=\"blank\" title=\"blank\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179300\" /><img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/blank.gif\" alt=\"blank\" title=\"blank\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179300\" />
+";
+}
+
+
+//Half Star:
+if($star_rating==".5"){
+$star_image = "
+<img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/half.gif\" alt=\"half\" title=\"half\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179302\" /><img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/blank.gif\" alt=\"blank\" title=\"blank\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179300\" /><img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/blank.gif\" alt=\"blank\" title=\"blank\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179300\" /><img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/blank.gif\" alt=\"blank\" title=\"blank\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179300\" />
+";
+}
+
+//One Star:
+if($star_rating=="1"){
+$star_image = "
+<img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/star.gif\" alt=\"star\" title=\"star\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179303\" /><img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/blank.gif\" alt=\"blank\" title=\"blank\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179300\" /><img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/blank.gif\" alt=\"blank\" title=\"blank\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179300\" /><img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/blank.gif\" alt=\"blank\" title=\"blank\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179300\" />
+";
+}
+
+//One and Half Star:
+if($star_rating=="1.5"){
+$star_image = "
+<img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/star.gif\" alt=\"star\" title=\"star\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179303\" /><img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/half.gif\" alt=\"half\" title=\"half\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179302\" /><img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/blank.gif\" alt=\"blank\" title=\"blank\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179300\" /><img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/blank.gif\" alt=\"blank\" title=\"blank\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179300\" />
+";
+}
+
+//Two Stars:
+if($star_rating=="2"){
+$star_image = "
+<img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/star.gif\" alt=\"star\" title=\"star\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179303\" /><img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/star.gif\" alt=\"star\" title=\"star\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179303\" /><img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/blank.gif\" alt=\"blank\" title=\"blank\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179300\" /><img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/blank.gif\" alt=\"blank\" title=\"blank\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179300\" />
+";
+}
+
+//Two and a Half Stars:
+if($star_rating=="2.5"){
+$star_image = "
+<img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/star.gif\" alt=\"star\" title=\"star\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179303\" /><img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/star.gif\" alt=\"star\" title=\"star\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179303\" /><img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/half.gif\" alt=\"half\" title=\"half\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179302\" /><img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/blank.gif\" alt=\"blank\" title=\"blank\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179300\" />
+";
+}
+
+//Three Stars:
+if($star_rating=="3"){
+$star_image = "
+<img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/star.gif\" alt=\"star\" title=\"star\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179303\" /><img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/star.gif\" alt=\"star\" title=\"star\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179303\" /><img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/star.gif\" alt=\"star\" title=\"star\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179303\" /><img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/blank.gif\" alt=\"blank\" title=\"blank\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179300\" />
+";
+}
+
+//Three and a Half Stars:
+if($star_rating=="3.5"){
+$star_image = "
+<img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/star.gif\" alt=\"star\" title=\"star\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179303\" /><img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/star.gif\" alt=\"star\" title=\"star\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179303\" /><img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/star.gif\" alt=\"star\" title=\"star\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179303\" /><img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/half.gif\" alt=\"half\" title=\"half\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179302\" />
+";
+}
+
+//Four Stars:
+if($star_rating=="4"){
+$star_image = "
+<img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/star.gif\" alt=\"star\" title=\"star\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179303\" /><img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/star.gif\" alt=\"star\" title=\"star\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179303\" /><img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/star.gif\" alt=\"star\" title=\"star\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179303\" /><img src=\"http://media.insidepulse.com/zones/movies/uploads/2009/10/star.gif\" alt=\"star\" title=\"star\" width=\"17\" height=\"16\" class=\"aligncenter size-full wp-image-179303\" />
+";
+}
+
+
+
+
 ?>
 
 
 
 
 		<div class="article_headline color1 bold">
-			<?php the_title(); ?>
+			<?php the_title(); ?> <?php edit_post_link('(edit)','',' '); ?>
 		</div>
 		<div class="article_subheadline">
 			<div class="article_subheadline_left">
@@ -84,11 +260,11 @@ if(!$insider_avatar120){
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<div class="fb-like" data-href="http://insidepulse.com/dinkers/" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+<div class="fb-like" data-href="<?php echo $currenturlencoded; ?>" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
 
 				</div>
 				<div class="social_twitter">
-<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="insidepulse" data-related="zonehere">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+<a href="https://twitter.com/share" class="twitter-share-button" data-text='<?php the_title(); ?>' data-url='<?php echo $currenturl; ?>' data-count="horizontal" data-via="insidepulse" data-related="zonehere">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
 				</div>
 				<div class="social_googleplus">
 <!-- Place this tag in your head or just before your close body tag -->
@@ -101,12 +277,118 @@ if(!$insider_avatar120){
 			</div>
 
 		</div>
-		<div class="article_body">
+
+<?php
+if (in_category('age-gate')){
+$articlebodyhide = "hide";
+?>
+<script>
+jQuery(document).ready(function($){ //fire on DOM ready
+
+// age form submit
+	$("#ageform_button").click(function(){
+		age_check();
+		return false;
+	});
+
+	//$(".article_body").hide();
+
+
+});
+
+</script>
+
+
+<?php
+	echo "
+			<div name=ageform id=ageform style=\"color:#000000; font-size:16px;\">
+					This content is for ages 18 and over only, please verify your birthday before viewing:<br><br>
+
+		";
+		echo agegateform();
+		echo "
+				<br><br><br>
+
+				<div name=ageform_error id=ageform_error style=\"color:#ff0000; font-weight:bold;\">
+				</div>
+			</div>
+	";
+
+}
+?>
+<div class="article_body <?php echo $articlebodyhide; ?>">
+				<center>
+				<?php if($review_poster_image){
+					echo $review_poster_image;
+					echo "<br><br>";
+					}
+				?>
+
+				<?php
+
+				if($movie_review){
+
+				?>
+
+<img src="<?php echo $topstory500x250; ?>" alt="" title="the-hustler-original" width="620" height="348" class="alignnone size-full wp-image-248092" />
+<img src="http://media.insidepulse.com/shared/images/reviews/movies_content.gif" alt="" title="IP Movie Reviews Content" width="113" height="34" class="alignnone size-full wp-image-248093" /><img src="http://media.insidepulse.com/shared/images/reviews/score_<?php echo $content_rating; ?>.gif" alt="" title="IP Movies Review - Score <?php echo $topstory500x250; ?>" width="32" height="34" class="alignnone size-full wp-image-248098" /><img src="http://media.insidepulse.com/shared/images/reviews/movies_extras.gif" alt="" title="IP Movies Review Extras" width="88" height="34" class="alignnone size-full wp-image-248101" /><img src="http://media.insidepulse.com/shared/images/reviews/score_<?php echo $extras_rating; ?>.gif" alt="" title="IP Movies Review - Score <?php echo $topstory500x250; ?>" width="32" height="34" class="alignnone size-full wp-image-248098" /><img src="http://media.insidepulse.com/shared/images/reviews/movies_replay.gif" alt="" title="IP Movies Review Replay" width="84" height="34" class="alignnone size-full wp-image-248104" /><img src="http://media.insidepulse.com/shared/images/reviews/score_<?php echo $replay_rating; ?>.gif" alt="" title="IP Movies Review - Score <?php echo $topstory500x250; ?>" width="32" height="34" class="alignnone size-full wp-image-248098" /><img src="http://media.insidepulse.com/shared/images/reviews/movies_overall.gif" alt="" title="IP Movies Review Overall" width="102" height="34" class="alignnone size-full wp-image-248103" /><img src="http://media.insidepulse.com/shared/images/reviews/score_<?php echo $star_rating; ?>.gif" alt="" title="IP Movies Review - Score <?php echo $topstory500x250; ?>" width="32" height="34" class="alignnone size-full wp-image-248098" /><a href="<?php echo $amazon_link; ?>"><img style="border:none;" src="http://media.insidepulse.com/shared/images/reviews/movies_amazonlogo.gif" alt="" title="IP Movies Review Amazon Logo" width="103" height="34" class="alignnone size-full wp-image-248099" border=0></a>
+
+
+
+
+
+
+
+<center><img src=http://media.insidepulse.com/shared/images/reviews/movies_break.gif></center>
+
+				<?php
+
+				}
+
+				elseif($star_image){
+					echo $star_image;
+					echo "<br><br>";
+					}
+				?>
+				</center>
+
+
+
+
 				<!-- content -->
 				<?php the_content(''); ?>
 				<!-- content end -->
+				<?php
+				echo get_the_tag_list('<p>Tags: ',', ','</p>');
+				?>
+
+
+
+				<?php if($creditlink){
+					echo "<br><br>Source: <a href=";
+					echo $creditlink;
+					echo " rel=noindex target=_blank>";
+					echo $credittext;
+					echo "</a>";
+					echo "<br><br>";
+					}
+				?>
+
+
+				<?php if($star_image){
+					echo "<center>";
+					echo "<br><br>";
+					echo $review_youtube_embed;
+					echo "<br><br>";
+					echo "</center>";
+					}
+				?>
+
+
+
 		</div>
 
+		<div class="clear" style="height:20px;"></div>
 		<div class="article_box_header">
 			<div class="article_box_header_left">
 				<h3 class="icon1 font2">Related Articles</h3>
@@ -117,23 +399,12 @@ if(!$insider_avatar120){
 			</div>
 		</div>
 		<div class="clear"></div>
+
+
+
 		<div class="article_box_body">
 
-			<div class="article_box_cell">
-				<a href="#"><img src="/wp-content/themes/version7/images/temp/morningbacklash500.jpg"><br>incredible headline because it is all the best of what we have to offer</a>
-			</div>
-
-			<div class="article_box_cell">
-				<a href="#"><img src="/wp-content/themes/version7/images/temp/morningbacklash500.jpg"><br>incredible headline because it is all the best of what we have to offer</a>
-			</div>
-
-			<div class="article_box_cell">
-				<a href="#"><img src="/wp-content/themes/version7/images/temp/morningbacklash500.jpg"><br>incredible headline because it is all the best of what we have to offer</a>
-			</div>
-
-			<div class="article_box_cell">
-				<a href="#"><img src="/wp-content/themes/version7/images/temp/morningbacklash500.jpg"><br>incredible headline because it is all the best of what we have to offer</a>
-			</div>
+			<?php //echo $relatedoutput; ?>
 		</div>
 
 		<div class="clear" style="height:30px;"></div>
@@ -149,25 +420,23 @@ if(!$insider_avatar120){
 		</div>
 		<div class="clear"></div>
 		<div class="article_authorbox_body">
-			<div class="article_authorbox_left">
-				<a href=<?php echo $authorlink ?>><img class="avatar" border="0" src=<?php echo $insider_avatar120 ?>></a>
+			<a href=<?php echo $authorlink ?>><img class="article_authorbox_img avatar" border="0" src=<?php echo $insider_avatar120 ?>></a>
+
+			<h3><?php echo $insider_display_name ?></h3>
+
+			<div id="article_authorbox_description1">
+				<p><?php echo $insider_description_short ?> <a id="article_authorbox_show" class="bold color1 cp">&raquo; see more</a></p>
 			</div>
-			<div class="article_authorbox_right">
-				<h3><?php echo $insider_display_name ?></h3>
 
-				<div id="article_authorbox_description1">
-					<?php echo $insider_description_short ?> <a id="article_authorbox_show" class="bold color1 cp">&raquo; see more</a>
-				</div>
-
-				<div id="article_authorbox_description2" class="hide">
-					<?php echo $insider_description ?> <a id="article_authorbox_hide" class="bold color1 cp">&raquo; see less</a>
-				</div>
-
-				<br><br>
-				<a href=$insider_twitter target=_blank><img class="icon"  src=http://media.insidepulse.com/shared/images/v6/icon_twitter.jpg border=0></a>
-				<a href=mailto:$insider_email target=_blank><img class="icon" src=http://media.insidepulse.com/shared/images/v6/icon_email.jpg border=0></a>
-
+			<div id="article_authorbox_description2" class="hide">
+				<p><?php echo $insider_description ?> <a id="article_authorbox_hide" class="bold color1 cp">&raquo; see less</a></p>
 			</div>
+
+			<br><br>
+			<a href=$insider_twitter target=_blank><img class="icon"  src=http://media.insidepulse.com/shared/images/v6/icon_twitter.jpg border=0></a>
+			<a href=mailto:$insider_email target=_blank><img class="icon" src=http://media.insidepulse.com/shared/images/v6/icon_email.jpg border=0></a>
+
+
 
 
 		</div>
@@ -187,6 +456,6 @@ if(!$insider_avatar120){
 <?php endif; ?>
 
 
-<?php get_sidebar(); ?>
+<?php include('sidebar.php'); ?>
 
-<?php get_footer(); ?>
+<?php include('footer.php'); ?>

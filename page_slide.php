@@ -35,7 +35,7 @@
 
 			</div>
 			<div class="slide_container_wide fr" style="padding-top:200px;">
-				<img src="/wp-content/themes/version7/images/logo_blacktext.png" height=70  style="padding-left:50px;">
+				<img src="http://media.insidepulse.com/shared/images/v7/logo_blacktext.png" height=70  style="padding-left:50px;">
 			</div>
 
 		</div>
@@ -70,14 +70,14 @@
 			</div>
 			<div class="slide_container_wide fr">
 				<div style="width:550px; height:120px;">
-					<img src="/wp-content/themes/version7/images/ad728.png" width=550>
+					<img src="http://media.insidepulse.com/shared/images/v7/ad728.png" width=550>
 					<h4>728x90 Leaderboard Banner</h4>
 
-					<img src="/wp-content/themes/version7/images/ad300.png">
+					<img src="http://media.insidepulse.com/shared/images/v7/ad300.png">
 					<h4>300x250 Rectangle</h4>
 				</div>
 				<div style="width:300px; height:350px;float:right;z-index:5;">
-					<img src="/wp-content/themes/version7/images/ad160.png" width=120>
+					<img src="http://media.insidepulse.com/shared/images/v7/ad160.png" width=120>
 					<h4>160x600 Skyscraper/Tower</h4>
 				</div>
 
@@ -97,7 +97,7 @@
 
 			</div>
 			<div class="slide_container_wide fr">
-				<img src="/wp-content/themes/version7/images/screengrab_homev7.jpg" width=550>
+				<img src="http://media.insidepulse.com/shared/images/v7/screengrab_homev7.jpg" width=550>
 			</div>
 
 		</div>
@@ -162,7 +162,7 @@
 
 			</div>
 			<div class="slide_container_wide fr" style="padding-top:200px;">
-				<img src="/wp-content/themes/version7/images/logo_blacktext.png" height=70  style="padding-left:50px;">
+				<img src="http://media.insidepulse.com/shared/images/v7/logo_blacktext.png" height=70  style="padding-left:50px;">
 			</div>
 
 		</div>
@@ -171,13 +171,13 @@
 
 			<div class="slide_container_wide fl slide_border">
 				<h2 class="font2">Logo</h2>
-				<img src="/wp-content/themes/version7/images/logo_blacktext.png" height=50>
+				<img src="http://media.insidepulse.com/shared/images/v7/logo_blacktext.png" height=50>
 				<h2 class="font2">Logo (on Black)</h2>
-				<img style="background:#000000;" src="/wp-content/themes/version7/images/logo_whitetext.png" height=50>
+				<img style="background:#000000;" src="http://media.insidepulse.com/shared/images/v7/logo_whitetext.png" height=50>
 
 				<h2 class="font2">Branding Icons</h2>
-				<img src="/wp-content/themes/version7/images/icon1.png" height=100>
-				<img src="/wp-content/themes/version7/images/icon2.png" height=100>
+				<img src="http://media.insidepulse.com/shared/images/v7/icon1.png" height=100>
+				<img src="http://media.insidepulse.com/shared/images/v7/icon2.png" height=100>
 
 			</div>
 			<div class="slide_container_narrow fr" style="padding-top:50px; padding-bottom:200px;">
@@ -308,7 +308,7 @@
 		<div id="slide_content1" name="slides_content1" class="slide_container">
 
 			<div class="slide_container_wide fl slide_border" style="padding-top:180px; padding-bottom:200px;">
-				<img src="/wp-content/themes/version7/images/logo_blacktext.png" height=70  style="padding-left:50px;">
+				<img src="http://media.insidepulse.com/shared/images/v7/logo_blacktext.png" height=70  style="padding-left:50px;">
 				<h2 class="font2" style="padding-left:80px;">Pop Culture & Entertainment Platform</h2>
 			</div>
 
@@ -435,7 +435,7 @@
 
 			</div>
 			<div class="slide_container_wide fr" style="text-align:center;padding-top:50px;">
-				<img src="/wp-content/themes/version7/images/work-office-fun.jpg">
+				<img src="http://media.insidepulse.com/shared/images/v7/work-office-fun.jpg">
 				<h3 class="font2">Anyone can contribute to Inside Pulse from anywhere around the world!</h3>
 			</div>
 
@@ -444,7 +444,7 @@
 		<div id="slide_content2" name="slide_content2" class="slide_container hide">
 
 			<div class="slide_container_wide fl slide_border">
-				<img src="/wp-content/themes/version7/images/worldmap.png" style="width:550px;">
+				<img src="http://media.insidepulse.com/shared/images/v7/worldmap.png" style="width:550px;">
 			</div>
 			<div class="slide_container_narrow fr" style="padding-top:200px;">
 				<h3 class="color1 font2">Worldwide Platform</h3>
@@ -459,13 +459,13 @@
 		<div id="slide_content3" name="slide_content3" class="slide_container hide">
 			<div class="slide_container_wide fl slide_border">
 
-				<img src="/wp-content/themes/version7/images/redcarpet.jpg" width=250 style="">
+				<img src="http://media.insidepulse.com/shared/images/v7/redcarpet.jpg" width=250 style="">
 				<h4 class="font2">Press Passes</h4>
 
-				<img src="/wp-content/themes/version7/images/bon-jovi-tickets.jpg" width=250 class="fr" style="">
+				<img src="http://media.insidepulse.com/shared/images/v7/bon-jovi-tickets.jpg" width=250 class="fr" style="">
 				<h4 class="font2 fr">Tickets</h4>
 
-				<img src="/wp-content/themes/version7/images/freebies.png" width=250 style="">
+				<img src="http://media.insidepulse.com/shared/images/v7/freebies.png" width=250 style="">
 				<h4 class="font2">Press Passes</h4>
 
 			</div>
@@ -509,7 +509,7 @@
 
 			</div>
 			<div class="slide_container_wide fr" style="padding-top:50px;">
-				<img src="/wp-content/themes/version7/images/chartrising.jpg" style="padding-left:150px;">
+				<img src="http://media.insidepulse.com/shared/images/v7/chartrising.jpg" style="padding-left:150px;">
 				<h3 class="color1 font2" style="padding-left:250px;text-align:right;">Reach a large, diverse audience that continues to grow!</h3>
 			</div>
 
@@ -581,4 +581,4 @@
 </div>
 
 
-<?php get_footer(); ?>
+<?php include('footer.php'); ?>

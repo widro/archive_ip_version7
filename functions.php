@@ -31,6 +31,161 @@ function govid_custom_column($column_name, $post_id) {
 
 
 
+function defaultimage($type, $size){
+
+	//make array
+	$imageurl = array();
+
+	if($type=="movies"){
+		$imageurl['topstory120x120'] = "http://media.insidepulse.com/shared/images/v7/default120x120_.jpg";
+		$imageurl['topstory500x250'] = "http://media.insidepulse.com/shared/images/v7/default500x250_.jpg";
+	}
+	elseif($type=="tv"){
+		$imageurl['topstory120x120'] = "http://media.insidepulse.com/shared/images/v7/default120x120_.jpg";
+		$imageurl['topstory500x250'] = "http://media.insidepulse.com/shared/images/v7/default500x250_.jpg";
+	}
+	elseif($type=="wrestling"){
+		$imageurl['topstory120x120'] = "http://media.insidepulse.com/shared/images/v7/default120x120_.jpg";
+		$imageurl['topstory500x250'] = "http://media.insidepulse.com/shared/images/v7/default500x250_.jpg";
+	}
+	else{
+		$imageurl['topstory120x120'] = "http://media.insidepulse.com/shared/images/v7/default120x120_.jpg";
+		$imageurl['topstory500x250'] = "http://media.insidepulse.com/shared/images/v7/default500x250_.jpg";
+	}
+
+	return $imageurl[$size];
+
+}
+
+
+
+
+
+
+
+function buildfilters($page, $activeid, $categoriesskiparray){
+
+
+	$authordd .= "<select id=\"authorid\" name=\"authorid\">";
+	$authordd .= "<option value=\"\">-- insider --</option>";
+	$getallauthors = getinsiders('');
+
+	foreach($getallauthors as $eachauthorarray){
+		$thisuserid = $eachauthorarray['ID'];
+		$thisdisplay_name = $eachauthorarray['display_name'];
+		$authordd .= "
+			<option value=$thisuserid>$thisdisplay_name</option>
+		";
+	}
+
+
+	$authordd .= "</select>";
+
+
+	$zonedd .= "<select id=\"zone\" name=\"zone\">";
+	$zonedd .= "<option value=\"\">-- zone --</option>";
+	$getallzones = getzones('');
+
+	foreach($getallzones as $eachzonearray){
+		$thiszonename = $eachzonearray['name'];
+		$thiszoneslug = $eachzonearray['slug'];
+		$zonedd .= "
+			<option value=$thiszoneslug>$thiszonename</option>
+		";
+	}
+
+
+	$zonedd .= "</select>";
+
+	$sectiondd .= "<select id=\"cat\" name=\"cat\">";
+	$sectiondd .= "<option value=\"\">-- section --</option>";
+	$categories =  get_categories('');
+	foreach ($categories as $category) {
+			$thiscategory_nicename = $category->category_nicename;
+			$thiscat_name = $category->cat_name;
+			$thiscategory_count = $category->category_count;
+
+			if (!in_array($thiscategory_nicename, $categoriesskiparray)) {
+				$sectiondd .= "
+					<option value=$thiscategory_nicename>$thiscat_name</option>
+				";
+			}
+	}
+
+
+
+	$sectiondd .= "</select>";
+
+	$output .= "Filter:";
+
+	$output .= $authordd;
+	$output .= $zonedd;
+	$output .= $sectiondd;
+
+
+	$output .= "<input type=\"submit\" value=\"Filter Articles\">";
+
+	return $output;
+
+}
+
+
+
+
+
+function makesql($type, $slug){
+	if($type=="zone"){
+		$sqladd = "&zone=$slug";
+	}
+	elseif($type=="cat"){
+		$sqladd = "&category_name=$slug";
+	}
+	elseif($type=="tag"){
+		$sqladd = "&tag=$slug";
+	}
+	elseif($type=="zonecat"){
+		$slugarray = explode("|", $slug);
+		$sqladd = "&zone=".  $slugarray[0] . "&category_name=" . $slugarray[1];
+	}
+	elseif($type=="zonetag"){
+		$slugarray = explode("|", $slug);
+		$sqladd = "&zone=".  $slugarray[0] . "&tag=" . $slugarray[1];
+	}
+
+	return $sqladd;
+}
+
+
+
+
+
+
+
+
+
+function listingcell($thistitle, $thisdate, $author, $clickthru, $thisexcerpt, $topstory120x120, $topstory500x250){
+	$listing = "
+
+	<div class=\"listing_cell\">
+		<div class=\"listing_cell_left\">
+
+			<a href=\"$clickthru\"><img src=\"$topstory120x120\"></a>
+
+		</div>
+		<div class=\"listing_cell_right\">
+			<a class=\"bold color1\" href=\"$clickthru\">$thistitle</a> <span class=\"date\">($thisdate)</span>
+			<p class=\"listing_cell_byline\">By $author</p>
+			<p>$thisexcerpt <a class=\"bold color1 author_cell_readmore\" href=\"$clickthru\">&raquo;&raquo;</a></p>
+		</div>
+	</div>
+	<div class=\"clear\"></div>
+	";
+
+	return $listing;
+}
+
+
+
 
 function in_zone( $zonetocheck, $_post = null ) {
 	if ( empty( $zonetocheck ) )
@@ -365,7 +520,7 @@ function my_wp_dashboard_test3() {
 		<li><a href="http://www.facebook.com/groups/246316252064223/" target=_blank>Pulse Wrestling Staff</a></li>
 		<li><a href="http://www.facebook.com/groups/195551063835699/" target=_blank>Inside Fights Staff</a></li>
 		<li><a href="http://www.facebook.com/groups/219403814767726/" target=_blank>Comics Nexus Staff</a></li>
-	
+
 	</ul>
 
 
@@ -388,7 +543,7 @@ function my_wp_dashboard_test5() {
 	<br><br>
 	Check out the IP Staff FAQ
 	<br><br>
-	
+
 
 	';
 }
@@ -559,38 +714,6 @@ if ( !class_exists('myCustomFields') ) {
                 "type"          =>   "text",
                 "scope"         =>   array( "post", "page" ),
                 "capability"    => "edit_posts"
-            ),
-            array(
-                "name"          => "livecoverage",
-                "title"         => "Live Coverage (livecoverage)",
-                "description"   => "",
-                "type"          =>   "text",
-                "scope"         =>   array( "post", "page" ),
-                "capability"    => "edit_posts"
-            ),
-            array(
-                "name"          => "showdigg",
-                "title"         => "Digg",
-                "description"   => "",
-                "type"          => "checkbox",
-                "scope"         =>   array( "post", "page" ),
-                "capability"    => "manage_options"
-            ),
-            array(
-                "name"          => "digest_limit",
-                "title"         => "Digest Limit",
-                "description"   => "",
-                "type"          =>   "text",
-                "scope"         =>   array( "post", "page" ),
-                "capability"    => "manage_options"
-            ),
-            array(
-                "name"          => "digest_date",
-                "title"         => "Digest Date",
-                "description"   => "",
-                "type"          =>   "text",
-                "scope"         =>   array( "post", "page" ),
-                "capability"    => "manage_options"
             )
         );
         /**
@@ -833,6 +956,15 @@ function my_show_extra_profile_fields( $user ) { ?>
 		</tr>
 
 		<tr>
+			<th><label for="avatar500">Cover Image URL (650x325)</label></th>
+
+			<td>
+				<input type="text" name="coverimage" id="coverimage" value="<?php echo esc_attr( get_the_author_meta( 'coverimage', $user->ID ) ); ?>" class="regular-text" /><br />
+				<span class="description">Please enter your Cover Image URL.</span>
+			</td>
+		</tr>
+
+		<tr>
 			<th><label for="ipemail">IP Email</label></th>
 
 			<td>
@@ -935,6 +1067,7 @@ function my_save_extra_profile_fields( $user_id ) {
 	update_usermeta( $user_id, 'rss3', $_POST['rss3'] );
 	update_usermeta( $user_id, 'avatar120', $_POST['avatar120'] );
 	update_usermeta( $user_id, 'avatar500', $_POST['avatar500'] );
+	update_usermeta( $user_id, 'coverimage', $_POST['coverimage'] );
 	update_usermeta( $user_id, 'ipemail', $_POST['ipemail'] );
 	update_usermeta( $user_id, 'ipforum', $_POST['ipforum'] );
 	update_usermeta( $user_id, 'quote', $_POST['quote'] );
@@ -1093,85 +1226,27 @@ function getrsslinks($rssurl, $overalltitle, $limit, $view){
 
 
 
-			if(!$topstory500x250){
-				$topstory500x250 =  $default500url;
-			}
+				if($topstory500x250==""){
+					$topstory500x250 = defaultimage("rss", "topstory500x250");
+				}
 
-			if(!$topstory120x120){
-				$topstory120x120 = $default120url;
-			}
+				if($topstory120x120==""){
+					$topstory120x120 = defaultimage("rss", "topstory120x120");
+				}
 
 
 
-			if($topstorycheck){
-				$subtopoutput .= "
-					<div class=container_left_subtops_cell>
-						<a href=\"$href\" rel=\"bookmark\" title=\"Permanent Link to $title\"><img src=$topstory120x120>$title</a>
-					</div>
-				";
-				$sidebaroutput .= "
-					<div class=container_right_widget_cell120>
-						<a href=\"$href\" rel=\"bookmark\" title=\"Permanent Link to $title\">$title</a>
-					</div>
-				";
-				$topstorycheck = false;
-			}
-			elseif($view=="array"){
 				$rowcounter_minus = $rowcounter-1;
-				$output[$rowcounter_minus]['href'] = $href;
+				$output[$rowcounter_minus]['clickthru'] = $href;
 				$output[$rowcounter_minus]['title'] = $title;
-				$output[$rowcounter_minus]['teaser'] = $teaser;
-				$output[$rowcounter_minus]['date'] = $date;
+				$output[$rowcounter_minus]['content'] = $desc;
+				$output[$rowcounter_minus]['excerpt'] = $teaser;
+				$output[$rowcounter_minus]['post_date'] = $date;
 				$output[$rowcounter_minus]['topstory120x120'] = $topstory120x120;
 				$output[$rowcounter_minus]['topstory500x250'] = $topstory500x250;
 
-
-			}
-			else{
-				$subtopoutput .= "
-					<div class=container_left_subtops_linkcell>
-						&raquo; <a href=\"$href\" rel=\"bookmark\" title=\"Permanent Link to $title\">$title</a><br>
-					</div>
-				";
-				$sidebaroutput .= "
-					<div class=container_right_widget_cell120>
-						<a href=\"$href\" rel=\"bookmark\" title=\"Permanent Link to $title\">$title</a>
-					</div>
-				";
-			}
 			$rowcounter++;
 		}
-	}
-
-	if($view=="subtop"){
-		$output = "
-			<div class=container_left_subtops_column>
-				<div class=container_left_subtops_headline>
-					<span class=headline>$overalltitle</span>
-				</div>
-				$subtopoutput
-				<div class=container_left_subtops_footer>
-					<a href=$overalllink>all $overalltitle</a>
-				</div>
-
-			</div>
-		";
-	}
-	elseif($view=="sidebar"){
-		$output = "
-		<div class=container_right_widget>
-
-			<div class=container_right_widget_header>
-				$overalltitle
-
-			</div>
-
-			<div class=container_right_widget>
-				$sidebaroutput
-			</div>
-
-		</div>
-		";
 	}
 
 
@@ -1218,7 +1293,7 @@ function agegateform(){
 	$output .= $yeardd;
 	$output .= "</select>";
 
-	$output .= "<input type=button value=\"enter birthday\" id=ageform_button name=ageform_button>";
+	$output .= "<input type=button onclick=\"age_check(); return false;\" value=\"enter birthday\" id=ageform_button name=ageform_button>";
 
 	return $output;
 

@@ -30,119 +30,145 @@ $insider_row3 = $allusermeta['row3'];
 $insider_row4 = $allusermeta['row4'];
 $insider_row5 = $allusermeta['row5'];
 $insider_zonesuser = $allusermeta['zonesuser'];
+$insider_coverimage = $allusermeta['coverimage'];
 
-if(!$insider_avatar120){
-	$insider_avatar120 .= $default120avatarurl;
+
+if($insider_avatar500==""){
+	$insider_avatar500 = defaultimage("avatar", "insider_avatar500");
 }
 
-if(!$insider_avatar500){
-	$insider_avatar500 .= $default500avatarurl;
+if($insider_avatar120==""){
+	$insider_avatar120 = defaultimage("avatar", "insider_avatar120");
 }
 
+
+if(!$insider_coverimage){
+	$insider_coverimage = "http://media.insidepulse.com/shared/images/v7/default650x325_.jpg";
+}
 
 ?>
 
-
-
-
 <style>
 .authortop{
-	background:url('/wp-content/themes/version7/images/authorlarge.jpg') top left no-repeat;
-	width:650px;
-	height:325px;
-	border: 3px #333333 solid;
-	margin-top:-2px;
+	background:url('<?php echo $insider_coverimage ?>') top left no-repeat;
 }
-
-.authorbottom{
-	width:360px;
-	height:120px;
-	padding:20px;
-	padding-top:1px;
-	background:#ffffff;
-	border: 1px #666666 solid;
-	margin-top:-80px;
-	margin-left:50px;
-	font-size:.7em;
-	color:#333333;
-	opacity: .8;
-	filter: alpha(opacity=80);
-	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-	float:left;
-
-}
-
-
-.authorbottomimg{
-	float:left;
-	height:120px;
-	width:120px;
-	margin-top:-60px;
-	margin-left:50px;
-	border: 3px #333333 solid;
-}
-
-
-
-
-.author_column{
-	width:330px;
-}
-.author_column p{
-	font-size:.875em;
-}
-
-.author_cell{
-	width:320px;
-	padding:5px;
-	border-top:1px #999999 solid;
-	padding-top:10px;
-	padding-bottom:10px;
-}
-
-.author_cell img{
-	width:250px;
-	height:125px;
-}
-
-
-.author_cell a{
-	font-size:1em;
-}
-
-.author_cell p{
-	font-size:.8em;
-}
-
-.author_cell_readmore{
-	text-align:right;
-	font-size:.6em;
-}
-
 </style>
+
+
+
+
+
 
 <?php if (have_posts()) : ?>
 <?php
 
-$currentpost =0;
+	$postarray = array();
 while (have_posts()) : the_post();
 	$topstory120x120 = get_post_meta($post->ID, 'topstory120x120', true);
 	$topstory500x250 = get_post_meta($post->ID, 'topstory500x250', true);
-	if(!$topstory500x250){
-		$topstory500x250 =  "http://media.insidepulse.com/shared/images/v6/default500.jpg";
+	if($topstory500x250==""){
+		$topstory500x250 = defaultimage("top-story", "topstory500x250");
 	}
 
-	if(!$topstory120x120){
-		$topstory120x120 = "http://media.insidepulse.com/shared/images/v6/default120.jpg";
+	if($topstory120x120==""){
+		$topstory120x120 = defaultimage("top-story", "topstory120x120");
 	}
+
 	$thistitle = $post->post_title;
 	$thisexcerpt = $post->post_excerpt;
-	$thisexcerpt = substr($thisexcerpt, 0, 180);
+
 	$thiscontent = $post->post_content;
+
+	$thistitle = str_replace("\"", "", $thistitle);
+
+	$clickthru=get_permalink($thispostid);
+
+	//outputs date in wacky format
+	$thisdate = mysql2date('h|m|s|m|d|Y', $post->post_date);
+
+	//explodes date by |
+	$thisdatearr = explode("|", $thisdate);
+
+	//converts pipe exploded array into unix ts
+	$unixtimestamp =  mktime((int)$thisdatearr[0], (int)$thisdatearr[1], (int)$thisdatearr[2], (int)$thisdatearr[3], (int)$thisdatearr[4], (int)$thisdatearr[5]);
+
+	$postarray[$unixtimestamp]['title'] = $thistitle;
+	$postarray[$unixtimestamp]['clickthru'] = $clickthru;
+	$postarray[$unixtimestamp]['excerpt'] = $thisexcerpt;
+	$postarray[$unixtimestamp]['content'] = $thiscontent;
+	$postarray[$unixtimestamp]['post_date'] = $post->post_date;
+	$postarray[$unixtimestamp]['topstory500x250'] = $topstory500x250;
+	$postarray[$unixtimestamp]['topstory120x120'] = $topstory120x120;
+endwhile;
+endif; ?>
+
+
+
+
+
+<?php
+/*
+$wrestlingposts = getrsslinks('http://wrestling.insidepulse.com/insider/widro/feed/', 'Wrestling', 10, "array");
+$diehardgamefanposts = getrsslinks('http://diehardgamefan.com/diehard/alexlucard/feed/', 'diehardgamefan', 10, "array");
+$insidefightsposts = getrsslinks('http://insidefights.com/insider/scottkubryksawitz/feed/', 'insidefights', 10, "array");
+
+$outsideposts = array();
+foreach($wrestlingposts as $eachpost){
+	$unixtimestamp = mktime($eachpost['post_date']);
+	$postarray[$unixtimestamp]['title'] = $eachpost['title'];
+	$postarray[$unixtimestamp]['clickthru'] = $eachpost['clickthru'];
+	$postarray[$unixtimestamp]['excerpt'] = $eachpost['excerpt'];
+	$postarray[$unixtimestamp]['content'] = $eachpost['content'];
+	$postarray[$unixtimestamp]['post_date'] = $eachpost['post_date'];
+	$postarray[$unixtimestamp]['topstory500x250'] = $eachpost['topstory500x250'];
+	$postarray[$unixtimestamp]['topstory120x120'] = $eachpost['topstory120x120'];
+}
+
+foreach($diehardgamefanposts as $eachpost){
+	$unixtimestamp = mktime($eachpost['post_date']);
+	$postarray[$unixtimestamp]['title'] = $eachpost['title'];
+	$postarray[$unixtimestamp]['clickthru'] = $eachpost['clickthru'];
+	$postarray[$unixtimestamp]['excerpt'] = $eachpost['excerpt'];
+	$postarray[$unixtimestamp]['content'] = $eachpost['content'];
+	$postarray[$unixtimestamp]['post_date'] = $eachpost['post_date'];
+	$postarray[$unixtimestamp]['topstory500x250'] = $eachpost['topstory500x250'];
+	$postarray[$unixtimestamp]['topstory120x120'] = $eachpost['topstory120x120'];
+}
+
+foreach($insidefightsposts as $eachpost){
+	$unixtimestamp = mktime($eachpost['post_date']);
+	$postarray[$unixtimestamp]['title'] = $eachpost['title'];
+	$postarray[$unixtimestamp]['clickthru'] = $eachpost['clickthru'];
+	$postarray[$unixtimestamp]['excerpt'] = $eachpost['excerpt'];
+	$postarray[$unixtimestamp]['content'] = $eachpost['content'];
+	$postarray[$unixtimestamp]['post_date'] = $eachpost['post_date'];
+	$postarray[$unixtimestamp]['topstory500x250'] = $eachpost['topstory500x250'];
+	$postarray[$unixtimestamp]['topstory120x120'] = $eachpost['topstory120x120'];
+}
+*/
+//merge outside array and insidepulse array
+//$allpostsarray = array_merge($outsideposts, $postarray);
+//$postarray2 = ksort($postarray);
+//$postarray3 = array_reverse($postarray);
+//var_dump($allpostsarray);
+//print_r($postarray);
+
+$currentpost =0;
+//foreach($postarray3 as $key => $outsidepost){
+foreach($postarray as $key => $outsidepost){
+	//echo $key . "<br>";
+
+	//vars
+	$thisexcerpt = $outsidepost['excerpt'];
+	$thisexcerpt = substr($thisexcerpt, 0, 180);
+
+	$thiscontent = $outsidepost['content'];
 	$thiscontent = substr(strip_tags($thiscontent), 0, 300);
+	$thistitle = $outsidepost['title'];
 	$thistitle = str_replace("\"", "", $thistitle);
 	$thistitle = substr($thistitle, 0, 100);
-	$clickthru=get_permalink($thispostid);
+
+	$clickthru = $outsidepost['clickthru'];
 
 	if($currentpost%3==1){
 		$authorcellcolor = "";
@@ -157,7 +183,7 @@ while (have_posts()) : the_post();
 
 	$authorlisting = "
 	<div class=\"author_cell\" style=\"background:#$authorcellcolor\">
-		<a class=\"bold color1\" href=\"$clickthru\">$thistitle</a>
+		<a class=\"bold color1\" href=\"$clickthru\">$thistitle</a> <span class=\"date\">$post_date</span>
 		<br>
 		<p>$thiscontent <a class=\"bold color1 author_cell_readmore\" href=\"$clickthru\">&raquo;&raquo;</a></p>
 
@@ -174,14 +200,22 @@ while (have_posts()) : the_post();
 		$authorlisting_right .= $authorlisting;
 	}
 
-$currentpost++;
-endwhile;
+	$currentpost++;
 
+
+}
 ?>
 
 
 
-<?php endif; ?>
+
+
+
+
+
+
+
+
 
 
 
@@ -227,4 +261,4 @@ endwhile;
 <?php include('sidebar_author.php'); ?>
 
 
-<?php get_footer(); ?>
+<?php include('footer.php'); ?>
