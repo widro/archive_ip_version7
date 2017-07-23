@@ -43,7 +43,17 @@ if($insider_avatar120==""){
 
 
 if(!$insider_coverimage){
-	$insider_coverimage = "http://media.insidepulse.com/shared/images/v7/default650x325_.jpg";
+
+	if($active_zone == "insidefights"){
+		$insider_coverimage = "http://media.insidepulse.com/shared/images/v7/coverimagefights.jpg";
+	}
+	elseif($active_zone == "insidefights"){
+		$insider_coverimage = "http://media.insidepulse.com/shared/images/v7/default650x325_.jpg";
+	}
+	else{
+		$insider_coverimage = "http://media.insidepulse.com/shared/images/v7/default650x325_.jpg";
+	}
+
 }
 
 ?>
@@ -254,11 +264,90 @@ foreach($postarray as $key => $outsidepost){
 </div>
 
 
+	</div>
+	<div class="content_right">
+
+		<div class="right_container" style="margin-top:20px;">
+			<a href="#"><img src="http://media.insidepulse.com/shared/images/v7/ad300.png"></a>
+		</div>
+
+		<div class="clear" style="height:30px;"></div>
+
+		<div class="right_container greybox">
+			<h3 class="icon2m bold">Social <span class="color1">Pulse</span></h3>
+
+<?php
+if($insider_facebook){
+?>
+			<div class="right_greybox_row">
+				<img class="right_greybox_icon" src="http://media.insidepulse.com/shared/images/v7/icon_greybox_facebook.png">
+				<a href="<?php echo $insider_facebook ?>">Facebook</a><br>
+				Check me out on facebook and subscribe!
+			</div>
+<?php
+}
+?>
+<?php
+if($insider_twitter){
+?>
+			<div class="right_greybox_row">
+				<img class="right_greybox_icon" src="http://media.insidepulse.com/shared/images/v7/icon_greybox_twitter.png">
+				<a href="<?php echo $insider_twitter ?>">Follow on Twitter</a><br>
+				Follow me on Twitter
+			</div>
+<?php
+}
+?>
+
+			<div class="right_greybox_row">
+				<img class="right_greybox_icon" src="http://media.insidepulse.com/shared/images/v7/icon_greybox_rss.png">
+				<a href="feed/">Subscribe</a><br>
+				Subscribe to all posts via RSS
+			</div>
+
+
+		</div>
+<!--
+		<div class="clear" style="height:30px;"></div>
+
+		<div class="right_container greybox">
+			<h3 class="icon1m bold">Personal <span class="color1">Pulse</span></h3>
+			<div class="right_greybox_row">
+				Dinkers
+			</div>
 
 
 
+		</div>
 
-<?php include('sidebar_author.php'); ?>
+		<div class="clear" style="height:30px;"></div>
 
+		<div class="right_container greybox">
+			<h3 class="icon2m bold">Another <span class="color1">Pulse</span></h3>
+
+			<div class="right_greybox_row">
+				tasty
+			</div>
+
+
+		</div>
+
+		<div class="clear" style="height:30px;"></div>
+
+		<div class="right_container greybox">
+			<h3 class="icon1m bold">Personal <span class="color1">Pulse</span></h3>
+			<div class="right_greybox_row">
+				Dinkers
+			</div>
+
+
+
+		</div>
+
+		<div class="right_container" style="margin-top:20px;">
+			<a href="#"><img src="http://media.insidepulse.com/shared/images/v7/ad300.png"></a>
+		</div>
+
+-->
 
 <?php include('footer.php'); ?>

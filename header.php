@@ -224,7 +224,7 @@ elseif($active_zone=="tv"){
 	//rightfeatured
 	$rightfeaturedvalues = array();
 	$rightfeaturedvalues[] = array('zonecat', 'tv|features', 'TV features', '/category/features/');
-	$rightfeaturedvalues[] = array('zonecat', 'movies|news', 'DVD news', '/category/news/');
+	$rightfeaturedvalues[] = array('zonecat', 'tv|news', 'TV news', '/category/news/');
 
 	//rightnarrowvalues
 	$rightnarrowvalues = array();
@@ -250,15 +250,15 @@ elseif($active_zone=="movies"){
 
 	//featured
 	$featuredvalues = array();
-	$featuredvalues[] = array('cat', 'reviews', 'reviews', '/category/reviews');
-	$featuredvalues[] = array('cat', 'news', 'news', '/category/news');
-	$featuredvalues[] = array('cat', 'features', 'features', '/category/features');
+	$featuredvalues[] = array('cat', 'movies|reviews', 'reviews', '/category/reviews');
+	$featuredvalues[] = array('cat', 'movies|news', 'news', '/category/news');
+	$featuredvalues[] = array('cat', 'movies|features', 'features', '/category/features');
 
 	//left4x2
 	$left4x2values = array();
-	$left4x2values[] = array('zonecat', 'movies|theatrical-reviews', 'theatrical reviews', '/category/theatrical-reviews');
-	$left4x2values[] = array('zonecat', 'movies|blu-ray-reviews', 'blu-ray-reviews', '/category/blu-ray-reviews');
-	$left4x2values[] = array('zonecat', 'movies|dvd-reviews', 'dvd-reviews', '/category/dvd-reviews');
+	$left4x2values[] = array('zonecat', 'movies|theatrical-reviews', 'Movie reviews', '/category/theatrical-reviews');
+	$left4x2values[] = array('zonecat', 'movies|blu-ray-reviews', 'blu ray reviews', '/category/blu-ray-reviews');
+	$left4x2values[] = array('zonecat', 'movies|dvd-reviews', 'dvd reviews', '/category/dvd-reviews');
 	$left4x2values[] = array('zonecat', 'movies|news', 'news', '/category/news');
 	$left4x2values[] = array('zonecat', 'movies|podcasts', 'podcasts', '/category/podcasts');
 	$left4x2values[] = array('zonecat', 'movies|trailers', 'trailers', '/category/trailers');
@@ -272,7 +272,7 @@ elseif($active_zone=="movies"){
 	//rightfeatured
 	$rightfeaturedvalues = array();
 	$rightfeaturedvalues[] = array('zonecat', 'movies|dvd-reviews', 'DVD Reviews', '/category/dvd-reviews/');
-	$rightfeaturedvalues[] = array('zonecat', 'tv|news', 'TV News', '/category/news/');
+	$rightfeaturedvalues[] = array('zonecat', 'movies|news', 'Movie News', '/category/news/');
 
 	//rightnarrowvalues
 	$rightnarrowvalues = array();
@@ -571,7 +571,7 @@ elseif($active_zone=="wrestling"){
 	$left4x2values = array();
 	$left4x2values[] = array('cat', 'news', 'news', '/category/news');
 	$left4x2values[] = array('cat', 'tv_shows', 'tv shows', '/category/tv_shows');
-	$left4x2values[] = array('cat', 'dvdsvideos', 'dvdsvideos', '/category/dvdsvideos');
+	$left4x2values[] = array('cat', 'dvdsvideos', 'dvds/videos', '/category/dvdsvideos');
 	$left4x2values[] = array('cat', 'podcasts', 'podcasts', '/category/podcasts');
 	$left4x2values[] = array('cat', 'ppvs', 'ppvs', '/category/ppvs');
 	$left4x2values[] = array('tag', 'the-rock', 'the rock', '/tag/the-rock');
@@ -708,7 +708,7 @@ $authorslug = "author";
 var currentvalue = 1;
 </script>
 <script type="text/javascript" src="<?php bloginfo( 'stylesheet_directory' ); ?>/version7.js"></script>
-<link rel="shortcut icon" href="http://www.insidepulse.net/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
 
 <?php
 if(is_single()){
@@ -749,15 +749,15 @@ if($active_zone=="insidefights"){
 }
 
 h3.icon1{
-	background:url('http://media.insidepulse.com/shared/images/v7/icon4x2_blue.png') no-repeat top left;
+	background:url('http://media.insidepulse.com/shared/images/v7/icon4x2_fights1.png') no-repeat top left;
 }
 
 h3.icon1m{
-	background:url('http://media.insidepulse.com/shared/images/v7/rightgreyicon1_blue.png') no-repeat top left;
+	background:url('http://media.insidepulse.com/shared/images/v7/rightgreyicon1_fights.png') no-repeat top left;
 }
 
 h3.icon2m{
-	background:url('http://media.insidepulse.com/shared/images/v7/rightgreyicon2_blue.png') no-repeat top left;
+	background:url('http://media.insidepulse.com/shared/images/v7/rightgreyicon2_fights.png') no-repeat top left;
 }
 
 
@@ -782,9 +782,7 @@ elseif($active_zone=="diehardgamefan"){
 .top{
 	background:url('http://media.insidepulse.com/shared/images/v7/top_bg_diehard.png') repeat-x;
 }
-.colorred{
-	color:#1313bb;
-}
+
 .color1{
 	color:#1313bb;
 }
@@ -851,14 +849,6 @@ h3.icon2m{
 
 h3.icon1{
 	background:url('http://media.insidepulse.com/shared/images/v7/icon4x2_orange.png') no-repeat top left;
-}
-
-h3.icon1m{
-	background:url('http://media.insidepulse.com/shared/images/v7/rightgreyicon1_orange.png') no-repeat top left;
-}
-
-h3.icon2m{
-	background:url('http://media.insidepulse.com/shared/images/v7/rightgreyicon2_orange.png') no-repeat top left;
 }
 
 
@@ -972,10 +962,10 @@ OAS_rn = new String (Math.random()); OAS_rns = OAS_rn.substring (2, 11);
 					<ul id="jsddm">
 						<li><a class="font2" href="#">More</a>
 							<ul>
-								<li><a class="font2" href="/figures/">Figures</a></li>
-								<li><a class="font2" href="/music/">Music</a></li>
-								<li><a class="font2" href="/celebrities/">Celebrities</a></li>
-								<li><a class="font2" href="/games/">Games</a></li>
+								<li><a class="font2" href="http://<?php echo $homeurl; ?>/figures/">Figures</a></li>
+								<li><a class="font2" href="http://<?php echo $homeurl; ?>/music/">Music</a></li>
+								<li><a class="font2" href="http://<?php echo $homeurl; ?>/celebrities/">Celebrities</a></li>
+								<li><a class="font2" href="http://<?php echo $homeurl; ?>/games/">Games</a></li>
 								<li><a class="font2" href="http://forum.insidepulse.com/ubbthreads/ubbthreads.php">Forum</a></li>
 							</ul>
 						</li>

@@ -28,7 +28,7 @@ while (have_posts()) : the_post();
 	}
 
 	$thisexcerpt = strip_tags($thisexcerpt);
-	$thisexcerpt = substr($thisexcerpt, 0, 180);
+	$thisexcerpt = substr($thisexcerpt, 0, 100);
 	$thistitle = str_replace("\"", "", $thistitle);
 	$thistitle = substr($thistitle, 0, 100);
 	$clickthru=get_permalink($thispostid);

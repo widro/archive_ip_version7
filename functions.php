@@ -52,6 +52,10 @@ function defaultimage($type, $size){
 		$imageurl['topstory120x120'] = "http://media.insidepulse.com/shared/images/v7/default120x120_.jpg";
 		$imageurl['topstory500x250'] = "http://media.insidepulse.com/shared/images/v7/default500x250_comicsnexus.png";
 	}
+	elseif($type=="insidefights"){
+		$imageurl['topstory120x120'] = "http://media.insidepulse.com/shared/images/v7/fightsdefault120.jpg";
+		$imageurl['topstory500x250'] = "http://media.insidepulse.com/shared/images/v7/fightsdefault500.jpg";
+	}
 	else{
 		$imageurl['topstory120x120'] = "http://media.insidepulse.com/shared/images/v7/default120x120_.jpg";
 		$imageurl['topstory500x250'] = "http://media.insidepulse.com/shared/images/v7/default500x250_.jpg";

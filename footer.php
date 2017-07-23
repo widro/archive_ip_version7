@@ -12,6 +12,9 @@
 	<div class="inner">
 		<div class="subfooter_column2a">
 				<div class="social_facebooklike">
+<?php
+if(!is_single()){
+?>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -21,18 +24,20 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<div class="fb-like" data-href="http://insidepulse.com/dinkers/" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+<div class="fb-like" data-href="http://insidepulse.com/" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
 
 				</div>
 				<div class="social_twitter">
-<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="insidepulse" data-related="zonehere">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+<a href="https://twitter.com/share" class="twitter-share-button" data-url='http://insidepulse.com/' data-count="horizontal" data-via="insidepulse" data-related="zonehere">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
 				</div>
 				<div class="social_googleplus">
 <!-- Place this tag in your head or just before your close body tag -->
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
 <!-- Place this tag where you want the +1 button to render -->
 <g:plusone size="medium"></g:plusone>
-
+<?php
+}
+?>
 				</div>
 		</div>
 		<div class="subfooter_column2b">
@@ -74,7 +79,7 @@
 			<a href="http://<?php echo $homeurl; ?>/latest-updates/?zone=tv&cat=features">Features</a>
 		</div>
 		<div class="footer_column8">
-			<a href="http://<?php echo $homeurl; ?>/comics-nexus/"><h4 class="font3 color1">Comics</h4></a>
+			<a href="http://<?php echo $homeurl; ?>/comics-nexus/"><h4 class="font3 colorred">Comics</h4></a>
 
 			<a href="http://<?php echo $homeurl; ?>/tag/marvel/">Marvel</a><br>
 			<a href="http://<?php echo $homeurl; ?>/tag/dc-comics/">DC Comics</a><br>

@@ -88,6 +88,29 @@ a:hover{
 }
 /*** end colors **/
 
+/*** general colors **/
+.colorred{
+	color:#ad151d;
+}
+
+.colorcomics{
+	color:#F26122;
+}
+
+
+.colorfights{
+	color:#055087;
+}
+
+.colordiehard{
+	color:#1313bb;
+}
+
+
+
+
+
+
 .clear{
 	clear:both;
 }
@@ -141,7 +164,7 @@ h3.icon1{
 	background:url('http://media.insidepulse.com/shared/images/v7/top_bg_red.png') repeat-x;
 	height:40px;
 	width:100%;
-
+	z-index:100;
 }
 
 .top_tabs{
@@ -193,6 +216,7 @@ h3.icon1{
 	background:url('http://media.insidepulse.com/shared/images/v7/bar.png') repeat-x;
 	height:110px;
 	width:100%;
+	z-index:99;
 }
 
 .bar_logo{
