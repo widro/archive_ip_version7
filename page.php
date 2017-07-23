@@ -40,7 +40,6 @@ elseif(is_page('media-kit')){
 }
 
 
-
 else{
 	include('page_default.php');
 }

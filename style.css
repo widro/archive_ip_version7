@@ -139,6 +139,10 @@ a:hover{
 	font-weight:bold;
 }
 
+.normal{
+	font-weight:normal;
+}
+
 .cp{
 	cursor:pointer;
 }
@@ -155,16 +159,20 @@ h3.icon1{
 	font-weight:normal;
 }
 
+.white{
+	color:#ffffff;
+}
 
 
-
+table,td,tdbody,tr,post-content{
+	text-align:left;
+}
 
 /*** top nav **/
 .top{
 	background:url('http://media.insidepulse.com/shared/images/v7/top_bg_red.png') repeat-x;
 	height:40px;
 	width:100%;
-	z-index:100;
 }
 
 .top_tabs{
@@ -189,17 +197,12 @@ h3.icon1{
 }
 
 .submenu{
+	height:16px;
+	width:100%;
 	color:#ffffff;
+	background:#222222;
 	font-weight:bold;
 	font-size:.7em;
-	padding-left:30px;
-	width:960px;
-	height:30px;
-}
-
-.submenu a{
-	color:#ffffff;
-	padding-right:20px;
 }
 
 .submenu li{
@@ -209,6 +212,11 @@ h3.icon1{
 	padding-top:2px;
 	padding-left:20px;
 	float:left;
+}
+
+.submenu a{
+	color:#ffffff;
+	padding-right:20px;
 }
 
 /*** logo bar **/
@@ -1003,9 +1011,9 @@ color: #ff0000;
 /*** article_authorbox **/
 .article_authorbox_body{
 	width:660px;
-	min-height: 150px;
+	min-height: 200px;
 	height: auto !important;
-	height: 150px;
+	height: 200px;
 	background:#f4f4f4;
 	border-top:1px #d7d7d7 solid;
 	border-bottom:1px #d7d7d7 solid;
@@ -1015,24 +1023,54 @@ color: #ff0000;
 	font-size:.825em;
 }
 
-
-
-.article_authorbox_img{
-	width:80px;
-	height:80px;
+.article_authorbox_bodyleft{
+	width:140px;
+	height:140px;
 	padding-left:30px;
 	padding-right:30px;
 	padding-top:10px;
 	float:left;
+
+}
+
+.article_authorbox_bodyleft img{
+	width:120px;
+	height:120px;
+	padding:10px;
+}
+
+.article_authorbox_bodyright{
+	width:400px;
+	min-height: 100px;
+	height: auto !important;
+	height: 100px;
+	padding-left:30px;
+	padding-right:30px;
+	padding-top:10px;
+	float:right;
+	font-size:.75em;
+
 }
 
 
-.article_authorbox_right h3{
-	font-size:1.1em;
-	font-weight:bold;
+.article_authorbox_cell{
+	width:50px;
+	height:50px;
+	float:left;
 }
 
+.article_authorbox_cell img{
+	width:45px;
+	height:45px;
+	padding:1px;
+	border: 2px solid #bfbfd0; 
+}
 
+.article_box_related{
+	float:right;
+	margin-right:5px;
+
+}
 
 /*** right_cell **/
 
@@ -1102,7 +1140,7 @@ color: #ff0000;
 	width:120px;
 	padding:5px;
 	padding-left:20px;
-	font-size:.85em;
+	font-size:.8em;
 	color:#999999;
 	font-weight:bold;
 	float:left;
@@ -1113,7 +1151,7 @@ color: #ff0000;
 .sidetabs_tab2, .sidetabs2_tab2{
 	width:105px;
 	padding:5px;
-	font-size:.85em;
+	font-size:.8em;
 	color:#999999;
 	font-weight:bold;
 	float:left;
@@ -1491,7 +1529,6 @@ h3.icon2m{
 	list-style:none;
 	margin:0;
 	padding:0;
-	text-align:right;
 }
 
 .right_greybox_author a{
@@ -1504,11 +1541,24 @@ h3.icon2m{
 	font-size:1.25em;
 	font-weight:normal;
 	color:#000000;
-	text-align:right;
 }
 
 .right_greybox_authorleft{
-	width:240px;
+	width:50px;
+	padding-left:10px;
+	height:90px;
+	float:left;
+}
+
+.right_greybox_authorleft img{
+	width:50px;
+	height:50px;
+	padding:5px;
+	float:left;
+}
+
+.right_greybox_authorright{
+	width:230px;
 	padding-left:10px;
 	padding-right:10px;
 	height:90px;
@@ -1516,16 +1566,42 @@ h3.icon2m{
 }
 
 
-.right_greybox_authorright{
-	width:50px;
-	height:90px;
-	float:left;
+
+/*** dsq-widget = sidebar recent comments **/
+
+
+.dsq-widget{
+	width:300px;
+	padding:10px;
+	font-size:.7em;
+	color:#666666;
+	background:#f2f2f2;
+	border-bottom:1px #cccccc solid;
+	border:1px #cccccc solid;
+	margin-bottom:5px;
 }
 
-.right_greybox_authorright img{
-	width:50px;
-	height:50px;
-	padding:5px;
-	float:left;
+.dsq-widget-item{
+	padding-bottom:5px;
+	border-bottom:1px #cccccc solid;
+
 }
 
+.dsq-widget-item a{
+
+
+}
+
+.dsq-widget-comment{
+
+}
+
+.dsq-widget-avatar{
+
+}
+
+
+.dsq-widget-meta{
+
+
+}

@@ -6,8 +6,8 @@ Template Name: Loader
 
 
 
-if($_GET['page']){
-	$currentpage = $_GET['page'];
+if($_GET['currentpage']){
+	$currentpage = $_GET['currentpage'];
 }
 else{
 	$currentpage = 1;
@@ -149,17 +149,17 @@ for($i=0;$i<$totalpages; $i++){
 
 if($currentpage==1){
 	$nextpage = $currentpage+1;
-	$nextlink = "<a href=?page=$nextpage>Next</a>";
+	$nextlink = "<a href=?currentpage=$nextpage>Next</a>";
 }
 elseif($currentpage==$totalpages){
 	$prevpage = $currentpage-1;
-	$prevlink = "<a href=?page=$prevpage>Previous</a>";
+	$prevlink = "<a href=?currentpage=$prevpage>Previous</a>";
 }
 else{
 	$nextpage = $currentpage+1;
 	$prevpage = $currentpage-1;
-	$nextlink = "<a href=?page=$nextpage>Next</a>";
-	$prevlink = "<a href=?page=$prevpage>Previous</a>";
+	$nextlink = "<a href=?currentpage=$nextpage>Next</a>";
+	$prevlink = "<a href=?currentpage=$prevpage>Previous</a>";
 
 }
 
@@ -276,13 +276,12 @@ endwhile;
 
 <div class="pagelinks">
 	<div class="pagelinks_left">
-		<?php next_posts_link('&laquo; Previous') ?>
+		<?php echo $prevlink ?>
 	</div>
 	<div class="pagelinks_right">
-		<?php previous_posts_link('Next &raquo;') ?>
+		<?php echo $nextlink ?>
 	</div>
 </div>
-
 
 
 <?php include('sidebar.php'); ?>

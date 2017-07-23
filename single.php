@@ -7,11 +7,6 @@
 $overalldate = $post->post_date;
 $overalldate = substr($overalldate, 0, 10);
 
-//check if there is meta data for randoms
-$showdigg = get_post_meta($post->ID, 'showdigg', true);
-$livecoverageslug = get_post_meta($post->ID, 'livecoverage', true);
-$digest_limit = get_post_meta($post->ID, 'digest_limit', true);
-$digest_date = get_post_meta($post->ID, 'digest_date', true);
 
 
 //author box info
@@ -30,15 +25,7 @@ $insider_email = $thiscurauth->user_email;
 $insider_user_login = $thiscurauth->user_login;
 $insider_user_nicename = $thiscurauth->user_nicename;
 
-if($thisurl=="diehardgamefan.com"){
-	$slugvar = "diehard";
-}
-else{
-	$slugvar = "insider";
-
-}
-
-$authorlink = "/" . $slugvar . "/" . $insider_user_nicename . "/";
+$authorlink = "/" . $authorslug . "/" . $insider_user_nicename . "/";
 
 $allusermeta = getusermetawidro($insider_userid);
 $insider_avatar120 = $allusermeta['avatar120'];
@@ -72,9 +59,12 @@ foreach ($types as $type) {
 }
 
 // check categories for article
+//left4x2
+$relatedvalues = array();
 foreach((get_the_category()) as $category) {
 	$thiscatslug = $category->slug;
 	$thiscatname = $category->name;
+	$relatedvalues[] = array('cat', $thiscatslug, $thiscatname, '/category/'.$thiscatslug);
 }
 
 
@@ -389,57 +379,22 @@ jQuery(document).ready(function($){ //fire on DOM ready
 		</div>
 
 		<div class="clear" style="height:20px;"></div>
-		<div class="article_box_header">
-			<div class="article_box_header_left">
-				<h3 class="icon1 font2">Related Articles</h3>
+<?php
 
-			</div>
-			<div class="article_box_header_right">
-				<a href="#" class="color1">more articles &raquo;</a>
-			</div>
-		</div>
-		<div class="clear"></div>
+	//$create_related = createsection($relatedvalues, "related");
+	//$relatedoutput = $create_related['header'];
+	//$relatedoutput .= $create_related['body'];
+	//$create_singleauthbox = create_authbox($insider_userid, "singleauthbox");
+	$relatedcat = $relatedvalues[1];
+?>
 
-
-
-		<div class="article_box_body">
-
-			<?php //echo $relatedoutput; ?>
-		</div>
+		<?php //echo $relatedoutput; ?>
+		<?php include($overallpath.'generate/category/l-cat-' . $relatedcat . '.html'); ?>
 
 		<div class="clear" style="height:30px;"></div>
 
-		<div class="article_box_header">
-			<div class="article_box_header_left">
-				<h3 class="icon1 font2">Insider</h3>
-
-			</div>
-			<div class="article_box_header_right">
-				<a href="#" class="color1">view profile &raquo;</a>
-			</div>
-		</div>
-		<div class="clear"></div>
-		<div class="article_authorbox_body">
-			<a href=<?php echo $authorlink ?>><img class="article_authorbox_img avatar" border="0" src=<?php echo $insider_avatar120 ?>></a>
-
-			<h3><?php echo $insider_display_name ?></h3>
-
-			<div id="article_authorbox_description1">
-				<p><?php echo $insider_description_short ?> <a id="article_authorbox_show" class="bold color1 cp">&raquo; see more</a></p>
-			</div>
-
-			<div id="article_authorbox_description2" class="hide">
-				<p><?php echo $insider_description ?> <a id="article_authorbox_hide" class="bold color1 cp">&raquo; see less</a></p>
-			</div>
-
-			<br><br>
-			<a href=$insider_twitter target=_blank><img class="icon"  src=http://media.insidepulse.com/shared/images/v6/icon_twitter.jpg border=0></a>
-			<a href=mailto:$insider_email target=_blank><img class="icon" src=http://media.insidepulse.com/shared/images/v6/icon_email.jpg border=0></a>
-
-
-
-
-		</div>
+		<?php //echo $create_singleauthbox ?>
+		<?php include($overallpath.'generate/author/l-author-' . $insider_userid . '.html'); ?>
 
 		<div class="clear" style="height:30px;"></div>
 

@@ -16,6 +16,16 @@ $default500avatarurl = "http://media.insidepulse.com/shared/images/v6/default500
 global $authorslug;
 $authorslug = "insider";
 
+global $disqusslug;
+$disqusslug = "inside-pulse";
+
+global $featuredauthors;
+$featuredauthors = "36|4|7|61|1";
+
+global $overallpath;
+$overallpath = "/nfs/c03/h05/mnt/56814/domains/insidepulse.net/html/";
+
+
 
 global $active_zone;
 global $featuredvalues;
@@ -153,12 +163,13 @@ if($active_zone=="home"){
 
 	//subnav
 	$subnavarray = array();
-	$subnavarray[] = array("Home", "/link");
-	$subnavarray[] = array("News", "/link");
-	$subnavarray[] = array("Reviews", "/link");
-	$subnavarray[] = array("Twilight", "/link");
-	$subnavarray[] = array("Survivor", "/link");
-	$subnavarray[] = array("Full Listing", "/link");
+	$subnavarray[] = array('Movie Reviews', '/category/theatrical-reviews');
+	$subnavarray[] = array('Wrestling Newsboard', 'http://wrestling.insidepulse.com/newsboard/');
+	$subnavarray[] = array('Game Reviews', 'http://diehardgamefan.com/category/reviews/');
+	$subnavarray[] = array('News', '/category/news/');
+	$subnavarray[] = array('MMA News', 'http://insidefights.com/category/mma-news/');
+	$subnavarray[] = array('Twilight', '/tag/twilight/');
+	$subnavarray[] = array('Full Listing', '/latest-updates/');
 
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
@@ -199,7 +210,14 @@ elseif($active_zone=="tv"){
 
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
+	$featuredauthors = "2|110|122|172|169";
 
+	//subnav
+	$subnavarray = array();
+	$subnavarray[] = array('News', '/category/news');
+	$subnavarray[] = array('Spoilers', '/category/spoilers');
+	$subnavarray[] = array('Reviews', 'reviews', '/category/reviews');
+	$subnavarray[] = array('Full Listing', '/latest-updates/?zone=tv');
 
 	//featured
 	$featuredvalues = array();
@@ -214,8 +232,8 @@ elseif($active_zone=="tv"){
 	$left4x2values[] = array('zonecat', 'tv|reviews', 'reviews', '/category/reviews');
 	$left4x2values[] = array('zonecat', 'tv|features', 'features', '/category/features');
 	$left4x2values[] = array('zonecat', 'tv|interviews', 'interviews', '/category/interviews');
-	$left4x2values[] = array('tag', 'the-x-factor', 'The X Factor', '/tag/the-x-factor');
-	$left4x2values[] = array('zonetag', 'tv|survivor', 'survivor', '/tag/survivor/');
+	$left4x2values[] = array('tag', 'the-x-factor,x-factor', 'The X Factor', '/latest-updates/?tag=the-x-factor,x-factor');
+	$left4x2values[] = array('zonetag', 'tv|survivor,survivor-south-pacific,survivor-redemption-island', 'survivor', '/tag/survivor/');
 	$left4x2values[] = array('zonetag', 'tv|glee', 'glee', '/tag/glee/');
 
 	//topstory sql add
@@ -237,16 +255,18 @@ elseif($active_zone=="tv"){
 elseif($active_zone=="movies"){
 
 	$movies_tabcss = "tab_cell_nav_on";
+	$featuredauthors = "7|220|124|221";
+
 
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
 
 	//subnav
 	$subnavarray = array();
-	$subnavarray[] = array("Theatrical Reviews", "/category/theatrical-reviews");
-	$subnavarray[] = array("Blu Ray Reviews", "/category/blu-ray-reviews");
-	$subnavarray[] = array("DVD Reviews", "/category/dvd-reviews");
-	$subnavarray[] = array("Full Listing", "/latest-updates/?zone=movies");
+	$subnavarray[] = array('Movie Reviews', '/category/theatrical-reviews');
+	$subnavarray[] = array('Blu Ray Reviews', '/category/blu-ray-reviews');
+	$subnavarray[] = array('DVD Reviews', '/category/dvd-reviews');
+	$subnavarray[] = array('Full Listing', '/latest-updates/?zone=movies');
 
 	//featured
 	$featuredvalues = array();
@@ -285,10 +305,18 @@ elseif($active_zone=="comics-nexus"){
 
 $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/images/v7/comicsnexuslogo.png\" class=\"bar_logo_comicsnexus\"></a>";
 	$comics_tabcss = "tab_cell_nav_on";
+	$featuredauthors = "177|178|179|842|182|184|11";
 
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
 
+
+	//subnav
+	$subnavarray = array();
+	$subnavarray[] = array('DC', '/tag/dc-comics');
+	$subnavarray[] = array('Marvel', '/tag/marvel');
+	$subnavarray[] = array('Comics Forums', 'http://forum.insidepulse.com/ubbthreads/ubbthreads.php?ubb=cfrm&c=3');
+	$subnavarray[] = array('Full Listing', '/latest-updates/?zone=comics-nexus');
 
 	//featured
 	$featuredvalues = array();
@@ -408,6 +436,7 @@ elseif($active_zone=="games"){
 elseif($active_zone=="sports"){
 
 	$sports_tabcss = "tab_cell_nav_on";
+	$featuredauthors = "61|64|65|69";
 
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
@@ -560,6 +589,18 @@ elseif($active_zone=="wrestling"){
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
 
+	$overallpath = "/nfs/c03/h03/mnt/55011/domains/wrestling.insidepulse.com/html/";
+	$disqusslug = "pulsewrestling";
+	$featuredauthors = "8|849|842|859|462|539|870";
+
+	//subnav
+	$subnavarray = array();
+	$subnavarray[] = array('Newsboard', '/newsboard/');
+	$subnavarray[] = array('Transactions', '/wwe-transaction-history/');
+	$subnavarray[] = array('Title History', '/title-history/');
+	$subnavarray[] = array('Top 100', '/top-100/');
+	$subnavarray[] = array('IWC Glossary', '/iwc-glossary/');
+
 
 	//featured
 	$featuredvalues = array();
@@ -599,7 +640,18 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
 
-$authorslug = "diehard";
+	$overallpath = "/nfs/c09/h01/mnt/131740/domains/diehardgamefan.com/html/";
+	$authorslug = "diehard";
+	$disqusslug = "diehardgamefan";
+	$featuredauthors = "21|345|419|296|605|490|1376";
+
+	//subnav
+	$subnavarray = array();
+	$subnavarray[] = array('Nintendo Reviews', '/latest-updates/?cat=nintendo-3ds-2,nintendo_wii,nintendo_ds,nintendo-wiiu/');
+	$subnavarray[] = array('Sony Reviews', '/latest-updates/?cat=sony_ps3,sony_psp,sony-ps-vita');
+	$subnavarray[] = array('Xbox Reviews', '/latest-updates/?cat=xbox_360/');
+	$subnavarray[] = array('Tabletop Gaming', '/category/tabletop-gaming/');
+	$subnavarray[] = array('Full Listing', '/latest-updates/');
 
 	//featured
 	$featuredvalues = array();
@@ -609,9 +661,9 @@ $authorslug = "diehard";
 
 	//left4x2
 	$left4x2values = array();
-	$left4x2values[] = array('cat', 'nintendo-3ds-2&nintendo_wii&nintendo_ds&nintendo-wiiu', 'Nintendo', '/category/nintendo-3ds-2');
-	$left4x2values[] = array('cat', 'sony_ps3&sony_psp&sony-ps-vita', 'sony', '/category/sony_ps3');
-	$left4x2values[] = array('cat', 'xbox_360', 'xbox', '/category/xbox_360');
+	$left4x2values[] = array('cat', 'nintendo-3ds-2,nintendo_wii,nintendo_ds,nintendo-wiiu', 'Nintendo', '/latest-updates/?cat=nintendo-3ds-2,nintendo_wii,nintendo_ds,nintendo-wiiu');
+	$left4x2values[] = array('cat', 'sony_ps3,sony_psp,sony-ps-vita', 'sony', '/latest-updates/?cat=sony_ps3,sony_psp,sony-ps-vita');
+	$left4x2values[] = array('cat', 'xbox_360', 'xbox', '/latest-updates/?cat=xbox_360');
 	$left4x2values[] = array('cat', 'pc_games', 'pc games', '/category/pc_games');
 	$left4x2values[] = array('cat', 'tabletop-gaming', 'tabletop gaming', '/category/tabletop-gaming');
 	$left4x2values[] = array('cat', 'reviews', 'reviews', '/category/reviews');
@@ -637,10 +689,22 @@ elseif($active_zone=="insidefights"){
 $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/images/v7/insidefightslogo.png\" class=\"bar_logo_insidefights\"></a>";
 	$insidefights_tabcss = "tab_cell_nav_on";
 
+	$disqusslug = "insidefights";
+
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
 
-$authorslug = "author";
+	$overallpath = "/nfs/c05/h02/mnt/74861/domains/insidefights.com/html/";
+	$authorslug = "author";
+	$featuredauthors = "855|364|852|853|560|857";
+
+	//subnav
+	$subnavarray = array();
+	$subnavarray[] = array('MMA news', '/category/mma-news/');
+	$subnavarray[] = array('MMA columns', '/category/mma-columns');
+	$subnavarray[] = array('Boxing news', '/category/boxing-news/');
+	$subnavarray[] = array('Boxing columns', '/category/boxing-columns/');
+	$subnavarray[] = array('Full Listing', '/latest-updates/');
 
 	//featured
 	$featuredvalues = array();
@@ -651,7 +715,7 @@ $authorslug = "author";
 	//left4x2
 	$left4x2values = array();
 	$left4x2values[] = array('cat', 'mma-news', 'mma news', '/category/mma-news/');
-	$left4x2values[] = array('cat', 'mma-video', 'mma video', '/category/mma-video/');
+	$left4x2values[] = array('cat', 'mma-previews', 'mma previews', '/category/mma-previews/');
 	$left4x2values[] = array('cat', 'mma-columns', 'mma columns', '/category/mma-columns/');
 	$left4x2values[] = array('cat', 'mma-video', 'mma video', '/category/mma-video/');
 	$left4x2values[] = array('cat', 'boxing-columns', 'boxing columns', '/category/boxing-columns/');
@@ -976,7 +1040,8 @@ OAS_rn = new String (Math.random()); OAS_rns = OAS_rn.substring (2, 11);
 
 		</div>
 		<div class="top_search">
-			<?php //display_search_box(DISPLAY_RESULTS_AS_POP_UP); ?>
+			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(2) ) : ?>
+			<?php endif; ?>
 
 
 		</div>
@@ -985,21 +1050,29 @@ OAS_rn = new String (Math.random()); OAS_rns = OAS_rn.substring (2, 11);
 
 
 </div>
-<!--
 <?php
 
 //output subnav
 if($subnavarray){
-echo "<div class=\"top_sub\">";
-	echo "<div class=\"inner submenu\">";
-	foreach($subnavarray as $subnavitem){
-		echo "<li><a href=\"" . $subnavitem[1] . "\">" . $subnavitem[0] . "</a> &middot;</li>";
-	}
-echo "</div>";
-echo "</div>";
-	}
+$subnavcount = count($subnavarray);
+	echo "<div class=\"submenu\">";
+		echo "<div class=\"inner\">";
+
+
+		for($i=0;$i<$subnavcount;$i++){
+			echo "<li><a href=\"" . $subnavarray[$i][1] . "\">" . $subnavarray[$i][0] . "</a>";
+
+			if($subnavcount==$i+1){
+				echo "</li>";
+			}
+			else{
+				echo "&middot;</li>";
+			}
+		}
+		echo "</div>";
+	echo "</div>";
+}
 ?>
--->
 
 
 <div class="bar">

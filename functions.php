@@ -30,6 +30,25 @@ function govid_custom_column($column_name, $post_id) {
 
 
 
+//register sidebars
+
+if ( function_exists('register_sidebar') )
+    register_sidebar(array(
+        'before_widget' => '<div  class="right_container">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="icon2m bold">					',
+        'after_title' => '</h3>',
+    ));
+
+if ( function_exists('register_sidebar') )
+    register_sidebar(array(
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '',
+        'after_title' => '',
+    ));
+
+
 
 function defaultimage($type, $size){
 
@@ -71,8 +90,12 @@ function defaultimage($type, $size){
 
 
 
-function buildfilters($page, $activeid, $categoriesskiparray){
+function buildfilters($page, $activeid, $categoriesskiparray, $sidebar=false){
 
+
+	if($sidebar){
+		$authordd .= "Author: ";
+	}
 
 	$authordd .= "<select id=\"authorid\" name=\"authorid\">";
 	$authordd .= "<option value=\"\">-- insider --</option>";
@@ -89,6 +112,13 @@ function buildfilters($page, $activeid, $categoriesskiparray){
 
 	$authordd .= "</select>";
 
+	if($sidebar){
+		$authordd .= "<br><br>";
+	}
+
+	if($sidebar){
+		$zonedd .= "Zone: ";
+	}
 
 	$zonedd .= "<select id=\"zone\" name=\"zone\">";
 	$zonedd .= "<option value=\"\">-- zone --</option>";
@@ -104,6 +134,14 @@ function buildfilters($page, $activeid, $categoriesskiparray){
 
 
 	$zonedd .= "</select>";
+
+	if($sidebar){
+		$zonedd .= "<br><br>";
+	}
+
+	if($sidebar){
+		$sectiondd .= "Category:";
+	}
 
 	$sectiondd .= "<select id=\"cat\" name=\"cat\">";
 	$sectiondd .= "<option value=\"\">-- section --</option>";
@@ -124,7 +162,17 @@ function buildfilters($page, $activeid, $categoriesskiparray){
 
 	$sectiondd .= "</select>";
 
-	$output .= "Filter:";
+	if($sidebar){
+		$sectiondd .= "<br><br>";
+	}
+
+	if($sidebar){
+		//$output .= "Sort Articles!<br><br>";
+	}
+	else{
+		$output .= "Filter:";
+
+	}
 
 	$output .= $authordd;
 	$output .= $zonedd;
@@ -151,6 +199,9 @@ function makesql($type, $slug){
 	elseif($type=="tag"){
 		$sqladd = "&tag=$slug";
 	}
+	elseif($type=="author"){
+		$sqladd = "&author=$slug";
+	}
 	elseif($type=="zonecat"){
 		$slugarray = explode("|", $slug);
 		$sqladd = "&zone=".  $slugarray[0] . "&category_name=" . $slugarray[1];
@@ -158,6 +209,10 @@ function makesql($type, $slug){
 	elseif($type=="zonetag"){
 		$slugarray = explode("|", $slug);
 		$sqladd = "&zone=".  $slugarray[0] . "&tag=" . $slugarray[1];
+	}
+	elseif($type=="zoneauthor"){
+		$slugarray = explode("|", $slug);
+		$sqladd = "&zone=".  $slugarray[0] . "&author=" . $slugarray[1];
 	}
 
 	return $sqladd;
@@ -551,6 +606,12 @@ function my_wp_dashboard_test5() {
 	<br><br>
 	Check out the IP Staff FAQ
 	<br><br>
+	Generate Links (article related, article author box, sidebar author)
+	<br><br>
+	<li><a href="http://insidepulse.com/wp-content/themes/version7/generate.php" target=_blank>Inside Pulse</a></li>
+	<li><a href="http://wrestling.insidepulse.com/wp-content/themes/version7/generate.php" target=_blank>Pulse Wrestling</a></li>
+	<li><a href="http://insidefights.com/wp-content/themes/version7/generate.php" target=_blank>Inside Fights</a></li>
+	<li><a href="http://diehardgamefan.com/wp-content/themes/version7/generate.php" target=_blank>Comics Nexus</a></li>
 
 
 	';
@@ -1355,5 +1416,420 @@ function getinsiders($type){
 	return $outputarray;
 
 }
+
+
+
+
+function createsection($values, $area){
+
+	if($area=="featuredhome"){
+		$limit = 4;
+	}
+	elseif($area=="rightsidetabs"){
+		$limit = 5;
+	}
+	elseif($area=="related"){
+		$limit = 4;
+	}
+	elseif($area=="narrowlinks"){
+		$limit = 3;
+	}
+	elseif($area=="featuredauthor"){
+		$limit = 2;
+	}
+	elseif($area=="authbox"){
+		$limit = 9;
+	}
+
+	$count = count($values);
+
+	$output_header = "";
+	for($i=0;$i<$count;$i++){
+		//grab zone
+		$type = $values[$i][0];
+		$slug = $values[$i][1];
+		$name = $values[$i][2];
+		$masterclickthru = $values[$i][3];
+
+		$position = $i+1;
+
+		//featured vars
+		$showcheck = false;
+		$featuredcells = "";
+
+		// top story sql
+		$sqladd = makesql($type, $slug);
+		$pageposts = get_posts('&showposts='. $limit .$sqladd.'&orderby=post_date&order=desc');
+
+		$zonecounter=0;
+
+
+		//rightsidetabs
+		if($area=="featuredhome"){
+			//check for which cols to hide
+			if($position>1){
+				$classadd = " class=\"hide\"";
+			}
+			else{
+				$classadd = "color1";
+			}
+
+			//tab divs
+			$output_header .= "<div id=\"featured_$position\" class=\"tab featured_tab$position cp $classadd\">$name</div>";
+
+			//new div
+			$output_body .= "<div id=\"featured_content$position\" $classadd>";
+		}
+		elseif($area=="rightsidetabs"){
+			//check for which cols to hide
+			if($position>1){
+				$classadd = " class=\"hide\"";
+			}
+			else{
+				$classadd = "color1";
+			}
+
+			//tab divs
+			$output_header .= "<div id=\"sidetabs_$position\" class=\"tab sidetabs_tab$position cp $classadd\">$name</div>";
+
+			//new div
+			$output_body .= "<div id=\"sidetabs_content$position\" $classadd>";
+		}
+		elseif($area=="related"){
+			//check for which cols to hide
+			if($position>1){
+				$classadd = " class=\"hide\"";
+			}
+			else{
+				$classadd = "tab_on";
+			}
+
+			//tab divs
+			$output_header .= "
+				<div class=\"article_box_header\">
+					<div class=\"article_box_header_left\">
+						<h3 class=\"icon1 font2\">Related $name Articles</h3>
+					</div>
+					<div class=\"article_box_header_right\">
+						<a href=\"$masterclickthru\" class=\"color1\">more articles &raquo;</a>
+					</div>
+				</div>
+				<div class=\"clear\"></div>
+			";
+
+			//new div
+			$output_body .= "<div class=\"article_box_body\">";
+
+		}
+		elseif($area=="narrowlinks"){
+			$output_header .= "<a href=\"$masterclickthru\" class=\"color1\">more $name &raquo;</a>";
+
+		}
+		elseif($area=="featuredauthor"){
+			$output_header .= "
+				<a href=\"#\" alt=\"$name's Profile\" title=\"$name's Profile\"><img src=\"$masterclickthru\" class=\"right_greybox_avatar120\"></a>
+			";
+			$output_body .= "
+				<h3 class=\"font2 color2 normal\">$name</h3>
+			";
+		}
+		elseif($area=="authbox"){
+		}
+
+
+
+
+
+
+
+		//loop
+		$currentpostcount=0;
+		foreach ($pageposts as $post):
+		setup_postdata($post);
+		$do_not_duplicate = $post->ID;
+
+		$topstory120x120 = get_post_meta($post->ID, 'topstory120x120', true);
+		$topstory500x250 = get_post_meta($post->ID, 'topstory500x250', true);
+		if($topstory500x250==""){
+			$topstory500x250 = defaultimage("top-story", "topstory500x250");
+		}
+
+		if($topstory120x120==""){
+			$topstory120x120 = defaultimage("top-story", "topstory120x120");
+		}
+		$thispostid = $post->ID;
+		$thistitle = $post->post_title;
+		$thistitle = strip_tags($thistitle);
+		$thisexcerpt = $post->post_excerpt;
+		$thisexcerpt = $post->post_excerpt;
+
+		if(!$thisexcerpt){
+			$thisexcerpt = $post->post_content;
+
+		}
+		$thisexcerpt = strip_tags($thisexcerpt);
+		$thisexcerpt = substr($thisexcerpt, 0, 180);
+		$thistitle = str_replace("\"", "", $thistitle);
+		$thistitle = substr($thistitle, 0, 100);
+		$clickthru=get_permalink($thispostid);
+
+		$thisdate = mysql2date('m.d.y', $post->post_date);
+
+		$thisuserinfo = get_userdata($post->post_author);
+		$thisuser = $thisuserinfo->display_name;
+		$thisuserclick = "/" . $authorslug . "/" . $thisuserinfo->user_nicename . "/";
+
+		if($area=="featuredhome"){
+			$output_body .= "
+						<div class=\"subtop_cell\">
+							<div class=\"subtop_cell_left\">
+								<a href=\"$clickthru\"><img src=\"$topstory120x120\"></a>
+							</div>
+							<div class=\"subtop_cell_right\">
+								<a href=\"$clickthru\" class=\"headline\">$thistitle</a>
+								<br>
+								<span class=\"subtop_byline\">by <a href=\"$thisuserclick\" class=\"color1\">$thisuser</a> <img src=\"http://media.insidepulse.com/shared/images/v7/commentbubble.png\" class=\"hide\"> <a href=\"#\" class=\"color1 hide\">33</a></span>
+							</div>
+						</div>
+			";
+
+			if($currentpostcount>0&&($currentpostcount%2==1)){
+				$output_body .= "
+							<div class=\"clear\"></div>
+				";
+			}
+		}
+
+		elseif($area=="rightsidetabs"){
+			$output_body .= "
+					<div class=\"right_cell\">
+						<div class=\"right_cell_left\">
+							<a href=\"$clickthru\" alt=\"$thistitle\" title=\"$thistitle\"><img src=\"$topstory120x120\"></a>
+						</div>
+						<div class=\"right_cell_right\">
+							<a href=\"$clickthru\" alt=\"$thistitle\" title=\"$thistitle\">$thistitle</a> <span class=\"date\">($thisdate)</span>
+							<br><br>
+							<span class=\"right_cell_byline\">by <a href=\"$thisuserclick\" class=\"color1\">$thisuser</a> <img src=\"http://media.insidepulse.com/shared/images/v7/commentbubble.png\" class=\"hide\"> <a href=\"#\" class=\"color1 hide\">33</a></span>
+						</div>
+					</div>
+					<div class=\"clear\"></div>
+
+			";
+		}
+
+		elseif($area=="related"){
+			if($position>1){
+				$classadd = "hide";
+			}
+			else{
+				$classadd = "";
+			}
+
+			$output_body .= "
+			<div class=\"article_box_cell $classadd\">
+				<a href=\"$clickthru\" alt=\"$thistitle\" title=\"$thistitle\"><img src=\"$topstory500x250\"><br>$thistitle</a>
+			</div>
+			";
+		}
+		elseif($area=="narrowlinks"){
+			$output_body .= "
+				<div class=\"newsad_left_cell\">
+					<a href=\"$clickthru\" alt=\"$thistitle\" title=\"$thistitle\"><img src=\"$topstory120x120\"></a>
+					<a href=\"$clickthru\" alt=\"$thistitle\" title=\"$thistitle\">$thistitle <span class=\"color1\">&raquo;</span></a>
+				</div>
+			";
+		}
+		elseif($area=="featuredauthor"){
+			$output_body .= "
+				<li><a href=\"$clickthru\" alt=\"$thistitle\" title=\"$thistitle\">&raquo; $thistitle</a></li>
+			";
+		}
+		elseif($area=="authbox"){
+			$output_body .= "
+				<div class=\"article_authorbox_cell\">
+					<a href=\"$clickthru\" alt=\"$thistitle\" title=\"$thistitle\"><img src=\"$topstory120x120\"></a>
+				</div>
+			";
+		}
+
+		$currentpostcount++;
+		endforeach;
+
+		if($area=="featuredhome"){
+			$output_body .= "
+				<div class=\"subtop_more\">
+					<a href=\"$masterclickthru\" class=\"color1 bold\">&raquo; more $name</a>
+				</div>
+			</div>
+
+			";
+
+		}
+		elseif($area=="rightsidetabs"){
+			$output_body .= "
+				<div class=\"right_cell_more\">
+					<a href=\"$masterclickthru\" alt=\"$thistitle\" title=\"$thistitle\" class=\"color1 bold\">&raquo; more $name</a>
+				</div>
+			</div>
+
+			";
+
+		}
+
+		elseif($area=="related"){
+			$output_body .= "
+			</div>
+			";
+		}
+		elseif($area=="narrowlinks"){
+		}
+		elseif($area=="featuredauthor"){
+		}
+		elseif($area=="authbox"){
+		}
+	}
+
+	$outputarray = array();
+	$outputarray['header'] = $output_header;
+	$outputarray['body'] = $output_body;
+	return $outputarray;
+}
+
+
+function create_authbox($insider_userid, $area){
+
+	global $authorslug;
+
+	$sql_users = "
+	SELECT user_login , user_pass , user_nicename , user_email , user_url , user_registered , user_activation_key , user_status , display_name
+	FROM wp_users
+	WHERE ID = '$insider_userid'
+	";
+
+	$result_users = mysql_query($sql_users) or die();
+
+	while($row_users = mysql_fetch_array($result_users)){
+		$insider_aim = $row_users['aim'];
+		$insider_description = $row_users['description'];
+		$insider_display_name = $row_users['display_name'];
+		$insider_first_name = $row_users['first_name'];
+		$insider_last_name = $row_users['last_name'];
+		$insider_nickname = $row_users['nickname'];
+		$insider_email = $row_users['user_email'];
+		$insider_user_login = $row_users['user_login'];
+		$insider_user_nicename = $row_users['user_nicename'];
+	}
+
+
+	$authorlink = "/" . $authorslug . "/" . $insider_user_nicename . "/";
+
+	$allusermeta = getusermetawidro($insider_userid);
+	$insider_avatar120 = $allusermeta['avatar120'];
+	$insider_avatar500 = $allusermeta['avatar500'];
+	$insider_rss1 = $allusermeta['rss1'];
+	$insider_rss2 = $allusermeta['rss2'];
+	$insider_rss3 = $allusermeta['rss3'];
+	$insider_description = $allusermeta['description'];
+	$insider_facebook = $allusermeta['facebook'];
+	$insider_twitter = $allusermeta['twitter'];
+	$insider_twitterrss = $allusermeta['twitterrss'];
+	$insider_quote = $allusermeta['quote'];
+	$insider_row1 = $allusermeta['row1'];
+	$insider_row2 = $allusermeta['row2'];
+	$insider_row3 = $allusermeta['row3'];
+
+	if(!$insider_avatar120){
+		$insider_avatar120 = defaultimage("avatar", "topstory120x120");
+	}
+
+	//featuredauthor
+	$authboxvalues = array();
+	$authboxvalues[] = array('author', $insider_userid, $insider_display_name, $insider_avatar120);
+
+	if($area=="singleauthbox"){
+		$thisarea = "authbox";
+	}
+	elseif($area=="rightauthbox"){
+		$thisarea = "featuredauthor";
+	}
+	$createsection = createsection($authboxvalues, $thisarea);
+	$createsection_header = $createsection['header'];
+	$createsection_body = $createsection['body'];
+
+	if($area=="singleauthbox"){
+		$output = "
+			<div class=\"article_box_header\">
+				<div class=\"article_box_header_left\">
+					<h3 class=\"icon1 font2\">$insider_display_name</h3>
+
+				</div>
+				<div class=\"article_box_header_right\">
+					<a href=\"$authorlink\" class=\"color1\">view profile &raquo;</a>
+				</div>
+			</div>
+			<div class=\"clear\"></div>
+			<div class=\"article_authorbox_body\">
+
+				<div class=\"article_authorbox_bodyleft\">
+					<a href=\"$authorlink\"><img class=\"article_authorbox_img avatar\" border=\"0\" src=$insider_avatar120></a>
+				</div>
+
+
+				<div class=\"article_authorbox_bodyright\">
+					$insider_description
+					<br><br>
+
+					<a class=\"color1 bold\" href=\"$insider_twitter\">Follow on Twitter</a> &middot; <a class=\"color1 bold\" href=\"mailto:$insider_email\">Email $insider_display_name</a>
+
+
+
+				</div>
+				<div class=\"clear\" style=\"height:10px;\"></div>
+
+				<h3 class=\"icon1 font2\" style=\"color:#999999; margin-top:30px;float:left;font-weight:normal;\">Recent Posts &raquo; </h3>
+				<div class=\"article_box_related\">
+					$createsection_body
+				</div>
+				<div class=\"clear\"></div>
+
+			</div>
+
+
+		";
+	}
+	elseif($area=="rightauthbox"){
+
+		$output = "
+			<div class=\"right_greybox_author\">
+				<div class=\"right_greybox_authorleft\">
+					$createsection_header
+				</div>
+				<div class=\"right_greybox_authorright\">
+					$createsection_body
+				</div>
+			</div>
+
+
+		";
+	}
+
+	return $output;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ?>
