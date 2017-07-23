@@ -11,6 +11,35 @@ Version: 7.0
 /*** core types **/
 
 
+
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('http://media.insidepulse.com/shared/fonts/BebasNeue-webfont.eot');
+    src: url('http://media.insidepulse.com/shared/fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://media.insidepulse.com/shared/fonts/BebasNeue-webfont.woff') format('woff'),
+         url('http://media.insidepulse.com/shared/fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('http://media.insidepulse.com/shared/fonts/BebasNeue-webfont.svg#webfontj1CI1MAi') format('svg');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body{
 	padding:0px;
 	margin:0 auto;
@@ -40,7 +69,7 @@ a:hover{
 }
 
 .font2{
-	font-family:'Bebas Neue';
+	font-family:'BebasNeueRegular';
 }
 
 .font3{
