@@ -106,6 +106,10 @@ $postarray3 = array_reverse($postarray);
 //print_r($postarray);
 
 }
+else{
+	$postarray3 = $postarray;
+}
+
 $topstoryposition=1;
 foreach($postarray3 as $thispost){
 
