@@ -346,6 +346,17 @@ jQuery(document).ready(function($){ //fire on DOM ready
 
 
 
+
+<!-- BEGIN UAT - 606x1,606x300 - InsidePulse: InsidePulse - DO NOT MODIFY -->
+<script type="text/javascript" src="http://ad-cdn.technoratimedia.com/00/35/09/uat_10935.js?ad_size=606x1,606x300"></script>
+<!-- END TAG -->
+
+
+
+
+
+
+
 				<!-- content -->
 				<?php the_content(''); ?>
 				<!-- content end -->

@@ -217,7 +217,6 @@ jQuery(document).ready(function($){ //fire on DOM ready
 
 
 </script>
-<script src="http://www8.glam.com/js/widgets/comscore_beacon.js"></script>
 
 <div style="height:1px;overflow:hidden;background:#000000;">
 <?php wp_footer(); ?>

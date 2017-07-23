@@ -51,6 +51,7 @@
 
 
 		</div>
+<script src="http://www8.glam.com/js/widgets/comscore_beacon.js"></script>
 
 
 <?php include('sidebar.php'); ?>

@@ -8,6 +8,13 @@ if(is_home()){
 
 <?php get_header(); ?>
 	<div class="content_left">
+<!-- BEGIN UAT - 606x1,606x300 - InsidePulse: InsidePulse - DO NOT MODIFY -->
+<script type="text/javascript" src="http://ad-cdn.technoratimedia.com/00/35/09/uat_10935.js?ad_size=606x1,606x300"></script>
+<!-- END TAG -->
+
+		<div class="clear"></div>
+
+
 	<h3 class="icon2m bold" style="margin-top:2px;">Full Listing</span></h3>
 <div class="listing_filter">
 	<form action="/latest-updates/" method="get">

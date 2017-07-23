@@ -594,7 +594,7 @@ elseif($active_zone=="wrestling"){
 	//$left4x2values = array($type, $slug, $name, $clickthru);
 
 	$disqusslug = "pulsewrestling";
-	$featuredauthors = "8|207|842|534|875|462|130|886";
+	$featuredauthors = "8|207|842|534|462|886|518|896";
 
 	//subnav
 	$subnavarray = array();
@@ -746,7 +746,6 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 
 
 ?>
-<!DOCTYPE html>
 <html <?php language_attributes();?> xmlns="http://www.w3.org/1999/xhtml"
       xmlns:og="http://ogp.me/ns#"
       xmlns:fb="http://www.facebook.com/2008/fbml">
