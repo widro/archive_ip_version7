@@ -6,7 +6,29 @@
 <div class="subfooter">
 	<div class="inner">
 		<div class="subfooter_column2a">
-			<img class="subscribe_newsletter" src="/wp-content/themes/version7/images/sharethistemp.png">
+				<div class="social_facebooklike">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=130580860308691";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-like" data-href="http://insidepulse.com/dinkers/" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+
+				</div>
+				<div class="social_twitter">
+<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="insidepulse" data-related="zonehere">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+				</div>
+				<div class="social_googleplus">
+<!-- Place this tag in your head or just before your close body tag -->
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<!-- Place this tag where you want the +1 button to render -->
+<g:plusone></g:plusone>
+
+				</div>
 		</div>
 		<div class="subfooter_column2b">
 			<img class="subscribe_newsletter" src="/wp-content/themes/version7/images/newsletter.png">
@@ -170,6 +192,7 @@ jQuery(document).ready(function($){ //fire on DOM ready
 
 
 
+	<div id="fb-root"></div>
 
 
 </body>

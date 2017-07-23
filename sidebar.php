@@ -41,7 +41,7 @@
 				<div class=\"right_cell_right\">
 					<a href=\"$clickthru\">$thistitle</a>
 					<br><br>
-					<span class=\"subtop_byline\">by <a href=\"#\" class=\"color1\">John Doe</a> | <img src=\"/wp-content/themes/version7/images/commentbubble.png\"> <a href=\"#\" class=\"color1\">33</span>
+					<span class=\"right_cell_byline\">by <a href=\"#\" class=\"color1\">John Doe</a> | <img src=\"/wp-content/themes/version7/images/commentbubble.png\"> <a href=\"#\" class=\"color1\">33</span>
 				</div>
 			</div>
 			<div class=\"clear\"></div>
@@ -105,24 +105,78 @@
 	</div>
 	<div class="content_right">
 
-		<div class="right_container">
+		<div class="right_container" style="margin-top:20px;">
 			<a href="#"><img src="/wp-content/themes/version7/images/ad300.png"></a>
 		</div>
 
-		<div class="clear"></div>
+		<div class="clear" style="height:30px;"></div>
 
-		<!-- to change -->
-				<div class="subtop_tab_on">REVIEWS</div>
-				<div class="subtop_tab_off">POPULAR</div>
-		<div class="clear"></div>
-		<!-- //to change -->
+<style>
+
+.sidetabs_tabs{
+	background:url('/wp-content/themes/version7/images/featured_tabs2_1.png') top left no-repeat;
+	width:320px;
+	height:33px;
+}
+
+.sidetabs_tabs1{
+	background:url('/wp-content/themes/version7/images/featured_tabs2_1.png') top left no-repeat;
+	width:320px;
+	height:33px;
+}
+
+.sidetabs_tabs2{
+	background:url('/wp-content/themes/version7/images/featured_tabs2_2.png') top left no-repeat;
+	width:320px;
+	height:33px;
+}
+
+
+.sidetabs_tab1{
+	width:120px;
+	padding:5px;
+	padding-left:20px;
+	font-size:.85em;
+	color:#999999;
+	font-weight:bold;
+	float:left;
+	text-align:center;
+}
+
+.sidetabs_tab2{
+	width:105px;
+	padding:5px;
+	font-size:.85em;
+	color:#999999;
+	font-weight:bold;
+	float:left;
+	text-align:center;
+}
+
+
+
+.tab_on{
+	color:#ff0000;
+}
+
+</style>
+
+		<div id="sidetabs" name="sidetabs2" class="sidetabs_tabs">
+			<div id="sidetabs_1" class="tab sidetabs_tab1 cp tab_on">REVIEWS</div>
+			<div id="sidetabs_2" class="tab sidetabs_tab2 cp">POPULAR</div>
+		</div>
 
 
 		<div class="right_container">
+			<div id="sidetabs_content1">
 			<?php echo $sidelinks ?>
+			</div>
+			<div id="sidetabs_content2">
+			<?php echo $sidelinks ?>
+			</div>
 		</div>
 
-		<div class="clear"></div>
+		<div class="clear" style="height:40px;"></div>
 
 		<div class="right_container">
 			<div class="newsad_left">

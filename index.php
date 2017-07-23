@@ -101,7 +101,7 @@
 				<br><br>
 				Check out this incredible teaser because it is all the best of what we have to offer
 				<br><br>
-				<a href="#" class="color1">read more &raquo;</a>
+				<a href="#" class="fr bold">read more &raquo;</a>
 
 			</div>
 		</div>
@@ -139,52 +139,254 @@
 
 
 		<div class="subtop">
-			<div class="subtop_tabs">
-				<div class="subtop_tab_on">NEWS</div>
-				<div class="subtop_tab_off">POPULAR</div>
-				<div class="subtop_tab_off">WHATS HOT</div>
+
+
+<style>
+
+.featured_tabs{
+	background:url('/wp-content/themes/version7/images/featured_tabs3_1.png') top left no-repeat;
+	width:660px;
+	height:33px;
+}
+
+.featured_tabs1{
+	background:url('/wp-content/themes/version7/images/featured_tabs3_1.png') top left no-repeat;
+	width:660px;
+	height:33px;
+}
+
+.featured_tabs2{
+	background:url('/wp-content/themes/version7/images/featured_tabs3_2.png') top left no-repeat;
+	width:660px;
+	height:33px;
+}
+
+.featured_tabs3{
+	background:url('/wp-content/themes/version7/images/featured_tabs3_3.png') top left no-repeat;
+	width:660px;
+	height:33px;
+}
+
+
+.featured_tab1{
+	width:120px;
+	padding:5px;
+	padding-left:20px;
+	font-size:.85em;
+	color:#999999;
+	font-weight:bold;
+	float:left;
+	text-align:center;
+}
+
+.featured_tab2{
+	width:105px;
+	padding:5px;
+	font-size:.85em;
+	color:#999999;
+	font-weight:bold;
+	float:left;
+	text-align:center;
+}
+
+.featured_tab3{
+	width:105px;
+	padding:5px;
+	font-size:.85em;
+	color:#999999;
+	font-weight:bold;
+	float:left;
+	text-align:center;
+}
+
+.tab_on{
+	color:#ff0000;
+}
+
+</style>
+
+<script>
+
+function changetab(newtab, totaltabs){
+		for(i=1;i<totaltabs+1;i++){
+			$("#pagetab"+i).removeClass("tab_on");
+			$("#pagecontent"+i).addClass("content_off").removeClass("content_on");
+		}
+
+		var newtabdiv = "pagetab" + newtab;
+		var newcontentdiv = "pagecontent" + newtab;
+		$("#"+newtabdiv).addClass("tab_on");
+
+		$("#"+newcontentdiv).addClass("content_on").removeClass("content_off");
+
+}
+
+jQuery(document).ready(function($){ //fire on DOM ready
+
+	$(".tab").click(function(){
+		var totalid = $(this).closest('div').parent().attr("id");
+		var totalidlength = totalid.length;
+
+		var totaltabs = parseInt($(this).closest('div').parent().attr("name").substr(totalidlength,1));
+
+		var thistab_text = $(this).attr("id").substr(totalidlength+1,1);
+		var thistab = parseInt($(this).attr("id").substr(totalidlength+1,1));
+		$(this).closest('div').parent().removeClass(totalid+'_tabs').removeClass(totalid+'_tabs1').removeClass(totalid+'_tabs2').removeClass(totalid+'_tabs3').addClass(totalid+'_tabs'+thistab);
+
+		for(i=0;i<totaltabs;i++){
+			i1 = i+1;
+			var contentid = "#" + totalid + "_content" + i1;
+			if(i1==thistab){
+				$(contentid).show();
+			}
+			else{
+				$(contentid).hide();
+			}
+		}
+
+	});
+});
+
+
+</script>
+
+
+
+
+			<div id="featured" name="featured3" class="featured_tabs">
+				<div id="featured_1" class="tab featured_tab1 cp tab_on">NEWS</div>
+				<div id="featured_2" class="tab featured_tab2 cp">POPULAR</div>
+				<div id="featured_3" class="tab featured_tab3 cp">WHATS HOT</div>
 			</div>
+
+
 			<div class="clear"></div>
 
 
-			<div class="subtop_cell">
-				<div class="subtop_cell_left">
-					<a href="#"><img src="/wp-content/themes/version7/images/temp/bmichaels-120x120.jpg"></a>
+			<div id="featured_content1">
+				<div class="subtop_cell">
+					<div class="subtop_cell_left">
+						<a href="#"><img src="/wp-content/themes/version7/images/temp/bmichaels-120x120.jpg"></a>
+					</div>
+					<div class="subtop_cell_right">
+						<a href="#" class="headline">Check out this incredible headline because it is all the best of what we have to offer</a>
+						<br><br>
+						<span class="subtop_byline">by <a href="#" class="color1">John Doe</a> | <img src="/wp-content/themes/version7/images/commentbubble.png"> <a href="#" class="color1">33</span>
+					</div>
 				</div>
-				<div class="subtop_cell_right">
-					<a href="#" class="headline">Check out this incredible headline because it is all the best of what we have to offer</a>
-					<br><br>
-					<span class="subtop_byline">by <a href="#" class="color1">John Doe</a> | <img src="/wp-content/themes/version7/images/commentbubble.png"> <a href="#" class="color1">33</span>
+				<div class="subtop_cell">
+					<div class="subtop_cell_left">
+						<a href="#"><img src="/wp-content/themes/version7/images/temp/bmichaels-120x120.jpg"></a>
+					</div>
+					<div class="subtop_cell_right">
+						<a href="#" class="headline">Check out this incredible headline because it is all the best of what we have to offer</a>
+						<br><br>
+						<span class="subtop_byline">by <a href="#" class="color1">John Doe</a> | <img src="/wp-content/themes/version7/images/commentbubble.png"> <a href="#" class="color1">33</span>
+					</div>
+				</div>
+				<div class="subtop_cell">
+					<div class="subtop_cell_left">
+						<a href="#"><img src="/wp-content/themes/version7/images/temp/bmichaels-120x120.jpg"></a>
+					</div>
+					<div class="subtop_cell_right">
+						<a href="#" class="headline">Check out this incredible headline because it is all the best of what we have to offer</a>
+						<br><br>
+						<span class="subtop_byline">by <a href="#" class="color1">John Doe</a> | <img src="/wp-content/themes/version7/images/commentbubble.png"> <a href="#" class="color1">33</span>
+					</div>
+				</div>
+				<div class="subtop_cell">
+					<div class="subtop_cell_left">
+						<a href="#"><img src="/wp-content/themes/version7/images/temp/bmichaels-120x120.jpg"></a>
+					</div>
+					<div class="subtop_cell_right">
+						<a href="#" class="headline">Check out this incredible headline because it is all the best of what we have to offer</a>
+						<br><br>
+						<span class="subtop_byline">by <a href="#" class="color1">John Doe</a> | <img src="/wp-content/themes/version7/images/commentbubble.png"> <a href="#" class="color1">33</span>
+					</div>
 				</div>
 			</div>
-			<div class="subtop_cell">
-				<div class="subtop_cell_left">
-					<a href="#"><img src="/wp-content/themes/version7/images/temp/bmichaels-120x120.jpg"></a>
+			<div id="featured_content2" class="hide">
+				<div class="subtop_cell">
+					<div class="subtop_cell_left">
+						<a href="#"><img src="/wp-content/themes/version7/images/temp/bmichaels-120x120.jpg"></a>
+					</div>
+					<div class="subtop_cell_right">
+						<a href="#" class="headline">2 out this incredible headline because it is all the best of what we have to offer</a>
+						<br><br>
+						<span class="subtop_byline">by <a href="#" class="color1">John Doe</a> | <img src="/wp-content/themes/version7/images/commentbubble.png"> <a href="#" class="color1">33</span>
+					</div>
 				</div>
-				<div class="subtop_cell_right">
-					<a href="#" class="headline">Check out this incredible headline because it is all the best of what we have to offer</a>
-					<br><br>
-					<span class="subtop_byline">by <a href="#" class="color1">John Doe</a> | <img src="/wp-content/themes/version7/images/commentbubble.png"> <a href="#" class="color1">33</span>
+				<div class="subtop_cell">
+					<div class="subtop_cell_left">
+						<a href="#"><img src="/wp-content/themes/version7/images/temp/bmichaels-120x120.jpg"></a>
+					</div>
+					<div class="subtop_cell_right">
+						<a href="#" class="headline">Check out this incredible headline because it is all the best of what we have to offer</a>
+						<br><br>
+						<span class="subtop_byline">by <a href="#" class="color1">John Doe</a> | <img src="/wp-content/themes/version7/images/commentbubble.png"> <a href="#" class="color1">33</span>
+					</div>
+				</div>
+				<div class="subtop_cell">
+					<div class="subtop_cell_left">
+						<a href="#"><img src="/wp-content/themes/version7/images/temp/bmichaels-120x120.jpg"></a>
+					</div>
+					<div class="subtop_cell_right">
+						<a href="#" class="headline">Check out this incredible headline because it is all the best of what we have to offer</a>
+						<br><br>
+						<span class="subtop_byline">by <a href="#" class="color1">John Doe</a> | <img src="/wp-content/themes/version7/images/commentbubble.png"> <a href="#" class="color1">33</span>
+					</div>
+				</div>
+				<div class="subtop_cell">
+					<div class="subtop_cell_left">
+						<a href="#"><img src="/wp-content/themes/version7/images/temp/bmichaels-120x120.jpg"></a>
+					</div>
+					<div class="subtop_cell_right">
+						<a href="#" class="headline">Check out this incredible headline because it is all the best of what we have to offer</a>
+						<br><br>
+						<span class="subtop_byline">by <a href="#" class="color1">John Doe</a> | <img src="/wp-content/themes/version7/images/commentbubble.png"> <a href="#" class="color1">33</span>
+					</div>
 				</div>
 			</div>
-			<div class="subtop_cell">
-				<div class="subtop_cell_left">
-					<a href="#"><img src="/wp-content/themes/version7/images/temp/bmichaels-120x120.jpg"></a>
+			<div id="featured_content3" class="hide">
+				<div class="subtop_cell">
+					<div class="subtop_cell_left">
+						<a href="#"><img src="/wp-content/themes/version7/images/temp/bmichaels-120x120.jpg"></a>
+					</div>
+					<div class="subtop_cell_right">
+						<a href="#" class="headline">3 out this incredible headline because it is all the best of what we have to offer</a>
+						<br><br>
+						<span class="subtop_byline">by <a href="#" class="color1">John Doe</a> | <img src="/wp-content/themes/version7/images/commentbubble.png"> <a href="#" class="color1">33</span>
+					</div>
 				</div>
-				<div class="subtop_cell_right">
-					<a href="#" class="headline">Check out this incredible headline because it is all the best of what we have to offer</a>
-					<br><br>
-					<span class="subtop_byline">by <a href="#" class="color1">John Doe</a> | <img src="/wp-content/themes/version7/images/commentbubble.png"> <a href="#" class="color1">33</span>
+				<div class="subtop_cell">
+					<div class="subtop_cell_left">
+						<a href="#"><img src="/wp-content/themes/version7/images/temp/bmichaels-120x120.jpg"></a>
+					</div>
+					<div class="subtop_cell_right">
+						<a href="#" class="headline">Check out this incredible headline because it is all the best of what we have to offer</a>
+						<br><br>
+						<span class="subtop_byline">by <a href="#" class="color1">John Doe</a> | <img src="/wp-content/themes/version7/images/commentbubble.png"> <a href="#" class="color1">33</span>
+					</div>
 				</div>
-			</div>
-			<div class="subtop_cell">
-				<div class="subtop_cell_left">
-					<a href="#"><img src="/wp-content/themes/version7/images/temp/bmichaels-120x120.jpg"></a>
+				<div class="subtop_cell">
+					<div class="subtop_cell_left">
+						<a href="#"><img src="/wp-content/themes/version7/images/temp/bmichaels-120x120.jpg"></a>
+					</div>
+					<div class="subtop_cell_right">
+						<a href="#" class="headline">Check out this incredible headline because it is all the best of what we have to offer</a>
+						<br><br>
+						<span class="subtop_byline">by <a href="#" class="color1">John Doe</a> | <img src="/wp-content/themes/version7/images/commentbubble.png"> <a href="#" class="color1">33</span>
+					</div>
 				</div>
-				<div class="subtop_cell_right">
-					<a href="#" class="headline">Check out this incredible headline because it is all the best of what we have to offer</a>
-					<br><br>
-					<span class="subtop_byline">by <a href="#" class="color1">John Doe</a> | <img src="/wp-content/themes/version7/images/commentbubble.png"> <a href="#" class="color1">33</span>
+				<div class="subtop_cell">
+					<div class="subtop_cell_left">
+						<a href="#"><img src="/wp-content/themes/version7/images/temp/bmichaels-120x120.jpg"></a>
+					</div>
+					<div class="subtop_cell_right">
+						<a href="#" class="headline">Check out this incredible headline because it is all the best of what we have to offer</a>
+						<br><br>
+						<span class="subtop_byline">by <a href="#" class="color1">John Doe</a> | <img src="/wp-content/themes/version7/images/commentbubble.png"> <a href="#" class="color1">33</span>
+					</div>
 				</div>
 			</div>
 
@@ -199,18 +401,54 @@
 		<div class="greyline650"></div>
 
 		<div class="clear"></div>
-
+		<div class="left4x2">
 
 <?php
+$zonearray = array();
+$zonenamearray = array();
+$zonearray[] = "movies";
+$zonenamearray[] = "Movies";
+$zonelinkarray[] = "/zone/movies/";
+$zonearray[] = "tv";
+$zonenamearray[] = "Television";
+$zonelinkarray[] = "/zone/tv/";
+$zonearray[] = "comics-nexus";
+$zonenamearray[] = "Comics Nexus";
+$zonelinkarray[] = "/zone/comics-nexus/";
+$zonearray[] = "sports";
+$zonenamearray[] = "Sports";
+$zonelinkarray[] = "/zone/sports/";
+$zonearray[] = "wrestling";
+$zonenamearray[] = "Wrestling";
+$zonelinkarray[] = "http://wrestling.insidepulse.com";
+$zonearray[] = "figures";
+$zonenamearray[] = "Inside Fights";
+$zonelinkarray[] = "http://insidefights.com";
+$zonearray[] = "movies";
+$zonenamearray[] = "Diehard Gamefan";
+$zonelinkarray[] = "http://diehardgamefan.com";
+$zonearray[] = "music";
+$zonenamearray[] = "Music";
+$zonelinkarray[] = "/zone/music/";
+
+$zonecount = count($zonearray);
+
+for($i=0;$i<$zonecount;$i++){
+
+	//grab zone
+	$thiszone = $zonearray[$i];
+	$thiszonename = $zonenamearray[$i];
 
 	// zone sql
-	$the_query = new WP_Query('&showposts=3&zone=movies&orderby=post_date&order=desc');
+	$the_query = new WP_Query('&showposts=3&zone='.$thiszone.'&orderby=post_date&order=desc');
 
 	$zonecounter=0;
-
+	$otherlinks = "";
+	$post = "";
 	//top story loop
 	while ($the_query->have_posts()) : $the_query->the_post();
 	$do_not_duplicate = $post->ID;
+	$thispostid = $post->ID;
 
 	$topstory120x120 = get_post_meta($post->ID, 'topstory120x120', true);
 	$topstory500x250 = get_post_meta($post->ID, 'topstory500x250', true);
@@ -224,12 +462,11 @@
 	$thistitle = $post->post_title;
 	$thistitle = strip_tags($thistitle);
 	$thisexcerpt = $post->post_excerpt;
-	$thisexcerpt = $post->post_excerpt;
 
 	if(!$thisexcerpt){
 		$thisexcerpt = $post->post_content;
-
 	}
+
 	$thisexcerpt = strip_tags($thisexcerpt);
 	$thisexcerpt = substr($thisexcerpt, 0, 180);
 	$thistitle = str_replace("\"", "", $thistitle);
@@ -254,9 +491,8 @@
 ?>
 
 
-		<div class="left4x2">
 			<div class="left4x2_column">
-				<h3 class="icon1 font2 color1">MOVIES</h3>
+				<a href="<?php echo $zonelinkarray[$i]; ?>"><h3 class="icon1 font2 color1"><?php echo $thiszonename; ?></h3></a>
 				<div class="greyline150"></div>
 				<?php echo $toplink ?>
 				<ul>
@@ -266,99 +502,12 @@
 					<a href="#" class="left4x2_more color1">more news &raquo;</a>
 				</div>
 			</div>
-			<div class="left4x2_column">
-				<h3 class="icon1 font2 color1">TV</h3>
-				<div class="greyline150"></div>
-				<a href="#"><img src="/wp-content/themes/version7/images/temp/rugby_front.jpg" width=150></a>
-				<a href="#" class="left4x2_headline">Some Kind Of title that goes here Some Kind Of title that goes here</a>
-				<ul>
-					<li><a href="#">Some Kind Of title that goes here</a></li>
-					<li><a href="#">Some Kind Of title that goes here</a></li>
-				</ul>
-				<div class="left4x2_more ar">
-					<a href="#" class="left4x2_more color1">more news &raquo;</a>
-				</div>
-			</div>
-			<div class="left4x2_column">
-				<h3 class="icon1 font2 color1">COMICS</h3>
-				<div class="greyline150"></div>
-				<a href="#"><img src="/wp-content/themes/version7/images/temp/rugby_front.jpg" width=150></a>
-				<a href="#" class="left4x2_headline">Some Kind Of title that goes here Some Kind Of title that goes here</a>
-				<ul>
-					<li><a href="#">Some Kind Of title that goes here</a></li>
-					<li><a href="#">Some Kind Of title that goes here</a></li>
-				</ul>
-				<div class="left4x2_more ar">
-					<a href="#" class="left4x2_more color1">more news &raquo;</a>
-				</div>
-			</div>
-			<div class="left4x2_column">
-				<h3 class="icon1 font2 color1">WRESTLING</h3>
-				<div class="greyline150"></div>
-				<a href="#"><img src="/wp-content/themes/version7/images/temp/rugby_front.jpg" width=150></a>
-				<a href="#" class="left4x2_headline">Some Kind Of title that goes here Some Kind Of title that goes here</a>
-				<ul>
-					<li><a href="#">Some Kind Of title that goes here</a></li>
-					<li><a href="#">Some Kind Of title that goes here</a></li>
-				</ul>
-				<div class="left4x2_more ar">
-					<a href="#" class="left4x2_more color1">more news &raquo;</a>
-				</div>
-			</div>
-		</div>
-		<div class="left4x2">
-			<div class="left4x2_column">
-				<h3 class="icon1 font2 color1">MMA/BOXING</h3>
-				<div class="greyline150"></div>
-				<a href="#"><img src="/wp-content/themes/version7/images/temp/rugby_front.jpg" width=150></a>
-				<a href="#" class="left4x2_headline">Some Kind Of title that goes here Some Kind Of title that goes here</a>
-				<ul>
-					<li><a href="#">Some Kind Of title that goes here</a></li>
-					<li><a href="#">Some Kind Of title that goes here</a></li>
-				</ul>
-				<div class="left4x2_more ar">
-					<a href="#" class="left4x2_more color1">more news &raquo;</a>
-				</div>
-			</div>
-			<div class="left4x2_column">
-				<h3 class="icon1 font2 color1">GAMES</h3>
-				<div class="greyline150"></div>
-				<a href="#"><img src="/wp-content/themes/version7/images/temp/rugby_front.jpg" width=150></a>
-				<a href="#" class="left4x2_headline">Some Kind Of title that goes here Some Kind Of title that goes here</a>
-				<ul>
-					<li><a href="#">Some Kind Of title that goes here</a></li>
-					<li><a href="#">Some Kind Of title that goes here</a></li>
-				</ul>
-				<div class="left4x2_more ar">
-					<a href="#" class="left4x2_more color1">more news &raquo;</a>
-				</div>
-			</div>
-			<div class="left4x2_column">
-				<h3 class="icon1 font2 color1">MUSIC</h3>
-				<div class="greyline150"></div>
-				<a href="#"><img src="/wp-content/themes/version7/images/temp/rugby_front.jpg" width=150></a>
-				<a href="#" class="left4x2_headline">Some Kind Of title that goes here Some Kind Of title that goes here</a>
-				<ul>
-					<li><a href="#">Some Kind Of title that goes here</a></li>
-					<li><a href="#">Some Kind Of title that goes here</a></li>
-				</ul>
-				<div class="left4x2_more ar">
-					<a href="#" class="left4x2_more color1">more news &raquo;</a>
-				</div>
-			</div>
-			<div class="left4x2_column">
-				<h3 class="icon1 font2 color1">SPORTS</h3>
-				<div class="greyline150"></div>
-				<a href="#"><img src="/wp-content/themes/version7/images/temp/rugby_front.jpg" width=150></a>
-				<a href="#" class="left4x2_headline">Some Kind Of title that goes here Some Kind Of title that goes here</a>
-				<ul>
-					<li><a href="#">Some Kind Of title that goes here</a></li>
-					<li><a href="#">Some Kind Of title that goes here</a></li>
-				</ul>
-				<div class="left4x2_more ar">
-					<a href="#" class="left4x2_more color1">more news &raquo;</a>
-				</div>
-			</div>
+
+
+<?php
+}
+?>
+
 		</div>
 
 
