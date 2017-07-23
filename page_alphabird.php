@@ -28,9 +28,16 @@ elseif(is_page('the-ride-season-3-the-game-ifeadi-odenigbo')){
 		</div>
 		<div class="clear"></div>
 
-<!-- BEGIN UAT - 606x1,606x300 - InsidePulse: InsidePulse - DO NOT MODIFY -->
-<script type="text/javascript" src="http://ad-cdn.technoratimedia.com/00/35/09/uat_10935.js?ad_size=606x1,606x300"></script>
-<!-- END TAG -->
+		<?php
+		$relatedfile = $overallpath.'generate/category/l-cat-top-story.html';
+		include($relatedfile);
+		$relatedfile = $overallpath.'generate/category/l-cat-news.html';
+		include($relatedfile);
+		$relatedfile = $overallpath.'generate/category/l-cat-reviews.html';
+		include($relatedfile);
+		?>
+
+		<div class="clear"></div>
 
 
 

@@ -1397,9 +1397,11 @@ h3.icon2m{
 
 .listing_cell{
 	width:660px;
+	min-height: 120px;
+	height: auto !important;
+	height: 120px;
 	padding:0px;
-	margin-bottom:10px;
-	border-top:1px #eeeeee solid;
+	border-bottom:1px #eeeeee solid;
 }
 
 .listing_cell_left{
@@ -1414,9 +1416,9 @@ h3.icon2m{
 }
 
 .listing_cell_right{
-	width:500px;
-	padding:20px;
-	padding-top:10px;
+	width:530px;
+	padding:5px;
+	padding-top:5px;
 	float:right;
 }
 

@@ -7,13 +7,6 @@ if(is_home()){
 ?>
 
 <?php get_header(); ?>
-	<div class="content_left">
-<!-- BEGIN UAT - 606x1,606x300 - InsidePulse: InsidePulse - DO NOT MODIFY -->
-<script type="text/javascript" src="http://ad-cdn.technoratimedia.com/00/35/09/uat_10935.js?ad_size=606x1,606x300"></script>
-<!-- END TAG -->
-
-		<div class="clear"></div>
-
 
 	<h3 class="icon2m bold" style="margin-top:2px;">Full Listing</span></h3>
 <div class="listing_filter">
@@ -35,7 +28,7 @@ if(is_home()){
 <?php if (have_posts()) : ?>
 <?php
 
-
+$i=0;
 while (have_posts()) : the_post();
 	$topstory120x120 = get_post_meta($post->ID, 'topstory120x120', true);
 	$topstory500x250 = get_post_meta($post->ID, 'topstory500x250', true);
@@ -60,8 +53,13 @@ while (have_posts()) : the_post();
 	$clickthru=get_permalink($thispostid);
 	$thisdate = mysql2date('m.d.y', $post->post_date);
 	$author = get_the_author();
+	$grey=false;
+	if($i%2==1){
+		$grey=true;
+	}
 
-	echo listingcell($thistitle, $thisdate, $author, $clickthru, $thisexcerpt, $topstory120x120, $topstory500x250);
+	echo listingcell($thistitle, $thisdate, $author, $clickthru, $thisexcerpt, $topstory120x120, $topstory500x250, $grey);
+$i++;
 endwhile;
 ?>
 

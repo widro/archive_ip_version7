@@ -209,23 +209,6 @@ foreach($postarray3 as $thispost){
 		<div class="clear"></div>
 
 
-
-
-
-<!-- BEGIN UAT - 606x1,606x300 - InsidePulse: InsidePulse - DO NOT MODIFY -->
-<script type="text/javascript" src="http://ad-cdn.technoratimedia.com/00/35/09/uat_10935.js?ad_size=606x1,606x300"></script>
-<!-- END TAG -->
-
-		<div class="clear"></div>
-
-
-
-
-
-
-
-
-
 		<div id="featured" name="featured3" class="featured_tabs">
 			<?php echo $featuredtabs; ?>
 		</div>
