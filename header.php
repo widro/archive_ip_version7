@@ -250,9 +250,9 @@ elseif($active_zone=="movies"){
 
 	//featured
 	$featuredvalues = array();
-	$featuredvalues[] = array('cat', 'movies|reviews', 'reviews', '/category/reviews');
-	$featuredvalues[] = array('cat', 'movies|news', 'news', '/category/news');
-	$featuredvalues[] = array('cat', 'movies|features', 'features', '/category/features');
+	$featuredvalues[] = array('zonecat', 'movies|reviews', 'reviews', '/category/reviews');
+	$featuredvalues[] = array('zonecat', 'movies|news', 'news', '/category/news');
+	$featuredvalues[] = array('zonecat', 'movies|features', 'features', '/category/features');
 
 	//left4x2
 	$left4x2values = array();
@@ -271,7 +271,7 @@ elseif($active_zone=="movies"){
 
 	//rightfeatured
 	$rightfeaturedvalues = array();
-	$rightfeaturedvalues[] = array('zonecat', 'movies|dvd-reviews', 'DVD Reviews', '/category/dvd-reviews/');
+	$rightfeaturedvalues[] = array('zonecat', 'movies|theatrical-reviews', 'Movie Reviews', '/category/theatrical-reviews/');
 	$rightfeaturedvalues[] = array('zonecat', 'movies|news', 'Movie News', '/category/news/');
 
 	//rightnarrowvalues
@@ -609,14 +609,14 @@ $authorslug = "diehard";
 
 	//left4x2
 	$left4x2values = array();
-	$left4x2values[] = array('cat', 'xbox_360', 'xbox 360', '/category/xbox_360');
-	$left4x2values[] = array('cat', 'sony_ps3', 'sony ps3', '/category/sony_ps3');
-	$left4x2values[] = array('cat', 'nintendo-3ds-2', 'Nintendo 3DS', '/category/nintendo-3ds-2');
+	$left4x2values[] = array('cat', 'nintendo-3ds-2&nintendo_wii&nintendo_ds&nintendo-wiiu', 'Nintendo', '/category/nintendo-3ds-2');
+	$left4x2values[] = array('cat', 'sony_ps3&sony_psp&sony-ps-vita', 'sony', '/category/sony_ps3');
+	$left4x2values[] = array('cat', 'xbox_360', 'xbox', '/category/xbox_360');
 	$left4x2values[] = array('cat', 'pc_games', 'pc games', '/category/pc_games');
 	$left4x2values[] = array('cat', 'tabletop-gaming', 'tabletop gaming', '/category/tabletop-gaming');
+	$left4x2values[] = array('cat', 'reviews', 'reviews', '/category/reviews');
+	$left4x2values[] = array('cat', 'features', 'features', '/category/features');
 	$left4x2values[] = array('cat', 'columns', 'columns', '/category/columns');
-	$left4x2values[] = array('cat', 'previews', 'previews', '/category/previews');
-	$left4x2values[] = array('cat', 'news', 'news', '/category/news');
 
 
 	//rightfeatured
