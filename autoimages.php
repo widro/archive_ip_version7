@@ -6,6 +6,358 @@ $autoimages_topstory500x250 = array();
 $autoimages_topstory120x120 = array();
 
 
+$autoimages_cats[] = "dwight-howard";
+$autoimages_tags[] = "dwight-howard";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/dwight-howard-dunk-wallpaper_1024x768_57746.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/dwight-howard-dunk-wallpaper_1024x768_57746-120x120.jpg";
+
+$autoimages_cats[] = "lebron-james";
+$autoimages_tags[] = "lebron-james";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Lebron-James.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Lebron-James-120x120.jpg";
+
+$autoimages_cats[] = "dwyane-wade";
+$autoimages_tags[] = "dwyane-wade";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Wade.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Wade-120x120.jpg";
+
+$autoimages_cats[] = "chris-bosh";
+$autoimages_tags[] = "chris-bosh";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Chris-Bosh.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Chris-Bosh-120x120.jpg";
+
+$autoimages_cats[] = "carmelo-anthony";
+$autoimages_tags[] = "carmelo-anthony";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Carmelo-Anthony.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Carmelo-Anthony-120x120.jpg";
+
+$autoimages_cats[] = "amare-stoudamire";
+$autoimages_tags[] = "amare-stoudamire";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Amare-Stautemire.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Amare-Stautemire-120x120.jpg";
+
+$autoimages_cats[] = "amare-stoudemire";
+$autoimages_tags[] = "amare-stoudemire";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Amare-Stautemire.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Amare-Stautemire-120x120.jpg";
+
+$autoimages_cats[] = "amare-stautemire";
+$autoimages_tags[] = "amare-stautemire";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Amare-Stautemire.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Amare-Stautemire-120x120.jpg";
+
+$autoimages_cats[] = "dirk-nowitzki";
+$autoimages_tags[] = "dirk-nowitzki";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/dirk.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/dirk-120x120.jpg";
+
+$autoimages_cats[] = "deron-williams";
+$autoimages_tags[] = "deron-williams";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/deron-williams-stand.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/deron-williams-stand-120x120.jpg";
+
+$autoimages_cats[] = "blake-griffin";
+$autoimages_tags[] = "blake-griffin";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Blake-Griffin.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Blake-Griffin-120x120.jpg";
+
+$autoimages_cats[] = "kobe-bryant";
+$autoimages_tags[] = "kobe-bryant";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/kobe_bryant1.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/kobe_bryant1-120x120.jpg";
+
+$autoimages_cats[] = "pau-gasol";
+$autoimages_tags[] = "pau-gasol";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/pau-gasol3.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/pau-gasol3-120x120.jpg";
+
+$autoimages_cats[] = "derrick-rose";
+$autoimages_tags[] = "derrick-rose";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/derrick-rose.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/derrick-rose-120x120.jpg";
+
+$autoimages_cats[] = "joe-johnson";
+$autoimages_tags[] = "joe-johnson";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/joe_johnson1.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/joe_johnson1-120x120.jpg";
+
+$autoimages_cats[] = "andrew-bogut";
+$autoimages_tags[] = "andrew-bogut";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Andrew-Bogut.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Andrew-Bogut-120x120.jpg";
+
+$autoimages_cats[] = "danny-granger";
+$autoimages_tags[] = "danny-granger";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Danny-Granger.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Danny-Granger-120x120.jpg";
+
+$autoimages_cats[] = "andre-iguodala";
+$autoimages_tags[] = "andre-iguodala";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Andre-Iguodala.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Andre-Iguodala-120x120.jpg";
+
+$autoimages_cats[] = "kevin-durant";
+$autoimages_tags[] = "kevin-durant";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/kevin-durant-car.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/kevin-durant-car-120x120.jpg";
+
+$autoimages_cats[] = "russell-westbrook";
+$autoimages_tags[] = "russell-westbrook";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Russell-Westbrook.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Russell-Westbrook-120x120.jpg";
+
+$autoimages_cats[] = "kevin-love";
+$autoimages_tags[] = "kevin-love";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Kevin-Love.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Kevin-Love-120x120.jpg";
+
+$autoimages_cats[] = "stephon-curry";
+$autoimages_tags[] = "stephon-curry";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Stephon-Curry.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Stephon-Curry-120x120.jpg";
+
+$autoimages_cats[] = "rajon-rondo";
+$autoimages_tags[] = "rajon-rondo";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Rajon-Rondo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Rajon-Rondo-120x120.jpg";
+
+$autoimages_cats[] = "john-wall";
+$autoimages_tags[] = "john-wall";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/John-Wall.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/John-Wall-120x120.jpg";
+
+$autoimages_cats[] = "steve-nash";
+$autoimages_tags[] = "steve-nash";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Steve-Nash.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Steve-Nash-120x120.jpg";
+
+$autoimages_cats[] = "nene";
+$autoimages_tags[] = "nene";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/nene.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/nene-120x120.jpg";
+
+$autoimages_cats[] = "tim-duncan";
+$autoimages_tags[] = "tim-duncan";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Tim-Duncan.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Tim-Duncan-120x120.jpg";
+
+$autoimages_cats[] = "manu-ginobli";
+$autoimages_tags[] = "manu-ginobli";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Manu-Ginobli.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Manu-Ginobli-120x120.jpg";
+
+$autoimages_cats[] = "lamarcus-aldridge";
+$autoimages_tags[] = "lamarcus-aldridge";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/lamarcus-aldridge.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/lamarcus-aldridge-120x120.jpg";
+
+$autoimages_cats[] = "kevin-garnett";
+$autoimages_tags[] = "kevin-garnett";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Kevin-Garnett.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Kevin-Garnett-120x120.jpg";
+
+$autoimages_cats[] = "zach-randolph";
+$autoimages_tags[] = "zach-randolph";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Zach-Randolph.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Zach-Randolph-120x120.jpg";
+
+$autoimages_cats[] = "atlanta-hawks";
+$autoimages_tags[] = "atlanta-hawks";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Atlanta_Hawks_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Atlanta_Hawks_Logo-120x120.jpg";
+
+$autoimages_cats[] = "boston-celtics";
+$autoimages_tags[] = "boston-celtics";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Boston_Celtics_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Boston_Celtics_Logo-120x120.jpg";
+
+$autoimages_cats[] = "charlotte-bobcats";
+$autoimages_tags[] = "charlotte-bobcats";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Charlotte_Bobcats_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Charlotte_Bobcats_Logo-120x120.jpg";
+
+$autoimages_cats[] = "chicago-bulls";
+$autoimages_tags[] = "chicago-bulls";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Chicago_Bulls_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Chicago_Bulls_Logo-120x120.jpg";
+
+$autoimages_cats[] = "new-york-knicks";
+$autoimages_tags[] = "new-york-knicks";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_New_York_Knicks_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_New_York_Knicks_Logo-120x120.jpg";
+
+$autoimages_cats[] = "nj-nets";
+$autoimages_tags[] = "nj-nets";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_New_Jersey_Nets_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_New_Jersey_Nets_Logo-120x120.jpg";
+
+$autoimages_cats[] = "brooklyn-nets";
+$autoimages_tags[] = "brooklyn-nets";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_New_Jersey_Nets_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_New_Jersey_Nets_Logo-120x120.jpg";
+
+$autoimages_cats[] = "la-lakers";
+$autoimages_tags[] = "la-lakers";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Los_Angeles_Lakers_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Los_Angeles_Lakers_Logo-120x120.jpg";
+
+$autoimages_cats[] = "los-angeles-lakers";
+$autoimages_tags[] = "los-angeles-lakers";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Los_Angeles_Lakers_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Los_Angeles_Lakers_Logo-120x120.jpg";
+
+$autoimages_cats[] = "l-a-lakers";
+$autoimages_tags[] = "l-a-lakers";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Los_Angeles_Lakers_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Los_Angeles_Lakers_Logo-120x120.jpg";
+
+$autoimages_cats[] = "lakers";
+$autoimages_tags[] = "lakers";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Los_Angeles_Lakers_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Los_Angeles_Lakers_Logo-120x120.jpg";
+
+$autoimages_cats[] = "la-clippers";
+$autoimages_tags[] = "la-clippers";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Los_Angeles_Clippers_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Los_Angeles_Clippers_Logo-120x120.jpg";
+
+$autoimages_cats[] = "los-angeles-clippers";
+$autoimages_tags[] = "los-angeles-clippers";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Los_Angeles_Clippers_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Los_Angeles_Clippers_Logo-120x120.jpg";
+
+$autoimages_cats[] = "miami-heat";
+$autoimages_tags[] = "miami-heat";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Miami_Heat_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Miami_Heat_Logo-120x120.jpg";
+
+$autoimages_cats[] = "utah-jazz";
+$autoimages_tags[] = "utah-jazz";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Utah_Jazz_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Utah_Jazz_Logo-120x120.jpg";
+
+$autoimages_cats[] = "detroit-pistons";
+$autoimages_tags[] = "detroit-pistons";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Detroit_Pistons_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Detroit_Pistons_Logo-120x120.jpg";
+
+$autoimages_cats[] = "milwaukee-bucks";
+$autoimages_tags[] = "milwaukee-bucks";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Milwaukee_Bucks_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Milwaukee_Bucks_Logo-120x120.jpg";
+
+$autoimages_cats[] = "toronto-raptors";
+$autoimages_tags[] = "toronto-raptors";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Toronto_Raptors_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Toronto_Raptors_Logo-120x120.jpg";
+
+$autoimages_cats[] = "memphis-grizzlies";
+$autoimages_tags[] = "memphis-grizzlies";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Memphis_Grizzlies_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Memphis_Grizzlies_Logo-120x120.jpg";
+
+$autoimages_cats[] = "denver-nuggets";
+$autoimages_tags[] = "denver-nuggets";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Denver_Nuggets_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Denver_Nuggets_Logo-120x120.jpg";
+
+$autoimages_cats[] = "golden-state-warriors";
+$autoimages_tags[] = "golden-state-warriors";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Golden_State_Warriors_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Golden_State_Warriors_Logo-120x120.jpg";
+
+$autoimages_cats[] = "sacramento-kings";
+$autoimages_tags[] = "sacramento-kings";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Sacramento_Kings_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Sacramento_Kings_Logo-120x120.jpg";
+
+$autoimages_cats[] = "washington-wizards";
+$autoimages_tags[] = "washington-wizards";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Washington_Wizards_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Washington_Wizards_Logo-120x120.jpg";
+
+$autoimages_cats[] = "dallas-mavericks";
+$autoimages_tags[] = "dallas-mavericks";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Dallas_Mavericks_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Dallas_Mavericks_Logo-120x120.jpg";
+
+$autoimages_cats[] = "san-antonio-spurs";
+$autoimages_tags[] = "san-antonio-spurs";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_San_Antonio_Spurs_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_San_Antonio_Spurs_Logo-120x120.jpg";
+
+$autoimages_cats[] = "phoenix-suns";
+$autoimages_tags[] = "phoenix-suns";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Phoenix_Suns_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Phoenix_Suns_Logo-120x120.jpg";
+
+$autoimages_cats[] = "cleveland-cavaliers";
+$autoimages_tags[] = "cleveland-cavaliers";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Cleveland_Cavaliers_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Cleveland_Cavaliers_Logo-120x120.jpg";
+
+$autoimages_cats[] = "indiana-pacers";
+$autoimages_tags[] = "indiana-pacers";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Indiana_Pacers_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Indiana_Pacers_Logo-120x120.jpg";
+
+$autoimages_cats[] = "houston-rockets";
+$autoimages_tags[] = "houston-rockets";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Houston_Rockets_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Houston_Rockets_Logo-120x120.jpg";
+
+$autoimages_cats[] = "minnesota-timberwolves";
+$autoimages_tags[] = "minnesota-timberwolves";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Minnesota_Timberwolves_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Minnesota_Timberwolves_Logo-120x120.jpg";
+
+$autoimages_cats[] = "orlando-magic";
+$autoimages_tags[] = "orlando-magic";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Orlando_Magic_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Orlando_Magic_Logo-120x120.jpg";
+
+$autoimages_cats[] = "portland-trailblazers";
+$autoimages_tags[] = "portland-trailblazers";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Portland_Trailblazers_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Portland_Trailblazers_Logo-120x120.jpg";
+
+$autoimages_cats[] = "new-orleans-hornets";
+$autoimages_tags[] = "new-orleans-hornets";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_New_Orleans_Hornets_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_New_Orleans_Hornets_Logo-120x120.jpg";
+
+$autoimages_cats[] = "philadelphia-sixers";
+$autoimages_tags[] = "philadelphia-sixers";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Philadelphia_Seventy_Sixers_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Philadelphia_Seventy_Sixers_Logo-120x120.jpg";
+
+$autoimages_cats[] = "philadelphia-76ers";
+$autoimages_tags[] = "philadelphia-76ers";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Philadelphia_Seventy_Sixers_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Philadelphia_Seventy_Sixers_Logo-120x120.jpg";
+
+$autoimages_cats[] = "oklahoma-city-thunder";
+$autoimages_tags[] = "oklahoma-city-thunder";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/01/2807-Oklahoma_City_Thunder.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/01/2807-Oklahoma_City_Thunder-120x120.jpg";
+
+$autoimages_cats[] = "chris-paul";
+$autoimages_tags[] = "chris-paul";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/01/chrispaulclippers.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/01/chrispaulclippers-120x120.jpg";
+
+
+
+
+
+
+
+
+
+
+
+
+
 $autoimages_cats[] = "entourage";
 $autoimages_tags[] = "entourage";
 $autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/07/entourage.jpg";
