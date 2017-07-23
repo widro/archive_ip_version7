@@ -22,11 +22,6 @@ $disqusslug = "inside-pulse";
 global $featuredauthors;
 $featuredauthors = "36|4|7|61|1";
 
-global $overallpath;
-$overallpath = "/nfs/c03/h05/mnt/56814/domains/insidepulse.net/html/";
-
-
-
 global $active_zone;
 global $featuredvalues;
 global $left4x2values;
@@ -163,13 +158,12 @@ if($active_zone=="home"){
 
 	//subnav
 	$subnavarray = array();
-	$subnavarray[] = array('Movie Reviews', '/category/theatrical-reviews');
-	$subnavarray[] = array('Wrestling Newsboard', 'http://wrestling.insidepulse.com/newsboard/');
-	$subnavarray[] = array('Game Reviews', 'http://diehardgamefan.com/category/reviews/');
-	$subnavarray[] = array('News', '/category/news/');
-	$subnavarray[] = array('MMA News', 'http://insidefights.com/category/mma-news/');
-	$subnavarray[] = array('Twilight', '/tag/twilight/');
-	$subnavarray[] = array('Full Listing', '/latest-updates/');
+	$subnavarray[] = array("Movie Reviews", "/category/theatrical-reviews");
+	$subnavarray[] = array("Wrestling Newsboard", "http://wrestling.insidepulse.com/newsboard/");
+	$subnavarray[] = array("Game Reviews", "http://diehardgamefan.com/category/reviews/");
+	$subnavarray[] = array("News", "/category/news/");
+	$subnavarray[] = array("MMA News", "http://insidefights.com/category/mma-news/");
+	$subnavarray[] = array("Twilight", "/tag/twilight/");
 
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
@@ -212,12 +206,6 @@ elseif($active_zone=="tv"){
 	//$left4x2values = array($type, $slug, $name, $clickthru);
 	$featuredauthors = "2|110|122|172|169";
 
-	//subnav
-	$subnavarray = array();
-	$subnavarray[] = array('News', '/category/news');
-	$subnavarray[] = array('Spoilers', '/category/spoilers');
-	$subnavarray[] = array('Reviews', 'reviews', '/category/reviews');
-	$subnavarray[] = array('Full Listing', '/latest-updates/?zone=tv');
 
 	//featured
 	$featuredvalues = array();
@@ -263,10 +251,10 @@ elseif($active_zone=="movies"){
 
 	//subnav
 	$subnavarray = array();
-	$subnavarray[] = array('Movie Reviews', '/category/theatrical-reviews');
-	$subnavarray[] = array('Blu Ray Reviews', '/category/blu-ray-reviews');
-	$subnavarray[] = array('DVD Reviews', '/category/dvd-reviews');
-	$subnavarray[] = array('Full Listing', '/latest-updates/?zone=movies');
+	$subnavarray[] = array("Movie Reviews", "/category/theatrical-reviews");
+	$subnavarray[] = array("Blu Ray Reviews", "/category/blu-ray-reviews");
+	$subnavarray[] = array("DVD Reviews", "/category/dvd-reviews");
+	$subnavarray[] = array("Full Listing", "/latest-updates/?zone=movies");
 
 	//featured
 	$featuredvalues = array();
@@ -313,10 +301,9 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 
 	//subnav
 	$subnavarray = array();
-	$subnavarray[] = array('DC', '/tag/dc-comics');
-	$subnavarray[] = array('Marvel', '/tag/marvel');
-	$subnavarray[] = array('Comics Forums', 'http://forum.insidepulse.com/ubbthreads/ubbthreads.php?ubb=cfrm&c=3');
-	$subnavarray[] = array('Full Listing', '/latest-updates/?zone=comics-nexus');
+	$subnavarray[] = array("DC', '/tag/dc-comics");
+	$subnavarray[] = array("Marvel', '/tag/marvel");
+	$subnavarray[] = array("Comics Forums", "http://forum.insidepulse.com/ubbthreads/ubbthreads.php?ubb=cfrm&c=3");
 
 	//featured
 	$featuredvalues = array();
@@ -589,17 +576,16 @@ elseif($active_zone=="wrestling"){
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
 
-	$overallpath = "/nfs/c03/h03/mnt/55011/domains/wrestling.insidepulse.com/html/";
 	$disqusslug = "pulsewrestling";
 	$featuredauthors = "8|849|842|859|462|539|870";
 
 	//subnav
 	$subnavarray = array();
-	$subnavarray[] = array('Newsboard', '/newsboard/');
-	$subnavarray[] = array('Transactions', '/wwe-transaction-history/');
-	$subnavarray[] = array('Title History', '/title-history/');
-	$subnavarray[] = array('Top 100', '/top-100/');
-	$subnavarray[] = array('IWC Glossary', '/iwc-glossary/');
+	$subnavarray[] = array("Newsboard", "/newsboard/");
+	$subnavarray[] = array("Transactions", "/wwe-transaction-history/");
+	$subnavarray[] = array("Title History", "/title-history/");
+	$subnavarray[] = array("Top 100", "/top-100/");
+	$subnavarray[] = array("IWC Glossary", "/iwc-glossary/");
 
 
 	//featured
@@ -640,18 +626,16 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
 
-	$overallpath = "/nfs/c09/h01/mnt/131740/domains/diehardgamefan.com/html/";
 	$authorslug = "diehard";
 	$disqusslug = "diehardgamefan";
 	$featuredauthors = "21|345|419|296|605|490|1376";
 
 	//subnav
 	$subnavarray = array();
-	$subnavarray[] = array('Nintendo Reviews', '/latest-updates/?cat=nintendo-3ds-2,nintendo_wii,nintendo_ds,nintendo-wiiu/');
-	$subnavarray[] = array('Sony Reviews', '/latest-updates/?cat=sony_ps3,sony_psp,sony-ps-vita');
-	$subnavarray[] = array('Xbox Reviews', '/latest-updates/?cat=xbox_360/');
-	$subnavarray[] = array('Tabletop Gaming', '/category/tabletop-gaming/');
-	$subnavarray[] = array('Full Listing', '/latest-updates/');
+	$subnavarray[] = array("Nintendo Reviews', '/latest-updates/?cat=nintendo-3ds-2,nintendo_wii,nintendo_ds,nintendo-wiiu/");
+	$subnavarray[] = array("Sony Reviews', '/latest-updates/?cat=sony_ps3,sony_psp,sony-ps-vita");
+	$subnavarray[] = array("Xbox Reviews', '/latest-updates/?cat=xbox_360/");
+	$subnavarray[] = array("Tabletop Gaming', '/category/tabletop-gaming/");
 
 	//featured
 	$featuredvalues = array();
@@ -694,33 +678,24 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
 
-	$overallpath = "/nfs/c05/h02/mnt/74861/domains/insidefights.com/html/";
 	$authorslug = "author";
 	$featuredauthors = "855|364|852|853|560|857";
 
-	//subnav
-	$subnavarray = array();
-	$subnavarray[] = array('MMA news', '/category/mma-news/');
-	$subnavarray[] = array('MMA columns', '/category/mma-columns');
-	$subnavarray[] = array('Boxing news', '/category/boxing-news/');
-	$subnavarray[] = array('Boxing columns', '/category/boxing-columns/');
-	$subnavarray[] = array('Full Listing', '/latest-updates/');
-
 	//featured
 	$featuredvalues = array();
-	$featuredvalues[] = array('cat', 'mma-news,boxing-news', 'news', '/latest-updates/?cat=mma-news,boxing-news');
-	$featuredvalues[] = array('cat', 'mma-columns,boxing-columns', 'columns', '/latest-updates/?cat=mma-columns,boxing-columns');
-	$featuredvalues[] = array('cat', 'mma-video,boxing-video', 'video', '/latest-updates/?cat=mma-video,boxing-video');
+	$featuredvalues[] = array('cat', 'mma-columns', 'columns', '/category/mma-columns');
+	$featuredvalues[] = array('cat', 'boxing-reviews', 'reviews', '/category/boxing-reviews');
+	$featuredvalues[] = array('cat', 'mma-video', 'video', '/category/mma-video');
 
 	//left4x2
 	$left4x2values = array();
 	$left4x2values[] = array('cat', 'mma-news', 'mma news', '/category/mma-news/');
+	$left4x2values[] = array('cat', 'mma-previews', 'mma previews', '/category/mma-previews/');
 	$left4x2values[] = array('cat', 'mma-columns', 'mma columns', '/category/mma-columns/');
 	$left4x2values[] = array('cat', 'mma-video', 'mma video', '/category/mma-video/');
-	$left4x2values[] = array('cat', 'mma-previews', 'mma previews', '/category/mma-previews/');
-	$left4x2values[] = array('cat', 'boxing-news', 'boxing news', '/category/boxing-news/');
 	$left4x2values[] = array('cat', 'boxing-columns', 'boxing columns', '/category/boxing-columns/');
-	$left4x2values[] = array('cat', 'boxing-video', 'boxing video', '/category/boxing-video/');
+	$left4x2values[] = array('cat', 'boxing-news', 'boxing news', '/category/boxing-news/');
+	$left4x2values[] = array('cat', 'boxing-features', 'boxing features', '/category/boxing-features/');
 	$left4x2values[] = array('cat', 'boxing-results', 'boxing results', '/category/boxing-results/');
 
 
