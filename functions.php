@@ -606,12 +606,6 @@ function my_wp_dashboard_test5() {
 	<br><br>
 	Check out the IP Staff FAQ
 	<br><br>
-	Generate Links (article related, article author box, sidebar author)
-	<br><br>
-	<li><a href="http://insidepulse.com/wp-content/themes/version7/generate.php" target=_blank>Inside Pulse</a></li>
-	<li><a href="http://wrestling.insidepulse.com/wp-content/themes/version7/generate.php" target=_blank>Pulse Wrestling</a></li>
-	<li><a href="http://insidefights.com/wp-content/themes/version7/generate.php" target=_blank>Inside Fights</a></li>
-	<li><a href="http://diehardgamefan.com/wp-content/themes/version7/generate.php" target=_blank>Comics Nexus</a></li>
 
 
 	';
@@ -1422,12 +1416,7 @@ function getinsiders($type){
 
 function createsection($values, $area){
 
-	global $authorslug;
-
-	if($area=="featuredhome"){
-		$limit = 4;
-	}
-	elseif($area=="rightsidetabs"){
+	if($area=="rightsidetabs"){
 		$limit = 5;
 	}
 	elseif($area=="related"){
@@ -1445,9 +1434,6 @@ function createsection($values, $area){
 
 	$count = count($values);
 
-	if($area=="related"){
-		$count = 1;
-	}
 	$output_header = "";
 	for($i=0;$i<$count;$i++){
 		//grab zone
@@ -1470,22 +1456,7 @@ function createsection($values, $area){
 
 
 		//rightsidetabs
-		if($area=="featuredhome"){
-			//check for which cols to hide
-			if($position>1){
-				$classadd = " class=\"hide\"";
-			}
-			else{
-				$classadd = "color1";
-			}
-
-			//tab divs
-			$output_header .= "<div id=\"featured_$position\" class=\"tab featured_tab$position cp $classadd\">$name</div>";
-
-			//new div
-			$output_body .= "<div id=\"featured_content$position\" $classadd>";
-		}
-		elseif($area=="rightsidetabs"){
+		if($area=="rightsidetabs"){
 			//check for which cols to hide
 			if($position>1){
 				$classadd = " class=\"hide\"";
@@ -1510,20 +1481,7 @@ function createsection($values, $area){
 			}
 
 			//tab divs
-			$output_header .= "
-				<div class=\"article_box_header\">
-					<div class=\"article_box_header_left\">
-						<h3 class=\"icon1 font2\">Related $name Articles</h3>
-					</div>
-					<div class=\"article_box_header_right\">
-						<a href=\"$masterclickthru\" class=\"color1\">more articles &raquo;</a>
-					</div>
-				</div>
-				<div class=\"clear\"></div>
-			";
-
-			//new div
-			$output_body .= "<div class=\"article_box_body\">";
+			$output_header .= "<div id=\"sidetabs_$position\" class=\"tab sidetabs_tab$position cp $classadd\">$name</div>";
 
 		}
 		elseif($area=="narrowlinks"){
@@ -1548,7 +1506,6 @@ function createsection($values, $area){
 
 
 		//loop
-		$currentpostcount=0;
 		foreach ($pageposts as $post):
 		setup_postdata($post);
 		$do_not_duplicate = $post->ID;
@@ -1584,28 +1541,7 @@ function createsection($values, $area){
 		$thisuser = $thisuserinfo->display_name;
 		$thisuserclick = "/" . $authorslug . "/" . $thisuserinfo->user_nicename . "/";
 
-		if($area=="featuredhome"){
-			$output_body .= "
-						<div class=\"subtop_cell\">
-							<div class=\"subtop_cell_left\">
-								<a href=\"$clickthru\"><img src=\"$topstory120x120\"></a>
-							</div>
-							<div class=\"subtop_cell_right\">
-								<a href=\"$clickthru\" class=\"headline\">$thistitle</a>
-								<br>
-								<span class=\"subtop_byline\">by <a href=\"$thisuserclick\" class=\"color1\">$thisuser</a> <img src=\"http://media.insidepulse.com/shared/images/v7/commentbubble.png\" class=\"hide\"> <a href=\"#\" class=\"color1 hide\">33</a></span>
-							</div>
-						</div>
-			";
-
-			if($currentpostcount>0&&($currentpostcount%2==1)){
-				$output_body .= "
-							<div class=\"clear\"></div>
-				";
-			}
-		}
-
-		elseif($area=="rightsidetabs"){
+		if($area=="rightsidetabs"){
 			$output_body .= "
 					<div class=\"right_cell\">
 						<div class=\"right_cell_left\">
@@ -1657,20 +1593,10 @@ function createsection($values, $area){
 			";
 		}
 
-		$currentpostcount++;
+		$zonecounter++;
 		endforeach;
 
-		if($area=="featuredhome"){
-			$output_body .= "
-				<div class=\"subtop_more\">
-					<a href=\"$masterclickthru\" class=\"color1 bold\">&raquo; more $name</a>
-				</div>
-			</div>
-
-			";
-
-		}
-		elseif($area=="rightsidetabs"){
+		if($area=="rightsidetabs"){
 			$output_body .= "
 				<div class=\"right_cell_more\">
 					<a href=\"$masterclickthru\" alt=\"$thistitle\" title=\"$thistitle\" class=\"color1 bold\">&raquo; more $name</a>
@@ -1682,9 +1608,6 @@ function createsection($values, $area){
 		}
 
 		elseif($area=="related"){
-			$output_body .= "
-			</div>
-			";
 		}
 		elseif($area=="narrowlinks"){
 		}
@@ -1701,7 +1624,7 @@ function createsection($values, $area){
 }
 
 
-function create_authbox($insider_userid, $area){
+function create_singleauthbox($insider_userid){
 
 	global $authorslug;
 
@@ -1744,115 +1667,64 @@ function create_authbox($insider_userid, $area){
 	$insider_row3 = $allusermeta['row3'];
 
 	if(!$insider_avatar120){
-		$insider_avatar120 = defaultimage("avatar", "topstory120x120");
+		$insider_avatar120 = $default120avatarurl;
 	}
 
-	//featuredauthor
+	//rightfeatured
 	$authboxvalues = array();
 	$authboxvalues[] = array('author', $insider_userid, $insider_display_name, $insider_avatar120);
 
-	if($area=="singleauthbox"){
-		$thisarea = "authbox";
-	}
-	elseif($area=="rightauthbox"){
-		$thisarea = "featuredauthor";
-	}
-	$createsection = createsection($authboxvalues, $thisarea);
-	$createsection_header = $createsection['header'];
-	$createsection_body = $createsection['body'];
-
-	if($area=="singleauthbox"){
-		$output = "
-			<div class=\"article_box_header\">
-				<div class=\"article_box_header_left\">
-					<h3 class=\"icon1 font2\">$insider_display_name</h3>
-
-				</div>
-				<div class=\"article_box_header_right\">
-					<a href=\"$authorlink\" class=\"color1\">view profile &raquo;</a>
-				</div>
-			</div>
-			<div class=\"clear\"></div>
-			<div class=\"article_authorbox_body\">
-
-				<div class=\"article_authorbox_bodyleft\">
-					<a href=\"$authorlink\"><img class=\"article_authorbox_img avatar\" border=\"0\" src=$insider_avatar120></a>
-				</div>
-
-
-				<div class=\"article_authorbox_bodyright\">
-					$insider_description
-					<br><br>
-		";
-	if($insider_twitter){
-		$output .= "
-					<a class=\"color1 bold\" href=\"$insider_twitter\">Follow on Twitter</a> &middot;
-		";
-	}
-
-	if($insider_facebook){
-		$output .= "
-					<a class=\"color1 bold\" href=\"$insider_facebook\">Follow on Facebook</a> &middot;
-		";
-	}
-		$output .= "
-					<a class=\"color1 bold\" href=\"mailto:$insider_email\">Email $insider_display_name</a>
-
-
-
-				</div>
-				<div class=\"clear\" style=\"height:10px;\"></div>
-
-				<h3 class=\"icon1 font2\" style=\"color:#999999; margin-top:30px;float:left;font-weight:normal;\">Recent Posts &raquo; </h3>
-				<div class=\"article_box_related\">
-					$createsection_body
-				</div>
-				<div class=\"clear\"></div>
-
-			</div>
-
-
-		";
-	}
-	elseif($area=="rightauthbox"){
-
-		$output = "
-			<div class=\"right_greybox_author\">
-				<div class=\"right_greybox_authorleft\">
-					$createsection_header
-				</div>
-				<div class=\"right_greybox_authorright\">
-					$createsection_body
-				</div>
-			</div>
-
-
-		";
-	}
-
-	return $output;
-
-}
-
-
-
-function make_narrow($createsection){
-
-	$narrowlinks_tabs = $createsection['header'];
-	$narrowlinks = $createsection['body'];
+	$rightsidetabs = createsection($authboxvalues, "authbox");
+	$authorbox = $rightsidetabs['body'];
 
 	$output = "
-		<div class=\"newsad_left\">
-			<div class=\"newsad_left_cell ar\">
-			$narrowlinks_tabs
+		<div class=\"article_box_header\">
+			<div class=\"article_box_header_left\">
+				<h3 class=\"icon1 font2\">$insider_display_name</h3>
+
 			</div>
-			$narrowlinks
+			<div class=\"article_box_header_right\">
+				<a href=\"$authorlink\" class=\"color1\">view profile &raquo;</a>
+			</div>
 		</div>
+		<div class=\"clear\"></div>
+		<div class=\"article_authorbox_body\">
+
+			<div class=\"article_authorbox_bodyleft\">
+				<a href=\"$authorlink\"><img class=\"article_authorbox_img avatar\" border=\"0\" src=$insider_avatar120></a>
+			</div>
+
+
+			<div class=\"article_authorbox_bodyright\">
+				$insider_description
+				<br><br>
+
+				<a class=\"color1 bold\" href=\"$insider_twitter\">Follow on Twitter</a> &middot; <a class=\"color1 bold\" href=\"mailto:$insider_email\">Email $insider_display_name</a>
+
+
+
+			</div>
+			<div class=\"clear\" style=\"height:10px;\"></div>
+
+			<h3 class=\"icon1 font2\" style=\"color:#999999; margin-top:30px;float:left;font-weight:normal;\">Recent Posts &raquo; </h3>
+			<div class=\"article_box_related\">
+				$authorbox
+			</div>
+			<div class=\"clear\"></div>
+
+		</div>
+
+
 	";
+
 
 	return $output;
 
 }
+
+
+
+
 
 
 

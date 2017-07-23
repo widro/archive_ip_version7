@@ -3,10 +3,62 @@
 	$sidelinks_tabs = $rightsidetabs['header'];
 	$sidelinks = $rightsidetabs['body'];
 
+	$rightsidetabs = createsection($rightnarrowvalues, "narrowlinks");
+	$narrowlinks_tabs = $rightsidetabs['header'];
+	$narrowlinks = $rightsidetabs['body'];
+
+
+
+	//$featuredauthors
+
+	//featuredauthor
+	$featuredauthorvalues = array();
+	$featuredauthorvalues[] = array('author', '1', 'Jonathan Widro', 'http://diehardgamefan.com/wordpress/wp-content/uploads/2008/12/widro-150x150.png');
+
+	$featuredauthor = createsection($featuredauthorvalues, "featuredauthor");
+	$featuredauthor_left = $featuredauthor['header'];
+	$featuredauthor_right = $featuredauthor['body'];
+
+
 ?>
 
 	</div>
 	<div class="content_right">
+<!--
+
+	<div class="clear" style="height:30px;"></div>
+		<div class="right_container greybox">
+			<h3 class="icon2m bold">Featured <span class="color1">Writers</span></h3>
+
+
+			<div class="right_greybox_author">
+				<div class="right_greybox_authorleft">
+					<?php echo $featuredauthor_left; ?>
+				</div>
+				<div class="right_greybox_authorright">
+					<?php echo $featuredauthor_right; ?>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+		</div>
+
+
+
+
+-->
+
+
+
+
+
+
 
 
 
@@ -27,27 +79,6 @@
 		</div>
 
 		<div class="clear" style="height:30px;"></div>
-			<div class="right_container greybox">
-				<h3 class="icon2m bold">Featured <span class="color1">Writers</span></h3>
-
-				<?php
-					$featuredauthorsarray = explode("|", $featuredauthors);
-					foreach($featuredauthorsarray as $featured_userid){
-						//include($overallpath.'generate/author/r-author-' . $featured_userid . '.html');
-						$featuredauthorfile = $overallpath.'generate/author/r-author-' . $featured_userid . '.html';
-						if(file_exists ($featuredauthorfile)){
-							include($featuredauthorfile);
-						}
-						else{
-							$create_rightauthbox = create_authbox($featured_userid, "rightauthbox");
-							echo $create_rightauthbox;
-						}
-					}
-				?>
-
-			</div>
-
-		<div class="clear" style="height:30px;"></div>
 
 		<div id="recentcomments" class="right_container dsq-widget">
 			<h3 class="icon2m bold">Recent <span class="color1">Comments</span></h3>
@@ -63,17 +94,7 @@
 			<h3 class="icon2m bold">Search <span class="color1">Pulse</span></h3>
 
 			<form action="/latest-updates/" method="get">
-
-				<?php
-				$right_filtersfile = $overallpath.'generate/right_filters.html';
-				if(file_exists ($right_filtersfile)){
-					include($right_filtersfile);
-				}
-				else{
-					echo buildfilters("latest", $thisurl, $categoriesskiparray, true);
-				}
-				?>
-
+			<?php echo buildfilters("latest", $thisurl, $categoriesskiparray, true); ?>
 			</form>
 
 		</div>
@@ -94,18 +115,12 @@
 		<div class="clear" style="height:40px;"></div>
 
 		<div class="right_container">
-			<?php
-			$narrowcat = $rightnarrowvalues[0][1];
-			$narrowfile = $overallpath.'generate/category/r-cat-narrow-' . $narrowcat . '.html';
-			if(file_exists ($narrowfile)){
-				include($narrowfile);
-			}
-			else{
-				$rightnarrowvalues = createsection($rightnarrowvalues, "narrowlinks");
-				$make_narrow = make_narrow($rightnarrowvalues);
-				echo $make_narrow;
-			}
-			?>
+			<div class="newsad_left">
+				<div class="newsad_left_cell ar">
+				<?php echo $narrowlinks_tabs; ?>
+				</div>
+				<?php echo $narrowlinks ?>
+			</div>
 			<div class="newsad_right">
 				<!--<a href="#"><img src="http://media.insidepulse.com/shared/images/v7/ad160.png"></a>-->
 

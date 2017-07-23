@@ -1,8 +1,7 @@
-<?php get_header();
+<?php get_header(); ?>
+	<div class="content_left">
 
-	$featuredhome = createsection($featuredvalues, "featuredhome");
-	$featuredtabs = $featuredhome['header'];
-	$featuredcells = $featuredhome['body'];
+<?php
 
 	//top story vars
 	$showcheck = false;
@@ -35,145 +34,63 @@
 
 	}
 	$thisexcerpt = strip_tags($thisexcerpt);
+	$thisexcerpt = substr($thisexcerpt, 0, 180);
 	$thistitle = str_replace("\"", "", $thistitle);
+	$thistitle = substr($thistitle, 0, 100);
 	$clickthru=get_permalink($thispostid);
 
-	//outputs date in wacky format
-	$thisdate = mysql2date('h|m|s|m|d|Y', $post->post_date);
+	//build top story rotator
+	if($topstory120x120&&$topstory500x250){
+		if($topstoryposition==1){
+			$rotatorimages .= "
+				<li class=\"show\"><a href=\"$clickthru\"><img src=\"$topstory500x250\"></a></li>
+			";
+			$rotatorclicks .= "
+				<li class=\"show\">
+					<a href=\"$clickthru\" class=\"topstory_headline color1 bold\">$thistitle</a>
+					<br><br>
+					$thisexcerpt
+					<br><br>
+					<a href=\"$clickthru\" class=\"fr bold\">read more &raquo;</a>
+				</li>
+			";
 
-	//explodes date by |
-	$thisdatearr = explode("|", $thisdate);
+			$featuredthumbrow .= "
+				<div class=\"topstory_scroll_cell\">
+					<a href=\"$clickthru\"><img id=\"topstorythumb_$topstoryposition\" name=\"topstorythumb_$topstoryposition\" src=\"$topstory500x250\" class=\"on\"></a>
+				</div>
+			";
+		}
+		else{
+			$rotatorimages .= "
+				<li><a href=\"$clickthru\"><img src=\"$topstory500x250\"></a></li>
+			";
+			$rotatorclicks .= "
+				<li>
+					<a href=\"$clickthru\" class=\"topstory_headline color1 bold\">$thistitle</a>
+					<br><br>
+					$thisexcerpt
+					<br><br>
+					<a href=\"$clickthru\" class=\"fr bold\">read more &raquo;</a>
+				</li>
+			";
 
-	//converts pipe exploded array into unix ts
-	$unixtimestamp =  mktime((int)$thisdatearr[0], (int)$thisdatearr[1], (int)$thisdatearr[2], (int)$thisdatearr[3], (int)$thisdatearr[4], (int)$thisdatearr[5]);
+			$featuredthumbrow .= "
+				<div class=\"topstory_scroll_cell \">
+					<a href=\"$clickthru\"><img id=\"topstorythumb_$topstoryposition\" name=\"topstorythumb_$topstoryposition\" src=\"$topstory500x250\"></a>
+				</div>
+			";
+		}
 
-	$postarray[$unixtimestamp]['title'] = $thistitle;
-	$postarray[$unixtimestamp]['clickthru'] = $clickthru;
-	$postarray[$unixtimestamp]['excerpt'] = $thisexcerpt;
-	$postarray[$unixtimestamp]['content'] = $thiscontent;
-	$postarray[$unixtimestamp]['post_date'] = $post->post_date;
-	$postarray[$unixtimestamp]['topstory500x250'] = $topstory500x250;
-	$postarray[$unixtimestamp]['topstory120x120'] = $topstory120x120;
+		$topstoryposition++;
+	}
 
 	endwhile;
-
-
-if($active_zone=="home"){
-
-$wrestlingposts = getrsslinks('http://wrestling.insidepulse.com/category/top-story/feed/', 'Wrestling', 2, "array");
-$diehardgamefanposts = getrsslinks('http://diehardgamefan.com/category/top-story/feed/', 'diehardgamefan', 2, "array");
-$insidefightsposts = getrsslinks('http://insidefights.com/category/top-story/feed/', 'insidefights', 2, "array");
-
-$outsideposts = array();
-foreach($wrestlingposts as $eachpost){
-	$unixtimestamp = mktime($eachpost['post_date']);
-	$postarray[$unixtimestamp]['title'] = $eachpost['title'];
-	$postarray[$unixtimestamp]['clickthru'] = $eachpost['clickthru'];
-	$postarray[$unixtimestamp]['excerpt'] = $eachpost['excerpt'];
-	$postarray[$unixtimestamp]['content'] = $eachpost['content'];
-	$postarray[$unixtimestamp]['post_date'] = $eachpost['post_date'];
-	$postarray[$unixtimestamp]['topstory500x250'] = $eachpost['topstory500x250'];
-	$postarray[$unixtimestamp]['topstory120x120'] = $eachpost['topstory120x120'];
-}
-
-foreach($diehardgamefanposts as $eachpost){
-	$unixtimestamp = mktime($eachpost['post_date']);
-	$postarray[$unixtimestamp]['title'] = $eachpost['title'];
-	$postarray[$unixtimestamp]['clickthru'] = $eachpost['clickthru'];
-	$postarray[$unixtimestamp]['excerpt'] = $eachpost['excerpt'];
-	$postarray[$unixtimestamp]['content'] = $eachpost['content'];
-	$postarray[$unixtimestamp]['post_date'] = $eachpost['post_date'];
-	$postarray[$unixtimestamp]['topstory500x250'] = $eachpost['topstory500x250'];
-	$postarray[$unixtimestamp]['topstory120x120'] = $eachpost['topstory120x120'];
-}
-
-foreach($insidefightsposts as $eachpost){
-	$unixtimestamp = mktime($eachpost['post_date']);
-	$postarray[$unixtimestamp]['title'] = $eachpost['title'];
-	$postarray[$unixtimestamp]['clickthru'] = $eachpost['clickthru'];
-	$postarray[$unixtimestamp]['excerpt'] = $eachpost['excerpt'];
-	$postarray[$unixtimestamp]['content'] = $eachpost['content'];
-	$postarray[$unixtimestamp]['post_date'] = $eachpost['post_date'];
-	$postarray[$unixtimestamp]['topstory500x250'] = $eachpost['topstory500x250'];
-	$postarray[$unixtimestamp]['topstory120x120'] = $eachpost['topstory120x120'];
-}
-
-//merge outside array and insidepulse array
-$postarray2 = ksort($postarray);
-$postarray3 = array_reverse($postarray);
-//print_r($postarray);
-
-}
-else{
-	$postarray3 = $postarray;
-}
-
-$topstoryposition=1;
-foreach($postarray3 as $thispost){
-
-	if($topstoryposition<5){
-		//vars
-		$topstory120x120 = $thispost['topstory120x120'];
-		$topstory500x250 = $thispost['topstory500x250'];
-		$clickthru = $thispost['clickthru'];
-		$thisexcerpt = $thispost['excerpt'];
-		$thistitle = $thispost['title'];
-		$thisexcerpt = substr($thisexcerpt, 0, 150);
-		$thistitle = substr($thistitle, 0, 100);
-
-
-		//build top story rotator
-		if($topstory120x120&&$topstory500x250){
-			if($topstoryposition==1){
-				$rotatorimages .= "
-					<li class=\"show\"><a href=\"$clickthru\"><img src=\"$topstory500x250\"></a></li>
-				";
-				$rotatorclicks .= "
-					<li class=\"show\">
-						<a href=\"$clickthru\" class=\"topstory_headline color1 bold\">$thistitle</a>
-						<br><br>
-						$thisexcerpt
-						<br><br>
-						<a href=\"$clickthru\" class=\"fr bold\">read more &raquo;</a>
-					</li>
-				";
-
-				$featuredthumbrow .= "
-					<div class=\"topstory_scroll_cell\">
-						<a href=\"$clickthru\"><img id=\"topstorythumb_$topstoryposition\" name=\"topstorythumb_$topstoryposition\" src=\"$topstory500x250\" class=\"on\"></a>
-					</div>
-				";
-			}
-			else{
-				$rotatorimages .= "
-					<li><a href=\"$clickthru\"><img src=\"$topstory500x250\"></a></li>
-				";
-				$rotatorclicks .= "
-					<li>
-						<a href=\"$clickthru\" class=\"topstory_headline color1 bold\">$thistitle</a>
-						<br><br>
-						$thisexcerpt
-						<br><br>
-						<a href=\"$clickthru\" class=\"fr bold\">read more &raquo;</a>
-					</li>
-				";
-
-				$featuredthumbrow .= "
-					<div class=\"topstory_scroll_cell \">
-						<a href=\"$clickthru\"><img id=\"topstorythumb_$topstoryposition\" name=\"topstorythumb_$topstoryposition\" src=\"$topstory500x250\"></a>
-					</div>
-				";
-			}
-
-			$topstoryposition++;
-		}
-	}
-}
 
 ?>
 
 
-	<div class="content_left">
+
 
 		<div class="topstory">
 			<div class="topstory_left">
@@ -202,6 +119,115 @@ foreach($postarray3 as $thispost){
 		</div>
 
 		<div class="clear"></div>
+
+<?php
+$featuredcount = count($featuredvalues);
+	$featuredcells = "";
+	$featuredtabs = "";
+
+for($i=0;$i<$featuredcount;$i++){
+	//grab zone
+	$type = $featuredvalues[$i][0];
+	$slug = $featuredvalues[$i][1];
+	$name = $featuredvalues[$i][2];
+	$masterclickthru = $featuredvalues[$i][3];
+
+	$featuredposition = $i+1;
+
+	//featured vars
+	$showcheck = false;
+
+	//build tabs
+	if($featuredposition==1){
+		$featuredtabs .= "<div id=\"featured_$featuredposition\" class=\"tab featured_tab$featuredposition cp tab_on\">$name</div>";
+	}
+	else{
+		$featuredtabs .= "<div id=\"featured_$featuredposition\" class=\"tab featured_tab$featuredposition cp tab_off\">$name</div>";
+	}
+
+	if($featuredposition>1){
+		$hidecss = "class=\"hide\"";
+	}
+
+	//featured divs
+	$featuredcells .= "
+			<div id=\"featured_content$featuredposition\" $hidecss>
+	";
+
+	// featured sql
+	$sqladd = makesql($type, $slug);
+	$the_query = new WP_Query('&showposts=4'.$sqladd.'&orderby=post_date&order=desc');
+
+	//featured loop
+	$thisfeaturedcount = 0;
+	while ($the_query->have_posts()) : $the_query->the_post();
+	$do_not_duplicate = $post->ID;
+
+	$topstory120x120 = get_post_meta($post->ID, 'topstory120x120', true);
+	$topstory500x250 = get_post_meta($post->ID, 'topstory500x250', true);
+	if($topstory500x250==""){
+		$topstory500x250 = defaultimage("top-story", "topstory500x250");
+	}
+
+	if($topstory120x120==""){
+		$topstory120x120 = defaultimage("top-story", "topstory120x120");
+	}
+	$thistitle = $post->post_title;
+	$thistitle = strip_tags($thistitle);
+	$thisexcerpt = $post->post_excerpt;
+	$thisexcerpt = $post->post_excerpt;
+
+	if(!$thisexcerpt){
+		$thisexcerpt = $post->post_content;
+
+	}
+	$thisexcerpt = strip_tags($thisexcerpt);
+	$thisexcerpt = substr($thisexcerpt, 0, 180);
+	$thistitle = str_replace("\"", "", $thistitle);
+	$thistitle = substr($thistitle, 0, 100);
+	$clickthru=get_permalink($thispostid);
+
+    $thisuserinfo = get_userdata($post->post_author);
+	$thisuser = $thisuserinfo->display_name;
+	$thisuserclick = "/" . $authorslug . "/" . $thisuserinfo->user_nicename . "/";
+
+	//featured
+	$featuredcells .= "
+				<div class=\"subtop_cell\">
+					<div class=\"subtop_cell_left\">
+						<a href=\"$clickthru\"><img src=\"$topstory120x120\"></a>
+					</div>
+					<div class=\"subtop_cell_right\">
+						<a href=\"$clickthru\" class=\"headline\">$thistitle</a>
+						<br>
+						<span class=\"subtop_byline\">by <a href=\"$thisuserclick\" class=\"color1\">$thisuser</a> <img src=\"http://media.insidepulse.com/shared/images/v7/commentbubble.png\" class=\"hide\"> <a href=\"#\" class=\"color1 hide\">33</a></span>
+					</div>
+				</div>
+	";
+
+	if($thisfeaturedcount>0&&($thisfeaturedcount%2==1)){
+	$featuredcells .= "
+				<div class=\"clear\"></div>
+	";
+	}
+
+
+	$thisfeaturedcount++;
+	endwhile;
+
+	//featured divs
+	$featuredcells .= "
+				<div class=\"subtop_more\">
+					<a href=\"$masterclickthru\" class=\"color1 bold\">&raquo; more $name</a>
+				</div>
+			</div>
+	";
+
+
+	//$featuredposition++;
+}
+
+?>
 
 		<div id="featured" name="featured3" class="featured_tabs">
 			<?php echo $featuredtabs; ?>
@@ -335,16 +361,7 @@ for($i=0;$i<$left4x2count;$i++){
 		</div>
 
 
-<?php
-
-	if(($active_zone!="home")&&(!is_home())){
-		include('sidebar_zone.php');
-	}
-	else{
-		include('sidebar_home.php');
-	}
-
-?>
+<?php include('sidebar.php'); ?>
 
 
 <?php include('footer.php'); ?>

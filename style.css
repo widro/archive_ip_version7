@@ -159,14 +159,9 @@ h3.icon1{
 	font-weight:normal;
 }
 
-.white{
-	color:#ffffff;
-}
 
 
-table,td,tdbody,tr,post-content{
-	text-align:left;
-}
+
 
 /*** top nav **/
 .top{
@@ -375,6 +370,7 @@ table,td,tdbody,tr,post-content{
 margin: 0;
 padding: 0;
 color:#666666;
+z-index:1000;
 }
 
 #jsddm li{
@@ -386,6 +382,7 @@ list-style: none;
 margin: 0;
 padding: 0;
 padding-top:2px;
+padding-left:10px;
 display: block;
 width: 70px;
 white-space: nowrap
@@ -407,7 +404,6 @@ display: inline
 margin: 0;
 padding: 0;
 text-align:left;
-z-index:1000;
 }
 
 #jsddm li ul li a{
@@ -1515,9 +1511,7 @@ h3.icon2m{
 
 .right_greybox_author{
 	width:310px;
-	min-height: 90px;
-	height: auto !important;
-	height: 90px;
+	height:90px;
 	font-size:.75em;
 	color:#666666;
 	background:#f2f2f2;
@@ -1562,9 +1556,7 @@ h3.icon2m{
 	width:230px;
 	padding-left:10px;
 	padding-right:10px;
-	min-height: 90px;
-	height: auto !important;
-	height: 90px;
+	height:90px;
 	float:left;
 }
 

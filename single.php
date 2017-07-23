@@ -64,10 +64,9 @@ $relatedvalues = array();
 foreach((get_the_category()) as $category) {
 	$thiscatslug = $category->slug;
 	$thiscatname = $category->name;
-	if($thiscatslug){
-		$relatedvalues[] = array('cat', $thiscatslug, $thiscatname, '/category/'.$thiscatslug);
-	}
+	$relatedvalues[] = array('cat', $thiscatslug, $thiscatname, '/category/'.$thiscatslug);
 }
+
 
 // get tags for use in auto images and related posts
 $posttags = get_the_tags();
@@ -380,36 +379,33 @@ jQuery(document).ready(function($){ //fire on DOM ready
 		</div>
 
 		<div class="clear" style="height:20px;"></div>
+		<div class="article_box_header">
+			<div class="article_box_header_left">
+				<h3 class="icon1 font2">Related Articles</h3>
+			</div>
+			<div class="article_box_header_right">
+				<a href="#" class="color1">more articles &raquo;</a>
+			</div>
+		</div>
+		<div class="clear"></div>
 
-		<?php
-		$relatedcat = $relatedvalues[0][1];
-		$relatedfile = $overallpath.'generate/category/l-cat-' . $relatedcat . '.html';
-		if(file_exists ($relatedfile)){
-			include($relatedfile);
-		}
-		else{
-			$create_related = createsection($relatedvalues, "related");
-			$relatedoutput = $create_related['header'];
-			$relatedoutput .= $create_related['body'];
-			echo $relatedoutput;
-		}
-		?>
+<?php
+
+	$create_related = createsection($relatedvalues, "related");
+	//$relatedoutput = $create_related['header'];
+	$relatedoutput .= $create_related['body'];
+	$create_singleauthbox = create_singleauthbox($insider_userid);
+?>
+
+		<div class="article_box_body">
+			<?php echo $relatedoutput; ?>
+		</div>
 
 		<div class="clear" style="height:30px;"></div>
 
+		<?php echo $create_singleauthbox ?>
 
-
-		<?php
-		$authorboxfile = $overallpath.'generate/author/l-author-' . $insider_userid . '.html';
-		if(file_exists ($authorboxfile)){
-			include($authorboxfile);
-		}
-		else{
-			$create_singleauthbox = create_authbox($insider_userid, "singleauthbox");
-			echo $create_singleauthbox;
-		}
-		?>
-		<div class="clear" style="height:30px;"></div>
+		<div class="clear"></div>
 
 		<!-- include comments -->
 		<?php comments_template(); ?>

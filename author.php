@@ -118,10 +118,9 @@ endif; ?>
 
 <?php
 /*
-
 $wrestlingposts = getrsslinks('http://wrestling.insidepulse.com/insider/widro/feed/', 'Wrestling', 10, "array");
-$diehardgamefanposts = getrsslinks('http://diehardgamefan.com/diehard/widro/feed/', 'diehardgamefan', 10, "array");
-$insidefightsposts = getrsslinks('http://insidefights.com/insider/widro/feed/', 'insidefights', 10, "array");
+$diehardgamefanposts = getrsslinks('http://diehardgamefan.com/diehard/alexlucard/feed/', 'diehardgamefan', 10, "array");
+$insidefightsposts = getrsslinks('http://insidefights.com/insider/scottkubryksawitz/feed/', 'insidefights', 10, "array");
 
 $outsideposts = array();
 foreach($wrestlingposts as $eachpost){
@@ -156,12 +155,14 @@ foreach($insidefightsposts as $eachpost){
 	$postarray[$unixtimestamp]['topstory500x250'] = $eachpost['topstory500x250'];
 	$postarray[$unixtimestamp]['topstory120x120'] = $eachpost['topstory120x120'];
 }
-
-//merge outside array and insidepulse array
-$postarray2 = ksort($postarray);
-$postarray3 = array_reverse($postarray);
-//print_r($postarray);
 */
+//merge outside array and insidepulse array
+//$allpostsarray = array_merge($outsideposts, $postarray);
+//$postarray2 = ksort($postarray);
+//$postarray3 = array_reverse($postarray);
+//var_dump($allpostsarray);
+//print_r($postarray);
+
 $currentpost =0;
 //foreach($postarray3 as $key => $outsidepost){
 foreach($postarray as $key => $outsidepost){
@@ -306,25 +307,21 @@ if($insider_twitter){
 
 
 		</div>
-
+<!--
 		<div class="clear" style="height:30px;"></div>
 
 		<div class="right_container greybox">
-			<h3 class="icon1m bold">Stats <span class="color1">Pulse</span></h3>
+			<h3 class="icon1m bold">Personal <span class="color1">Pulse</span></h3>
 			<div class="right_greybox_row">
-				Some interesting stats:
-
-
-
+				Dinkers
 			</div>
 
 
 
 		</div>
 
-
-<!--
 		<div class="clear" style="height:30px;"></div>
+
 		<div class="right_container greybox">
 			<h3 class="icon2m bold">Another <span class="color1">Pulse</span></h3>
 
