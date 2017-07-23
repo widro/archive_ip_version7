@@ -379,33 +379,24 @@ jQuery(document).ready(function($){ //fire on DOM ready
 		</div>
 
 		<div class="clear" style="height:20px;"></div>
-		<div class="article_box_header">
-			<div class="article_box_header_left">
-				<h3 class="icon1 font2">Related Articles</h3>
-			</div>
-			<div class="article_box_header_right">
-				<a href="#" class="color1">more articles &raquo;</a>
-			</div>
-		</div>
-		<div class="clear"></div>
-
 <?php
 
 	$create_related = createsection($relatedvalues, "related");
-	//$relatedoutput = $create_related['header'];
+	$relatedoutput = $create_related['header'];
 	$relatedoutput .= $create_related['body'];
-	$create_singleauthbox = create_singleauthbox($insider_userid);
+	$create_singleauthbox = create_authbox($insider_userid, "singleauthbox");
+	$relatedcat = $relatedvalues[1];
 ?>
 
-		<div class="article_box_body">
-			<?php echo $relatedoutput; ?>
-		</div>
+		<?php echo $relatedoutput; ?>
+		<?php //include($overallpath.'generate/category/l-cat-' . $relatedcat . '.html'); ?>
 
 		<div class="clear" style="height:30px;"></div>
 
 		<?php echo $create_singleauthbox ?>
+		<?php //include($overallpath.'generate/author/l-author-' . $insider_userid . '.html'); ?>
 
-		<div class="clear"></div>
+		<div class="clear" style="height:30px;"></div>
 
 		<!-- include comments -->
 		<?php comments_template(); ?>

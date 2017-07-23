@@ -159,9 +159,14 @@ h3.icon1{
 	font-weight:normal;
 }
 
+.white{
+	color:#ffffff;
+}
 
 
-
+table,td,tdbody,tr,post-content{
+	text-align:left;
+}
 
 /*** top nav **/
 .top{
