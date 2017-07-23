@@ -203,9 +203,6 @@
 
 <?php
 
-	//$zones = array('movies', 'tv', '', '', '', '', '', '');
-
-
 	// zone sql
 	$the_query = new WP_Query('&showposts=3&zone=movies&orderby=post_date&order=desc');
 
