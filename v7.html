@@ -1,0 +1,1395 @@
+<html>
+<head>
+<title>Inside Pulse v7</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+
+
+
+
+<style>
+
+
+/*** core types **/
+
+
+body{
+	padding:0px;
+	margin:0 auto;
+	background:#eeeeee;
+	font-size:16px;
+	text-align: center;
+}
+
+img{
+	border:0px;
+}
+
+a{
+	text-decoration:none;
+	color:#000000;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+
+
+/*** items **/
+.font1{
+	font-family:'Arial';
+}
+
+.font2{
+	font-family:'Bebas Neue';
+}
+
+.font3{
+	font-family:'Arial Narrow';
+}
+
+.color1{
+	color:#ad151d;
+}
+
+.clear{
+	clear:both;
+}
+
+.fl{
+	float:left;
+}
+
+.fr{
+	float:right;
+}
+
+.al{
+	text-align:left;
+}
+
+.ac{
+	text-align:center;
+}
+
+.ar{
+	text-align:right;
+}
+
+.bold{
+	font-weight:bold;
+}
+
+.cp{
+	cursor:pointer;
+}
+
+
+
+h3.icon1{
+	background:url('images/icon4x2.png') no-repeat top left;
+	height:20px;
+	padding-left:25px;
+}
+
+
+
+
+
+/*** top nav **/
+.top{
+	background:url('images/top_bg_red.png') repeat-x;
+	height:40px;
+	width:100%;
+
+}
+
+.top_tabs{
+	padding-left:20px;
+	width:760px;
+	float:left;
+}
+
+
+.top_search{
+	width:200px;
+	float:right;
+}
+
+/*** logo bar **/
+.bar{
+	background:url('images/bar.png') repeat-x;
+	height:110px;
+	width:100%;
+}
+
+.bar_logo{
+	width:240px;
+	height:110px;
+	text-align:center;
+	float:left;
+}
+
+.bar_logo img{
+	padding-top:40px;
+	height:40px;
+}
+
+.bar_ad{
+	width:730px;
+	float:right;
+	height:100px;
+	padding-top:10px;
+}
+
+
+/*** core **/
+
+
+.inner{
+	width:980px;
+	text-align:left;
+	margin:0 auto;
+	height:100%;
+}
+
+.headline{
+	font-weight:bold;
+	font-size:.9em;
+}
+
+.content{
+	background:#ffffff;
+	height:3500px;
+}
+
+.content_left{
+	width:660px;
+	float:left;
+}
+
+.content_right{
+	width:320px;
+	float:right;
+}
+
+/*** tabs nav **/
+.tab_cell_nav_on{
+	height:40px;
+	float:left;
+	cursor:pointer;
+	margin-left:-20px;
+}
+
+.tab_cell_nav_off{
+	height:40px;
+	float:left;
+	cursor:pointer;
+	margin-left:-20px;
+}
+
+.tab_cell_nav_on a{
+	color:#ffffff;
+	margin-left:25px;
+	padding-top:20px;
+
+}
+
+.tab_cell_nav_off a{
+	color:#ffffff;
+	margin-left:25px;
+	padding-top:20px;
+
+}
+
+
+.tab_cell_nav_on .left{
+	background:url('images/tableftplus.png') no-repeat bottom left;
+	text-align:center;
+	color:#ffffff;
+	height:40px;
+	float:left;
+
+}
+
+.tab_cell_nav_on .right{
+	background:url('images/tabright.png') no-repeat bottom left;
+	height:40px;
+	width:26px;
+	float:left;
+}
+
+
+.tab_cell_nav_off .left{
+	text-align:center;
+	color:#ffffff;
+	height:40px;
+	float:left;
+
+}
+
+.tab_cell_nav_off .right{
+	height:40px;
+	width:26px;
+	float:left;
+}
+
+/*** top story **/
+.topstory{
+	margin-top:10px;
+	width:660px;
+}
+
+.topstory_left{
+	width:380px;
+	float:left;
+}
+
+.topstory_left img{
+	width:360px;
+	padding:10px;
+	height:180px;
+}
+
+.topstory_right{
+	width:260px;
+	padding:10px;
+	font-size:.9em;
+	float:left;
+}
+
+.topstory_headline{
+	font-size:1.25em
+}
+
+.topstory_readmore{
+	font-size:.9em;
+	font-weight:bold;
+}
+
+.topstory_scroll{
+	width:660px;
+	height:90px;
+	background:#f4f4f4;
+	border-top:1px #d7d7d7 solid;
+	border-bottom:1px #d7d7d7 solid;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.topstory_scroll_arrow{
+	width:30px;
+	height:90px;
+	float:left;
+}
+
+.topstory_scroll_arrow img{
+	padding:10px;
+	padding-top:30px;
+}
+
+.topstory_scroll_cell{
+	width:150px;
+	height:90px;
+	float:left;
+}
+
+.topstory_scroll_cell img{
+	width:140px;
+	height:70px;
+	padding:5px;
+	padding-top:10px;
+}
+
+
+
+
+
+
+/*** subtop **/
+.subtop{
+	margin-top:10px;
+	width:660px;
+}
+
+.subtop_cell{
+	width:330px;
+	float:left;
+}
+
+
+.subtop_cell_left{
+	width:100px;
+	float:left;
+}
+
+.subtop_cell_left img{
+	width:80px;
+	height:80px;
+	padding:10px;
+}
+
+.subtop_cell_right{
+	width:220px;
+	padding:10px;
+	padding-left:0px;
+	float:left;
+}
+
+.subtop_byline{
+	color:#cccccc;
+	font-size:.7em;
+}
+
+.greyline650{
+	height:1px;
+	margin-left:10px;
+	width:640px;
+	background:cccccc;
+	display:block;
+	font-size:0px;
+}
+
+
+
+/*** 4x2 grid **/
+
+.left4x2{
+	width:660px;
+}
+.left4x2_column{
+	float:left;
+	margin-left:5px;
+	padding:4px;
+	width:150px;
+	height:300px;
+}
+
+.left4x2_column h3{
+	font-size:1.125em;
+	font-weight:bold;
+	margin-bottom:5px;
+}
+
+.left4x2_column ul{
+	padding-left:10px;
+	margin-left:1px;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+
+.left4x2_column li{
+	list-style: url("images/li4x2.png") outside;
+	font-size:.8em;
+	margin-bottom:5px;
+}
+
+
+.left4x2_column img{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+.left4x2_headline{
+	font-weight:bold;
+	font-size:.9em;
+}
+
+.left4x2_column li a{
+	font-weight:normal;
+}
+
+.greyline150{
+	height:4px;
+	width:150px;
+	background:cccccc;
+	display:block;
+	font-size:0px;
+}
+
+.left4x2_more{
+	width:150px;
+	font-size:.8em;
+}
+
+
+
+
+
+/*** right side **/
+
+.right_container{
+	width:320px;
+}
+
+
+/*** newsad **/
+
+.newsad_left{
+	float:left;
+	width:140px;
+	min-height:600px;
+	background:#f4f4f4;
+}
+
+.newsad_left_cell{
+	width:120px;
+	padding:10px;
+	font-size:.8em;
+}
+
+.newsad_left_cell img{
+	width:110px;
+	height:110px;
+	padding-bottom:5px;
+}
+
+.newsad_right{
+	float:left;
+	width:160px;
+}
+
+
+
+
+
+
+
+
+/*** subfooter **/
+
+.subfooter{
+	background:#ebebeb;
+	border-top:1px solid #ffffff;
+	border-bottom:3px solid #999999;
+	height:40px;
+	width:100%;
+}
+
+.subfooter_column2a{
+	float:left;
+	padding-top:10px;
+	height:40px;
+	width:400px;
+	font-size:.9em;
+}
+
+.subfooter_column2b{
+	float:left;
+	padding-top:10px;
+	margin-top:-10px;
+	height:40px;
+	width:250px;
+	font-size:.9em;
+}
+
+.subfooter_column2c{
+	float:left;
+	padding-top:10px;
+	height:40px;
+	width:200px;
+	font-size:.9em;
+}
+
+.subfooter_column2d{
+	float:left;
+	padding-top:10px;
+	height:40px;
+	width:70px;
+	font-size:.9em;
+}
+
+.enter_email{
+	width:150px;
+
+}
+
+
+.subscribe_newsletter{
+	margin-top:-10px;
+}
+
+
+/*** footer **/
+
+.footer{
+	background:#222222;
+	width:100%;
+	height:200px;
+	color:#ffffff;
+}
+
+.footer h4{
+	font-size:1.125em;
+	font-weight:bold;
+	margin-bottom:20px;
+	text-transform:uppercase;
+}
+
+.footer a{
+	font-size:1em;
+	color:#aaaaaa;
+}
+
+.footer_column8{
+	float:left;
+	padding-top:30px;
+	height:110px;
+	width:110px;
+	padding-left:10px;
+	line-height:1.125em;
+}
+
+.footer_column3a{
+	float:left;
+	padding-top:10px;
+	height:110px;
+	width:340px;
+	font-size:.8em;
+}
+
+.footer_column3b{
+	float:left;
+	padding-top:10px;
+	height:110px;
+	width:247px;
+	padding-left:60px;
+	padding-right:60px;
+
+}
+
+.footer_column3c{
+	float:left;
+	padding-top:10px;
+	height:110px;
+	width:270px;
+}
+
+
+.footer_line{
+	background:#111111;
+	height:1px;
+	width:100%;
+	border-bottom:1px #333333 solid;
+	font-size:0px;
+}
+
+
+</style>
+</head>
+<body class="font1">
+
+<div class="top">
+	<div class="inner">
+		<div class="top_tabs" id="t10" name="t10">
+
+			<div id="nav1" name="nav1" class="tab_cell_nav_on">
+				<div class="left">
+					<br><a class="font2" href="#"><img src="images/homeicon.png"></a>
+				</div>
+				<div class="right"></div>
+			</div>
+
+			<div id="nav2" name="nav2" class="tab_cell_nav_off">
+				<div class="left">
+					<br><a class="font2" href="#">Movies</a>
+				</div>
+				<div class="right"></div>
+			</div>
+
+			<div id="nav3" name="nav3" class="tab_cell_nav_off">
+				<div class="left">
+					<br><a class="font2" href="#">TV</a>
+				</div>
+				<div class="right"></div>
+			</div>
+
+			<div id="nav4" name="nav4" class="tab_cell_nav_off">
+				<div class="left">
+					<br><a class="font2" href="#">Comics</a>
+				</div>
+				<div class="right"></div>
+			</div>
+
+			<div id="nav5" name="nav5" class="tab_cell_nav_off">
+				<div class="left">
+					<br><a class="font2" href="#">Wrestling</a>
+				</div>
+				<div class="right"></div>
+			</div>
+
+			<div id="nav6" name="nav6" class="tab_cell_nav_off">
+				<div class="left">
+					<br><a class="font2" href="#">Video Games</a>
+				</div>
+				<div class="right"></div>
+			</div>
+
+			<div id="nav7" name="nav7" class="tab_cell_nav_off">
+				<div class="left">
+					<br><a class="font2" href="#">MMA/Boxing</a>
+				</div>
+				<div class="right"></div>
+			</div>
+
+			<div id="nav8" name="nav8" class="tab_cell_nav_off">
+				<div class="left">
+					<br><a class="font2" href="#">Music</a>
+				</div>
+				<div class="right"></div>
+			</div>
+
+			<div id="nav9" name="nav9" class="tab_cell_nav_off">
+				<div class="left">
+					<br><a class="font2" href="#">Sports</a>
+				</div>
+				<div class="right"></div>
+			</div>
+
+			<div id="nav10" name="nav10" class="tab_cell_nav_off">
+				<div class="left">
+					<br><a class="font2" href="#">More</a>
+				</div>
+				<div class="right"></div>
+			</div>
+
+		</div>
+		<div class="top_search">
+			<input type="text" class="enter_email">
+		</div>
+
+	</div>
+
+
+
+</div>
+
+<div class="bar">
+	<div class="inner">
+		<div class="bar_logo">
+			<a href="#"><img src="images/logo.png"></a>
+		</div>
+		<div class="bar_ad">
+			<a href="#"><img src="images/ad728.png"></a>
+		</div>
+	</div>
+
+</div>
+
+<div class="inner content">
+
+	<div class="content_left">
+
+
+		<div class="topstory">
+			<div class="topstory_left">
+				<a href="#"><img src="images/temp/morningbacklash500.jpg"></a>
+			</div>
+			<div class="topstory_right">
+				<a href="#" class="topstory_headline color1 bold">Check out this incredible headline because it is all the best of what we have to offer</a>
+				<br><br>
+				Check out this incredible teaser because it is all the best of what we have to offer
+				<br><br>
+				<a href="#" class="color1">read more &raquo;</a>
+
+			</div>
+		</div>
+
+
+		<div class="clear"></div>
+
+
+		<div class="topstory_scroll">
+			<div class="topstory_scroll_arrow">
+				<a href="#"><img src="images/topstoryscrollarrow_left.png"></a>
+			</div>
+			<div class="topstory_scroll_cell">
+				<a href="#"><img src="images/temp/morningbacklash500.jpg"></a>
+			</div>
+			<div class="topstory_scroll_cell">
+				<a href="#"><img src="images/temp/morningbacklash500.jpg"></a>
+			</div>
+			<div class="topstory_scroll_cell">
+				<a href="#"><img src="images/temp/morningbacklash500.jpg"></a>
+			</div>
+			<div class="topstory_scroll_cell">
+				<a href="#"><img src="images/temp/morningbacklash500.jpg"></a>
+			</div>
+
+			<div class="topstory_scroll_arrow">
+				<a href="#"><img src="images/topstoryscrollarrow_right.png"></a>
+			</div>
+
+
+		</div>
+
+		<div class="clear"></div>
+
+
+
+
+<style>
+.subtop_tabs{
+	width:600px;
+	height:31px;
+	padding-top:10px;
+	font-size:.9em;
+}
+
+.subtop_tab_off{
+	z-index:-1;
+	background:url('images/whitetab_off.png') no-repeat top left;
+	text-align:center;
+	color:#999999;
+	width:147px;
+	height:31px;
+	margin-left:-30px;
+	float:left;
+
+}
+.subtop_tab_on{
+	z-index:100;
+	background:url('images/whitetab.png') no-repeat top left;
+	text-align:center;
+	width:147px;
+	height:31px;
+	float:left;
+
+}
+
+
+</style>
+
+
+		<div class="subtop">
+			<div class="subtop_tabs">
+				<div class="subtop_tab_on">NEWS</div>
+				<div class="subtop_tab_off">POPULAR</div>
+				<div class="subtop_tab_off">WHATS HOT</div>
+			</div>
+			<div class="clear"></div>
+
+
+			<div class="subtop_cell">
+				<div class="subtop_cell_left">
+					<a href="#"><img src="images/temp/bmichaels-120x120.jpg"></a>
+				</div>
+				<div class="subtop_cell_right">
+					<a href="#" class="headline">Check out this incredible headline because it is all the best of what we have to offer</a>
+					<br><br>
+					<span class="subtop_byline">by <a href="#" class="color1">John Doe</a> | <img src="images/commentbubble.png"> <a href="#" class="color1">33</span>
+				</div>
+			</div>
+			<div class="subtop_cell">
+				<div class="subtop_cell_left">
+					<a href="#"><img src="images/temp/bmichaels-120x120.jpg"></a>
+				</div>
+				<div class="subtop_cell_right">
+					<a href="#" class="headline">Check out this incredible headline because it is all the best of what we have to offer</a>
+					<br><br>
+					<span class="subtop_byline">by <a href="#" class="color1">John Doe</a> | <img src="images/commentbubble.png"> <a href="#" class="color1">33</span>
+				</div>
+			</div>
+			<div class="subtop_cell">
+				<div class="subtop_cell_left">
+					<a href="#"><img src="images/temp/bmichaels-120x120.jpg"></a>
+				</div>
+				<div class="subtop_cell_right">
+					<a href="#" class="headline">Check out this incredible headline because it is all the best of what we have to offer</a>
+					<br><br>
+					<span class="subtop_byline">by <a href="#" class="color1">John Doe</a> | <img src="images/commentbubble.png"> <a href="#" class="color1">33</span>
+				</div>
+			</div>
+			<div class="subtop_cell">
+				<div class="subtop_cell_left">
+					<a href="#"><img src="images/temp/bmichaels-120x120.jpg"></a>
+				</div>
+				<div class="subtop_cell_right">
+					<a href="#" class="headline">Check out this incredible headline because it is all the best of what we have to offer</a>
+					<br><br>
+					<span class="subtop_byline">by <a href="#" class="color1">John Doe</a> | <img src="images/commentbubble.png"> <a href="#" class="color1">33</span>
+				</div>
+			</div>
+
+
+
+		</div>
+
+
+		<div class="clear" style="height:20px;"></div>
+
+
+		<div class="greyline650"></div>
+
+		<div class="clear"></div>
+
+
+
+
+		<div class="left4x2">
+			<div class="left4x2_column">
+				<h3 class="icon1 font2 color1">MOVIES</h3>
+				<div class="greyline150"></div>
+				<a href="#"><img src="images/temp/rugby_front.jpg" width=150></a>
+				<a href="#" class="left4x2_headline">Some Kind Of title that goes here Some Kind Of title that goes here</a>
+				<ul>
+					<li><a href="#">Some Kind Of title that goes here</a></li>
+					<li><a href="#">Some Kind Of title that goes here</a></li>
+				</ul>
+				<div class="left4x2_more ar">
+					<a href="#" class="left4x2_more color1">more news &raquo;</a>
+				</div>
+			</div>
+			<div class="left4x2_column">
+				<h3 class="icon1 font2 color1">TV</h3>
+				<div class="greyline150"></div>
+				<a href="#"><img src="images/temp/rugby_front.jpg" width=150></a>
+				<a href="#" class="left4x2_headline">Some Kind Of title that goes here Some Kind Of title that goes here</a>
+				<ul>
+					<li><a href="#">Some Kind Of title that goes here</a></li>
+					<li><a href="#">Some Kind Of title that goes here</a></li>
+				</ul>
+				<div class="left4x2_more ar">
+					<a href="#" class="left4x2_more color1">more news &raquo;</a>
+				</div>
+			</div>
+			<div class="left4x2_column">
+				<h3 class="icon1 font2 color1">COMICS</h3>
+				<div class="greyline150"></div>
+				<a href="#"><img src="images/temp/rugby_front.jpg" width=150></a>
+				<a href="#" class="left4x2_headline">Some Kind Of title that goes here Some Kind Of title that goes here</a>
+				<ul>
+					<li><a href="#">Some Kind Of title that goes here</a></li>
+					<li><a href="#">Some Kind Of title that goes here</a></li>
+				</ul>
+				<div class="left4x2_more ar">
+					<a href="#" class="left4x2_more color1">more news &raquo;</a>
+				</div>
+			</div>
+			<div class="left4x2_column">
+				<h3 class="icon1 font2 color1">WRESTLING</h3>
+				<div class="greyline150"></div>
+				<a href="#"><img src="images/temp/rugby_front.jpg" width=150></a>
+				<a href="#" class="left4x2_headline">Some Kind Of title that goes here Some Kind Of title that goes here</a>
+				<ul>
+					<li><a href="#">Some Kind Of title that goes here</a></li>
+					<li><a href="#">Some Kind Of title that goes here</a></li>
+				</ul>
+				<div class="left4x2_more ar">
+					<a href="#" class="left4x2_more color1">more news &raquo;</a>
+				</div>
+			</div>
+		</div>
+		<div class="left4x2">
+			<div class="left4x2_column">
+				<h3 class="icon1 font2 color1">MMA/BOXING</h3>
+				<div class="greyline150"></div>
+				<a href="#"><img src="images/temp/rugby_front.jpg" width=150></a>
+				<a href="#" class="left4x2_headline">Some Kind Of title that goes here Some Kind Of title that goes here</a>
+				<ul>
+					<li><a href="#">Some Kind Of title that goes here</a></li>
+					<li><a href="#">Some Kind Of title that goes here</a></li>
+				</ul>
+				<div class="left4x2_more ar">
+					<a href="#" class="left4x2_more color1">more news &raquo;</a>
+				</div>
+			</div>
+			<div class="left4x2_column">
+				<h3 class="icon1 font2 color1">GAMES</h3>
+				<div class="greyline150"></div>
+				<a href="#"><img src="images/temp/rugby_front.jpg" width=150></a>
+				<a href="#" class="left4x2_headline">Some Kind Of title that goes here Some Kind Of title that goes here</a>
+				<ul>
+					<li><a href="#">Some Kind Of title that goes here</a></li>
+					<li><a href="#">Some Kind Of title that goes here</a></li>
+				</ul>
+				<div class="left4x2_more ar">
+					<a href="#" class="left4x2_more color1">more news &raquo;</a>
+				</div>
+			</div>
+			<div class="left4x2_column">
+				<h3 class="icon1 font2 color1">MUSIC</h3>
+				<div class="greyline150"></div>
+				<a href="#"><img src="images/temp/rugby_front.jpg" width=150></a>
+				<a href="#" class="left4x2_headline">Some Kind Of title that goes here Some Kind Of title that goes here</a>
+				<ul>
+					<li><a href="#">Some Kind Of title that goes here</a></li>
+					<li><a href="#">Some Kind Of title that goes here</a></li>
+				</ul>
+				<div class="left4x2_more ar">
+					<a href="#" class="left4x2_more color1">more news &raquo;</a>
+				</div>
+			</div>
+			<div class="left4x2_column">
+				<h3 class="icon1 font2 color1">SPORTS</h3>
+				<div class="greyline150"></div>
+				<a href="#"><img src="images/temp/rugby_front.jpg" width=150></a>
+				<a href="#" class="left4x2_headline">Some Kind Of title that goes here Some Kind Of title that goes here</a>
+				<ul>
+					<li><a href="#">Some Kind Of title that goes here</a></li>
+					<li><a href="#">Some Kind Of title that goes here</a></li>
+				</ul>
+				<div class="left4x2_more ar">
+					<a href="#" class="left4x2_more color1">more news &raquo;</a>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<div class="clear"></div>
+
+
+		<div class="greyline650"></div>
+
+		<h4>article view begins</h4>
+		<div class="greyline650"></div>
+
+
+
+<style>
+
+
+.article_headline{
+	width:620px;
+	padding:20px;
+	font-size:1.5em;
+}
+
+.article_subheadline{
+	width:660px;
+	background:#eeeeee;
+}
+
+.article_subheadline_left{
+	width:340px;
+	float:left;
+	padding:20px;
+	font-size:.7em;
+}
+
+.article_subheadline_right{
+	width:240px;
+	float:right;
+	padding:20px;
+}
+
+.article_body{
+	width:620px;
+	padding:20px;
+	font-size:.8em;
+	line-height:1.5em;
+}
+
+/* similar to topstory_scroll */
+.article_box_header{
+	width:620px;
+	padding:20px;
+}
+
+
+
+
+
+/* similar to topstory_scroll */
+.article_box_body{
+	width:620px;
+	background:#f4f4f4;
+	border-top:1px #d7d7d7 solid;
+	border-bottom:1px #d7d7d7 solid;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:20px;
+	margin-right:20px;
+}
+
+
+.article_box_cell{
+	width:150px;
+
+
+}
+
+
+.article_box_header_left{
+	float:left;
+}
+
+
+.article_box_header_left h3{
+	margin:0px;
+}
+
+.article_box_header_right{
+	width:100px;
+	float:right;
+	font-size:.75em;
+	padding-top:5px;
+}
+
+</style>
+
+
+
+		<div class="article_headline color1 bold">
+			Check out this incredible headline because it is all the best of what we have to offer
+		</div>
+		<div class="article_subheadline">
+			<div class="article_subheadline_left">
+				by <a href="#" class="color1">Jonathan Widro</a> on October 2, 2011
+			</div>
+			<div class="article_subheadline_right">
+				<img class="subscribe_newsletter" src="images/sharethistemp.png">
+			</div>
+
+		</div>
+		<div class="article_body">
+			<p>Nintendo released the first Game Boy in 1989 with <a href=http://www.youtube.com/watch?v=k_blJOihy18>cream colored spinach</a> graphics and Tetris included, starting a two decade+ run dominating the portable gaming market.</p>
+			<p>However, with its latest hardware launch - Nintendo 3DS - something strange happened to Nintendo. It didn't sell huge numbers right out of the gate.</p>
+			<p>The portable gaming landscape in 2011 isn't the same as it was just a couple years ago. In the time since Game Boy, the portable market has been defined by Nintendo and whoever their competitor was at the time. Atari's Lynx posed no threat, and Sega's Game Gear never took any substantial market share. Even in 2004 when Sony launched PSP, they weren't able to get close to Nintendo's dominance.</p>
+			<p>But then the iPhone happened. Suddenly there were millions of game-enabled devices that played "games" that went for less than $10 and often free.</p>
+			<p><img src=http://diehardgamefan.com/wordpress/wp-content/uploads/2011/06/sony_playstation_vita.jpg width=300 align=right>Both Nintendo and Sony have new portable machines in 2011, both of which seem firmly rooted in the old portable gaming paradigm - core gamers buying dedicated gaming machines that utilized proprietary software only available from retail.</p>
+			<p>Nintendo launched first, shipping 3DS in late March (in the US) in a huge burst, but saw sales almost entirely dry up. Even with the first major Nintendo release - <a href=http://diehardgamefan.com/2011/06/27/review-the-legend-of-zelda-ocarina-of-time-3d-nintendo-3ds/>Zelda: Ocarina of Time</a> - in mid-June, they have only sold 830,000 units in America over about five months time. This is not the type of clamoring Nintendo is accostumed to for their systems, which have seen shortages and huge demand across the board since 2005.</p>
+			<p><img src=http://diehardgamefan.com/wordpress/wp-content/uploads/2011/07/the-legend-of-zelda-ocarina-of-time-3d-new-screnshots_1285782215.jpg width=300 align=left>In a bold and shocking move, Nintendo announced today that it would be lowering the price of 3DS from $250 to $170 effective August 12, less than a half year since it launched. It's the fastest price drop in console history and proof that Nintendo is finally realizing that the market is changing under their feet and they need to change.</p>
+			<p>For early adopters of Nintendo 3DS, this is a bitter pill to swallow at first. A sudden and substantial pricedrop - $70 is nearly 30% of the original cost - burns diehards who wanted in on 3DS on day 1. Knowing this, Nintendo pre-empted potential backlash by offering 20 free digital games to those early adopters. When available, 3DS Ambassadors will be entitled to <a href=http://www.nintendo.com/corp/nintendo3ds/news/ target=_blank>10 NES and 10 GBA classic games</a>, some of which are reportedly being delayed for sale otherwise.</p>
+			<p>However, those buyers are the least of Nintendo's concern. 3DS owners to date, myself included, are the most loyal and diehard Nintendo fans, buying the new system as soon as its available. For me, six months of earlier game time in addition to the 20 free games make the price drop annoying but nothing too upsetting.</p>
+			<p>The real issue is those that have NOT bought 3DS, and why. What's different this time that wasn't around when DS or even DSi launched?</p>
+			<p><b>3D</b> - Nintendo gambled with another major gimmick with this generation of portable consoles, and the results are inconclusive. Anyone who's tried a 3DS is immediately wowed by the 3D effect, but it has come with a variety of interesting caveats - namely it can't be played continuously as long, and gimps other features of the console like the gyropscope. I'm not convinced that 3D has hampered sales, but it certainly hasn't been the system-selling feature Nintendo expected, at least not yet.</p>
+			<p><b>Launch games</b> - many say that the reason for Nintendo's slow launch with 3DS has to do with the games available. In general this is a fallacy - most systems have a launch burst then a drought, and Nintendo has a large amount of first party killer app software coming out soon.</p>
+			<p><b>iPhone</b> - it could be argued that Apple is currently the market dominator with gaming - at least in time spent. Apple customers might not be core gamers, but they buy a couple games and play them in downtime in their commute or at school. Without needing a separate device, these gamers can get their portable gaming fix.</p>
+			<p><b>Game Prices</b> - the most underrated and underreported reason for 3DS's slow start is the baffling decision to increase software prices over the last generation. In a move that seems to defy market logic, Nintendo raised the price of games from $30 in the DS generation to $40 in the 3DS generation at the same time that game prices on mobile platforms have forced expectations lower. Nintendo took the bold step of lowering hardware price, but they will need to address the software pricing ASAP as well.</p>
+			<p><b>PS Vita</b> - when Sony announced that the non-3G version of Vita would retail for $250 (same as 3DS), they put their stake in the ground and made this a war. Vita promises far increased specs and an absolute focus on the core gaming experience, taking the wind out of the sales of Nintendo's carefully planned post-E3 Zelda 3DS launch. There is no way Nintendo could compete this holiday season at the same exact price as Vita, and made the call now to make price a differentiator for consumers looking to upgrade portables later this year.</p>
+			<p>How does it all add up? Nintendo fans should be lauding this price drop. Nintendo took bold and decisive action to fix their launch and prime the 3DS for maximum success in its second six months. Will this be enough to convince consumers and publishers alike to better support the device? Or is this this first major sign that Nintendo's dominance in the portable arena is short lived. It will be fascinating to see this play out, and its nearly impossible to predict what the portable landscape will look like a year from today.</p>
+		</div>
+
+		<div class="article_box_header">
+			<div class="article_box_header_left">
+				<h3 class="icon1 font2">Related Articles</h3>
+
+			</div>
+			<div class="article_box_header_right">
+				<a href="#" class="color1">more articles &raquo;</a>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="article_box_body">
+		</div>
+
+<style>
+
+
+.right_cell{
+	width:320px;
+	padding:10px;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+.right_cell_left{
+	width:80px;
+	float:left;
+}
+
+.right_cell_left img{
+	width:50px;
+	height:50px;
+	padding:10px;
+}
+
+.right_cell_right{
+	padding:10px;
+	width:220px;
+	font-size:.75em;
+	float:left;
+}
+
+
+
+</style>
+
+
+
+
+
+
+
+
+	</div>
+	<div class="content_right">
+
+		<div class="right_container">
+			<a href="#"><img src="images/ad300.png"></a>
+		</div>
+
+		<div class="clear"></div>
+
+		<!-- to change -->
+				<div class="subtop_tab_on">NEWS</div>
+				<div class="subtop_tab_off">POPULAR</div>
+		<div class="clear"></div>
+		<!-- //to change -->
+
+
+		<div class="right_container">
+			<div class="right_cell">
+				<div class="right_cell_left">
+					<a href="#"><img src="images/temp/bmichaels-120x120.jpg"></a>
+				</div>
+				<div class="right_cell_right">
+					<a href="#">Check out this incredible headline because it is all the best of what we have to offer</a>
+					<br><br>
+					<span class="subtop_byline">by <a href="#" class="color1">John Doe</a> | <img src="images/commentbubble.png"> <a href="#" class="color1">33</span>
+				</div>
+			</div>
+			<div class="right_cell">
+				<div class="right_cell_left">
+					<a href="#"><img src="images/temp/bmichaels-120x120.jpg"></a>
+				</div>
+				<div class="right_cell_right">
+					<a href="#">Check out this incredible headline because it is all the best of what we have to offer</a>
+					<br><br>
+					<span class="subtop_byline">by <a href="#" class="color1">John Doe</a> | <img src="images/commentbubble.png"> <a href="#" class="color1">33</span>
+				</div>
+			</div>
+			<div class="right_cell">
+				<div class="right_cell_left">
+					<a href="#"><img src="images/temp/bmichaels-120x120.jpg"></a>
+				</div>
+				<div class="right_cell_right">
+					<a href="#">Check out this incredible headline because it is all the best of what we have to offer</a>
+					<br><br>
+					<span class="subtop_byline">by <a href="#" class="color1">John Doe</a> | <img src="images/commentbubble.png"> <a href="#" class="color1">33</span>
+				</div>
+			</div>
+			<div class="right_cell">
+				<div class="right_cell_left">
+					<a href="#"><img src="images/temp/bmichaels-120x120.jpg"></a>
+				</div>
+				<div class="right_cell_right">
+					<a href="#">Check out this incredible headline because it is all the best of what we have to offer</a>
+					<br><br>
+					<span class="subtop_byline">by <a href="#" class="color1">John Doe</a> | <img src="images/commentbubble.png"> <a href="#" class="color1">33</span>
+				</div>
+			</div>
+			<div class="right_cell">
+				<div class="right_cell_left">
+					<a href="#"><img src="images/temp/bmichaels-120x120.jpg"></a>
+				</div>
+				<div class="right_cell_right">
+					<a href="#">Check out this incredible headline because it is all the best of what we have to offer</a>
+					<br><br>
+					<span class="subtop_byline">by <a href="#" class="color1">John Doe</a> | <img src="images/commentbubble.png"> <a href="#" class="color1">33</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="clear"></div>
+
+		<div class="right_container">
+			<div class="newsad_left">
+				<div class="newsad_left_cell ar">
+					<a href="#" class="color1">more news &raquo;</a>
+				</div>
+				<div class="newsad_left_cell">
+					<a href="#"><img src="images/temp/bmichaels-120x120.jpg"></a>
+					<a href="#">Check out this incredible headline because it is all the best of what we have to offer <span class="color1">&raquo;</span></a>
+				</div>
+				<div class="newsad_left_cell">
+					<a href="#"><img src="images/temp/orton.jpg"></a>
+					<a href="#">Check out this incredible headline because it is all the best of what we have to offer <span class="color1">&raquo;</span></a>
+				</div>
+				<div class="newsad_left_cell">
+					<a href="#"><img src="images/temp/1218869-rihanna-n-ireland-video-200-120x120.jpg"></a>
+					<a href="#">Check out this incredible headline because it is all the best of what we have to offer <span class="color1">&raquo;</span></a>
+				</div>
+			</div>
+			<div class="newsad_right">
+				<a href="#"><img src="images/ad160.png"></a>
+			</div>
+		</div>
+
+	</div>
+
+
+</div>
+
+
+
+<!-- subfooter -->
+
+
+<div class="subfooter">
+	<div class="inner">
+		<div class="subfooter_column2a">
+			<img class="subscribe_newsletter" src="images/sharethistemp.png">
+		</div>
+		<div class="subfooter_column2b">
+			<img class="subscribe_newsletter" src="images/newsletter.png">
+		</div>
+		<div class="subfooter_column2c">
+
+			<input type="text" class="enter_email">
+		</div>
+		<div class="subfooter_column2d">
+			<img src="images/signup.png">
+		</div>
+
+
+	</div>
+</div>
+
+
+
+
+<!-- footer -->
+
+
+<div class="footer">
+
+	<div class="inner">
+		<div class="footer_column8">
+			<a href="#"><h4 class="font3 color1">Movies</h4></a>
+
+			<a href="#">News</a><br>
+			<a href="#">Reviews</a><br>
+			<a href="#">Columns</a><br>
+			<a href="#">Features</a>
+		</div>
+		<div class="footer_column8">
+			<a href="#"><h4 class="font3 color1">TV</h4></a>
+
+			<a href="#">News</a><br>
+			<a href="#">Reviews</a><br>
+			<a href="#">Columns</a><br>
+			<a href="#">Features</a>
+		</div>
+		<div class="footer_column8">
+			<a href="#"><h4 class="font3 color1">Comics</h4></a>
+
+			<a href="#">News</a><br>
+			<a href="#">Reviews</a><br>
+			<a href="#">Columns</a><br>
+			<a href="#">Features</a>
+		</div>
+		<div class="footer_column8">
+			<a href="#"><h4 class="font3 color1">Wrestling</h4></a>
+
+			<a href="#">News</a><br>
+			<a href="#">Reviews</a><br>
+			<a href="#">Columns</a><br>
+			<a href="#">Features</a>
+		</div>
+		<div class="footer_column8">
+			<a href="#"><h4 class="font3 color1">MMA/Boxing</h4></a>
+
+			<a href="#">News</a><br>
+			<a href="#">Reviews</a><br>
+			<a href="#">Columns</a><br>
+			<a href="#">Features</a>
+		</div>
+		<div class="footer_column8">
+			<a href="#"><h4 class="font3 color1">Video Games</h4></a>
+
+			<a href="#">News</a><br>
+			<a href="#">Reviews</a><br>
+			<a href="#">Columns</a><br>
+			<a href="#">Features</a>
+		</div>
+		<div class="footer_column8">
+			<a href="#"><h4 class="font3 color1">Music</h4></a>
+
+			<a href="#">News</a><br>
+			<a href="#">Reviews</a><br>
+			<a href="#">Columns</a><br>
+			<a href="#">Features</a>
+		</div>
+		<div class="footer_column8">
+			<a href="#"><h4 class="font3 color1">Sports</h4></a>
+
+			<a href="#">News</a><br>
+			<a href="#">Reviews</a><br>
+			<a href="#">Columns</a><br>
+			<a href="#">Features</a>
+		</div>
+	</div>
+
+
+
+</div>
+<div class="clear"></div>
+<div class="footer_line"></div>
+<div class="clear"></div>
+
+<div class="footer" style="height:120px">
+	<div class="inner">
+		<div class="footer_column3a">
+			<a href="#">About Us</a>
+			<a href="#">Contact Us</a>
+			<a href="#">Advertise</a>
+			<a href="#">Contribute</a>
+			<a href="#">Media</a>
+			<a href="#">Privacy</a>
+			<br>
+			&copy; 2011 Inside Pulse, a division of <a href="#">Digital Grout LLC</a>
+
+		</div>
+		<div class="footer_column3b ac">
+			<a href="#"><img src="images/stayconnected.png" align="left"></a>
+			<a href="#"><img src="images/facebook.png" align="left"></a>
+			<a href="#"><img src="images/twitter.png" align="left"></a>
+			<a href="#"><img src="images/rss.png" align="left"></a>
+
+		</div>
+		<div class="footer_column3c">
+			<a href="#"><img src="images/logo.png"></a>
+		</div>
+
+
+
+	</div>
+</div>
+
+
+
+
+
+<script>
+function changetab(newtab, totaltabs, cssclass){
+		for(i=1;i<totaltabs+1;i++){
+			$("#nav"+i).removeClass(cssclass+"_on");
+			$("#nav"+i).addClass(cssclass+"_off");
+		}
+
+		var newtabdiv = "nav" + newtab;
+		$("#"+newtabdiv).addClass(cssclass+"_on");
+
+}
+
+
+
+
+
+jQuery(document).ready(function($){ //fire on DOM ready
+
+	$(".tab_cell_nav_on,.tab_cell_nav_off").click(function(){
+		var totaltabs = parseInt($(this).closest('div').parent().attr("name").substr(1,2));
+		var thistab = parseInt($(this).closest('div').attr("name").substr(3,2));
+		changetab(thistab, totaltabs, "tab_cell_nav");
+	});
+
+});
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
