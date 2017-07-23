@@ -228,13 +228,6 @@ for($i=0;$i<$left4x2count;$i++){
 	$name = $left4x2values[$i][2];
 	$masterclickthru = $left4x2values[$i][3];
 
-	if($left4x2values[$i][4]){
-		$limit = $left4x2values[$i][4];
-	}
-	else{
-		$limit = 4;
-	}
-
 	$zonecounter=0;
 	$otherlinks = "";
 	$post = "";
@@ -243,6 +236,8 @@ for($i=0;$i<$left4x2count;$i++){
 	//top story loop
 
 	if($type=="rss"){
+
+	//	$left4x2values[] = array('rss', 'http://wrestling.insidepulse.com/feed/', 'Wrestling', 'http://wrestling.insidepulse.com/');
 
 		$postsarrayall = getrsslinks($slug, $name, 4, "array");
 		foreach($postsarrayall as $postsarray){
@@ -272,7 +267,7 @@ for($i=0;$i<$left4x2count;$i++){
 	}
 	else{
 		// zone sql
-		$the_query = new WP_Query('&showposts=' . $limit .$sqladd.'&orderby=post_date&order=desc');
+		$the_query = new WP_Query('&showposts=4'.$sqladd.'&orderby=post_date&order=desc');
 
 		while ($the_query->have_posts()) : $the_query->the_post();
 			$do_not_duplicate = $post->ID;

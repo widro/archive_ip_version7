@@ -307,7 +307,7 @@ elseif($active_zone=="comics-nexus"){
 
 $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/images/v7/comicsnexuslogo.png\" class=\"bar_logo_comicsnexus\"></a>";
 	$comics_tabcss = "tab_cell_nav_on";
-	$featuredauthors = "177|178|179|842|182|184|11";
+	$featuredauthors = "178|177|179|842|182|867|11";
 
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
