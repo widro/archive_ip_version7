@@ -708,19 +708,19 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 
 	//featured
 	$featuredvalues = array();
-	$featuredvalues[] = array('cat', 'mma-columns', 'columns', '/category/mma-columns');
-	$featuredvalues[] = array('cat', 'boxing-reviews', 'reviews', '/category/boxing-reviews');
-	$featuredvalues[] = array('cat', 'mma-video', 'video', '/category/mma-video');
+	$featuredvalues[] = array('cat', 'mma-news,boxing-news', 'news', '/latest-updates/?cat=mma-news,boxing-news');
+	$featuredvalues[] = array('cat', 'mma-columns,boxing-columns', 'columns', '/latest-updates/?cat=mma-columns,boxing-columns');
+	$featuredvalues[] = array('cat', 'mma-video,boxing-video', 'video', '/latest-updates/?cat=mma-video,boxing-video');
 
 	//left4x2
 	$left4x2values = array();
 	$left4x2values[] = array('cat', 'mma-news', 'mma news', '/category/mma-news/');
-	$left4x2values[] = array('cat', 'mma-previews', 'mma previews', '/category/mma-previews/');
 	$left4x2values[] = array('cat', 'mma-columns', 'mma columns', '/category/mma-columns/');
 	$left4x2values[] = array('cat', 'mma-video', 'mma video', '/category/mma-video/');
-	$left4x2values[] = array('cat', 'boxing-columns', 'boxing columns', '/category/boxing-columns/');
+	$left4x2values[] = array('cat', 'mma-previews', 'mma previews', '/category/mma-previews/');
 	$left4x2values[] = array('cat', 'boxing-news', 'boxing news', '/category/boxing-news/');
-	$left4x2values[] = array('cat', 'boxing-features', 'boxing features', '/category/boxing-features/');
+	$left4x2values[] = array('cat', 'boxing-columns', 'boxing columns', '/category/boxing-columns/');
+	$left4x2values[] = array('cat', 'boxing-video', 'boxing video', '/category/boxing-video/');
 	$left4x2values[] = array('cat', 'boxing-results', 'boxing results', '/category/boxing-results/');
 
 
