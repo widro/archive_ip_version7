@@ -235,6 +235,7 @@ foreach($postarray as $key => $outsidepost){
 <div class="authorbottom">
 	<h3 class="icon2m bold" style="margin-top:2px;"><span class="color1"><?php echo $insider_display_name ?></span></h3>
 	 <?php echo $insider_description ?>
+	<div class="clear"></div>
 
 </div>
 

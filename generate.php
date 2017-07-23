@@ -10,6 +10,9 @@ $thisurl =  $_SERVER['HTTP_HOST'];
 if($thisurl=="insidepulse.com"){
 	require_once($currentpath.'/wp-load.php');
 }
+elseif($thisurl=="insidepulse.net"){
+	require_once($currentpath.'/wp-load.php');
+}
 else{
 	require_once($currentpath.'/wordpress/wp-load.php');
 }

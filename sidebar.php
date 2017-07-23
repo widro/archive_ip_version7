@@ -39,7 +39,7 @@
 							include($featuredauthorfile);
 						}
 						else{
-							$create_rightauthbox = create_authbox($featured_userid, "rightauthbox");
+							$create_rightauthbox = create_authbox($featured_userid, "rightauthbox", $authorslug);
 							echo $create_rightauthbox;
 						}
 					}

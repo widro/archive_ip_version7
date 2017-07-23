@@ -23,7 +23,7 @@ global $featuredauthors;
 $featuredauthors = "36|4|7|61|1";
 
 global $overallpath;
-$overallpath = "/nfs/c03/h05/mnt/56814/domains/insidepulse.net/html/";
+$overallpath = $_SERVER['DOCUMENT_ROOT'] . "/";
 
 
 
@@ -257,7 +257,7 @@ elseif($active_zone=="tv"){
 elseif($active_zone=="movies"){
 
 	$movies_tabcss = "tab_cell_nav_on";
-	$featuredauthors = "7|220|124|221|222";
+	$featuredauthors = "7|220|124|221|222|198";
 
 
 	//format
@@ -346,12 +346,12 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 
 	//rightfeatured
 	$rightfeaturedvalues = array();
-	$rightfeaturedvalues[] = array('zonecat', 'movies|dvd-reviews', 'DVD Reviews', '/category/dvd-reviews/');
-	$rightfeaturedvalues[] = array('zonecat', 'tv|news', 'TV News', '/category/news/');
+	$rightfeaturedvalues[] = array('zonecat', 'comics-nexus|reviews', 'Reviews', '/latest-updates/?zone=comics-nexus&cat=reviews');
+	$rightfeaturedvalues[] = array('zonecat', 'comics-nexus|spoilers', 'Spoilers', '/latest-updates/?zone=comics-nexus&cat=spoilers');
 
 	//rightnarrowvalues
 	$rightnarrowvalues = array();
-	$rightnarrowvalues[] = array('cat', 'news', 'news', '/category/news/');
+	$rightnarrowvalues[] = array('zonecat', 'comics-nexus|news', 'news', '/latest-updates/?zone=comics-nexus&cat=news');
 
 
 }
@@ -593,7 +593,6 @@ elseif($active_zone=="wrestling"){
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
 
-	$overallpath = "/nfs/c03/h03/mnt/55011/domains/wrestling.insidepulse.com/html/";
 	$disqusslug = "pulsewrestling";
 	$featuredauthors = "8|207|842|534|875|462|130|886";
 
@@ -644,7 +643,6 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
 
-	$overallpath = "/nfs/c09/h01/mnt/131740/domains/diehardgamefan.com/html/";
 	$authorslug = "diehard";
 	$disqusslug = "diehardgamefan";
 	$featuredauthors = "21|345|1367|605|884|47";
@@ -698,7 +696,6 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
 
-	$overallpath = "/nfs/c05/h02/mnt/74861/domains/insidefights.com/html/";
 	$authorslug = "insider";
 	$featuredauthors = "855|852|853";
 

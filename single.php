@@ -405,7 +405,7 @@ jQuery(document).ready(function($){ //fire on DOM ready
 			include($authorboxfile);
 		}
 		else{
-			$create_singleauthbox = create_authbox($insider_userid, "singleauthbox");
+			$create_singleauthbox = create_authbox($insider_userid, "singleauthbox", $authorslug);
 			echo $create_singleauthbox;
 		}
 		?>

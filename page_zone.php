@@ -46,7 +46,7 @@
 
 	//converts pipe exploded array into unix ts
 	$unixtimestamp =  mktime((int)$thisdatearr[0], (int)$thisdatearr[1], (int)$thisdatearr[2], (int)$thisdatearr[3], (int)$thisdatearr[4], (int)$thisdatearr[5]);
-
+	$unixtimestamp = (int)$unixtimestamp;
 	$postarray[$unixtimestamp]['title'] = $thistitle;
 	$postarray[$unixtimestamp]['clickthru'] = $clickthru;
 	$postarray[$unixtimestamp]['excerpt'] = $thisexcerpt;
@@ -60,13 +60,14 @@
 
 if($active_zone=="home"){
 
-$wrestlingposts = getrsslinks('http://wrestling.insidepulse.com/category/top-story/feed/', 'Wrestling', 2, "array");
-$diehardgamefanposts = getrsslinks('http://diehardgamefan.com/category/top-story/feed/', 'diehardgamefan', 2, "array");
-$insidefightsposts = getrsslinks('http://insidefights.com/category/top-story/feed/', 'insidefights', 2, "array");
+$wrestlingposts = getrsslinks('http://wrestling.insidepulse.com/category/top-story/feed/', 'Wrestling', 1, "array");
+$diehardgamefanposts = getrsslinks('http://diehardgamefan.com/category/top-story/feed/', 'diehardgamefan', 1, "array");
+$insidefightsposts = getrsslinks('http://insidefights.com/category/top-story/feed/', 'insidefights', 1, "array");
 
 $outsideposts = array();
 foreach($wrestlingposts as $eachpost){
 	$unixtimestamp = mktime($eachpost['post_date']);
+	$unixtimestamp = (int)$unixtimestamp;
 	$postarray[$unixtimestamp]['title'] = $eachpost['title'];
 	$postarray[$unixtimestamp]['clickthru'] = $eachpost['clickthru'];
 	$postarray[$unixtimestamp]['excerpt'] = $eachpost['excerpt'];
@@ -78,6 +79,7 @@ foreach($wrestlingposts as $eachpost){
 
 foreach($diehardgamefanposts as $eachpost){
 	$unixtimestamp = mktime($eachpost['post_date']);
+	$unixtimestamp = (int)$unixtimestamp;
 	$postarray[$unixtimestamp]['title'] = $eachpost['title'];
 	$postarray[$unixtimestamp]['clickthru'] = $eachpost['clickthru'];
 	$postarray[$unixtimestamp]['excerpt'] = $eachpost['excerpt'];
@@ -89,6 +91,7 @@ foreach($diehardgamefanposts as $eachpost){
 
 foreach($insidefightsposts as $eachpost){
 	$unixtimestamp = mktime($eachpost['post_date']);
+	$unixtimestamp = (int)$unixtimestamp;
 	$postarray[$unixtimestamp]['title'] = $eachpost['title'];
 	$postarray[$unixtimestamp]['clickthru'] = $eachpost['clickthru'];
 	$postarray[$unixtimestamp]['excerpt'] = $eachpost['excerpt'];
@@ -99,9 +102,11 @@ foreach($insidefightsposts as $eachpost){
 }
 
 //merge outside array and insidepulse array
-$postarray2 = ksort($postarray);
+
+ksort($postarray);
 $postarray3 = array_reverse($postarray);
-//print_r($postarray);
+//print_r($postarray3);
+//exit();
 
 }
 else{

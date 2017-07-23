@@ -1,3 +1,11 @@
+<?php
+if(is_home()){
+	include_once('page_zone.php');
+	exit();
+}
+
+?>
+
 <?php get_header(); ?>
 	<div class="content_left">
 	<h3 class="icon2m bold" style="margin-top:2px;">Full Listing</span></h3>
