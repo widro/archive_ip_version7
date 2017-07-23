@@ -33,15 +33,18 @@
 	$thistitle = substr($thistitle, 0, 100);
 	$clickthru=get_permalink($thispostid);
 
+	$thisdate = mysql2date('m.d.y', $post->post_date); 
+	$author = get_the_author();
+
 	$sidelinks .= "
 			<div class=\"right_cell\">
 				<div class=\"right_cell_left\">
 					<a href=\"$clickthru\"><img src=\"$topstory120x120\"></a>
 				</div>
 				<div class=\"right_cell_right\">
-					<a href=\"$clickthru\">$thistitle</a>
+					<a href=\"$clickthru\">$thistitle</a> <span class=\"date\">($thisdate)</span>
 					<br><br>
-					<span class=\"right_cell_byline\">by <a href=\"#\" class=\"color1\">John Doe</a> | <img src=\"/wp-content/themes/version7/images/commentbubble.png\"> <a href=\"#\" class=\"color1\">33</span>
+					<span class=\"right_cell_byline\">by <a href=\"#\" class=\"color1\">$author</a> | <img src=\"/wp-content/themes/version7/images/commentbubble.png\"> <a href=\"#\" class=\"color1\">33</a></span>
 				</div>
 			</div>
 			<div class=\"clear\"></div>
@@ -111,56 +114,6 @@
 
 		<div class="clear" style="height:30px;"></div>
 
-<style>
-
-.sidetabs_tabs{
-	background:url('/wp-content/themes/version7/images/featured_tabs2_1.png') top left no-repeat;
-	width:320px;
-	height:33px;
-}
-
-.sidetabs_tabs1{
-	background:url('/wp-content/themes/version7/images/featured_tabs2_1.png') top left no-repeat;
-	width:320px;
-	height:33px;
-}
-
-.sidetabs_tabs2{
-	background:url('/wp-content/themes/version7/images/featured_tabs2_2.png') top left no-repeat;
-	width:320px;
-	height:33px;
-}
-
-
-.sidetabs_tab1{
-	width:120px;
-	padding:5px;
-	padding-left:20px;
-	font-size:.85em;
-	color:#999999;
-	font-weight:bold;
-	float:left;
-	text-align:center;
-}
-
-.sidetabs_tab2{
-	width:105px;
-	padding:5px;
-	font-size:.85em;
-	color:#999999;
-	font-weight:bold;
-	float:left;
-	text-align:center;
-}
-
-
-
-.tab_on{
-	color:#ff0000;
-}
-
-</style>
-
 		<div id="sidetabs" name="sidetabs2" class="sidetabs_tabs">
 			<div id="sidetabs_1" class="tab sidetabs_tab1 cp tab_on">REVIEWS</div>
 			<div id="sidetabs_2" class="tab sidetabs_tab2 cp">POPULAR</div>
@@ -171,7 +124,7 @@
 			<div id="sidetabs_content1">
 			<?php echo $sidelinks ?>
 			</div>
-			<div id="sidetabs_content2">
+			<div id="sidetabs_content2" class="hide">
 			<?php echo $sidelinks ?>
 			</div>
 		</div>
@@ -189,10 +142,3 @@
 				<a href="#"><img src="/wp-content/themes/version7/images/ad160.png"></a>
 			</div>
 		</div>
-
-	</div>
-
-
-</div>
-
-

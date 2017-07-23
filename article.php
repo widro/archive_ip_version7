@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+	<div class="content_left">
 
 
 		<div class="article_headline color1 bold">

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+	<div class="content_left">
 
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
@@ -20,6 +20,8 @@ $thiscurauth = get_userdata(intval($insider_userid));
 
 $insider_aim = $thiscurauth->aim;
 $insider_description = $thiscurauth->description;
+$insider_description_short = substr($insider_description, 0, 160);
+
 $insider_display_name = $thiscurauth->display_name;
 $insider_first_name = $thiscurauth->first_name;
 $insider_last_name = $thiscurauth->last_name;
@@ -67,8 +69,9 @@ if(!$insider_avatar120){
 		</div>
 		<div class="article_subheadline">
 			<div class="article_subheadline_left">
-				by <a href="<?php echo $authorlink ?>" class="color1"><?php echo $insider_display_name ?></a> on <?php the_time('F j, Y'); ?>  | <a href="mailto:<?php the_author_email(); ?>" class="color1">Email the author</a> <?php edit_post_link('Edit Post','| ',' '); ?>	<?php if($show_twitter){echo $show_twitter_text;	}?>
+				by <a href="<?php echo $authorlink ?>" class="color1"><?php echo $insider_display_name ?></a> on <?php the_time('F j, Y'); ?>
 			</div>
+
 			<div class="article_subheadline_right">
 
 				<div class="social_facebooklike">
@@ -91,7 +94,7 @@ if(!$insider_avatar120){
 <!-- Place this tag in your head or just before your close body tag -->
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
 <!-- Place this tag where you want the +1 button to render -->
-<g:plusone></g:plusone>
+<g:plusone size="medium"></g:plusone>
 
 				</div>
 
@@ -133,75 +136,6 @@ if(!$insider_avatar120){
 			</div>
 		</div>
 
-
-
-<style>
-.article_authorbox_body{
-	width:660px;
-	height:150px;
-	background:#f4f4f4;
-	border-top:1px #d7d7d7 solid;
-	border-bottom:1px #d7d7d7 solid;
-	margin-top:10px;
-	margin-bottom:10px;
-}
-
-
-.article_authorbox_left{
-	width:100px;
-	padding-left:30px;
-	padding-right:30px;
-	padding-top:10px;
-	float:left;
-}
-
-.article_authorbox_left img{
-	width:80px;
-	height:80px;
-}
-
-.article_authorbox_right{
-	width:440px;
-	float:left;
-	padding-right:40px;
-	font-size:.825em;
-	background:url('/wp-content/themes/version7/images/greybg.png') top right no-repeat;
-}
-
-.article_authorbox_right h3{
-	font-size:1.1em;
-	font-weight:bold;
-}
-
-.comments_cell{
-	width:660px;
-}
-
-.comments_cell_left{
-	width:100px;
-	float:left;
-}
-
-.comments_cell_left img{
-	width:90px;
-	height:90px;
-	padding:5px;
-}
-
-.comments_cell_right{
-	width:560px;
-	border-bottom:1px solid #eeeeee;
-	float:right;
-	font-size:.825em;
-}
-
-
-
-
-
-
-</style>
-
 		<div class="clear" style="height:30px;"></div>
 
 		<div class="article_box_header">
@@ -221,7 +155,14 @@ if(!$insider_avatar120){
 			<div class="article_authorbox_right">
 				<h3><?php echo $insider_display_name ?></h3>
 
-				<?php echo $insider_description ?>
+				<div id="article_authorbox_description1">
+					<?php echo $insider_description_short ?> <a id="article_authorbox_show" class="bold color1 cp">&raquo; see more</a>
+				</div>
+
+				<div id="article_authorbox_description2" class="hide">
+					<?php echo $insider_description ?> <a id="article_authorbox_hide" class="bold color1 cp">&raquo; see less</a>
+				</div>
+
 				<br><br>
 				<a href=$insider_twitter target=_blank><img class="icon"  src=http://media.insidepulse.com/shared/images/v6/icon_twitter.jpg border=0></a>
 				<a href=mailto:$insider_email target=_blank><img class="icon" src=http://media.insidepulse.com/shared/images/v6/icon_email.jpg border=0></a>
@@ -233,29 +174,8 @@ if(!$insider_avatar120){
 
 		<div class="clear" style="height:30px;"></div>
 
-
-		<div class="article_authorbox_header">
-			<div class="article_box_header_left">
-				<h3 class="icon1 font2">Comments</h3>
-
-			</div>
-			<div class="article_box_header_right">
-				<a href="#" class="color1">view profile &raquo;</a>
-			</div>
-		</div>
-		<div class="clear"></div>
-		<div class="comments_cell">
-			<div class="comments_cell_left">
-				<a href=<?php echo $authorlink ?>><img class="avatar" border="0" src=<?php echo $insider_avatar120 ?>></a>
-
-			</div>
-			<div class="comments_cell_right">
-				<a href="">Widro</a><br>
-				Commentgoes here and the yadda to the yadda to that dinkers in that stinkers up in that dirnk
-				<br><br>
-				<a href="">Like</a> &middot; <a href="">Reply</a> &middot; 9 minutes ago
-			</div>
-		</div>
+		<!-- include comments -->
+		<?php comments_template(); ?>
 
 
 
@@ -268,6 +188,5 @@ if(!$insider_avatar120){
 
 
 <?php get_sidebar(); ?>
-
 
 <?php get_footer(); ?>

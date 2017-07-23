@@ -1,3 +1,8 @@
+	<!-- ends content_right -->
+	</div>
+
+<!-- ends overall content -->
+</div>
 <div class="clear"></div>
 
 <!-- subfooter -->
@@ -26,7 +31,7 @@
 <!-- Place this tag in your head or just before your close body tag -->
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
 <!-- Place this tag where you want the +1 button to render -->
-<g:plusone></g:plusone>
+<g:plusone size="medium"></g:plusone>
 
 				</div>
 		</div>
@@ -128,21 +133,22 @@
 <div class="footer" style="height:120px">
 	<div class="inner">
 		<div class="footer_column3a">
-			<a href="#">About Us</a>
-			<a href="#">Contact Us</a>
-			<a href="#">Advertise</a>
-			<a href="#">Contribute</a>
-			<a href="#">Media</a>
-			<a href="#">Privacy</a>
-			<br>
+			<a href="/about/">About Us</a> &middot;
+			<a href="/contact/">Contact Us</a> &middot;
+			<a href="/advertising/">Advertise</a> &middot;
+			<a href="/contribute/">Contribute</a> &middot;
+			<a href="/media-kit/">Media</a> &middot;
+			<a href="/staff/">Staff</a> &middot;
+			<a href="/privacy/">Privacy</a>
+			<br><br>
 			&copy; 2011 Inside Pulse, a division of <a href="#">Digital Grout LLC</a>
 
 		</div>
 		<div class="footer_column3b ac">
-			<a href="#"><img src="/wp-content/themes/version7/images/stayconnected.png" align="left"></a>
-			<a href="#"><img src="/wp-content/themes/version7/images/facebook.png" align="left"></a>
-			<a href="#"><img src="/wp-content/themes/version7/images/twitter.png" align="left"></a>
-			<a href="#"><img src="/wp-content/themes/version7/images/rss.png" align="left"></a>
+			<a href="#"><img src="/wp-content/themes/version7/images/stayconnected.png" align="left" style="padding-right:25px;"></a>
+			<a href="#"><img src="/wp-content/themes/version7/images/facebook.png" align="left" style="padding-right:5px;"></a>
+			<a href="#"><img src="/wp-content/themes/version7/images/twitter.png" align="left" style="padding-right:5px;"></a>
+			<a href="#"><img src="/wp-content/themes/version7/images/rss.png" align="left" style="padding-right:5px;"></a>
 
 		</div>
 		<div class="footer_column3c">
