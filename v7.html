@@ -91,6 +91,7 @@ h3.icon1{
 	background:url('images/icon4x2.png') no-repeat top left;
 	height:20px;
 	padding-left:25px;
+	font-size:1.3em;
 }
 
 
@@ -176,31 +177,44 @@ h3.icon1{
 
 /*** tabs nav **/
 .tab_cell_nav_on{
+	line-height:2.5em;
 	height:40px;
 	float:left;
 	cursor:pointer;
 	margin-left:-20px;
+	overflow:hidden;
 }
 
 .tab_cell_nav_off{
+	line-height:2.5em;
 	height:40px;
 	float:left;
 	cursor:pointer;
 	margin-left:-20px;
+	overflow:hidden;
 }
 
 .tab_cell_nav_on a{
+	font-size:1.2em;
 	color:#ffffff;
-	margin-left:25px;
-	padding-top:20px;
+	margin-left:22px;
+	margin-top:22px;
 
 }
 
 .tab_cell_nav_off a{
+	font-size:1.2em;
 	color:#ffffff;
-	margin-left:25px;
-	padding-top:20px;
+	margin-left:22px;
+	margin-top:22px;
+}
 
+.tab_cell_nav_off img{
+	padding-top:10px;
+}
+
+.tab_cell_nav_on img{
+	padding-top:10px;
 }
 
 
@@ -367,8 +381,6 @@ h3.icon1{
 }
 
 .left4x2_column h3{
-	font-size:1.125em;
-	font-weight:bold;
 	margin-bottom:5px;
 }
 
@@ -587,70 +599,70 @@ h3.icon1{
 
 			<div id="nav1" name="nav1" class="tab_cell_nav_on">
 				<div class="left">
-					<br><a class="font2" href="#"><img src="images/homeicon.png"></a>
+					<a class="font2" href="#"><img src="images/homeicon.png"></a>
 				</div>
 				<div class="right"></div>
 			</div>
 
 			<div id="nav2" name="nav2" class="tab_cell_nav_off">
 				<div class="left">
-					<br><a class="font2" href="#">Movies</a>
+					<a class="font2" href="#">Movies</a>
 				</div>
 				<div class="right"></div>
 			</div>
 
 			<div id="nav3" name="nav3" class="tab_cell_nav_off">
 				<div class="left">
-					<br><a class="font2" href="#">TV</a>
+					<a class="font2" href="#">TV</a>
 				</div>
 				<div class="right"></div>
 			</div>
 
 			<div id="nav4" name="nav4" class="tab_cell_nav_off">
 				<div class="left">
-					<br><a class="font2" href="#">Comics</a>
+					<a class="font2" href="#">Comics</a>
 				</div>
 				<div class="right"></div>
 			</div>
 
 			<div id="nav5" name="nav5" class="tab_cell_nav_off">
 				<div class="left">
-					<br><a class="font2" href="#">Wrestling</a>
+					<a class="font2" href="#">Wrestling</a>
 				</div>
 				<div class="right"></div>
 			</div>
 
 			<div id="nav6" name="nav6" class="tab_cell_nav_off">
 				<div class="left">
-					<br><a class="font2" href="#">Video Games</a>
+					<a class="font2" href="#">Video Games</a>
 				</div>
 				<div class="right"></div>
 			</div>
 
 			<div id="nav7" name="nav7" class="tab_cell_nav_off">
 				<div class="left">
-					<br><a class="font2" href="#">MMA/Boxing</a>
+					<a class="font2" href="#">MMA/Boxing</a>
 				</div>
 				<div class="right"></div>
 			</div>
 
 			<div id="nav8" name="nav8" class="tab_cell_nav_off">
 				<div class="left">
-					<br><a class="font2" href="#">Music</a>
+					<a class="font2" href="#">Music</a>
 				</div>
 				<div class="right"></div>
 			</div>
 
 			<div id="nav9" name="nav9" class="tab_cell_nav_off">
 				<div class="left">
-					<br><a class="font2" href="#">Sports</a>
+					<a class="font2" href="#">Sports</a>
 				</div>
 				<div class="right"></div>
 			</div>
 
 			<div id="nav10" name="nav10" class="tab_cell_nav_off">
 				<div class="left">
-					<br><a class="font2" href="#">More</a>
+					<a class="font2" href="#">More</a>
 				</div>
 				<div class="right"></div>
 			</div>
@@ -984,10 +996,9 @@ h3.icon1{
 	line-height:1.5em;
 }
 
-/* similar to topstory_scroll */
 .article_box_header{
-	width:620px;
-	padding:20px;
+	width:640px;
+	margin-left:20px;
 }
 
 
@@ -996,21 +1007,15 @@ h3.icon1{
 
 /* similar to topstory_scroll */
 .article_box_body{
-	width:620px;
+	width:640px;
+	padding:20px;
+	height:100%;
 	background:#f4f4f4;
 	border-top:1px #d7d7d7 solid;
 	border-bottom:1px #d7d7d7 solid;
 	margin-top:10px;
 	margin-bottom:10px;
 	margin-left:20px;
-	margin-right:20px;
-}
-
-
-.article_box_cell{
-	width:150px;
-
-
 }
 
 
@@ -1029,6 +1034,25 @@ h3.icon1{
 	font-size:.75em;
 	padding-top:5px;
 }
+
+.article_box_cell{
+	text-align:center;
+	width:150px;
+	float:left;
+	padding:5px;
+}
+
+.article_box_cell a{
+	font-size:.8em;
+}
+
+.article_box_cell img{
+	width:150px;
+	height:70px;
+}
+
+
+
 
 </style>
 
@@ -1076,6 +1100,25 @@ h3.icon1{
 		</div>
 		<div class="clear"></div>
 		<div class="article_box_body">
+
+			<div class="article_box_cell">
+				<a href="#"><img src="images/temp/morningbacklash500.jpg"><br>incredible headline because it is all the best of what we have to offer</a>
+			</div>
+
+			<div class="article_box_cell">
+				<a href="#"><img src="images/temp/morningbacklash500.jpg"><br>incredible headline because it is all the best of what we have to offer</a>
+			</div>
+
+			<div class="article_box_cell">
+				<a href="#"><img src="images/temp/morningbacklash500.jpg"><br>incredible headline because it is all the best of what we have to offer</a>
+			</div>
+
+			<div class="article_box_cell">
+				<a href="#"><img src="images/temp/morningbacklash500.jpg"><br>incredible headline because it is all the best of what we have to offer</a>
+			</div>
+
+
+
 		</div>
 
 <style>
