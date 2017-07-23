@@ -486,7 +486,7 @@ elseif($active_zone=="figures"){
 	$featuredvalues = array();
 	$featuredvalues[] = array('zonecat', 'figures|news', 'news', '/category/news');
 	$featuredvalues[] = array('zonecat', 'figures|podcasts', 'podcasts', '/category/podcasts');
-	$featuredvalues[] = array('zonetag', 'figures|wwe-figures', 'wwe figures', '/tag/wwe-figures');
+	$featuredvalues[] = array('zonecat', 'figures|reviews', 'reviews', '/category/reviews');
 
 	//left4x2
 	$left4x2values = array();
@@ -494,6 +494,10 @@ elseif($active_zone=="figures"){
 	$left4x2values[] = array('zonetag', 'figures|hasbro', 'hasbro', '/tag/hasbro/');
 	$left4x2values[] = array('zonetag', 'figures|mcfarlane-toys', 'mcfarlane', '/tag/mcfarlane-toys/');
 	$left4x2values[] = array('zonetag', 'figures|other-toys', 'other', '/tag/other-toys/');
+	$left4x2values[] = array('zonetag', 'figures|wwe-figures', 'wwe figures', '/tag/wwe-figures/');
+	$left4x2values[] = array('zonetag', 'figures|dc-comics', 'dc-comics', '/tag/dc-comics/');
+	$left4x2values[] = array('zonetag', 'figures|marvel', 'marvel', '/tag/marvel/');
+	$left4x2values[] = array('zonetag', 'figures|transformers', 'transformers', '/tag/transformers/');
 
 	//topstory sql add
 	$topstorysqladd = "&zone=figures";
