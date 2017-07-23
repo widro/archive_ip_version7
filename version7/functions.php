@@ -1,6 +1,125 @@
 <?php
 add_filter( 'manage_posts_columns', 'govid_columns' ); //Filter out Post Columns with 2 custom columns
 
+function extrastats_count($uid, $sortby){
+
+	if($sortby=="month"){
+		$dateformat1 = "%Y %m";
+	}
+	elseif($sortby=="day"){
+		$dateformat1 = "%Y %m %d";
+	}
+	elseif($sortby=="year"){
+		$dateformat1 = "%Y %m %d";
+	}
+
+
+
+	$sqladmin = "
+	SELECT COUNT(*) as total, DATE_FORMAT(post_date,'$dateformat1') as date
+	FROM wp_posts
+	WHERE post_author = '$uid'
+	GROUP BY date
+	ORDER by date DESC
+	";
+
+	$resultadmin = mysql_query($sqladmin) or die($sqladmin);
+
+	while($rowadmin = mysql_fetch_array($resultadmin)){
+		$date = $rowadmin['date'];
+
+		if($total){
+			$oldtotal = $total;
+		}
+		$total = $rowadmin['total'];
+
+		if($sortby=="month"){
+			if($oldtotal){
+				$percentchange = ($oldtotal-$total)/$oldtotal*100;
+				$percentchange = round($percentchange, 2);
+				$total2 = " ($percentchange % change)";
+
+
+			}
+		}
+
+
+		//$content .= "$day - $total<br>";
+
+		$content .= "
+		<div class=\"highscores_row\">
+		<div class=\"highscores_rank\">*</div>
+		<div class=\"highscores_name\">$date</div>
+		<div class=\"highscores_score\">$total</div>
+		</div>
+		";
+
+	}
+
+
+	return $content;
+
+}
+
+
+
+function stats_startdate($user_id){
+	$sqladmin = "
+	select post_date
+	from wp_posts
+	where post_author = '$user_id'
+	order by post_date ASC
+	limit 1
+	";
+
+	$resultadmin = mysql_query($sqladmin) or die($sqladmin);
+
+	while($rowadmin = mysql_fetch_array($resultadmin)){
+		$date = $rowadmin['post_date'];
+	}
+
+	return $date;
+}
+
+function stats_total($user_id){
+	$sqladmin = "
+	select count(*) as total
+	from wp_posts
+	where post_author = '$user_id'
+	and post_status = 'publish'
+	";
+
+	$resultadmin = mysql_query($sqladmin) or die($sqladmin);
+
+	while($rowadmin = mysql_fetch_array($resultadmin)){
+		$total = $rowadmin['total'];
+	}
+
+	return $total;
+}
+
+
+
+
+
+
+function stats_author($user_id, $admin=false){
+
+	$startdate = stats_startdate($user_id);
+	$totalposts = stats_total($user_id);
+
+
+
+}
+
+
+
+
+
+
+
+
+
 function govid_columns($defaults) {
     //$defaults['language'] = __('Language'); //Language and Films is name of column
     $defaults['zone'] = __('Zones');

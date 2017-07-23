@@ -894,6 +894,7 @@ h3.icon2m{
 
 	";
 }elseif($active_zone=="comics-nexus"){
+	include_once('analytics/'.$active_zone.'.txt');
 
 	echo "
 	<style>
