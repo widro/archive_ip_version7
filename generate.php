@@ -4,10 +4,23 @@
 // include wordpress crap
 //require_once(getenv("DOCUMENT_ROOT")."/wp-load.php");
 //$currentpath = $_SERVER['DOCUMENT_ROOT'];
-require_once('/nfs/c03/h04/mnt/56814/domains/insidepulse.net/html/wp-load.php');
 
 $currentpath = $_SERVER['DOCUMENT_ROOT'];
 $thisurl =  $_SERVER['HTTP_HOST'];
+if($thisurl=="insidepulse.com"){
+	require_once($currentpath.'/wp-load.php');
+}
+else{
+	require_once($currentpath.'/wordpress/wp-load.php');
+}
+
+
+
+
+
+
+
+
 
 $currentpath_generatepath = $currentpath . "/generate/";
 
@@ -21,34 +34,46 @@ $buildfilename_author = $currentpath_generatepath . "author/";
 $categories =  get_categories('');
 
 foreach ($categories as $category) {
-	$thiscatslug = $category->slug;
-	$thiscatname = $category->name;
+
+	//grab vars
 	$thiscatslug = $category->category_nicename;
 	$thiscatname = $category->cat_name;
 
-	$relatedvalues2 = array('cat', $thiscatslug, $thiscatname, '/category/'.$thiscatslug);
-	$create_related = createsection($relatedvalues2, "related");
-	$relatedoutput = $create_related['header'];
-	$relatedoutput .= $create_related['body'];
+	if($thiscatslug){
+		//related filename
+		$buildfilename_cat_ind = $buildfilename_cat . "l-cat-" . $thiscatslug . ".html";
 
-	$buildfilename_cat_ind = $buildfilename_cat . "l-cat-" . $thiscatslug . ".html";
-	$buildfilename_cat_ind2 = $buildfilename_cat . "r-cat-" . $thiscatslug . ".html";
+		//narrow filename
+		$buildfilename_cat_ind2 = $buildfilename_cat . "r-cat-narrow-" . $thiscatslug . ".html";
 
-	// fopen file thing etc
-	$f = fopen ($buildfilename_cat_ind, 'w');
-	fputs ($f, $relatedoutput);
-	fclose ($f);
+		//build array for each
+		$values = array();
+		$values[] = array('cat', $thiscatslug, $thiscatname, '/category/'.$thiscatslug);
 
-	echo "success - $buildfilename_cat_ind <br>";
+		//related content
+		$create_related = createsection($values, "related");
+		$relatedoutput = $create_related['header'];
+		$relatedoutput .= $create_related['body'];
+
+		//narrow content
+		$rightnarrowvalues = createsection($values, "narrowlinks");
+		$make_narrow = make_narrow($rightnarrowvalues);
+
+		// fopen file thing etc
+		$f = fopen ($buildfilename_cat_ind, 'w');
+		fputs ($f, $relatedoutput);
+		fclose ($f);
+
+		echo "success - $buildfilename_cat_ind <br>";
 
 
-	// fopen file thing etc
-	$f = fopen ($buildfilename_cat_ind2, 'w');
-	fputs ($f, $textcontent2);
-	fclose ($f);
+		// fopen file thing etc
+		$f = fopen ($buildfilename_cat_ind2, 'w');
+		fputs ($f, $make_narrow);
+		fclose ($f);
 
-	echo "success - $buildfilename_cat_ind2 <br>";
-
+		echo "success - $buildfilename_cat_ind2 <br>";
+	}
 }
 
 
@@ -87,6 +112,35 @@ foreach($getallauthors as $eachauthorarray){
 	echo "success - $buildfilename_author_indr <br>";
 
 }
+
+//generate filters
+
+//copied from elsewhere
+$categoriesskiparray = array('digest','age-gate','digest','authordigest', 'categorydigest', 'special', 'live-coverage', 'zonedigest', 'tagdigest');
+$thisurl =  $_SERVER['HTTP_HOST'];
+
+
+$regular_filters = buildfilters("latest", $thisurl, $categoriesskiparray);
+$right_filters = buildfilters("latest", $thisurl, $categoriesskiparray, true);
+
+$buildfilename_right_filters = $currentpath_generatepath . "right_filters.html";
+$buildfilename_regular_filters = $currentpath_generatepath . "regular_filters.html";
+
+// fopen file thing etc
+$f = fopen ($buildfilename_right_filters, 'w');
+fputs ($f, $right_filters);
+fclose ($f);
+
+echo "success - $buildfilename_right_filters <br>";
+
+// fopen file thing etc
+$f = fopen ($buildfilename_regular_filters, 'w');
+fputs ($f, $regular_filters);
+fclose ($f);
+
+echo "success - $buildfilename_regular_filters <br>";
+
+
 
 
 

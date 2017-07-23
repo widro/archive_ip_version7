@@ -3,7 +3,18 @@
 	<h3 class="icon2m bold" style="margin-top:2px;">Full Listing</span></h3>
 <div class="listing_filter">
 	<form action="/latest-updates/" method="get">
-	<?php echo buildfilters("latest", $thisurl, $categoriesskiparray); ?>
+
+	<?php
+	$regular_filtersfile = $overallpath.'generate/regular_filters.html';
+	if(file_exists ($regular_filtersfile)){
+		include($regular_filtersfile);
+	}
+	else{
+		echo buildfilters("latest", $thisurl, $categoriesskiparray);
+	}
+	?>
+
+
 	</form>
 </div>
 <?php if (have_posts()) : ?>

@@ -1422,6 +1422,8 @@ function getinsiders($type){
 
 function createsection($values, $area){
 
+	global $authorslug;
+
 	if($area=="featuredhome"){
 		$limit = 4;
 	}
@@ -1443,6 +1445,9 @@ function createsection($values, $area){
 
 	$count = count($values);
 
+	if($area=="related"){
+		$count = 1;
+	}
 	$output_header = "";
 	for($i=0;$i<$count;$i++){
 		//grab zone
@@ -1778,8 +1783,20 @@ function create_authbox($insider_userid, $area){
 				<div class=\"article_authorbox_bodyright\">
 					$insider_description
 					<br><br>
+		";
+	if($insider_twitter){
+		$output .= "
+					<a class=\"color1 bold\" href=\"$insider_twitter\">Follow on Twitter</a> &middot;
+		";
+	}
 
-					<a class=\"color1 bold\" href=\"$insider_twitter\">Follow on Twitter</a> &middot; <a class=\"color1 bold\" href=\"mailto:$insider_email\">Email $insider_display_name</a>
+	if($insider_facebook){
+		$output .= "
+					<a class=\"color1 bold\" href=\"$insider_facebook\">Follow on Facebook</a> &middot;
+		";
+	}
+		$output .= "
+					<a class=\"color1 bold\" href=\"mailto:$insider_email\">Email $insider_display_name</a>
 
 
 
@@ -1819,7 +1836,23 @@ function create_authbox($insider_userid, $area){
 
 
 
+function make_narrow($createsection){
 
+	$narrowlinks_tabs = $createsection['header'];
+	$narrowlinks = $createsection['body'];
+
+	$output = "
+		<div class=\"newsad_left\">
+			<div class=\"newsad_left_cell ar\">
+			$narrowlinks_tabs
+			</div>
+			$narrowlinks
+		</div>
+	";
+
+	return $output;
+
+}
 
 
 

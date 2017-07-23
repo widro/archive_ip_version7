@@ -308,37 +308,6 @@ if($insider_twitter){
 		</div>
 
 		<div class="clear" style="height:30px;"></div>
-<?php
-
-function authorstats($userid){
-
-
-
-
-	$sql_date = "
-	SELECT COUNT(*) as total, DATE_FORMAT(post_date,'%Y %m %d') as date
-	FROM wp_posts
-	WHERE post_author=$userid
-	AND post_status = 'publish'
-	GROUP BY date
-	ORDER by date DESC
-
-	";
-
-	$result_date = mysql_query($sql_date) or die();
-
-	while($row_date = mysql_fetch_array($result_date)){
-
-
-
-	}
-
-
-}
-
-
-?>
-
 
 		<div class="right_container greybox">
 			<h3 class="icon1m bold">Stats <span class="color1">Pulse</span></h3>

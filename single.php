@@ -64,9 +64,10 @@ $relatedvalues = array();
 foreach((get_the_category()) as $category) {
 	$thiscatslug = $category->slug;
 	$thiscatname = $category->name;
-	$relatedvalues[] = array('cat', $thiscatslug, $thiscatname, '/category/'.$thiscatslug);
+	if($thiscatslug){
+		$relatedvalues[] = array('cat', $thiscatslug, $thiscatname, '/category/'.$thiscatslug);
+	}
 }
-
 
 // get tags for use in auto images and related posts
 $posttags = get_the_tags();
@@ -379,23 +380,35 @@ jQuery(document).ready(function($){ //fire on DOM ready
 		</div>
 
 		<div class="clear" style="height:20px;"></div>
-<?php
 
-	//$create_related = createsection($relatedvalues, "related");
-	//$relatedoutput = $create_related['header'];
-	//$relatedoutput .= $create_related['body'];
-	//$create_singleauthbox = create_authbox($insider_userid, "singleauthbox");
-	$relatedcat = $relatedvalues[1];
-?>
-
-		<?php //echo $relatedoutput; ?>
-		<?php include($overallpath.'generate/category/l-cat-' . $relatedcat . '.html'); ?>
+		<?php
+		$relatedcat = $relatedvalues[0][1];
+		$relatedfile = $overallpath.'generate/category/l-cat-' . $relatedcat . '.html';
+		if(file_exists ($relatedfile)){
+			include($relatedfile);
+		}
+		else{
+			$create_related = createsection($relatedvalues, "related");
+			$relatedoutput = $create_related['header'];
+			$relatedoutput .= $create_related['body'];
+			echo $relatedoutput;
+		}
+		?>
 
 		<div class="clear" style="height:30px;"></div>
 
-		<?php //echo $create_singleauthbox ?>
-		<?php include($overallpath.'generate/author/l-author-' . $insider_userid . '.html'); ?>
 
+
+		<?php
+		$authorboxfile = $overallpath.'generate/author/l-author-' . $insider_userid . '.html';
+		if(file_exists ($authorboxfile)){
+			include($authorboxfile);
+		}
+		else{
+			$create_singleauthbox = create_authbox($insider_userid, "singleauthbox");
+			echo $create_singleauthbox;
+		}
+		?>
 		<div class="clear" style="height:30px;"></div>
 
 		<!-- include comments -->

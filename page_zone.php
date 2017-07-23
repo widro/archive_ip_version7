@@ -35,9 +35,7 @@
 
 	}
 	$thisexcerpt = strip_tags($thisexcerpt);
-	$thisexcerpt = substr($thisexcerpt, 0, 180);
 	$thistitle = str_replace("\"", "", $thistitle);
-	$thistitle = substr($thistitle, 0, 100);
 	$clickthru=get_permalink($thispostid);
 
 	//outputs date in wacky format
@@ -120,6 +118,8 @@ foreach($postarray3 as $thispost){
 		$clickthru = $thispost['clickthru'];
 		$thisexcerpt = $thispost['excerpt'];
 		$thistitle = $thispost['title'];
+		$thisexcerpt = substr($thisexcerpt, 0, 150);
+		$thistitle = substr($thistitle, 0, 100);
 
 
 		//build top story rotator
@@ -335,7 +335,16 @@ for($i=0;$i<$left4x2count;$i++){
 		</div>
 
 
-<?php include('sidebar.php'); ?>
+<?php
+
+	if(($active_zone!="home")&&(!is_home())){
+		include('sidebar_zone.php');
+	}
+	else{
+		include('sidebar_home.php');
+	}
+
+?>
 
 
 <?php include('footer.php'); ?>
