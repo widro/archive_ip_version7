@@ -1,3 +1,4 @@
+<div class="clear"></div>
 
 <!-- subfooter -->
 
@@ -21,8 +22,6 @@
 
 	</div>
 </div>
-
-
 
 
 <!-- footer -->

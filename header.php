@@ -15,7 +15,7 @@
 	<?php wp_title(''); ?>
 </title>
 
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>?<?php echo rand(0,10000000); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
@@ -31,28 +31,28 @@
 
 			<div id="nav1" name="nav1" class="tab_cell_nav_on">
 				<div class="left">
-					<a class="font2" href="#"><img src="/wp-content/themes/version7/images/homeicon.png"></a>
+					<a class="font2" href="/"><img src="/wp-content/themes/version7/images/homeicon.png"></a>
 				</div>
 				<div class="right"></div>
 			</div>
 
 			<div id="nav2" name="nav2" class="tab_cell_nav_off">
 				<div class="left">
-					<a class="font2" href="#">Movies</a>
+					<a class="font2" href="/zone/movies/">Movies</a>
 				</div>
 				<div class="right"></div>
 			</div>
 
 			<div id="nav3" name="nav3" class="tab_cell_nav_off">
 				<div class="left">
-					<a class="font2" href="#">TV</a>
+					<a class="font2" href="/zone/movies/">TV</a>
 				</div>
 				<div class="right"></div>
 			</div>
 
 			<div id="nav4" name="nav4" class="tab_cell_nav_off">
 				<div class="left">
-					<a class="font2" href="#">Comics</a>
+					<a class="font2" href="/zone/movies/">Comics</a>
 				</div>
 				<div class="right"></div>
 			</div>
