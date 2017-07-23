@@ -292,20 +292,23 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 
 	//featured
 	$featuredvalues = array();
-	$featuredvalues[] = array('cat', 'news', 'news', '/category/news');
-	$featuredvalues[] = array('cat', 'reviews', 'reviews', '/category/reviews');
-	$featuredvalues[] = array('cat', 'features', 'features', '/category/features');
+	$featuredvalues[] = array('zonetag', 'comics-nexus|dc-comics-relaunch', 'DC Relaunch', '/tag/dc-comics-relaunch');
+	$featuredvalues[] = array('zonecat', 'comics-nexus|news', 'news', '/category/news');
+	$featuredvalues[] = array('zonecat', 'comics-nexus|columns', 'features', '/category/features');
 
 	//left4x2
 	$left4x2values = array();
-	$left4x2values[] = array('zonecat', 'comics-nexus|news', 'news', '/news');
-	$left4x2values[] = array('zonecat', 'comics-nexus|reviews', 'reviews', '/reviews');
-	$left4x2values[] = array('zonecat', 'comics-nexus|columns', 'features', '/features');
-	$left4x2values[] = array('zonecat', 'comics-nexus|interviews', 'interviews', '/interviews');
+	$left4x2values[] = array('zonecat', 'comics-nexus|news', 'news', '/category/news');
+	$left4x2values[] = array('zonecat', 'comics-nexus|spoilers', 'spoilers', '/category/spoilers');
+	$left4x2values[] = array('zonecat', 'comics-nexus|reviews', 'reviews', '/category/reviews');
+	$left4x2values[] = array('zonecat', 'comics-nexus|columns', 'features', '/category/features');
+	$left4x2values[] = array('zonecat', 'comics-nexus|interviews', 'interviews', '/category/interviews');
 	$left4x2values[] = array('tag', 'dc-comics-relaunch', 'DC Relaunch', '/tag/dc-comics-relaunch');
-	$left4x2values[] = array('zonetag', 'figures|dc-comics', 'DC Figures', '/interviews');
+	$left4x2values[] = array('zonetag', 'figures|dc-comics', 'DC Figures', '/tag/dc-comics/');
+	$left4x2values[] = array('zonetag', 'figures|marvel', 'Marvel Figures', '/tag/marvel/');
 	$left4x2values[] = array('tag', 'marvel', 'marvel', '/tag/marvel');
-	$left4x2values[] = array('tag', 'batman', 'batman', '/tag/batman');
+	$left4x2values[] = array('zonecat', 'comics-nexus|in-stores-now', 'in stores now', '/category/in-stores-now');
+	$left4x2values[] = array('zonecat', 'comics-nexus|podcasts', 'podcasts', '/category/podcasts');
 
 	//topstory sql add
 	$topstorysqladd = "&zone=comics-nexus";
@@ -641,9 +644,9 @@ $authorslug = "author";
 
 	//featured
 	$featuredvalues = array();
-	$featuredvalues[] = array('cat', 'mma-columns', 'mma columns', '/category/mma-columns');
-	$featuredvalues[] = array('cat', 'reviews', 'reviews', '/category/reviews');
-	$featuredvalues[] = array('cat', 'features', 'features', '/category/features');
+	$featuredvalues[] = array('cat', 'mma-columns', 'columns', '/category/mma-columns');
+	$featuredvalues[] = array('cat', 'boxing-reviews', 'reviews', '/category/boxing-reviews');
+	$featuredvalues[] = array('cat', 'mma-video', 'video', '/category/mma-video');
 
 	//left4x2
 	$left4x2values = array();
@@ -660,11 +663,11 @@ $authorslug = "author";
 	//rightfeatured
 	$rightfeaturedvalues = array();
 	$rightfeaturedvalues[] = array('cat', 'mma-news', 'mma news', '/category/mma-news/');
-	$rightfeaturedvalues[] = array('cat', 'boxing', 'boxing', '/category/boxing/');
+	$rightfeaturedvalues[] = array('cat', 'boxing-news', 'boxing news', '/category/boxing-news/');
 
 	//rightnarrowvalues
 	$rightnarrowvalues = array();
-	$rightnarrowvalues[] = array('cat', 'news', 'news', '/category/news/');
+	$rightnarrowvalues[] = array('cat', 'boxing', 'boxing', '/boxing/boxing/');
 
 
 }
@@ -708,7 +711,7 @@ var currentvalue = 1;
 <link rel="shortcut icon" href="http://www.insidepulse.net/favicon.ico" type="image/vnd.microsoft.icon" />
 
 <?php
-if(is_single()||is_page()){
+if(is_single()){
 ?>
     <meta property="og:url" content="<?php echo $currenturl; ?>"/>
     <meta property="og:image" content="<?php echo get_post_meta($post->ID, 'topstory120x120', true); ?>"/>
@@ -777,22 +780,25 @@ elseif($active_zone=="diehardgamefan"){
 	echo "
 	<style>
 .top{
-	background:url('http://media.insidepulse.com/shared/images/v7/top_bg_blue.png') repeat-x;
+	background:url('http://media.insidepulse.com/shared/images/v7/top_bg_diehard.png') repeat-x;
+}
+.colorred{
+	color:#1313bb;
 }
 .color1{
-	color:#20205c;
+	color:#1313bb;
 }
 .article_body a{
-	color:#20205c;
+	color:#1313bb;
 }
 
 
 .topstory_scroll_cell .on{
-	border:1px solid #1313bb;
+	border:1px solid #20205c;
 }
 
 .tab_on{
-	color:#1313bb;
+	color:#20205c;
 }
 
 
@@ -808,6 +814,52 @@ h3.icon2m{
 	background:url('http://media.insidepulse.com/shared/images/v7/rightgreyicon2_blue.png') no-repeat top left;
 }
 
+
+
+
+
+
+
+
+
+
+	</style>
+
+	";
+}elseif($active_zone=="comics-nexus"){
+
+	echo "
+	<style>
+.top{
+	background:url('http://media.insidepulse.com/shared/images/v7/top_bg_orange.png') repeat-x;
+}
+.color1{
+	color:#F26122;
+}
+.article_body a{
+	color:#F26122;
+}
+
+
+.topstory_scroll_cell .on{
+	border:1px solid #F89623;
+}
+
+.tab_on{
+	color:#F89623;
+}
+
+h3.icon1{
+	background:url('http://media.insidepulse.com/shared/images/v7/icon4x2_orange.png') no-repeat top left;
+}
+
+h3.icon1m{
+	background:url('http://media.insidepulse.com/shared/images/v7/rightgreyicon1_orange.png') no-repeat top left;
+}
+
+h3.icon2m{
+	background:url('http://media.insidepulse.com/shared/images/v7/rightgreyicon2_orange.png') no-repeat top left;
+}
 
 
 
@@ -924,7 +976,7 @@ OAS_rn = new String (Math.random()); OAS_rns = OAS_rn.substring (2, 11);
 								<li><a class="font2" href="/music/">Music</a></li>
 								<li><a class="font2" href="/celebrities/">Celebrities</a></li>
 								<li><a class="font2" href="/games/">Games</a></li>
-								<li><a class="font2" href="http://forums.insidepulse.com/">Forum</a></li>
+								<li><a class="font2" href="http://forum.insidepulse.com/ubbthreads/ubbthreads.php">Forum</a></li>
 							</ul>
 						</li>
 					</ul>

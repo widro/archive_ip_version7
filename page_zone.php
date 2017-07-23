@@ -217,6 +217,9 @@ for($i=0;$i<$featuredcount;$i++){
 
 	//featured divs
 	$featuredcells .= "
+				<div class=\"subtop_more\">
+					<a href=\"$masterclickthru\" class=\"color1 bold\">&raquo; more $name</a>
+				</div>
 			</div>
 	";
 
@@ -295,11 +298,11 @@ for($i=0;$i<$left4x2count;$i++){
 			$topstory500x250 = get_post_meta($post->ID, 'topstory500x250', true);
 
 			if($topstory500x250==""){
-				$topstory500x250 = defaultimage("top-story", "topstory500x250");
+				$topstory500x250 = defaultimage($active_zone, "topstory500x250");
 			}
 
 			if($topstory120x120==""){
-				$topstory120x120 = defaultimage("top-story", "topstory120x120");
+				$topstory120x120 = defaultimage($active_zone, "topstory120x120");
 			}
 			$thistitle = $post->post_title;
 			$thistitle = strip_tags($thistitle);

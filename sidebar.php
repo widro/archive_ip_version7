@@ -49,6 +49,7 @@ for($i=0;$i<$rightfeaturedcount;$i++){
 	if($topstory120x120==""){
 		$topstory120x120 = defaultimage("top-story", "topstory120x120");
 	}
+	$thispostid = $post->ID;
 	$thistitle = $post->post_title;
 	$thistitle = strip_tags($thistitle);
 	$thisexcerpt = $post->post_excerpt;
@@ -87,7 +88,13 @@ for($i=0;$i<$rightfeaturedcount;$i++){
 
 	$zonecounter++;
 	endwhile;
-	$sidelinks .= "</div>";
+	$sidelinks .= "
+		<div class=\"right_cell_more\">
+			<a href=\"$masterclickthru\" class=\"color1 bold\">&raquo; more $name</a>
+		</div>
+	</div>
+
+	";
 	}
 ?>
 
@@ -120,6 +127,7 @@ for($i=0;$i<$rightfeaturedcount;$i++){
 	if($topstory120x120==""){
 		$topstory120x120 = defaultimage("top-story", "topstory120x120");
 	}
+	$thispostid = $post->ID;
 	$thistitle = $post->post_title;
 	$thistitle = strip_tags($thistitle);
 	$thisexcerpt = $post->post_excerpt;
@@ -180,7 +188,7 @@ for($i=0;$i<$rightfeaturedcount;$i++){
 		<div class="right_container">
 			<div class="newsad_left">
 				<div class="newsad_left_cell ar">
-					<a href="<?php echo $masterclickthru; ?>" class="color1">more news &raquo;</a>
+					<a href="<?php echo $masterclickthru; ?>" class="color1">more <?php echo $name; ?> &raquo;</a>
 				</div>
 				<?php echo $narrowlinks ?>
 			</div>

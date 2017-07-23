@@ -48,6 +48,10 @@ function defaultimage($type, $size){
 		$imageurl['topstory120x120'] = "http://media.insidepulse.com/shared/images/v7/default120x120_.jpg";
 		$imageurl['topstory500x250'] = "http://media.insidepulse.com/shared/images/v7/default500x250_.jpg";
 	}
+	elseif($type=="comics-nexus"){
+		$imageurl['topstory120x120'] = "http://media.insidepulse.com/shared/images/v7/default120x120_.jpg";
+		$imageurl['topstory500x250'] = "http://media.insidepulse.com/shared/images/v7/default500x250_comicsnexus.png";
+	}
 	else{
 		$imageurl['topstory120x120'] = "http://media.insidepulse.com/shared/images/v7/default120x120_.jpg";
 		$imageurl['topstory500x250'] = "http://media.insidepulse.com/shared/images/v7/default500x250_.jpg";
