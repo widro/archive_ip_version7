@@ -1422,6 +1422,8 @@ function getinsiders($type){
 
 function createsection($values, $area){
 
+	global $authorslug;
+
 	if($area=="featuredhome"){
 		$limit = 4;
 	}
@@ -1817,7 +1819,7 @@ function create_authbox($insider_userid, $area){
 		$output = "
 			<div class=\"right_greybox_author\">
 				<div class=\"right_greybox_authorleft\">
-					$createsection_header
+					<a href=\"$authorlink\" alt=\"$insider_display_name's Profile\" title=\"$insider_display_name's Profile\"><img src=\"$insider_avatar120\" class=\"right_greybox_avatar120\"></a>
 				</div>
 				<div class=\"right_greybox_authorright\">
 					$createsection_body
@@ -1834,7 +1836,23 @@ function create_authbox($insider_userid, $area){
 
 
 
+function make_narrow($createsection){
 
+	$narrowlinks_tabs = $createsection['header'];
+	$narrowlinks = $createsection['body'];
+
+	$output = "
+		<div class=\"newsad_left\">
+			<div class=\"newsad_left_cell ar\">
+			$narrowlinks_tabs
+			</div>
+			$narrowlinks
+		</div>
+	";
+
+	return $output;
+
+}
 
 
 

@@ -54,6 +54,7 @@ $comics_tabcss = "tab_cell_nav_off";
 $wrestling_tabcss = "tab_cell_nav_off";
 $games_tabcss = "tab_cell_nav_off";
 $insidefights_tabcss = "tab_cell_nav_off";
+$figures_tabcss = "tab_cell_nav_off";
 $music_tabcss = "tab_cell_nav_off";
 $sports_tabcss = "tab_cell_nav_off";
 $more_tabcss = "tab_cell_nav_off";
@@ -159,6 +160,7 @@ else{
 //arrays
 
 $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/images/v7/logo.png\" class=\"bar_logo_insidepulse\"></a>";
+
 if($active_zone=="home"){
 
 	//subnav
@@ -255,7 +257,7 @@ elseif($active_zone=="tv"){
 elseif($active_zone=="movies"){
 
 	$movies_tabcss = "tab_cell_nav_on";
-	$featuredauthors = "7|220|124|221";
+	$featuredauthors = "7|220|124|221|222";
 
 
 	//format
@@ -473,7 +475,8 @@ elseif($active_zone=="sports"){
 
 elseif($active_zone=="figures"){
 
-	$more_tabcss = "tab_cell_nav_on";
+	//$more_tabcss = "tab_cell_nav_on";
+	$figures_tabcss = "tab_cell_nav_on";
 
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
@@ -510,6 +513,7 @@ elseif($active_zone=="figures"){
 
 elseif($active_zone=="music"){
 
+	//$more_tabcss = "tab_cell_nav_on";
 	$music_tabcss = "tab_cell_nav_on";
 
 	//format
@@ -591,7 +595,7 @@ elseif($active_zone=="wrestling"){
 
 	$overallpath = "/nfs/c03/h03/mnt/55011/domains/wrestling.insidepulse.com/html/";
 	$disqusslug = "pulsewrestling";
-	$featuredauthors = "8|849|842|859|462|539|870";
+	$featuredauthors = "8|207|842|534|875|462|130|886";
 
 	//subnav
 	$subnavarray = array();
@@ -643,7 +647,7 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 	$overallpath = "/nfs/c09/h01/mnt/131740/domains/diehardgamefan.com/html/";
 	$authorslug = "diehard";
 	$disqusslug = "diehardgamefan";
-	$featuredauthors = "21|345|419|296|605|490|1376";
+	$featuredauthors = "21|345|1367|605|884|47";
 
 	//subnav
 	$subnavarray = array();
@@ -695,8 +699,8 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 	//$left4x2values = array($type, $slug, $name, $clickthru);
 
 	$overallpath = "/nfs/c05/h02/mnt/74861/domains/insidefights.com/html/";
-	$authorslug = "author";
-	$featuredauthors = "855|364|852|853|560|857";
+	$authorslug = "insider";
+	$featuredauthors = "855|852|853";
 
 	//subnav
 	$subnavarray = array();
@@ -995,7 +999,7 @@ OAS_rn = new String (Math.random()); OAS_rns = OAS_rn.substring (2, 11);
 
 			<div id="nav6" name="nav6" class="<?php echo $games_tabcss; ?>";>
 				<div class="left">
-					<a class="font2" href="http://<?php echo $diehardgamefanurl; ?>/">Video Games</a>
+					<a class="font2" href="http://<?php echo $diehardgamefanurl; ?>/">Games</a>
 				</div>
 				<div class="right"></div>
 			</div>
@@ -1014,13 +1018,28 @@ OAS_rn = new String (Math.random()); OAS_rns = OAS_rn.substring (2, 11);
 				<div class="right"></div>
 			</div>
 
-			<div id="nav9" name="nav9" class="<?php echo $pulsecasts_tabcss; ?>";>
+			<div id="nav9" name="nav9" class="<?php echo $figures_tabcss; ?>";>
 				<div class="left">
-					<a class="font2" href="http://<?php echo $homeurl; ?>/pulsecasts/">Audio</a>
+					<a class="font2" href="http://<?php echo $homeurl; ?>/figures/">Figs</a>
 				</div>
 				<div class="right"></div>
 			</div>
 
+			<div id="nav10" name="nav10" class="<?php echo $music_tabcss; ?>";>
+				<div class="left">
+					<a class="font2" href="http://<?php echo $homeurl; ?>/music/">Music</a>
+				</div>
+				<div class="right"></div>
+			</div>
+
+			<div id="nav11" name="nav11" class="<?php echo $more_tabcss; ?>";>
+				<div class="left">
+					<a class="font2" href="http://forum.insidepulse.com/ubbthreads/ubbthreads.php">Forum</a>
+				</div>
+				<div class="right"></div>
+			</div>
+
+<!--
 			<div id="nav10" name="nav10" class="<?php echo $more_tabcss; ?>";>
 				<div class="left">
 					<ul id="jsddm">
@@ -1037,6 +1056,7 @@ OAS_rn = new String (Math.random()); OAS_rns = OAS_rn.substring (2, 11);
 				</div>
 				<div class="right"></div>
 			</div>
+-->
 
 		</div>
 		<div class="top_search">
@@ -1071,6 +1091,7 @@ $subnavcount = count($subnavarray);
 		}
 		echo "</div>";
 	echo "</div>";
+	echo "<div class=\"clear\"></div>";
 }
 ?>
 
