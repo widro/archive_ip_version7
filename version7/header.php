@@ -17,7 +17,6 @@ global $authorslug;
 $authorslug = "insider";
 
 global $disqusslug;
-$disqusslug = "inside-pulse";
 $disqusslug = "pulsewrestling";
 
 global $featuredauthors;
@@ -276,7 +275,6 @@ elseif($active_zone=="tv"){
 	//$left4x2values = array($type, $slug, $name, $clickthru);
 	$featuredauthors = "2|172|1";
 
-$disqusslug = "inside-pulse";
 	//subnav
 	$subnavarray = array();
 	$subnavarray[] = array('News', '/category/news');
@@ -335,7 +333,6 @@ elseif($active_zone=="movies"){
 	$featuredauthors = "7|220|198|131|222";
 
 
-$disqusslug = "inside-pulse";
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
 
@@ -400,8 +397,6 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
 
-$disqusslug = "inside-pulse";
-
 	//subnav
 	$subnavarray = array();
 	$subnavarray[] = array('DC', '/tag/dc-comics');
@@ -454,7 +449,6 @@ $disqusslug = "inside-pulse";
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\"://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");</script>
 	";
 
-	$zonepoll = "152";
 }
 
 elseif($active_zone=="pulsecasts"){
@@ -733,7 +727,6 @@ elseif($active_zone=="wrestling"){
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
 
-	$disqusslug = "pulsewrestling";
 	$featuredauthors = "36|2207|2896|2842|2885|2888|2889|2917|1";
 
 	//subnav
@@ -783,7 +776,7 @@ elseif($active_zone=="wrestling"){
 <a class=\"twitter-timeline\" href=\"https://twitter.com/pulsewrestling\" data-widget-id=\"425391494002786304\">Tweets by @pulsewrestling</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\"://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");</script>
 	";
-	$zonepoll = "148";
+	$zonepoll = "152";
 
 }
 
