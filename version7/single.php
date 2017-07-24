@@ -319,8 +319,8 @@ jQuery(document).ready(function($){ //fire on DOM ready
 				<?php if(has_tag("wwe network schedule", $post )){ echo "<div class='wwenetworkschedule'><img src='http://media.insidepulse.com/shared/images/vx/wwenetworkdaily.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("MLB Daily Schedule", $post )){ echo "<div class='mlbdaily'><img src='http://media.insidepulse.com/shared/images/vx/template1600_todaymlb.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("MLB Daily Scoreboard", $post )){ echo "<div class='mlbdaily'><img src='http://media.insidepulse.com/shared/images/vx/wwenetworkdaily.jpg' style='padding:0px;width:660px;' />"; } ?>
-				<?php if(has_tag("poll of the week", $post )){ echo "<div class='pollarticle'><img src='http://media.insidepulse.com/shared/images/vx/polloftheweek1600_pulse.jpg' style='padding:0px;width:660px;' />"; } ?>
-				<?php if(has_tag("poll of the week d", $post )){ echo "<div class='pollarticle'><img src='http://diehardgamefan.com/wp-content/uploads/2015/01/dhgfpolloftheweek1600.jpg' style='padding:0px;width:660px;' />"; } ?>
+				<?php //if(has_tag("poll of the week", $post )){ echo "<div class='pollarticle'><img src='http://media.insidepulse.com/shared/images/vx/polloftheweek1600_pulse.jpg' style='padding:0px;width:660px;' />"; } ?>
+				<?php //if(has_tag("poll of the week d", $post )){ echo "<div class='pollarticle'><img src='http://diehardgamefan.com/wp-content/uploads/2015/01/dhgfpolloftheweek1600.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("weekend poll", $post )){ echo "<div class='pollarticle'><img src='http://media.insidepulse.com/shared/images/vx/weekendpoll1600_pulse.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("SmarK WWE Network Raw Rant", $post )){ echo "<div class='pollarticle'><img src='http://wrestling.insidepulse.com/wp-content/uploads/2014/08/smark_wwenetwork_raw.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("SmarK WWE Network Nitro Rant", $post )){ echo "<div class='pollarticle'><img src='http://wrestling.insidepulse.com/wp-content/uploads/2014/09/smark_wwenetwork_nitro.jpg' style='padding:0px;width:660px;' />"; } ?>
@@ -346,8 +346,8 @@ jQuery(document).ready(function($){ //fire on DOM ready
 				<?php if(has_tag("wwe network schedule", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("MLB Daily Schedule", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("MLB Daily Scoreboard", $post )){ echo "</div>"; } ?>
-				<?php if(has_tag("poll of the week", $post )){ echo "</div>"; } ?>
-				<?php if(has_tag("poll of the week d", $post )){ echo "</div>"; } ?>
+				<?php //if(has_tag("poll of the week", $post )){ echo "</div>"; } ?>
+				<?php //if(has_tag("poll of the week d", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("weekend poll", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("SmarK WWE Network Raw Rant", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("SmarK WWE Network Nitro Rant", $post )){ echo "</div>"; } ?>

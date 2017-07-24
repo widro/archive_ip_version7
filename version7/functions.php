@@ -1,7 +1,11 @@
-
 <?php
 add_filter( 'manage_posts_columns', 'govid_columns' ); //Filter out Post Columns with 2 custom columns
 add_filter( 'publicize_checkbox_default', '__return_false' );
+if ( function_exists( 'add_theme_support' ) ) {
+  add_theme_support( 'post-thumbnails' );
+}
+
+
 function extrastats_count($uid, $sortby){
 
 	if($sortby=="month"){
@@ -1071,7 +1075,6 @@ add_action( 'show_user_profile', 'my_show_extra_profile_fields' );
 add_action( 'edit_user_profile', 'my_show_extra_profile_fields' );
 
 function my_show_extra_profile_fields( $user ) { ?>
-
 	<h3>Extra profile information</h3>
 
 	<table class="form-table">
