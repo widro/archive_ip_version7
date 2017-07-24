@@ -430,7 +430,7 @@ jQuery(document).ready(function($){ //fire on DOM ready
 
 
 <?php
-$thisrand = rand(1,2);
+$thisrand = rand(1,3);
 
 if($thisrand==1){
 ?>
@@ -448,6 +448,28 @@ script.async = true;
 ref.parentNode.insertBefore(script, ref);
 })(); </script>
 <div style='width: 300px; background-color: #FFFFFF'><a href='http://crowdignite.com/account/1203' style='font: Arial; color:#000000;' target=_blank>Blowing Up Blogs</a></div>
+
+<?php
+}elseif($thisrand==2){
+?>
+
+
+
+
+<iframe class="scribol" height="420" width="609" id="scribol_945219" scrolling="no" frameborder="0"></iframe>
+<script>
+var Scribol;
+if(typeof Scribol=='undefined'){Scribol={};  Scribol.frames=[];Scribol.site='http://scribol.com/';Scribol.is_preview=false;}
+Scribol.frames.push('945219');</script>
+<script async="async" defer="defer" src="http://scribol.com/txwidget1.2.js"></script>
+
+
+
+
+
+
+
+
 
 <?php
 }else{
