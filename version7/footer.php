@@ -73,12 +73,12 @@
 			<a href="http://<?php echo $wrestlingurl; ?>/category/features/">Features</a>
 		</div>
 		<div class="footer_column8">
-			<a href="http://<?php echo $insidefightsurl; ?>/"><h4 class="font3 colorred">MMA/Boxing</h4></a>
+			<a href="http://<?php echo $homeurl; ?>/inside-fights/"><h4 class="font3 colorred">MMA/Boxing</h4></a>
 
-			<a href="http://<?php echo $insidefightsurl; ?>/category/mma-news/">MMA News</a><br>
-			<a href="http://<?php echo $insidefightsurl; ?>/category/mma-columns/">MMA Columns</a><br>
-			<a href="http://<?php echo $insidefightsurl; ?>/category/boxing-news/">Boxing News</a><br>
-			<a href="http://<?php echo $insidefightsurl; ?>/category/boxing-columns/">Boxing Columns</a><br>
+			<a href="http://<?php echo $homeurl; ?>/category/mma-news/">MMA News</a><br>
+			<a href="http://<?php echo $homeurl; ?>/category/mma-columns/">MMA Columns</a><br>
+			<a href="http://<?php echo $homeurl; ?>/category/boxing-news/">Boxing News</a><br>
+			<a href="http://<?php echo $homeurl; ?>/category/boxing-columns/">Boxing Columns</a><br>
 		</div>
 		<div class="footer_column8">
 			<a href="http://<?php echo $diehardgamefanurl; ?>/"><h4 class="font3 colorred">Video Games</h4></a>
@@ -183,7 +183,7 @@
 
 
 <script src='http://Q1MediaHydraPlatform.com/ads/video/unit_desktop_slider.php?eid=10378'></script>
-
+<script src='http://q1mediahydraplatform.com/ads/video/unit_mobile_only.php?eid=10378'></script>
 
 
 <script type="text/javascript">

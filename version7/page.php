@@ -1,6 +1,7 @@
 <?php
+
 //zone pages
-if(is_page('home')||is_page('pulsecasts')||is_page('movies')||is_page('tv')||is_page('sports')||is_page('comics-nexus')||is_page('comics')||is_page('music')||is_page('commercials')||is_page('games')||is_page('figures')){
+if(is_page('home')||is_page('pulsecasts')||is_page('movies')||is_page('tv')||is_page('sports')||is_page('insidefights')||is_page('inside-fights')||is_page('comics-nexus')||is_page('comics')||is_page('music')||is_page('commercials')||is_page('games')||is_page('figures')){
 //	include('page_zone.php');
 	include('loader.php');
 }
@@ -11,18 +12,8 @@ elseif(is_page('dell2')||is_page('new-video')||is_page('silverado2')||is_page('t
 }
 
 
-elseif($post->post_type=='forum'){
-	include('page_forums.php');
-}
-
-elseif(strpos($_SERVER['PHP_SELF'], 'forums')){
-	include('page_forums.php');
-}
 
 
-elseif($post->post_type=='topic'){
-	include('page_forums.php');
-}
 
 //authors
 elseif(is_page('widro')){

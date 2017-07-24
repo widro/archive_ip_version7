@@ -1514,7 +1514,7 @@ p.listing_cell_byline{
 
 .listing_cell_byline a{
 	color:#000000;
-	font-size:.75em;
+	font-size:1em;
 }
 
 
@@ -1606,6 +1606,7 @@ p.listing_cell_byline{
 	color:#666666;
 	background:#f2f2f2;
 	border-bottom:1px #cccccc solid;
+	overflow:hidden;
 }
 
 .right_greybox_author li{
@@ -1648,6 +1649,7 @@ p.listing_cell_byline{
 	min-height: 140px;
 	height: auto !important;
 	float:left;
+	overflow:hidden;
 }
 
 
@@ -1691,12 +1693,11 @@ p.listing_cell_byline{
 
 }
 
-/*** schedule table august 31, 2014 **/
-
-table.scheduletable{
-	width:100%;
-	border:2px #ff0000 solid;
 
 
+
+div.wrap div.error{
+visibility:hidden;
+display:none;
 }
 

@@ -74,6 +74,7 @@ $wrestlingurl = "gamepaint.com";
 $homeurl = "insidepulse.net";
 
 $insidefightsurl = "insidefights.com";
+$insidefightsurl = "insidepulse.com/inside-fights";
 $diehardgamefanurl = "diehardgamefan.com";
 $wrestlingurl = "wrestling.insidepulse.com";
 $homeurl = "insidepulse.com";
@@ -863,6 +864,9 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 	$left4x2values[] = array('cat', 'boxing-features', 'boxing features', '/category/boxing-features/');
 	$left4x2values[] = array('cat', 'boxing-results', 'boxing results', '/category/boxing-results/');
 
+
+	//topstory sql add
+	$topstorysqladd = "&zone=inside-fights";
 
 	//rightfeatured
 	$rightfeaturedvalues = array();
