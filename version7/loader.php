@@ -5,6 +5,7 @@ Template Name: Loader
 // get vars
 
 
+$topstorysqladd = "&category_name=top-story";
 
 if($_GET['currentpage']){
 	$currentpage = $_GET['currentpage'];
@@ -79,6 +80,10 @@ if(is_page('sports')){
 }
 if(is_page('figures')){
 	$zone = "figures";
+}
+if(is_page('wrestling')){
+	$zone = "wrestling";
+	$topstorysqladd = "&category_name=top-story-wrestling";
 }
 if(is_page('music')){
 	$zone = "music";
@@ -287,7 +292,7 @@ if(!$_SERVER['QUERY_STRING']){
 	$topstoryposition = 1;
 
 	// top story sql
-	$the_query = new WP_Query('&showposts=4' . $topstorysqladd . '&category_name=top-story&orderby=post_date&order=desc');
+	$the_query = new WP_Query('&showposts=4' . $topstorysqladd . '&orderby=post_date&order=desc');
 
 	//top story loop
 	while ($the_query->have_posts()) : $the_query->the_post();

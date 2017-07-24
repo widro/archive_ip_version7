@@ -369,9 +369,7 @@ jQuery(document).ready(function($){ //fire on DOM ready
 				echo get_the_tag_list('<p>Tags: ',', ','</p>');
 				?>
 
-				<div style="width:600px;height:140px;padding:20px;background:#000000;color:#ffffff;font-weight:bold;font-size:50px;line-height:40px;">
-					<a href="http://wrestling.insidepulse.com/2015/01/14/ever-wanted-to-write-about-wrestling-join-the-pulse-wrestling-crew/"><img src="http://wrestling.insidepulse.com/wp-content/uploads/2015/01/template120_hiring-120x120.png" width=120 align=left>Join the Pulse Wrestling Team!</a>
-				</div>
+
 
 				<?php if($creditlink){
 					echo "<br><br>Source: <a href=";

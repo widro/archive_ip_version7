@@ -18,6 +18,7 @@ $authorslug = "insider";
 
 global $disqusslug;
 $disqusslug = "inside-pulse";
+$disqusslug = "pulsewrestling";
 
 global $featuredauthors;
 $featuredauthors = "4|7|2|1|874";
@@ -128,6 +129,9 @@ else{
 	elseif(in_zone("inside-fights")||is_page("inside-fights")){
 		$active_zone = "insidefights";
 	}
+	elseif(in_zone("wrestling")||is_page("wrestling")){
+		$active_zone = "wrestling";
+	}
 
 	//figures
 	elseif(in_zone("figures")||is_page("figures")){
@@ -231,7 +235,8 @@ if($active_zone=="home"){
 	$left4x2values[] = array('zone', 'tv', 'Television', '/tv');
 	$left4x2values[] = array('zone', 'comics-nexus', 'Comics Nexus', '/comics-nexus');
 	$left4x2values[] = array('zone', 'inside-fights', 'Inside Fights', '/inside-fights');
-	$left4x2values[] = array('rss', 'http://' . $wrestlingurl . '/feed/', 'Wrestling', 'http://wrestling.insidepulse.com/');
+	$left4x2values[] = array('zone', 'wrestling', 'Wrestling', '/wrestling');
+	//$left4x2values[] = array('rss', 'http://' . $wrestlingurl . '/feed/', 'Wrestling', 'http://wrestling.insidepulse.com/');
 	//$left4x2values[] = array('rss', 'http://' . $diehardgamefanurl . '/category/archive/feed/', 'Diehard Gamefan', 'http://diehardgamefan.com/');
 	$left4x2values[] = array('rss', 'http://' . $diehardgamefanurl . '/feed/', 'Diehard Gamefan', 'http://diehardgamefan.com/');
 	$left4x2values[] = array('tag', 'video-of-the-day', 'Daily Video', '/video-of-the-day');
@@ -271,6 +276,7 @@ elseif($active_zone=="tv"){
 	//$left4x2values = array($type, $slug, $name, $clickthru);
 	$featuredauthors = "2|172|1";
 
+$disqusslug = "inside-pulse";
 	//subnav
 	$subnavarray = array();
 	$subnavarray[] = array('News', '/category/news');
@@ -329,6 +335,7 @@ elseif($active_zone=="movies"){
 	$featuredauthors = "7|220|198|131|222";
 
 
+$disqusslug = "inside-pulse";
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
 
@@ -393,6 +400,7 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
 
+$disqusslug = "inside-pulse";
 
 	//subnav
 	$subnavarray = array();
@@ -726,7 +734,7 @@ elseif($active_zone=="wrestling"){
 	//$left4x2values = array($type, $slug, $name, $clickthru);
 
 	$disqusslug = "pulsewrestling";
-	$featuredauthors = "8|207|896|842|885|888|889|917|1";
+	$featuredauthors = "36|2207|2896|2842|2885|2888|2889|2917|1";
 
 	//subnav
 	$subnavarray = array();
@@ -1250,7 +1258,7 @@ div.pulseofinstagram div.caption{
 
 			<div id="nav5" name="nav5" class="<?php echo $wrestling_tabcss; ?>";>
 				<div class="left">
-					<a class="font2" href="http://<?php echo $wrestlingurl; ?>/">Wrestling</a>
+					<a class="font2" href="http://<?php echo $homeurl; ?>/wrestling/">Wrestling</a>
 				</div>
 				<div class="right"></div>
 			</div>

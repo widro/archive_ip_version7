@@ -66,11 +66,11 @@
 			<a href="#">Features</a>
 		</div>
 		<div class="footer_column8">
-			<a href="http://<?php echo $wrestlingurl; ?>/"><h4 class="font2 colorred">Wrestling</h4></a>
-			<a href="http://<?php echo $wrestlingurl; ?>/category/news/">News</a><br>
-			<a href="http://<?php echo $wrestlingurl; ?>/category/recaps__reviews/">Reviews</a><br>
-			<a href="http://<?php echo $wrestlingurl; ?>/category/commentary/">Columns</a><br>
-			<a href="http://<?php echo $wrestlingurl; ?>/category/features/">Features</a>
+			<a href="http://<?php echo $homeurl; ?>/wrestling/"><h4 class="font2 colorred">Wrestling</h4></a>
+			<a href="http://<?php echo $homeurl; ?>/category/wrestling-news/">News</a><br>
+			<a href="http://<?php echo $homeurl; ?>/category/wrestling-recaps__reviews/">Reviews</a><br>
+			<a href="http://<?php echo $homeurl; ?>/category/wrestling-commentary/">Columns</a><br>
+			<a href="http://<?php echo $homeurl; ?>/category/wrestling-features/">Features</a>
 		</div>
 		<div class="footer_column8">
 			<a href="http://<?php echo $homeurl; ?>/inside-fights/"><h4 class="font2 colorred">MMA/Boxing</h4></a>

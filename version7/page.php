@@ -1,7 +1,7 @@
 <?php
 
 //zone pages
-if(is_page('home')||is_page('pulsecasts')||is_page('movies')||is_page('tv')||is_page('sports')||is_page('insidefights')||is_page('inside-fights')||is_page('comics-nexus')||is_page('comics')||is_page('music')||is_page('commercials')||is_page('games')||is_page('figures')){
+if(is_page('home')||is_page('pulsecasts')||is_page('wrestling')||is_page('movies')||is_page('tv')||is_page('sports')||is_page('insidefights')||is_page('inside-fights')||is_page('comics-nexus')||is_page('comics')||is_page('music')||is_page('commercials')||is_page('games')||is_page('figures')){
 //	include('page_zone.php');
 	include('loader.php');
 }
