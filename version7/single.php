@@ -431,13 +431,13 @@ jQuery(document).ready(function($){ //fire on DOM ready
 	<?php
 	if($active_zone == "insidefights"){
 	?>
-<style> 
+<style>
 #widget_table_28077 {background:none repeat scroll 0 0 #F4F4F4!important;border-bottom:1px solid #D7D7D7;border-collapse:separate;border-spacing:4px;border-top:1px solid #D7D7D7;margin-bottom:10px!important;margin-top:10px!important;width:660px;}
 #widget_table_28077 img{border:medium none;margin-bottom:3px!important;}
 #widget_table_28077 a{font-family:Arial;text-decoration:none;}
 #widget_table_28077 td:hover a{font-family:Arial;text-decoration:underline;}
 #widget_table_28077 td{padding-bottom:5px!important;padding-top:5px!important;text-align:center;}
-</style> 
+</style>
 <script type='text/javascript'>
 var _CI = _CI || {};
 (function() {
@@ -455,130 +455,24 @@ ref.parentNode.insertBefore(script, ref);
 	<?php
 	}
 	else{
-$thisrand = rand(1,3);
-//echo "zone - " . $active_zone;
-
-if($thisrand==1){
-	if(($active_zone == "tv")||($active_zone == "movies")){
-	?>
-<style> 
-#widget_table_28055 {background:none repeat scroll 0 0 #F4F4F4!important;border-bottom:1px solid #D7D7D7;border-collapse:separate;border-spacing:4px;border-top:1px solid #D7D7D7;margin-bottom:10px!important;margin-top:10px!important;width:660px;}
-#widget_table_28055 img{border:medium none;margin-bottom:3px!important;}
-#widget_table_28055 a{font-family:Arial;text-decoration:none;}
-#widget_table_28055 td:hover a{font-family:Arial;text-decoration:underline;}
-#widget_table_28055 td{padding-bottom:5px!important;padding-top:5px!important;text-align:center;}
-</style> 
-<script type='text/javascript'>
-var _CI = _CI || {};
-(function() {
-var script = document.createElement('script');
-ref = document.getElementsByTagName('script')[0];
-_CI.counter = (_CI.counter) ? _CI.counter + 1 : 1;
-document.write('<div id="_CI_widget_');
-document.write(_CI.counter+'"></div>');
-script.type = 'text/javascript';
-script.src = 'http://widget.crowdignite.com/widgets/28055?_ci_wid=_CI_widget_'+_CI.counter;
-script.async = true;
-ref.parentNode.insertBefore(script, ref);
-})(); </script>
-
-	<?php
-	}
-	elseif(($active_zone == "comics-nexus")||($active_zone == "diehardgamefan")){
-	?>
-<style> 
-#widget_table_28075 {background:none repeat scroll 0 0 #F4F4F4!important;border-bottom:1px solid #D7D7D7;border-collapse:separate;border-spacing:4px;border-top:1px solid #D7D7D7;margin-bottom:10px!important;margin-top:10px!important;width:660px;}
-#widget_table_28075 img{border:medium none;margin-bottom:3px!important;}
-#widget_table_28075 a{font-family:Arial;text-decoration:none;}
-#widget_table_28075 td:hover a{font-family:Arial;text-decoration:underline;}
-#widget_table_28075 td{padding-bottom:5px!important;padding-top:5px!important;text-align:center;}
-</style> 
-<script type='text/javascript'>
-var _CI = _CI || {};
-(function() {
-var script = document.createElement('script');
-ref = document.getElementsByTagName('script')[0];
-_CI.counter = (_CI.counter) ? _CI.counter + 1 : 1;
-document.write('<div id="_CI_widget_');
-document.write(_CI.counter+'"></div>');
-script.type = 'text/javascript';
-script.src = 'http://widget.crowdignite.com/widgets/28075?_ci_wid=_CI_widget_'+_CI.counter;
-script.async = true;
-ref.parentNode.insertBefore(script, ref);
-})(); </script>
-
-	<?php
-	}
-	else{
-	?>
-<style> 
-#widget_table_28055 {background:none repeat scroll 0 0 #F4F4F4!important;border-bottom:1px solid #D7D7D7;border-collapse:separate;border-spacing:4px;border-top:1px solid #D7D7D7;margin-bottom:10px!important;margin-top:10px!important;width:660px;}
-#widget_table_28055 img{border:medium none;margin-bottom:3px!important;}
-#widget_table_28055 a{font-family:Arial;text-decoration:none;}
-#widget_table_28055 td:hover a{font-family:Arial;text-decoration:underline;}
-#widget_table_28055 td{padding-bottom:5px!important;padding-top:5px!important;text-align:center;}
-</style> 
-<script type='text/javascript'>
-var _CI = _CI || {};
-(function() {
-var script = document.createElement('script');
-ref = document.getElementsByTagName('script')[0];
-_CI.counter = (_CI.counter) ? _CI.counter + 1 : 1;
-document.write('<div id="_CI_widget_');
-document.write(_CI.counter+'"></div>');
-script.type = 'text/javascript';
-script.src = 'http://widget.crowdignite.com/widgets/28055?_ci_wid=_CI_widget_'+_CI.counter;
-script.async = true;
-ref.parentNode.insertBefore(script, ref);
-})(); </script>
-
-	<?php
-	}
-	?>
-
-
-
-
-<?php
-}elseif($thisrand==2){
 ?>
 
+<div id="zergnet-widget-14725" style="text-align:center;">
+	<a href="http://www.zergnet.com/?w=14725" target="_blank"><b>ZergNet</b></a>
+</div>
 
-
-
-<iframe class="scribol" height="420" width="609" id="scribol_945219" scrolling="no" frameborder="0"></iframe>
-<script>
-var Scribol;
-if(typeof Scribol=='undefined'){Scribol={};  Scribol.frames=[];Scribol.site='http://scribol.com/';Scribol.is_preview=false;}
-Scribol.frames.push('945219');</script>
-<script async="async" defer="defer" src="http://scribol.com/txwidget1.2.js"></script>
-
-
-
-
-
-
-
+<script language="javascript" type="text/javascript">
+	(function() {
+		var zergnet = document.createElement('script');
+		zergnet.type = 'text/javascript'; zergnet.async = true;
+		zergnet.src = 'http://www.zergnet.com/zerg.js?id=14725';
+		var znscr = document.getElementsByTagName('script')[0];
+		znscr.parentNode.insertBefore(zergnet, znscr);
+	})();
+</script>
 
 
 <?php
-}else{
-?>
-
-<!-- MGID News Widget Start -->
-<div id="MarketGid863"><center>
-<a href="http://mgid.com/" target="_blank">Loading...</a>
-</center></div>
-<!-- MGID News Widget End -->
-<!-- before </body> tag -->
-<script type="text/javascript">
-    var MarketGidDate = new Date();
-    document.write('<scr'+'ipt type="text/javascript" '+'src="http://jsn.dt07.net/i/n/insidepulse.com.863.js?t='+MarketGidDate.getYear()+MarketGidDate.getMonth()+ '" charset="utf-8" ></scr'+'ipt>');
-    </script>
-
-
-<?php
-}
 }
 ?>
 
