@@ -189,12 +189,12 @@ if($active_zone=="home"){
 	$left4x2values[] = array('zone', 'tv', 'Television', '/tv');
 	$left4x2values[] = array('zone', 'sports', 'Sports', '/sports');
 	$left4x2values[] = array('rss', 'http://' . $wrestlingurl . '/feed/', 'Wrestling', 'http://wrestling.insidepulse.com/');
-	$left4x2values[] = array('rss', 'http://' . $insidefightsurl . '/feed/', 'Inside Fights', 'http://insidefights.com/');
+	//$left4x2values[] = array('rss', 'http://' . $insidefightsurl . '/feed/', 'Inside Fights', 'http://insidefights.com/');
 	$left4x2values[] = array('rss', 'http://' . $diehardgamefanurl . '/feed/', 'Diehard Gamefan', 'http://diehardgamefan.com/');
 	$left4x2values[] = array('zone', 'comics-nexus', 'Comics Nexus', '/comics-nexus');
 	$left4x2values[] = array('zone', 'music', 'Music', '/music');
 	//$left4x2values[] = array('zonecat', 'movies|news', 'movie news', '/news');
-	//$left4x2values[] = array('cat', 'news', 'news', '/news');
+	$left4x2values[] = array('cat', 'news', 'news', '/news');
 
 	//rightfeatured
 	$rightfeaturedvalues = array();
@@ -257,7 +257,7 @@ elseif($active_zone=="tv"){
 elseif($active_zone=="movies"){
 
 	$movies_tabcss = "tab_cell_nav_on";
-	$featuredauthors = "7|220|124|221|222|198";
+	$featuredauthors = "7|220|198|221|131|222";
 
 
 	//format
@@ -602,7 +602,7 @@ elseif($active_zone=="wrestling"){
 	//$left4x2values = array($type, $slug, $name, $clickthru);
 
 	$disqusslug = "pulsewrestling";
-	$featuredauthors = "8|207|842|883|462|886|885|896|1";
+	$featuredauthors = "8|207|842|883|891|886|885|896|1";
 
 	//subnav
 	$subnavarray = array();
@@ -615,9 +615,9 @@ elseif($active_zone=="wrestling"){
 
 	//featured
 	$featuredvalues = array();
+	$featuredvalues[] = array('cat', 'news', 'news', '/category/news');
 	$featuredvalues[] = array('cat', 'commentary', 'commentary', '/category/commentary');
 	$featuredvalues[] = array('cat', 'recaps__reviews', 'recaps', '/category/recaps__reviews');
-	$featuredvalues[] = array('cat', 'features', 'features', '/category/features');
 
 	//left4x2
 	$left4x2values = array();

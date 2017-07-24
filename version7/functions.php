@@ -206,9 +206,6 @@ function defaultimage($type, $size){
 
 
 
-
-
-
 function buildfilters($page, $activeid, $categoriesskiparray, $sidebar=false){
 
 
@@ -1431,8 +1428,8 @@ function getrsslinks($rssurl, $overalltitle, $limit, $view){
 	$rss = fetch_feed($rssurl);
 
 	//print_r($rss);
-	$overalltitle =  $rss->get_title();
-	$overalllink =  $rss->get_link();
+	//$overalltitle =  $rss->get_title();
+	//$overalllink =  $rss->get_link();
 	$topstorycheck = true;
 	$subtopoutput = "";
 	$rowcounter=0;
@@ -1878,6 +1875,20 @@ function createsection($values, $area){
 }
 
 
+function twitterlink($twitter){
+
+	if(strstr("http", $twitter)){
+		return $twitter;
+	}
+	else{
+		return "http://twitter.com/".$twitter;
+	}
+
+}
+
+
+
+
 function create_authbox($insider_userid, $area, $authorslug = "insider"){
 
 	$sql_users = "
@@ -1911,7 +1922,7 @@ function create_authbox($insider_userid, $area, $authorslug = "insider"){
 	$insider_rss3 = $allusermeta['rss3'];
 	$insider_description = $allusermeta['description'];
 	$insider_facebook = $allusermeta['facebook'];
-	$insider_twitter = $allusermeta['twitter'];
+	$insider_twitter = twitterlink($allusermeta['twitter']);
 	$insider_twitterrss = $allusermeta['twitterrss'];
 	$insider_quote = $allusermeta['quote'];
 	$insider_row1 = $allusermeta['row1'];

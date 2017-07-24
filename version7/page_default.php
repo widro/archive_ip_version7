@@ -54,7 +54,7 @@ elseif(is_page('title-history')){
 		FROM titles, titlecode
 		WHERE titlecode.titlecode = titles.titlecode
 		AND titles.titlecode = $titlecode
-		ORDER BY date DESC
+		ORDER BY date ASC
 		";
 
 		$result = mysql_query($sql) or die("Error displaying titles article.");
