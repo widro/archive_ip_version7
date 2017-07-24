@@ -304,7 +304,7 @@
 
 
 <?php if(is_page('about')){ ?>
-<div class="inner" id="slides" name="slides5">
+<div class="inner" id="slides" name="slides6">
 		<div id="slide_content1" name="slides_content1" class="slide_container">
 
 			<div class="slide_container_wide fl slide_border" style="padding-top:180px; padding-bottom:200px;">
@@ -340,7 +340,24 @@
 
 		</div>
 
-		<div id="slide_content3" name="slide_content3" class="slide_container hide">
+		<div id="slide_content3" name="slide_content4" class="slide_container hide">
+
+			<div class="slide_container_narrow fl slide_border">
+				<h3 class="color1 font2">Inside Pulse Network</h3>
+				<h4>In addition to typical ad units that run across the site, Inside Pulse offers a variety of deeper integrated opportunities for premium advertisers.</h4>
+				<p>Site wraps
+				Sponsored blogs/content
+				In-media adveritisng (audio, video)
+				</p>
+
+			</div>
+			<div class="slide_container_wide fr">
+				dinkerssssssss
+			</div>
+
+		</div>
+
+		<div id="slide_content4" name="slide_content3" class="slide_container hide">
 
 			<div class="slide_container_wide fl slide_border">
 
@@ -364,15 +381,11 @@
 
 		</div>
 
-		<div id="slide_content4" name="slide_content4" class="slide_container hide">
+		<div id="slide_content5" name="slide_content5" class="slide_container hide">
 
 			<div class="slide_container_narrow fl slide_border">
-				<h3 class="color1 font2">Integrated Opportunities</h3>
-				<h4>In addition to typical ad units that run across the site, Inside Pulse offers a variety of deeper integrated opportunities for premium advertisers.</h4>
-				<p>Site wraps
-				Sponsored blogs/content
-				In-media adveritisng (audio, video)
-				</p>
+				<h3 class="color1 font2">Inside Pulse Portal</h3>
+
 
 			</div>
 			<div class="slide_container_wide fr">
@@ -381,7 +394,7 @@
 
 		</div>
 
-		<div id="slide_content5" name="slide_content5" class="slide_container hide">
+		<div id="slide_content6" name="slide_content5" class="slide_container hide">
 
 			<div class="slide_container_narrow fl slide_border">
 				<h3 class="color1 font2">Contact Us</h3>
@@ -403,13 +416,14 @@
 			<div class="slide_footer_left">
 				&copy; <?php echo date("Y"); ?> Inside Pulse
 			</div>
-			<div id="slide" name="slide5" class="slide_tabs">
+			<div id="slide" name="slide6" class="slide_tabs">
 				<div id="slide_n" class="tab font2 slidetab fl cp">&laquo; </div>
 				<div id="slide_1" class="tab font2 slidetab fl cp tab_on">1</div>
 				<div id="slide_2" class="tab font2 slidetab fl cp">2</div>
 				<div id="slide_3" class="tab font2 slidetab fl cp">3</div>
 				<div id="slide_4" class="tab font2 slidetab fl cp">4</div>
 				<div id="slide_5" class="tab font2 slidetab fl cp">5</div>
+				<div id="slide_6" class="tab font2 slidetab fl cp">6</div>
 				<div id="slide_p" class="tab font2 slidetab fl cp">&raquo; </div>
 			</div>
 			<div class="slide_footer_right">
