@@ -250,13 +250,13 @@ table,td,tdbody,tr,post-content{
 
 .top_tabs{
 	padding-left:20px;
-	width:760px;
+	width:660px;
 	float:left;
 }
 
 
 .top_search{
-	width:200px;
+	width:300px;
 	float:right;
 	height:40px;
 }
@@ -409,7 +409,7 @@ table,td,tdbody,tr,post-content{
 
 
 .tab_cell_nav_on .left{
-	background:url('http://media.insidepulse.com/shared/images/v7/tableftplus.png') no-repeat bottom left;
+	background:url('mainsprite.png') 0 0px;
 	text-align:center;
 	color:#ffffff;
 	height:40px;
@@ -418,7 +418,7 @@ table,td,tdbody,tr,post-content{
 }
 
 .tab_cell_nav_on .right{
-	background:url('http://media.insidepulse.com/shared/images/v7/tabright.png') no-repeat bottom left;
+	background:url('mainsprite.png') -206px 0;
 	height:40px;
 	width:26px;
 	float:left;
@@ -662,25 +662,25 @@ color: #ff0000;
 /*** featured_tabs **/
 
 .featured_tabs{
-	background:url('http://media.insidepulse.com/shared/images/v7/featured_tabs3_1.png') top left no-repeat;
+	background:url('mainsprite.png') -5px -159px;
 	width:660px;
 	height:33px;
 }
 
 .featured_tabs1{
-	background:url('http://media.insidepulse.com/shared/images/v7/featured_tabs3_1.png') top left no-repeat;
+	background:url('mainsprite.png') -5px -159px;
 	width:660px;
 	height:33px;
 }
 
 .featured_tabs2{
-	background:url('http://media.insidepulse.com/shared/images/v7/featured_tabs3_2.png') top left no-repeat;
+	background:url('mainsprite.png') -5px -191px;
 	width:660px;
 	height:33px;
 }
 
 .featured_tabs3{
-	background:url('http://media.insidepulse.com/shared/images/v7/featured_tabs3_3.png') top left no-repeat;
+	background:url('mainsprite.png') -5px -223px;
 	width:660px;
 	height:33px;
 }
@@ -1190,19 +1190,19 @@ color: #ff0000;
 /*** sidetabs **/
 
 .sidetabs_tabs, .sidetabs2_tabs{
-	background:url('http://media.insidepulse.com/shared/images/v7/featured_tabs2_1.png') top left no-repeat;
+	background:url('mainsprite.png') -5px -95px;
 	width:320px;
 	height:32px;
 }
 
 .sidetabs_tabs1, .sidetabs2_tabs1{
-	background:url('http://media.insidepulse.com/shared/images/v7/featured_tabs2_1.png') top left no-repeat;
+	background:url('mainsprite.png') -5px -95px;
 	width:320px;
 	height:32px;
 }
 
 .sidetabs_tabs2, .sidetabs2_tabs2{
-	background:url('http://media.insidepulse.com/shared/images/v7/featured_tabs2_2.png') top left no-repeat;
+	background:url('mainsprite.png') -5px -127px;
 	width:320px;
 	height:32px;
 }
@@ -1393,7 +1393,7 @@ color: #ff0000;
 
 
 h3.icon1m{
-	background:url('http://media.insidepulse.com/shared/images/v7/rightgreyicon1.png') no-repeat top left;
+	background:url('mainsprite.png') 0 -40px;
 	padding-left:60px;
 	padding-top:15px;
 	padding-bottom:10px;
@@ -1404,7 +1404,7 @@ h3.icon1m{
 }
 
 h3.icon2m{
-	background:url('http://media.insidepulse.com/shared/images/v7/rightgreyicon2.png') no-repeat top left;
+	background:url('mainsprite.png') 0px -260px;
 	padding-left:60px;
 	padding-top:15px;
 	padding-bottom:10px;
@@ -1474,7 +1474,9 @@ h3.icon2m{
 	height: auto !important;
 	height: 120px;
 	padding:0px;
-	border-bottom:1px #eeeeee solid;
+	padding-top:15px;
+	padding-bottom:15px;
+	border-bottom:0px #eeeeee solid;
 }
 
 .listing_cell_left{
@@ -1489,7 +1491,7 @@ h3.icon2m{
 }
 
 .listing_cell_right{
-	width:500px;
+	width:510px;
 	padding:5px;
 	padding-top:5px;
 	float:right;
@@ -1501,18 +1503,18 @@ h3.icon2m{
 
 .listing_cell_right p{
 	font-size:.8em;
-	margin:0px;
+	margin:3px;
 }
 
 
-.listing_cell_byline{
+p.listing_cell_byline{
 	color:#666666;
 	font-size:.75em;
-	margin:2px;
 }
 
 .listing_cell_byline a{
 	color:#000000;
+	font-size:.75em;
 }
 
 
@@ -1598,18 +1600,16 @@ h3.icon2m{
 
 .right_greybox_author{
 	width:310px;
-	min-height: 90px;
+	min-height:140px;
 	height: auto !important;
-	height: 90px;
 	font-size:.75em;
 	color:#666666;
 	background:#f2f2f2;
 	border-bottom:1px #cccccc solid;
-	margin-bottom:5px;
 }
 
 .right_greybox_author li{
-	font-size:.8em;
+	font-size:1em;
 	list-style:none;
 	margin:0;
 	padding:0;
@@ -1622,32 +1622,31 @@ h3.icon2m{
 .right_greybox_author h3{
 	margin:1px;
 	padding:0;
-	font-size:1.25em;
+	font-size:1.75em;
 	font-weight:normal;
 	color:#000000;
 }
 
 .right_greybox_authorleft{
-	width:50px;
+	width:120px;
 	padding-left:10px;
-	height:90px;
+	height:140px;
 	float:left;
 }
 
 .right_greybox_authorleft img{
-	width:50px;
-	height:50px;
+	width:120px;
+	height:120px;
 	padding:5px;
 	float:left;
 }
 
 .right_greybox_authorright{
-	width:230px;
+	width:160px;
 	padding-left:10px;
 	padding-right:10px;
-	min-height: 90px;
+	min-height: 140px;
 	height: auto !important;
-	height: 90px;
 	float:left;
 }
 

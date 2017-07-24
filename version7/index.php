@@ -7,6 +7,7 @@ if(is_home()&&$_SERVER['HTTP_HOST']!="press.insidepulse.com"){
 ?>
 
 <?php get_header(); ?>
+	<div class="content_left">
 
 <!--	<h3 class="icon2m bold" style="margin-top:2px;">Full Listing</span></h3> -->
 <div class="listing_filter">
@@ -51,7 +52,7 @@ while (have_posts()) : the_post();
 
 	$clickthru=get_permalink($thispostid);
 	$thisdate = mysql2date('m.d.y', $post->post_date);
-	$author = get_the_author();
+	$author = "<a href=\"" . get_author_posts_url($post->post_author) . "\">" . get_the_author() . "</a>";
 	$grey=false;
 	if($i%2==1){
 		$grey=true;

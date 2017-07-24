@@ -57,7 +57,28 @@ elseif($view=="related"){
 elseif(is_page('latest-updates')||is_page('movies')||is_page('tv')||is_page('comics-nexus')||is_page('sports')||is_page('figures')||is_page('newsboard')){
 	$limit = 50;
 	$view="latest";
+}
 
+if(is_page('movies')){
+	$zone = "movies";
+}
+if(is_page('tv')){
+	$zone = "tv";
+}
+if(is_page('comics-nexus')){
+	$zone = "comics-nexus";
+}
+if(is_page('movies')){
+	$zone = "movies";
+}
+if(is_page('sports')){
+	$zone = "sports";
+}
+if(is_page('figures')){
+	$zone = "figures";
+}
+if(is_page('music')){
+	$zone = "music";
 }
 
 if($zone){
@@ -225,7 +246,7 @@ $clickthru=get_permalink($thispostid);
 
 //$author = $post->post_author;
 $author = get_the_author();
-
+$author = "<a href=\"" . get_author_posts_url($post->post_author) . "\">" . get_the_author() . "</a>";
 
 $thisexcerpt = makeexcerpt($post->post_content, $post->post_excerpt, "default");
 

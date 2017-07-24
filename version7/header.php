@@ -1095,12 +1095,20 @@ $(document).ready(function() {
 
 			<div id="nav9" name="nav9" class="<?php echo $figures_tabcss; ?>";>
 				<div class="left">
-					<a class="font2" href="http://<?php echo $homeurl; ?>/figures/">Figs</a>
+					<a class="font2" href="http://<?php echo $homeurl; ?>/figures/">Figures</a>
 				</div>
 				<div class="right"></div>
 			</div>
 
+
+
 <!--
+			<div id="nav8" name="nav8" class="<?php echo $sports_tabcss; ?>";>
+				<div class="left">
+					<a class="font2" href="http://arcade.insidepulse.com/">Arcade</a>
+				</div>
+				<div class="right"></div>
+			</div>
 
 			<div id="nav11" name="nav11" class="<?php echo $more_tabcss; ?>";>
 				<div class="left">
@@ -1155,6 +1163,7 @@ $(document).ready(function() {
 <?php
 
 //output subnav
+/*
 if($subnavarray){
 $subnavcount = count($subnavarray);
 	echo "<div class=\"submenu\">";
@@ -1175,6 +1184,7 @@ $subnavcount = count($subnavarray);
 	echo "</div>";
 	echo "<div class=\"clear\"></div>";
 }
+*/
 ?>
 
 

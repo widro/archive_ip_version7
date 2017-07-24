@@ -357,7 +357,7 @@ function listingcell($thistitle, $thisdate, $author, $clickthru, $thisexcerpt, $
 
 		</div>
 		<div class=\"listing_cell_right\">
-			<a class=\"bold color1\" href=\"$clickthru\">$thistitle</a>
+			<a class=\"color1\" href=\"$clickthru\">$thistitle</a>
 			<p class=\"listing_cell_byline\">By $author <span class=\"date\">($thisdate)</span></p>
 			<p>$thisexcerpt <a class=\"bold color1 author_cell_readmore\" href=\"$clickthru\">&raquo;&raquo;</a></p>
 		</div>
