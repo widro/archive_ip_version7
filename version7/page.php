@@ -12,6 +12,10 @@ elseif(is_page('dell2')||is_page('new-video')||is_page('silverado2')||is_page('t
 }
 
 
+//dvd-release-dates
+elseif(is_page('dvd-release-dates')||is_page('upcoming-theatrical-movie-release-calendar')){
+	include('page_table.php');
+}
 
 
 
