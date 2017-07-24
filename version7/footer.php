@@ -203,7 +203,17 @@ if(!is_single()){
 
 
 	</div>
+
+
+
+
 </div>
+<div class="clear"></div>
+<script type="text/javascript">
+  if(typeof(gnm_ord)=='undefined') gnm_ord=Math.random()*10000000000000000; if(typeof(gnm_tile) == 'undefined') gnm_tile=1;
+  document.write('<scr'+'ipt src="http://n4403ad.doubleclick.net/adj/gn.cr.insidepulse.com/ros;sect=ros;mtfInline=true;sz=728x90;tile='+(gnm_tile++)+';ord='+gnm_ord+'?" type="text/javascript"></scr'+'ipt>');
+</script>
+<!-- END AD TAG -->
 
 
 <script type="text/javascript">

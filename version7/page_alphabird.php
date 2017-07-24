@@ -23,8 +23,80 @@ elseif(is_page('the-ride-season-3-the-game-ifeadi-odenigbo')){
 
 
 <?php
+} else{
+?>
+
+
+<?php the_content(); ?>
+<?php
 }
 ?>
+
+
+
+
+<br><br><br><br><br><br>
+
+
+
+
+<h3 class="icon1 font2 color1">Inside Pulse Latest Updates:</h3>
+
+
+
+<?php
+
+	$i=0;
+	$sqladd = "";
+	$the_query = new WP_Query('&showposts=10' . $sqladd . '&orderby=post_date&order=desc');
+
+	//top story loop
+	while ($the_query->have_posts()) : $the_query->the_post();
+
+	$topstory120x120 = get_post_meta($post->ID, 'topstory120x120', true);
+	$topstory500x250 = get_post_meta($post->ID, 'topstory500x250', true);
+	if($topstory500x250==""){
+		$topstory500x250 = defaultimage($thiscat_name, "topstory500x250");
+	}
+
+	if($topstory120x120==""){
+		$topstory120x120 = defaultimage($thiscat_name, "topstory120x120");
+	}
+	$thistitle = $post->post_title;
+	$thisexcerpt = $post->post_excerpt;
+	$thisexcerpt = substr($thisexcerpt, 0, 180);
+	if(!$thisexcerpt){
+		$thisexcerpt = $post->post_content;
+	}
+
+	$thisexcerpt = strip_tags($thisexcerpt);
+	$thisexcerpt = substr($thisexcerpt, 0, 100);
+	$thistitle = str_replace("\"", "", $thistitle);
+	$thistitle = substr($thistitle, 0, 100);
+	$clickthru=get_permalink($thispostid);
+	$thisdate = mysql2date('m.d.y', $post->post_date);
+	$author = get_the_author();
+	$grey=false;
+	if($i%2==1){
+		$grey=true;
+	}
+
+	echo listingcell($thistitle, $thisdate, $author, $clickthru, $thisexcerpt, $topstory120x120, $topstory500x250, $grey);
+$i++;
+endwhile;
+?>
+
+
+
+
+
+
+
+
+
+
+
+
 		</div>
 		<div class="clear"></div>
 

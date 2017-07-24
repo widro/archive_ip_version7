@@ -6,11 +6,7 @@ if(is_page('home')||is_page('pulsecasts')||is_page('movies')||is_page('tv')||is_
 }
 
 //video pages
-elseif(is_page('new-video')){
-	include('page_alphabird.php');
-}
-
-elseif(is_page('the-ride-season-3-the-game-ifeadi-odenigbo')){
+elseif(is_page('new-video')||is_page('silverado')||is_page('the-ride-season-3-the-game-ifeadi-odenigbo')){
 	include('page_alphabird.php');
 }
 
