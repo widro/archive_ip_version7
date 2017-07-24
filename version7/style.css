@@ -662,25 +662,25 @@ color: #ff0000;
 /*** featured_tabs **/
 
 .featured_tabs{
-	background:url('mainsprite.png') -5px -159px no-repeat;
+	background:url('mainsprite.png') -5px -159px;
 	width:660px;
 	height:33px;
 }
 
 .featured_tabs1{
-	background:url('mainsprite.png') -5px -159px no-repeat;
+	background:url('mainsprite.png') -5px -159px;
 	width:660px;
 	height:33px;
 }
 
 .featured_tabs2{
-	background:url('mainsprite.png') -5px -191px no-repeat;
+	background:url('mainsprite.png') -5px -191px;
 	width:660px;
 	height:33px;
 }
 
 .featured_tabs3{
-	background:url('mainsprite.png') -5px -223px no-repeat;
+	background:url('mainsprite.png') -5px -223px;
 	width:660px;
 	height:33px;
 }

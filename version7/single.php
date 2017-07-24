@@ -323,6 +323,7 @@ jQuery(document).ready(function($){ //fire on DOM ready
 				<?php if(has_tag("weekend poll", $post )){ echo "<div class='pollarticle'><img src='http://media.insidepulse.com/shared/images/vx/weekendpoll1600_pulse.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("SmarK WWE Network Raw Rant", $post )){ echo "<div class='pollarticle'><img src='http://wrestling.insidepulse.com/wp-content/uploads/2014/08/smark_wwenetwork_raw.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("SmarK WWE Network Nitro Rant", $post )){ echo "<div class='pollarticle'><img src='http://wrestling.insidepulse.com/wp-content/uploads/2014/09/smark_wwenetwork_nitro.jpg' style='padding:0px;width:660px;' />"; } ?>
+				<?php if(has_tag("SmarK WWE Network SNME Rant", $post )){ echo "<div class='pollarticle'><img src='http://wrestling.insidepulse.com/wp-content/uploads/2014/09/smarkrantsnme1600.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("Tuesday Raw Roundtable", $post )){ echo "<div class='pollarticle'><img src='http://wrestling.insidepulse.com/wp-content/uploads/2014/08/tuesdayraw1600.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("10 Thoughts on NXT", $post )){ echo "<div class='pollarticle'><img src='http://wrestling.insidepulse.com/wp-content/uploads/2014/08/10thoughtsnxt.jpg' style='padding:0px;width:660px;' />"; } ?>
 
@@ -338,6 +339,7 @@ jQuery(document).ready(function($){ //fire on DOM ready
 				<?php if(has_tag("weekend poll", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("SmarK WWE Network Raw Rant", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("SmarK WWE Network Nitro Rant", $post )){ echo "</div>"; } ?>
+				<?php if(has_tag("SmarK WWE Network SNME Rant", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("Tuesday Raw Roundtable", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("10 Thoughts on NXT", $post )){ echo "</div>"; } ?>
 				<br><br>
