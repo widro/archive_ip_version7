@@ -626,7 +626,7 @@ elseif($active_zone=="wrestling"){
 	$left4x2values[] = array('cat', 'tv_shows', 'tv shows', '/category/tv_shows', '8');
 	$left4x2values[] = array('cat', 'podcasts', 'podcasts', '/category/podcasts', '8');
 
-	$left4x2values[] = array('cat', 'ppvs', 'ppvs', '/category/ppvs');
+	$left4x2values[] = array('cat', 'ppvs,dvdsvideos', 'ppvs/dvds', '/latest-updates/?cat=ppvs,dvdsvideos');
 	$left4x2values[] = array('tag', 'the-rock', 'the rock', '/tag/the-rock');
 	$left4x2values[] = array('tag', 'john-cena', 'John Cena', '/tag/john-cena');
 	$left4x2values[] = array('tag', 'cm-punk', 'CM Punk', '/tag/cm-punk');
