@@ -13,9 +13,16 @@
 
 		<div class="right_container" style="margin-top:20px;">
 			<!--<a href="#"><img src="http://media.insidepulse.com/shared/images/v7/ad300.png"></a>-->
-<!-- BEGIN UAT - 300x250 - InsidePulse: InsidePulse - DO NOT MODIFY -->
-<script type="text/javascript" src="http://ad-cdn.technoratimedia.com/00/35/09/uat_10935.js?ad_size=300x250"></script>
-<!-- END TAG -->
+			<!--- start of insidepulse.sportsfanlive.com/default_companion_Position2_(300x250.1) --->
+			<script LANGUAGE="JavaScript1.1">
+			document.write('<script LANGUAGE="JavaScript1.1" SRC="http://oascentral.sportsfanlive.com/RealMedia/ads/adstream_jx.ads/insidepulse.sportsfanlive.com/default/jx/comp/1'+OAS_rns+'@Position2,Left,x06!Position2?XE&Partner=insidepulse&PartnerUnit=insidepulse.300x250.1.default/jx/comp&XE" type="text/javascript"><\/script>');
+			</script>
+			<NOSCRIPT>
+			<A HREF="http://oascentral.sportsfanlive.com/RealMedia/ads/click_nx.ads/insidepulse.sportsfanlive.com/default/nx/comp@Position2,Left,x06!Position2?x?XE&Partner=insidepulse&PartnerUnit=insidepulse.300x250.1.default/nx/comp&XE" target="_blank">
+			<IMG SRC="http://oascentral.sportsfanlive.com/RealMedia/ads/adstream_nx.ads/insidepulse.sportsfanlive.com/default/nx/comp@Position2,Left,x06!Position2?x?XE&Partner=insidepulse&PartnerUnit=insidepulse.300x250.1.default/nx/comp&XE" border=0>
+			</A>
+			</NOSCRIPT>
+			<!--- end of insidepulse.sportsfanlive.com/default_companion_Position2_(300x250.1) --->
 
 		</div>
 
@@ -105,9 +112,16 @@
 			<div class="newsad_right">
 				<!--<a href="#"><img src="http://media.insidepulse.com/shared/images/v7/ad160.png"></a>-->
 
-<!-- BEGIN UAT - 160x600 - InsidePulse: InsidePulse - DO NOT MODIFY -->
-<script type="text/javascript" src="http://ad-cdn.technoratimedia.com/00/35/09/uat_10935.js?ad_size=160x600"></script>
-<!-- END TAG -->
+				<!--- start of insidepulse.sportsfanlive.com/default_companion_Left_(160x600.1) --->
+				<script LANGUAGE="JavaScript1.1">
+				document.write('<script LANGUAGE="JavaScript1.1" SRC="http://oascentral.sportsfanlive.com/RealMedia/ads/adstream_jx.ads/insidepulse.sportsfanlive.com/default/jx/comp/1'+OAS_rns+'@Position2,Left,x06!Left?XE&Partner=insidepulse&PartnerUnit=insidepulse.160x600.1.default/jx/comp&XE" type="text/javascript"><\/script>');
+				</script>
+				<NOSCRIPT>
+				<A HREF="http://oascentral.sportsfanlive.com/RealMedia/ads/click_nx.ads/insidepulse.sportsfanlive.com/default/nx/comp@Position2,Left,x06!Left?x?XE&Partner=insidepulse&PartnerUnit=insidepulse.160x600.1.default/nx/comp&XE" target="_blank">
+				<IMG SRC="http://oascentral.sportsfanlive.com/RealMedia/ads/adstream_nx.ads/insidepulse.sportsfanlive.com/default/nx/comp@Position2,Left,x06!Left?x?XE&Partner=insidepulse&PartnerUnit=insidepulse.160x600.1.default/nx/comp&XE" border=0>
+				</A>
+				</NOSCRIPT>
+				<!--- end of insidepulse.sportsfanlive.com/default_companion_Left_(160x600.1) --->
 
 			</div>
 		</div>
@@ -121,6 +135,3 @@ if($thisurl==$insidefightsurl){
 <?php
 }
 ?>
-<!-- BEGIN UAT - 300x250 - InsidePulse: InsidePulse - DO NOT MODIFY -->
-<script type="text/javascript" src="http://ad-cdn.technoratimedia.com/00/35/09/uat_10935.js?ad_size=300x250"></script>
-<!-- END TAG -->
