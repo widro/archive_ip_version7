@@ -158,6 +158,7 @@ function govid_custom_column($column_name, $post_id) {
 
 if ( function_exists('register_sidebar') )
     register_sidebar(array(
+        'id' => 'sidebar-1',
         'before_widget' => '<div  class="right_container">',
         'after_widget' => '</div>',
         'before_title' => '<h3 class="icon2m bold">					',
@@ -166,6 +167,7 @@ if ( function_exists('register_sidebar') )
 
 if ( function_exists('register_sidebar') )
     register_sidebar(array(
+        'id' => 'sidebar-2',
         'before_widget' => '',
         'after_widget' => '',
         'before_title' => '',
@@ -311,6 +313,7 @@ function buildfilters($page, $activeid, $categoriesskiparray, $sidebar=false){
 
 
 function makesql($type, $slug){
+	$sqladd = "";
 	if($type=="zone"){
 		$sqladd = "&zone=$slug";
 	}
@@ -640,15 +643,12 @@ function getzones($zoneslug){
 
 
 function makeexcerpt($content, $excerpt, $type){
-	$yo = 1;
-	if(!$excerpt){
-		$yo = 2;
-
-		$content_exploded = explode("<!--more-->", $content);
-		$excerpt = $content_exploded[0];
-
-		if(!$content_exploded[1]){
-			$yo = 3;
+	if($excerpt==""){
+		if(strpos($content, "<!--more-->")){
+			$content_exploded = explode("<!--more-->", $content);
+			$excerpt = $content_exploded[0];
+		}
+		else{
 			$excerpt = substr(strip_tags($content), 0, 250);
 		}
 	}
@@ -1442,7 +1442,7 @@ function getrsslinks($rssurl, $overalltitle, $limit, $view){
 	$rowcounter=0;
 	$topstory500x250 = "";
 	$topstory120x120 = "";
-	foreach ( $rss->get_items(0, $items) as $item ) {
+	foreach ( $rss->get_items() as $item ) {
 		if($rowcounter<$limit){
 			$href = $item->get_link();
 			$title = esc_attr(strip_tags($item->get_title()));
@@ -1636,6 +1636,8 @@ function createsection($values, $area){
 		$count = 1;
 	}
 	$output_header = "";
+	$output_body = "";
+	$classadd = "";
 	for($i=0;$i<$count;$i++){
 		//grab zone
 		$type = $values[$i][0];
@@ -1654,7 +1656,6 @@ function createsection($values, $area){
 		$pageposts = get_posts('&showposts='. $limit .$sqladd.'&orderby=post_date&order=desc');
 
 		$zonecounter=0;
-
 
 		//rightsidetabs
 		if($area=="featuredhome"){

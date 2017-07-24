@@ -39,7 +39,7 @@
 
 	$thisexcerpt = makeexcerpt($post->post_content, $post->post_excerpt, "default");
 
-	$clickthru=get_permalink($thispostid);
+	$clickthru=get_permalink($post->ID);
 
 	//outputs date in wacky format
 	$thisdate = mysql2date('h|m|s|m|d|Y', $post->post_date);
@@ -53,7 +53,7 @@
 	$postarray[$unixtimestamp]['title'] = $thistitle;
 	$postarray[$unixtimestamp]['clickthru'] = $clickthru;
 	$postarray[$unixtimestamp]['excerpt'] = $thisexcerpt;
-	$postarray[$unixtimestamp]['content'] = $thiscontent;
+	$postarray[$unixtimestamp]['content'] = $post->post_content;
 	$postarray[$unixtimestamp]['post_date'] = $post->post_date;
 	$postarray[$unixtimestamp]['topstory500x250'] = $topstory500x250;
 	$postarray[$unixtimestamp]['topstory120x120'] = $topstory120x120;
@@ -103,6 +103,9 @@ else{
 }
 
 $topstoryposition=1;
+		$rotatorimages = "";
+		$rotatorclicks = "";
+		$featuredthumbrow = "";
 foreach($postarray3 as $thispost){
 
 	if($topstoryposition<5){

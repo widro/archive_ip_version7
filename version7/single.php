@@ -315,7 +315,7 @@ jQuery(document).ready(function($){ //fire on DOM ready
 				</center>
 
 				<?php if(has_tag("Pulse of Instagram", $post )){ echo "<div class='pulseofinstagram'><img src='http://wrestling.insidepulse.com/wp-content/uploads/2014/07/pulseofinstagramtemp3.jpg' style='padding:0px;width:660px;' />"; } ?>
-				<?php if(has_tag("Smackdown Spoilers", $post )){ echo "<div class='smackdownspoilers'><img src='http://wrestling.insidepulse.com/wp-content/uploads/2014/07/template1600_smackdownspoil.jpg' style='padding:0px;width:660px;' />"; } ?>
+				<?php //if(has_tag("Smackdown Spoilers", $post )){ echo "<div class='smackdownspoilers'><img src='http://wrestling.insidepulse.com/wp-content/uploads/2014/07/template1600_smackdownspoil.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("wwe network schedule", $post )){ echo "<div class='wwenetworkschedule'><img src='http://media.insidepulse.com/shared/images/vx/wwenetworkdaily.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("MLB Daily Schedule", $post )){ echo "<div class='mlbdaily'><img src='http://media.insidepulse.com/shared/images/vx/template1600_todaymlb.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("MLB Daily Scoreboard", $post )){ echo "<div class='mlbdaily'><img src='http://media.insidepulse.com/shared/images/vx/wwenetworkdaily.jpg' style='padding:0px;width:660px;' />"; } ?>
@@ -326,7 +326,7 @@ jQuery(document).ready(function($){ //fire on DOM ready
 				<?php if(has_tag("SmarK WWE Network Nitro Rant", $post )){ echo "<div class='pollarticle'><img src='http://wrestling.insidepulse.com/wp-content/uploads/2014/09/smark_wwenetwork_nitro.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("SmarK WWE Network SNME Rant", $post )){ echo "<div class='pollarticle'><img src='http://wrestling.insidepulse.com/wp-content/uploads/2014/09/smarkrantsnme1600.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("SmarK WWE Network Rant", $post )){ echo "<div class='pollarticle'><img src='http://wrestling.insidepulse.com/wp-content/uploads/2014/12/smarkwwenetwork1600.jpg' style='padding:0px;width:660px;' />"; } ?>
-				<?php if(has_tag("Tuesday Raw Roundtable", $post )){ echo "<div class='pollarticle'><img src='http://wrestling.insidepulse.com/wp-content/uploads/2014/08/tuesdayraw1600.jpg' style='padding:0px;width:660px;' />"; } ?>
+				<?php //if(has_tag("Tuesday Raw Roundtable", $post )){ echo "<div class='pollarticle'><img src='http://wrestling.insidepulse.com/wp-content/uploads/2014/08/tuesdayraw1600.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("10 Thoughts on NXT", $post )){ echo "<div class='pollarticle'><img src='http://wrestling.insidepulse.com/wp-content/uploads/2014/08/10thoughtsnxt.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("Pull List Roundtable", $post )){ echo "<div class='pollarticle'><img src='http://insidepulse.com/wp-content/uploads/2014/12/roundtable_comics1600.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("This Day In Pulse History", $post )){ echo "<div class='pollarticle'><img src='http://insidepulse.net/wp-content/themes/insidepulsex/images/thisdaypulse.jpg' style='padding:0px;width:660px;' />"; } ?>
@@ -342,7 +342,7 @@ jQuery(document).ready(function($){ //fire on DOM ready
 				<?php the_content(''); ?>
 				<!-- content end -->
 				<?php if(has_tag("Pulse of Instagram", $post )){ echo "</div>"; } ?>
-				<?php if(has_tag("Smackdown Spoilers", $post )){ echo "</div>"; } ?>
+				<?php //if(has_tag("Smackdown Spoilers", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("wwe network schedule", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("MLB Daily Schedule", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("MLB Daily Scoreboard", $post )){ echo "</div>"; } ?>
@@ -353,7 +353,7 @@ jQuery(document).ready(function($){ //fire on DOM ready
 				<?php if(has_tag("SmarK WWE Network Nitro Rant", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("SmarK WWE Network SNME Rant", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("SmarK WWE Network Rant", $post )){ echo "</div>"; } ?>
-				<?php if(has_tag("Tuesday Raw Roundtable", $post )){ echo "</div>"; } ?>
+				<?php //if(has_tag("Tuesday Raw Roundtable", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("10 Thoughts on NXT", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("Pull List Roundtable", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("This Day In Pulse History", $post )){ echo "</div>"; } ?>
