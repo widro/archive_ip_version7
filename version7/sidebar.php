@@ -11,16 +11,8 @@
 		<div class="right_container" style="margin-top:20px;min-height:300px;">
 			<!--<a href="#"><img src="http://media.insidepulse.com/shared/images/v7/ad300.png"></a>-->
 
-			<!--- start of insidepulse.sportsfanlive.com/default_companion_Position2_(300x250.1) --->
-			<script LANGUAGE="JavaScript1.1">
-			document.write('<script LANGUAGE="JavaScript1.1" SRC="http://oascentral.sportsfanlive.com/RealMedia/ads/adstream_jx.ads/insidepulse.sportsfanlive.com/default/jx/comp/1'+OAS_rns+'@Position2,Left,x06!Position2?XE&Partner=insidepulse&PartnerUnit=insidepulse.300x250.1.default/jx/comp&XE" type="text/javascript"><\/script>');
-			</script>
-			<NOSCRIPT>
-			<A HREF="http://oascentral.sportsfanlive.com/RealMedia/ads/click_nx.ads/insidepulse.sportsfanlive.com/default/nx/comp@Position2,Left,x06!Position2?x?XE&Partner=insidepulse&PartnerUnit=insidepulse.300x250.1.default/nx/comp&XE" target="_blank">
-			<IMG SRC="http://oascentral.sportsfanlive.com/RealMedia/ads/adstream_nx.ads/insidepulse.sportsfanlive.com/default/nx/comp@Position2,Left,x06!Position2?x?XE&Partner=insidepulse&PartnerUnit=insidepulse.300x250.1.default/nx/comp&XE" border=0>
-			</A>
-			</NOSCRIPT>
-			<!--- end of insidepulse.sportsfanlive.com/default_companion_Position2_(300x250.1) --->
+			<!--- start of insidepulse.sportsfanlive.com_Middle_(300x250) --->
+			<script LANGUAGE="JavaScript1.1">OAS_rn = new String (Math.random());OAS_rns = OAS_rn.substring (2, 11);document.write('<script LANGUAGE="JavaScript1.1" SRC="http://oascentral.sportsfanlive.com/RealMedia/ads/adstream_jx.ads/insidepulse.sportsfanlive.com/jx/1'+OAS_rns+'@Middle?RM_HTML_CLICK=" type="text/javascript"><\/script>');</script><NOSCRIPT><A HREF="http://oascentral.sportsfanlive.com/RealMedia/ads/click_nx.ads/insidepulse.sportsfanlive.com@Middle?&?RM_HTML_CLICK=" target="_blank"><IMG SRC="http://oascentral.sportsfanlive.com/RealMedia/ads/adstream_nx.ads/insidepulse.sportsfanlive.com@Middle?&?RM_HTML_CLICK=" border=0></A></NOSCRIPT><!--- end of insidepulse.sportsfanlive.com_Middle_(300x250) --->
 		</div>
 
 		<div class="right_container">
@@ -170,16 +162,8 @@
 
 			<div class="newsad_right">
 
-				<!--- start of insidepulse.sportsfanlive.com/default_companion_Left_(160x600.1) --->
-				<script LANGUAGE="JavaScript1.1">
-				document.write('<script LANGUAGE="JavaScript1.1" SRC="http://oascentral.sportsfanlive.com/RealMedia/ads/adstream_jx.ads/insidepulse.sportsfanlive.com/default/jx/comp/1'+OAS_rns+'@Position2,Left,x06!Left?XE&Partner=insidepulse&PartnerUnit=insidepulse.160x600.1.default/jx/comp&XE" type="text/javascript"><\/script>');
-				</script>
-				<NOSCRIPT>
-				<A HREF="http://oascentral.sportsfanlive.com/RealMedia/ads/click_nx.ads/insidepulse.sportsfanlive.com/default/nx/comp@Position2,Left,x06!Left?x?XE&Partner=insidepulse&PartnerUnit=insidepulse.160x600.1.default/nx/comp&XE" target="_blank">
-				<IMG SRC="http://oascentral.sportsfanlive.com/RealMedia/ads/adstream_nx.ads/insidepulse.sportsfanlive.com/default/nx/comp@Position2,Left,x06!Left?x?XE&Partner=insidepulse&PartnerUnit=insidepulse.160x600.1.default/nx/comp&XE" border=0>
-				</A>
-				</NOSCRIPT>
-				<!--- end of insidepulse.sportsfanlive.com/default_companion_Left_(160x600.1) --->
+				<!--- start of insidepulse.sportsfanlive.com_Left_(160x600) --->
+				<script LANGUAGE="JavaScript1.1">OAS_rn = new String (Math.random());OAS_rns = OAS_rn.substring (2, 11);document.write('<script LANGUAGE="JavaScript1.1" SRC="http://oascentral.sportsfanlive.com/RealMedia/ads/adstream_jx.ads/insidepulse.sportsfanlive.com/jx/1'+OAS_rns+’@Left?RM_HTML_CLICK=" type="text/javascript"><\/script>');</script><NOSCRIPT><A HREF="http://oascentral.sportsfanlive.com/RealMedia/ads/click_nx.ads/insidepulse.sportsfanlive.com@Left?&?RM_HTML_CLICK=" target="_blank"><IMG SRC="http://oascentral.sportsfanlive.com/RealMedia/ads/adstream_nx.ads/insidepulse.sportsfanlive.com@Left?&?RM_HTML_CLICK=" border=0></A></NOSCRIPT><!--- end of insidepulse.sportsfanlive.com_Left_(160x600) --->
 
 			</div>
 		</div>

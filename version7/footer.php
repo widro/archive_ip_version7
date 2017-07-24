@@ -42,7 +42,7 @@
 
 	<div class="inner">
 		<div class="footer_column8">
-			<a href="http://<?php echo $homeurl; ?>/movies/"><h4 class="font3 colorred">Movies</h4></a>
+			<a href="http://<?php echo $homeurl; ?>/movies/"><h4 class="font2 colorred">Movies</h4></a>
 
 			<a href="http://<?php echo $homeurl; ?>/category/theatrical-reviews/">Movie Reviews</a><br>
 			<a href="http://<?php echo $homeurl; ?>/category/blu-ray-reviews/">Blu Ray Reviews</a><br>
@@ -50,7 +50,7 @@
 			<a href="http://<?php echo $homeurl; ?>/tag/box-office/">Box Office</a>
 		</div>
 		<div class="footer_column8">
-			<a href="http://<?php echo $homeurl; ?>/tv/"><h4 class="font3 colorred">TV</h4></a>
+			<a href="http://<?php echo $homeurl; ?>/tv/"><h4 class="font2 colorred">TV</h4></a>
 
 			<a href="http://<?php echo $homeurl; ?>/latest-updates/?zone=tv&cat=news">News</a><br>
 			<a href="http://<?php echo $homeurl; ?>/latest-updates/?zone=tv&cat=reviews">Reviews</a><br>
@@ -58,7 +58,7 @@
 			<a href="http://<?php echo $homeurl; ?>/latest-updates/?zone=tv&cat=features">Features</a>
 		</div>
 		<div class="footer_column8">
-			<a href="http://<?php echo $homeurl; ?>/comics-nexus/"><h4 class="font3 colorred">Comics</h4></a>
+			<a href="http://<?php echo $homeurl; ?>/comics-nexus/"><h4 class="font2 colorred">Comics</h4></a>
 
 			<a href="http://<?php echo $homeurl; ?>/tag/marvel/">Marvel</a><br>
 			<a href="http://<?php echo $homeurl; ?>/tag/dc-comics/">DC Comics</a><br>
@@ -66,22 +66,22 @@
 			<a href="#">Features</a>
 		</div>
 		<div class="footer_column8">
-			<a href="http://<?php echo $wrestlingurl; ?>/"><h4 class="font3 colorred">Wrestling</h4></a>
+			<a href="http://<?php echo $wrestlingurl; ?>/"><h4 class="font2 colorred">Wrestling</h4></a>
 			<a href="http://<?php echo $wrestlingurl; ?>/category/news/">News</a><br>
 			<a href="http://<?php echo $wrestlingurl; ?>/category/recaps__reviews/">Reviews</a><br>
 			<a href="http://<?php echo $wrestlingurl; ?>/category/commentary/">Columns</a><br>
 			<a href="http://<?php echo $wrestlingurl; ?>/category/features/">Features</a>
 		</div>
 		<div class="footer_column8">
-			<a href="http://<?php echo $insidefightsurl; ?>/"><h4 class="font3 colorred">MMA/Boxing</h4></a>
+			<a href="http://<?php echo $homeurl; ?>/inside-fights/"><h4 class="font2 colorred">MMA/Boxing</h4></a>
 
-			<a href="http://<?php echo $insidefightsurl; ?>/category/mma-news/">MMA News</a><br>
-			<a href="http://<?php echo $insidefightsurl; ?>/category/mma-columns/">MMA Columns</a><br>
-			<a href="http://<?php echo $insidefightsurl; ?>/category/boxing-news/">Boxing News</a><br>
-			<a href="http://<?php echo $insidefightsurl; ?>/category/boxing-columns/">Boxing Columns</a><br>
+			<a href="http://<?php echo $homeurl; ?>/category/mma-news/">MMA News</a><br>
+			<a href="http://<?php echo $homeurl; ?>/category/mma-columns/">MMA Columns</a><br>
+			<a href="http://<?php echo $homeurl; ?>/category/boxing-news/">Boxing News</a><br>
+			<a href="http://<?php echo $homeurl; ?>/category/boxing-columns/">Boxing Columns</a><br>
 		</div>
 		<div class="footer_column8">
-			<a href="http://<?php echo $diehardgamefanurl; ?>/"><h4 class="font3 colorred">Video Games</h4></a>
+			<a href="http://<?php echo $diehardgamefanurl; ?>/"><h4 class="font2 colorred">Video Games</h4></a>
 
 			<a href="http://<?php echo $diehardgamefanurl; ?>/category/reviews/">Reviews</a><br>
 			<a href="http://<?php echo $diehardgamefanurl; ?>/category/neviews/">News</a><br>
@@ -89,7 +89,7 @@
 			<a href="http://<?php echo $diehardgamefanurl; ?>/category/features/">Features</a>
 		</div>
 		<div class="footer_column8">
-			<a href="http://<?php echo $homeurl; ?>/sports/"><h4 class="font3 colorred">Sports</h4></a>
+			<a href="http://<?php echo $homeurl; ?>/sports/"><h4 class="font2 colorred">Sports</h4></a>
 
 			<a href="http://<?php echo $homeurl; ?>/latest-updates/?zone=sports&cat=news">News</a><br>
 			<a href="http://<?php echo $homeurl; ?>/latest-updates/?zone=sports&cat=reviews">Reviews</a><br>
@@ -97,7 +97,7 @@
 			<a href="http://<?php echo $homeurl; ?>/latest-updates/?zone=sports&cat=features">Features</a>
 		</div>
 		<div class="footer_column8">
-			<a href="http://<?php echo $homeurl; ?>/music/"><h4 class="font3 colorred">More</h4></a>
+			<a href="http://<?php echo $homeurl; ?>/music/"><h4 class="font2 colorred">More</h4></a>
 
 			<a href="http://<?php echo $homeurl; ?>/figures">Figures</a><br>
 			<a href="http://<?php echo $homeurl; ?>/music">Music</a><br>
@@ -156,6 +156,9 @@
 
 </div>
 <div class="clear"></div>
+<div class="footer_line"></div>
+<div class="clear"></div>
+<div class="footer">
 <script type="text/javascript">
   if(typeof(gnm_ord)=='undefined') gnm_ord=Math.random()*10000000000000000; if(typeof(gnm_tile) == 'undefined') gnm_tile=1;
   document.write('<scr'+'ipt src="http://n4403ad.doubleclick.net/adj/gn.cr.insidepulse.com/ros;sect=ros;mtfInline=true;sz=728x90;tile='+(gnm_tile++)+';ord='+gnm_ord+'?" type="text/javascript"></scr'+'ipt>');
@@ -252,6 +255,8 @@ jQuery(document).ready(function($){ //fire on DOM ready
 <!--gum gum ads-->
 <script type="text/javascript">ggv2id='<?php echo $ggv2id; ?>';</script>
 <script type="text/javascript" src="http://g2.gumgum.com/javascripts/ggv2.js"></script>
+<div class="clear"></div>
+</div>
 
 </body>
 </html>
