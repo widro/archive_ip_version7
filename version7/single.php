@@ -362,27 +362,6 @@ jQuery(document).ready(function($){ //fire on DOM ready
 				<!-- content -->
 				<?php the_content(''); ?>
 				<!-- content end -->
-
-
-<?php
-if (in_category('live-coverage')){
-?>
-
-<iframe src="http://media.insidepulse.com/livecoverage/ppv.html" style="border:0; width:600px; height:400px;"></iframe>
-
-<?
-}
-?>
-
-
-
-
-
-
-
-
-
-
 				<?php
 				echo get_the_tag_list('<p>Tags: ',', ','</p>');
 				?>

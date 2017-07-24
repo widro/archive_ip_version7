@@ -9,13 +9,31 @@ $autoimages_topstory120x120 = array();
 
 
 
-$autoimages_cats[] = "fcw";
-$autoimages_tags[] = "fcw";
-$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/FCW-500x250-120x120.jpg";
-$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/FCW-500x250.jpg";
 
 
 
+
+
+
+$autoimages_cats[] = "raw";
+$autoimages_tags[] = "raw";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2010/09/raw-logo-120.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2011/08/MNR500.jpg";
+
+$autoimages_cats[] = "smackdown";
+$autoimages_tags[] = "smackdown";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2009/05/friday_night_smackdown_logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2009/05/friday_night_smackdown_logo-500x194.jpg";
+
+$autoimages_cats[] = "impact";
+$autoimages_tags[] = "impact";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2011/05/impact-wrestling.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2011/05/impact-wrestling-logo.jpg";
+
+$autoimages_cats[] = "cbs-world";
+$autoimages_tags[] = "cbs-world";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2011/01/wrestling120cbsworld.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2011/01/wrestling500cbsworld.jpg";
 
 
 
@@ -34,9 +52,10 @@ $autoimages_tags[] = "lord-tensai";
 $autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Lord-Tensai-120x1201.jpg";
 $autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Lord-Tensai-500x250.jpg";
 
-
-
-
+$autoimages_cats[] = "fcw";
+$autoimages_tags[] = "fcw";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/FCW-500x250-120x120.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/FCW-500x250.jpg";
 
 $autoimages_cats[] = "ric-flair";
 $autoimages_tags[] = "ric-flair";
