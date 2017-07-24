@@ -308,6 +308,30 @@ jQuery(document).ready(function($){ //fire on DOM ready
 }
 ?>
 <div class="article_body <?php echo $articlebodyhide; ?>">
+
+
+<?php
+if($active_zone=="wrestling"){
+?>
+<!-- BEGIN UAT - 606x300 - InsidePulse: InsidePulse - DO NOT MODIFY -->
+<script type="text/javascript" src="http://ad-cdn.technoratimedia.com/00/35/09/uat_10935.js?ad_size=606x300">
+</script>
+<!-- END TAG -->
+<?php
+}
+?>
+
+
+
+
+
+
+
+
+
+
+
+
 				<center>
 				<?php if($review_poster_image){
 					echo $review_poster_image;

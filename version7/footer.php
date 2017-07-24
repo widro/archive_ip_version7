@@ -254,6 +254,17 @@ jQuery(document).ready(function($){ //fire on DOM ready
 </div>
 	<div id="fb-root"></div>
 
+<!-- Mask to cover the whole screen -->
+<div id="mask"></div>
+
+<!-- boxes -->
+<div id="boxes">
+	<div id="dialog2" class="window">
+	  So, with this <b>Simple Jquery Modal Window</b>, it can be in any shapes you want! Simple and Easy to modify : ) <br/><br/>
+	<input type="button" value="Close it" class="close"/>
+	</div>
+</div>
+<!-- boxes -->
 
 </body>
 </html>
