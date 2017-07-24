@@ -180,6 +180,7 @@ if($active_zone=="home"){
 
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
+	$featuredauthors = "2|7|178|177|220|172";
 
 
 	//featured
@@ -615,7 +616,7 @@ elseif($active_zone=="wrestling"){
 	//$left4x2values = array($type, $slug, $name, $clickthru);
 
 	$disqusslug = "pulsewrestling";
-	$featuredauthors = "8|207|842|883|891|886|885|896|1";
+	$featuredauthors = "8|207|896|842|886|885|888|889|1";
 
 	//subnav
 	$subnavarray = array();

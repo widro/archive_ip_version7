@@ -1819,6 +1819,7 @@ function createsection($values, $area){
 			";
 		}
 		elseif($area=="featuredauthor"){
+			$thistitle = substr($thistitle, 0, 75);
 			$output_body .= "
 				<li><a href=\"$clickthru\" alt=\"$thistitle\" title=\"$thistitle\">&raquo; $thistitle</a></li>
 			";
@@ -2009,6 +2010,7 @@ function create_authbox($insider_userid, $area, $authorslug = "insider"){
 				</div>
 				<div class=\"right_greybox_authorright\">
 					$createsection_body
+				<div class=\"clear\"></div>
 				</div>
 			</div>
 
