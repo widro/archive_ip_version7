@@ -1478,35 +1478,41 @@ h3.icon2m{
 }
 
 .listing_cell_left{
-	width:110px;
+	width:140px;
 	float:left;
 }
 
 .listing_cell_left img{
-	width:90px;
-	height:90px;
+	width:120px;
+	height:120px;
 	padding:10px;
 }
 
 .listing_cell_right{
-	width:530px;
+	width:500px;
 	padding:5px;
 	padding-top:5px;
 	float:right;
 }
 
 .listing_cell_right a{
-	font-size:1em;
+	font-size:1.5em;
 }
 
 .listing_cell_right p{
 	font-size:.8em;
+	margin:0px;
 }
 
 
 .listing_cell_byline{
-	color:#999999;
+	color:#666666;
 	font-size:.75em;
+	margin:2px;
+}
+
+.listing_cell_byline a{
+	color:#000000;
 }
 
 

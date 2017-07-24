@@ -1093,16 +1093,25 @@ $(document).ready(function() {
 				<div class="right"></div>
 			</div>
 
-			<div id="nav8" name="nav8" class="<?php echo $sports_tabcss; ?>";>
+			<div id="nav9" name="nav9" class="<?php echo $figures_tabcss; ?>";>
 				<div class="left">
-					<a class="font2" href="http://<?php echo $homeurl; ?>/sports/">Sports</a>
+					<a class="font2" href="http://<?php echo $homeurl; ?>/figures/">Figs</a>
 				</div>
 				<div class="right"></div>
 			</div>
 
-			<div id="nav9" name="nav9" class="<?php echo $figures_tabcss; ?>";>
+<!--
+
+			<div id="nav11" name="nav11" class="<?php echo $more_tabcss; ?>";>
 				<div class="left">
-					<a class="font2" href="http://<?php echo $homeurl; ?>/figures/">Figs</a>
+					<a class="font2" href="http://forum.insidepulse.com/ubbthreads/ubbthreads.php">Forum</a>
+				</div>
+				<div class="right"></div>
+			</div>
+
+			<div id="nav8" name="nav8" class="<?php echo $sports_tabcss; ?>";>
+				<div class="left">
+					<a class="font2" href="http://<?php echo $homeurl; ?>/sports/">Sports</a>
 				</div>
 				<div class="right"></div>
 			</div>
@@ -1113,15 +1122,6 @@ $(document).ready(function() {
 				</div>
 				<div class="right"></div>
 			</div>
-
-			<div id="nav11" name="nav11" class="<?php echo $more_tabcss; ?>";>
-				<div class="left">
-					<a class="font2" href="http://forum.insidepulse.com/ubbthreads/ubbthreads.php">Forum</a>
-				</div>
-				<div class="right"></div>
-			</div>
-
-<!--
 			<div id="nav10" name="nav10" class="<?php echo $more_tabcss; ?>";>
 				<div class="left">
 					<ul id="jsddm">

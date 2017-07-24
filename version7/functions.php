@@ -345,7 +345,7 @@ function makesql($type, $slug){
 function listingcell($thistitle, $thisdate, $author, $clickthru, $thisexcerpt, $topstory120x120, $topstory500x250, $grey = false){
 
 	if($grey){
-		$cssadd = "style=\"background:#fafafa;\"";
+		$cssadd = "style=\"background:#eeeeee;\"";
 	}
 
 	$listing = "
@@ -357,8 +357,8 @@ function listingcell($thistitle, $thisdate, $author, $clickthru, $thisexcerpt, $
 
 		</div>
 		<div class=\"listing_cell_right\">
-			<a class=\"bold color1\" href=\"$clickthru\">$thistitle</a> <span class=\"date\">($thisdate)</span>
-			<p class=\"listing_cell_byline\">By $author</p>
+			<a class=\"bold color1\" href=\"$clickthru\">$thistitle</a>
+			<p class=\"listing_cell_byline\">By $author <span class=\"date\">($thisdate)</span></p>
 			<p>$thisexcerpt <a class=\"bold color1 author_cell_readmore\" href=\"$clickthru\">&raquo;&raquo;</a></p>
 		</div>
 	<div class=\"clear\"></div>

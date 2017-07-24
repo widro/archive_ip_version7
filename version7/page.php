@@ -2,7 +2,8 @@
 
 //zone pages
 if(is_page('home')||is_page('pulsecasts')||is_page('movies')||is_page('tv')||is_page('sports')||is_page('comics-nexus')||is_page('comics')||is_page('music')||is_page('commercials')||is_page('games')||is_page('figures')){
-	include('page_zone.php');
+//	include('page_zone.php');
+	include('loader.php');
 }
 
 //video pages

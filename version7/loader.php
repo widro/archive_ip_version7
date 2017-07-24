@@ -54,18 +54,11 @@ if(is_page('around3')){
 elseif($view=="related"){
 	$limit = 5;
 }
-elseif(is_page('latest-updates')){
+elseif(is_page('latest-updates')||is_page('movies')||is_page('tv')||is_page('comics-nexus')||is_page('sports')||is_page('figures')||is_page('newsboard')){
 	$limit = 50;
 	$view="latest";
 
 }
-
-elseif(is_page('newsboard')){
-	$limit = 50;
-	$view="latest";
-
-}
-
 
 if($zone){
 	$browselinkadd .= "&zone=$zone";
@@ -226,7 +219,8 @@ if($topstory120x120==""){
 	$topstory120x120 = defaultimage("loader", "topstory120x120");
 }
 $thistitle = $post->post_title;
-$thisdate = $post->post_date;
+$thisdate = mysql2date('M j, Y', $post->post_date);
+$thisdate = mysql2date('M j, Y', $post->post_date);
 $clickthru=get_permalink($thispostid);
 
 //$author = $post->post_author;
@@ -246,9 +240,12 @@ if(!$topstory120x120){
 }
 
 
-
-	//$loaderoutput .= listingcell($post, "latest");
+if($tempi%2==0){
 	$loaderoutput .=  listingcell($thistitle, $thisdate, $author, $clickthru, $thisexcerpt, $topstory120x120, $topstory500x250);
+}
+else{
+	$loaderoutput .=  listingcell($thistitle, $thisdate, $author, $clickthru, $thisexcerpt, $topstory120x120, $topstory500x250, true);
+}
 
 $tempi++;
 endwhile;
@@ -422,7 +419,7 @@ foreach($postarray3 as $thispost){
 
 
 
-	<h3 class="icon2m bold" style="margin-top:2px;">Full <?php echo $thiscat_name; ?> Listing</span></h3>
+	<h3 class="icon2m bold" style="margin-top:2px;">Latest <?php echo $thiscat_name; ?> Updates</span></h3>
 
 <div class="listing_filter">
 	<form action="/latest-updates/" method="get">

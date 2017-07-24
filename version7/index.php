@@ -8,7 +8,7 @@ if(is_home()&&$_SERVER['HTTP_HOST']!="press.insidepulse.com"){
 
 <?php get_header(); ?>
 
-	<h3 class="icon2m bold" style="margin-top:2px;">Full Listing</span></h3>
+<!--	<h3 class="icon2m bold" style="margin-top:2px;">Full Listing</span></h3> -->
 <div class="listing_filter">
 	<form action="/latest-updates/" method="get">
 

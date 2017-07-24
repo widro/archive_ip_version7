@@ -32,7 +32,7 @@ if(is_page('tv-show-madness')){
 	$clickthru=get_permalink($thispostid);
 
 	//outputs date in wacky format
-	$thisdate = $post->post_date;
+	$thisdate = mysql2date('M j, Y', $post->post_date);
 ?>
 
 <li><a href="<?php echo $clickthru; ?>"><?php echo $thistitle; ?></a></li>
