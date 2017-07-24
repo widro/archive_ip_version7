@@ -49,8 +49,17 @@
 		</div>
 		<div class="clear"></div>
 
+		<div class="clear" style="height:30px;"></div>
+		<div class="right_container">
+
+		Our very own <a href="http://diehardgamefan.com/latest-updates/?authorid=296&zone=">ML Kennedy</a> has an all-new book!<br>
+
+		<a href="http://www.amazon.com/gp/product/B00UIZPZ52/ref=x_gr_mw_bb_t1_sout_a?ie=UTF8&tag=x_gr_mw_bb_t1_sout_a-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=B00UIZPZ52&SubscriptionId=1MGPYB6YW3HWK55XCGG2"><img src="http://insidepulse.com/wp-content/uploads/2015/03/thanksgivingforwerewolves.jpg"></a>
+		<a href="http://www.amazon.com/gp/product/B00UIZPZ52/ref=x_gr_mw_bb_t1_sout_a?ie=UTF8&tag=x_gr_mw_bb_t1_sout_a-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=B00UIZPZ52&SubscriptionId=1MGPYB6YW3HWK55XCGG2"><h3>Check out Thanksgiving for Werewolves and Other Monstrous Tales today!</h3></a>
 
 
+
+		</div>
 		<div class="clear" style="height:30px;"></div>
 
 		<div class="right_container greybox">

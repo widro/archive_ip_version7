@@ -15,15 +15,24 @@
 	while ($the_query->have_posts()) : $the_query->the_post();
 	$do_not_duplicate = $post->ID;
 
-	$topstory120x120 = get_post_meta($post->ID, 'topstory120x120', true);
-	$topstory500x250 = get_post_meta($post->ID, 'topstory500x250', true);
-	if($topstory500x250==""){
-		$topstory500x250 = defaultimage("top-story", "topstory500x250");
-	}
+			$topstory120x120 = get_the_post_thumbnail( $post->ID, 'thumbnail' );
 
-	if($topstory120x120==""){
-		$topstory120x120 = defaultimage("top-story", "topstory120x120");
-	}
+			$topstory500x250 = get_the_post_thumbnail( $post->ID, 'large' );
+
+			if(!$topstory120x120){
+				$topstory120x120 = get_post_meta($post->ID, 'topstory120x120', true);
+				if(!$topstory120x120){
+					$topstory120x120 = "http://media.insidepulse.com/shared/images/v7/default120x120_.jpg";
+				}
+				$topstory120x120 = "<img src='$topstory120x120'>";
+			}
+			if(!$topstory500x250){
+				$topstory500x250 = get_post_meta($post->ID, 'topstory500x250', true);
+				if(!$topstory500x250){
+					$topstory500x250 = "http://media.insidepulse.com/shared/images/v7/default500x250_.jpg";
+				}
+				$topstory500x250 = "<img src='$topstory500x250'>";
+			}
 
 	$thistitle = $post->post_title;
 	//$thistitle = strip_tags($thistitle);
@@ -53,80 +62,28 @@
 	endwhile;
 
 
-if($active_zone=="homse"){
-
-$wrestlingposts = getrsslinks('http://wrestling.insidepulse.com/category/top-story/feed/', 'Wrestling', 1, "array");
-$diehardgamefanposts = getrsslinks('http://diehardgamefan.com/category/top-story/feed/', 'diehardgamefan', 1, "array");
-$insidefightsposts = getrsslinks('http://insidefights.com/category/top-story/feed/', 'insidefights', 1, "array");
-
-$outsideposts = array();
-foreach($wrestlingposts as $eachpost){
-	$unixtimestamp = mktime($eachpost['post_date']);
-	$unixtimestamp = (int)$unixtimestamp;
-	$postarray[$unixtimestamp]['title'] = $eachpost['title'];
-	$postarray[$unixtimestamp]['clickthru'] = $eachpost['clickthru'];
-	$postarray[$unixtimestamp]['excerpt'] = $eachpost['excerpt'];
-	$postarray[$unixtimestamp]['content'] = $eachpost['content'];
-	$postarray[$unixtimestamp]['post_date'] = $eachpost['post_date'];
-	$postarray[$unixtimestamp]['topstory500x250'] = $eachpost['topstory500x250'];
-	$postarray[$unixtimestamp]['topstory120x120'] = $eachpost['topstory120x120'];
-}
-
-foreach($diehardgamefanposts as $eachpost){
-	$unixtimestamp = mktime($eachpost['post_date']);
-	$unixtimestamp = (int)$unixtimestamp;
-	$postarray[$unixtimestamp]['title'] = $eachpost['title'];
-	$postarray[$unixtimestamp]['clickthru'] = $eachpost['clickthru'];
-	$postarray[$unixtimestamp]['excerpt'] = $eachpost['excerpt'];
-	$postarray[$unixtimestamp]['content'] = $eachpost['content'];
-	$postarray[$unixtimestamp]['post_date'] = $eachpost['post_date'];
-	$postarray[$unixtimestamp]['topstory500x250'] = $eachpost['topstory500x250'];
-	$postarray[$unixtimestamp]['topstory120x120'] = $eachpost['topstory120x120'];
-}
-
-foreach($insidefightsposts as $eachpost){
-	$unixtimestamp = mktime($eachpost['post_date']);
-	$unixtimestamp = (int)$unixtimestamp;
-	$postarray[$unixtimestamp]['title'] = $eachpost['title'];
-	$postarray[$unixtimestamp]['clickthru'] = $eachpost['clickthru'];
-	$postarray[$unixtimestamp]['excerpt'] = $eachpost['excerpt'];
-	$postarray[$unixtimestamp]['content'] = $eachpost['content'];
-	$postarray[$unixtimestamp]['post_date'] = $eachpost['post_date'];
-	$postarray[$unixtimestamp]['topstory500x250'] = $eachpost['topstory500x250'];
-	$postarray[$unixtimestamp]['topstory120x120'] = $eachpost['topstory120x120'];
-}
-
-//merge outside array and insidepulse array
-
-ksort($postarray);
-$postarray3 = array_reverse($postarray);
-//print_r($postarray3);
-//exit();
-
-}
-else{
 	$postarray3 = $postarray;
-}
 
 $topstoryposition=1;
 foreach($postarray3 as $thispost){
 
 	if($topstoryposition<5){
 		//vars
-		$topstory120x120 = $thispost['topstory120x120'];
-		$topstory500x250 = $thispost['topstory500x250'];
+
 		$clickthru = $thispost['clickthru'];
 		$thisexcerpt = $thispost['excerpt'];
 		$thistitle = $thispost['title'];
 		$thisexcerpt = substr($thisexcerpt, 0, 150);
 		//$thistitle = substr($thistitle, 0, 100);
+		$topstory120x120 = $thispost['topstory120x120'];
+		$topstory500x250 = $thispost['topstory500x250'];
 
 
 		//build top story rotator
 		if($topstory120x120&&$topstory500x250){
 			if($topstoryposition==1){
 				$rotatorimages .= "
-					<li class=\"show\"><a href=\"$clickthru\"><img src=\"$topstory500x250\"></a></li>
+					<li class=\"show\"><a href=\"$clickthru\">$topstory500x250</a></li>
 				";
 				$rotatorclicks .= "
 					<li class=\"show\">
@@ -146,7 +103,7 @@ foreach($postarray3 as $thispost){
 			}
 			else{
 				$rotatorimages .= "
-					<li><a href=\"$clickthru\"><img src=\"$topstory500x250\"></a></li>
+					<li><a href=\"$clickthru\">$topstory500x250</a></li>
 				";
 				$rotatorclicks .= "
 					<li>
@@ -251,7 +208,7 @@ for($i=0;$i<$left4x2count;$i++){
 
 			if($zonecounter==0){
 				$toplink = "
-						<a href=\"$clickthru\"><img src=\"$topstory500x250\"></a>
+						<a href=\"$clickthru\">$topstory500x250</a>
 						<a href=\"$clickthru\" class=\"left4x2_headline\">$thistitle</a>
 				";
 
@@ -273,15 +230,23 @@ for($i=0;$i<$left4x2count;$i++){
 			$do_not_duplicate = $post->ID;
 			$thispostid = $post->ID;
 
-			$topstory120x120 = get_post_meta($post->ID, 'topstory120x120', true);
-			$topstory500x250 = get_post_meta($post->ID, 'topstory500x250', true);
+			$topstory120x120 = get_the_post_thumbnail( $post->ID, 'thumbnail' );
 
-			if($topstory500x250==""){
-				$topstory500x250 = defaultimage($active_zone, "topstory500x250");
+			$topstory500x250 = get_the_post_thumbnail( $post->ID, 'large' );
+
+			if(!$topstory120x120){
+				$topstory120x120 = get_post_meta($post->ID, 'topstory120x120', true);
+				if(!$topstory120x120){
+					$topstory120x120 = "http://media.insidepulse.com/shared/images/v7/default120x120_.jpg";
+				}
+				$topstory120x120 = "<img src='$topstory120x120'>";
 			}
-
-			if($topstory120x120==""){
-				$topstory120x120 = defaultimage($active_zone, "topstory120x120");
+			if(!$topstory500x250){
+				$topstory500x250 = get_post_meta($post->ID, 'topstory500x250', true);
+				if(!$topstory500x250){
+					$topstory500x250 = "http://media.insidepulse.com/shared/images/v7/default500x250_.jpg";
+				}
+				$topstory500x250 = "<img src='$topstory500x250'>";
 			}
 			$thistitle = $post->post_title;
 			//$thistitle = strip_tags($thistitle);
@@ -294,7 +259,7 @@ for($i=0;$i<$left4x2count;$i++){
 
 			if($zonecounter==0){
 				$toplink = "
-						<a href=\"$clickthru\"><img src=\"$topstory500x250\"></a>
+						<a href=\"$clickthru\">$topstory500x250</a>
 						<a href=\"$clickthru\" class=\"left4x2_headline\">$thistitle</a>
 				";
 

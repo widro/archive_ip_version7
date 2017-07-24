@@ -439,45 +439,6 @@ jQuery(document).ready(function($){ //fire on DOM ready
 		<?php comments_template(); ?>
 
 
-<!-- MarketGidNews Start -->
-<div id="MarketGidScriptRootN6121" class="news-block-magick">
-    <div id="MarketGidPreloadN6121">
-        <a id="mg_add6121" href="http://mgid.com/advertisers/?utm_source=widget&utm_medium=text&utm_campaign=add" target="_blank">Place your ad here</a><br>        <a href="http://mgid.com/" target="_blank">Loading...</a>
-    </div>
-    <script>
-                (function(){
-            var D=new Date(),d=document,b='body',ce='createElement',ac='appendChild',st='style',ds='display',n='none',gi='getElementById';
-            var i=d[ce]('iframe');i[st][ds]=n;d[gi]("MarketGidScriptRootN6121")[ac](i);try{var iw=i.contentWindow.document;iw.open();iw.writeln("<ht"+"ml><bo"+"dy></bo"+"dy></ht"+"ml>");iw.close();var c=iw[b];}
-            catch(e){var iw=d;var c=d[gi]("MarketGidScriptRootN6121");}var dv=iw[ce]('div');dv.id="MG_ID";dv[st][ds]=n;dv.innerHTML=6121;c[ac](dv);
-            var s=iw[ce]('script');s.async='async';s.defer='defer';s.charset='utf-8';s.src="//jsn.mgid.com/i/n/insidepulse.com.6121.js?t="+D.getYear()+D.getMonth()+D.getDate()+D.getHours();c[ac](s);})();
-    </script>
-</div>
-<!-- MarketGidNews End -->
-<script type="text/javascript">
-  if(typeof(gnm_ord)=='undefined') gnm_ord=Math.random()*10000000000000000; if(typeof(gnm_tile) == 'undefined') gnm_tile=1;
-  document.write('<scr'+'ipt src="http://n4403ad.doubleclick.net/adj/gn.cr.insidepulse.com/ros;sect=ros;mtfInline=true;sz=300x250;tile='+(gnm_tile++)+';ord='+gnm_ord+'?" type="text/javascript"></scr'+'ipt>');
-</script>
-<!-- END AD TAG -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

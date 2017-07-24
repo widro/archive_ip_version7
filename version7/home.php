@@ -15,16 +15,24 @@
 	while ($the_query->have_posts()) : $the_query->the_post();
 	$do_not_duplicate = $post->ID;
 
-	$topstory120x120 = get_post_meta($post->ID, 'topstory120x120', true);
-	$topstory500x250 = get_post_meta($post->ID, 'topstory500x250', true);
-	if($topstory500x250==""){
-		$topstory500x250 = defaultimage("top-story", "topstory500x250");
-	}
+			$topstory120x120 = get_the_post_thumbnail( $post->ID, 'thumbnail' );
 
-	if($topstory120x120==""){
-		$topstory120x120 = defaultimage("top-story", "topstory120x120");
-	}
+			$topstory500x250 = get_the_post_thumbnail( $post->ID, 'large' );
 
+			if(!$topstory120x120){
+				$topstory120x120 = get_post_meta($post->ID, 'topstory120x120', true);
+				if(!$topstory120x120){
+					$topstory120x120 = "http://media.insidepulse.com/shared/images/v7/default120x120_.jpg";
+				}
+				$topstory120x120 = "<img src='$topstory120x120'>";
+			}
+			if(!$topstory500x250){
+				$topstory500x250 = get_post_meta($post->ID, 'topstory500x250', true);
+				if(!$topstory500x250){
+					$topstory500x250 = "http://media.insidepulse.com/shared/images/v7/default500x250_.jpg";
+				}
+				$topstory500x250 = "<img src='$topstory500x250'>";
+			}
 	$thistitle = $post->post_title;
 	//$thistitle = strip_tags($thistitle);
 	$thistitle = str_replace("\"", "", $thistitle);
@@ -112,7 +120,7 @@ foreach($postarray3 as $thispost){
 		if($topstory120x120&&$topstory500x250){
 			if($topstoryposition==1){
 				$rotatorimages .= "
-					<li class=\"show\"><a href=\"$clickthru\"><img src=\"$topstory500x250\"></a></li>
+					<li class=\"show\"><a href=\"$clickthru\">$topstory500x250</a></li>
 				";
 				$rotatorclicks .= "
 					<li class=\"show\">
@@ -124,15 +132,18 @@ foreach($postarray3 as $thispost){
 					</li>
 				";
 
+				//$topstory500x250 = str_replace("%body%", "black", "<body text='%body%'>");
+				$topstory500x250 = str_replace("img src", "img class=\"on\" id=\"topstorythumb_$topstoryposition\" name=\"topstorythumb_$topstoryposition\" src", "$topstory500x250");
+
 				$featuredthumbrow .= "
 					<div class=\"topstory_scroll_cell\">
-						<a href=\"$clickthru\"><img id=\"topstorythumb_$topstoryposition\" name=\"topstorythumb_$topstoryposition\" src=\"$topstory500x250\" class=\"on\"></a>
+						<a href=\"$clickthru\">$topstory500x250</a>
 					</div>
 				";
 			}
 			else{
 				$rotatorimages .= "
-					<li><a href=\"$clickthru\"><img src=\"$topstory500x250\"></a></li>
+					<li><a href=\"$clickthru\">$topstory500x250</a></li>
 				";
 				$rotatorclicks .= "
 					<li>
@@ -144,9 +155,10 @@ foreach($postarray3 as $thispost){
 					</li>
 				";
 
+				$topstory500x250 = str_replace("img src", "img id=\"topstorythumb_$topstoryposition\" name=\"topstorythumb_$topstoryposition\" src", "$topstory500x250");
 				$featuredthumbrow .= "
 					<div class=\"topstory_scroll_cell \">
-						<a href=\"$clickthru\"><img id=\"topstorythumb_$topstoryposition\" name=\"topstorythumb_$topstoryposition\" src=\"$topstory500x250\"></a>
+						<a href=\"$clickthru\">$topstory500x250</a>
 					</div>
 				";
 			}
@@ -225,6 +237,8 @@ for($i=0;$i<$left4x2count;$i++){
 		foreach($postsarrayall as $postsarray){
 			$topstory120x120 = $postsarray['topstory120x120'];
 			$topstory500x250 = $postsarray['topstory500x250'];
+				$topstory120x120 = "<img src='$topstory120x120'>";
+				$topstory500x250 = "<img src='$topstory500x250'>";
 			$thistitle = $postsarray['title'];
 			//$thistitle = strip_tags($thistitle);
 			$thisexcerpt = $postsarray['excerpt'];
@@ -233,7 +247,7 @@ for($i=0;$i<$left4x2count;$i++){
 
 			if($zonecounter==0){
 				$toplink = "
-						<a href=\"$clickthru\"><img src=\"$topstory500x250\"></a>
+						<a href=\"$clickthru\">$topstory500x250</a>
 						<a href=\"$clickthru\" class=\"left4x2_headline\">$thistitle</a>
 				";
 
@@ -255,15 +269,23 @@ for($i=0;$i<$left4x2count;$i++){
 			$do_not_duplicate = $post->ID;
 			$thispostid = $post->ID;
 
-			$topstory120x120 = get_post_meta($post->ID, 'topstory120x120', true);
-			$topstory500x250 = get_post_meta($post->ID, 'topstory500x250', true);
+			$topstory120x120 = get_the_post_thumbnail( $post->ID, 'thumbnail' );
 
-			if($topstory500x250==""){
-				$topstory500x250 = defaultimage($active_zone, "topstory500x250");
+			$topstory500x250 = get_the_post_thumbnail( $post->ID, 'large' );
+
+			if(!$topstory120x120){
+				$topstory120x120 = get_post_meta($post->ID, 'topstory120x120', true);
+				if(!$topstory120x120){
+					$topstory120x120 = "http://media.insidepulse.com/shared/images/v7/default120x120_.jpg";
+				}
+				$topstory120x120 = "<img src='$topstory120x120'>";
 			}
-
-			if($topstory120x120==""){
-				$topstory120x120 = defaultimage($active_zone, "topstory120x120");
+			if(!$topstory500x250){
+				$topstory500x250 = get_post_meta($post->ID, 'topstory500x250', true);
+				if(!$topstory500x250){
+					$topstory500x250 = "http://media.insidepulse.com/shared/images/v7/default500x250_.jpg";
+				}
+				$topstory500x250 = "<img src='$topstory500x250'>";
 			}
 			$thistitle = $post->post_title;
 			//$thistitle = strip_tags($thistitle);
@@ -276,7 +298,7 @@ for($i=0;$i<$left4x2count;$i++){
 
 			if($zonecounter==0){
 				$toplink = "
-						<a href=\"$clickthru\"><img src=\"$topstory500x250\"></a>
+						<a href=\"$clickthru\">$topstory500x250</a>
 						<a href=\"$clickthru\" class=\"left4x2_headline\">$thistitle</a>
 				";
 

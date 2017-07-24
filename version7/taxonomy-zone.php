@@ -11,15 +11,24 @@
 	while ($the_query->have_posts()) : $the_query->the_post();
 	$do_not_duplicate = $post->ID;
 
-	$topstory120x120 = get_post_meta($post->ID, 'topstory120x120', true);
-	$topstory500x250 = get_post_meta($post->ID, 'topstory500x250', true);
-	if($topstory500x250==""){
-		$topstory500x250 = defaultimage("top-story", "topstory500x250");
-	}
+			$topstory120x120 = get_the_post_thumbnail( $post->ID, 'thumbnail' );
 
-	if($topstory120x120==""){
-		$topstory120x120 = defaultimage("top-story", "topstory120x120");
-	}
+			$topstory500x250 = get_the_post_thumbnail( $post->ID, 'large' );
+
+			if(!$topstory120x120){
+				$topstory120x120 = get_post_meta($post->ID, 'topstory120x120', true);
+				if(!$topstory120x120){
+					$topstory120x120 = "http://media.insidepulse.com/shared/images/v7/default120x120_.jpg";
+				}
+				$topstory120x120 = "<img src='$topstory120x120'>";
+			}
+			if(!$topstory500x250){
+				$topstory500x250 = get_post_meta($post->ID, 'topstory500x250', true);
+				if(!$topstory500x250){
+					$topstory500x250 = "http://media.insidepulse.com/shared/images/v7/default500x250_.jpg";
+				}
+				$topstory500x250 = "<img src='$topstory500x250'>";
+			}
 
 	$thistitle = $post->post_title;
 	$thistitle = strip_tags($thistitle);
@@ -68,7 +77,7 @@ foreach($postarray3 as $thispost){
 		if($topstory120x120&&$topstory500x250){
 			if($topstoryposition==1){
 				$rotatorimages .= "
-					<li class=\"show\"><a href=\"$clickthru\"><img src=\"$topstory500x250\"></a></li>
+					<li class=\"show\"><a href=\"$clickthru\">$topstory500x250</a></li>
 				";
 				$rotatorclicks .= "
 					<li class=\"show\">
@@ -80,15 +89,17 @@ foreach($postarray3 as $thispost){
 					</li>
 				";
 
+				$topstory500x250 = str_replace("img src", "img class=\"on\" id=\"topstorythumb_$topstoryposition\" name=\"topstorythumb_$topstoryposition\" src", "$topstory500x250");
+
 				$featuredthumbrow .= "
 					<div class=\"topstory_scroll_cell\">
-						<a href=\"$clickthru\"><img id=\"topstorythumb_$topstoryposition\" name=\"topstorythumb_$topstoryposition\" src=\"$topstory500x250\" class=\"on\"></a>
+						<a href=\"$clickthru\">$topstory500x250</a>
 					</div>
 				";
 			}
 			else{
 				$rotatorimages .= "
-					<li><a href=\"$clickthru\"><img src=\"$topstory500x250\"></a></li>
+					<li><a href=\"$clickthru\">$topstory500x250</a></li>
 				";
 				$rotatorclicks .= "
 					<li>
@@ -100,9 +111,11 @@ foreach($postarray3 as $thispost){
 					</li>
 				";
 
+				$topstory500x250 = str_replace("img src", "img id=\"topstorythumb_$topstoryposition\" name=\"topstorythumb_$topstoryposition\" src", "$topstory500x250");
+
 				$featuredthumbrow .= "
-					<div class=\"topstory_scroll_cell \">
-						<a href=\"$clickthru\"><img id=\"topstorythumb_$topstoryposition\" name=\"topstorythumb_$topstoryposition\" src=\"$topstory500x250\"></a>
+					<div class=\"topstory_scroll_cell\">
+						<a href=\"$clickthru\">$topstory500x250</a>
 					</div>
 				";
 			}
@@ -154,15 +167,24 @@ foreach($postarray3 as $thispost){
 
 
 while (have_posts()) : the_post();
-	$topstory120x120 = get_post_meta($post->ID, 'topstory120x120', true);
-	$topstory500x250 = get_post_meta($post->ID, 'topstory500x250', true);
-	if($topstory500x250==""){
-		$topstory500x250 = defaultimage($thiscat_name, "topstory500x250");
-	}
+			$topstory120x120 = get_the_post_thumbnail( $post->ID, 'thumbnail' );
 
-	if($topstory120x120==""){
-		$topstory120x120 = defaultimage($thiscat_name, "topstory120x120");
-	}
+			$topstory500x250 = get_the_post_thumbnail( $post->ID, 'large' );
+
+			if(!$topstory120x120){
+				$topstory120x120 = get_post_meta($post->ID, 'topstory120x120', true);
+				if(!$topstory120x120){
+					$topstory120x120 = "http://media.insidepulse.com/shared/images/v7/default120x120_.jpg";
+				}
+				$topstory120x120 = "<img src='$topstory120x120'>";
+			}
+			if(!$topstory500x250){
+				$topstory500x250 = get_post_meta($post->ID, 'topstory500x250', true);
+				if(!$topstory500x250){
+					$topstory500x250 = "http://media.insidepulse.com/shared/images/v7/default500x250_.jpg";
+				}
+				$topstory500x250 = "<img src='$topstory500x250'>";
+			}
 	$thistitle = $post->post_title;
 	$thistitle = str_replace("\"", "", $thistitle);
 	$thistitle = substr($thistitle, 0, 100);

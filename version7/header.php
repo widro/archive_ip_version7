@@ -321,7 +321,7 @@ elseif($active_zone=="tv"){
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\"://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");</script>
 	";
 
-	$zonepoll = "156";
+	$zonepoll = "166";
 
 }
 
@@ -383,7 +383,7 @@ elseif($active_zone=="movies"){
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\"://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");</script>
 	";
 
-	$zonepoll = "155";
+	$zonepoll = "163";
 
 }
 
@@ -448,6 +448,7 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\"://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");</script>
 	";
 
+	$zonepoll = "162";
 }
 
 elseif($active_zone=="pulsecasts"){
@@ -726,7 +727,7 @@ elseif($active_zone=="wrestling"){
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
 
-	$featuredauthors = "36|2207|2896|2842|2885|2888|2889|2917|1";
+	$featuredauthors = "36|2207|2842|2885|2888|2889|2917|1";
 
 	//subnav
 	$subnavarray = array();
@@ -775,7 +776,7 @@ elseif($active_zone=="wrestling"){
 <a class=\"twitter-timeline\" href=\"https://twitter.com/pulsewrestling\" data-widget-id=\"425391494002786304\">Tweets by @pulsewrestling</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\"://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");</script>
 	";
-	$zonepoll = "159";
+	$zonepoll = "169";
 
 }
 

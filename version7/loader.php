@@ -5,7 +5,6 @@ Template Name: Loader
 // get vars
 
 
-$topstorysqladd = "&category_name=top-story";
 
 if($_GET['currentpage']){
 	$currentpage = $_GET['currentpage'];
@@ -83,7 +82,6 @@ if(is_page('figures')){
 }
 if(is_page('wrestling')){
 	$zone = "wrestling";
-	$topstorysqladd = "&category_name=top-story-wrestling";
 }
 if(is_page('music')){
 	$zone = "music";
@@ -234,18 +232,24 @@ $do_not_duplicate = $post->ID;
 
 //query_posts($sqladd);
 
-$default120url = "http://media.insidepulse.com/shared/images/logos/default120_insidepulse.jpg";
-$default500url = "http://media.insidepulse.com/shared/images/logos/default500_insidepulse.jpg";
+			$topstory120x120 = get_the_post_thumbnail( $post->ID, 'thumbnail' );
 
-$topstory120x120 = get_post_meta($post->ID, 'topstory120x120', true);
-$topstory500x250 = get_post_meta($post->ID, 'topstory500x250', true);
-if($topstory500x250==""){
-	$topstory500x250 = defaultimage("loader", "topstory500x250");
-}
+			$topstory500x250 = get_the_post_thumbnail( $post->ID, 'large' );
 
-if($topstory120x120==""){
-	$topstory120x120 = defaultimage("loader", "topstory120x120");
-}
+			if(!$topstory120x120){
+				$topstory120x120 = get_post_meta($post->ID, 'topstory120x120', true);
+				if(!$topstory120x120){
+					$topstory120x120 = "http://media.insidepulse.com/shared/images/v7/default120x120_.jpg";
+				}
+				$topstory120x120 = "<img src='$topstory120x120'>";
+			}
+			if(!$topstory500x250){
+				$topstory500x250 = get_post_meta($post->ID, 'topstory500x250', true);
+				if(!$topstory500x250){
+					$topstory500x250 = "http://media.insidepulse.com/shared/images/v7/default500x250_.jpg";
+				}
+				$topstory500x250 = "<img src='$topstory500x250'>";
+			}
 $thistitle = $post->post_title;
 $thisdate = mysql2date('M j, Y', $post->post_date);
 $thisdate = mysql2date('M j, Y', $post->post_date);
@@ -257,15 +261,6 @@ $author = "<a href=\"" . get_author_posts_url($post->post_author) . "\">" . get_
 
 $thisexcerpt = makeexcerpt($post->post_content, $post->post_excerpt, "default");
 
-
-
-if(!$topstory500x250){
-	$topstory500x250 =  $default500avatarurl;
-}
-
-if(!$topstory120x120){
-	$topstory120x120 = $default120avatarurl;
-}
 
 
 if($tempi%2==0){
@@ -292,22 +287,30 @@ if(!$_SERVER['QUERY_STRING']){
 	$topstoryposition = 1;
 
 	// top story sql
-	$the_query = new WP_Query('&showposts=4' . $topstorysqladd . '&orderby=post_date&order=desc');
+	$the_query = new WP_Query('&showposts=4&category_name=top-story&zone=' . $zone . '&orderby=post_date&order=desc');
 
 	//top story loop
 	while ($the_query->have_posts()) : $the_query->the_post();
 	$do_not_duplicate = $post->ID;
 
-	$topstory120x120 = get_post_meta($post->ID, 'topstory120x120', true);
-	$topstory500x250 = get_post_meta($post->ID, 'topstory500x250', true);
-	if($topstory500x250==""){
-		$topstory500x250 = defaultimage("top-story", "topstory500x250");
-	}
+			$topstory120x120 = get_the_post_thumbnail( $post->ID, 'thumbnail' );
 
-	if($topstory120x120==""){
-		$topstory120x120 = defaultimage("top-story", "topstory120x120");
-	}
+			$topstory500x250 = get_the_post_thumbnail( $post->ID, 'large' );
 
+			if(!$topstory120x120){
+				$topstory120x120 = get_post_meta($post->ID, 'topstory120x120', true);
+				if(!$topstory120x120){
+					$topstory120x120 = "http://media.insidepulse.com/shared/images/v7/default120x120_.jpg";
+				}
+				$topstory120x120 = "<img src='$topstory120x120'>";
+			}
+			if(!$topstory500x250){
+				$topstory500x250 = get_post_meta($post->ID, 'topstory500x250', true);
+				if(!$topstory500x250){
+					$topstory500x250 = "http://media.insidepulse.com/shared/images/v7/default500x250_.jpg";
+				}
+				$topstory500x250 = "<img src='$topstory500x250'>";
+			}
 	$thistitle = $post->post_title;
 	//$thistitle = strip_tags($thistitle);
 	$thistitle = str_replace("\"", "", $thistitle);
@@ -355,7 +358,7 @@ foreach($postarray3 as $thispost){
 		if($topstory120x120&&$topstory500x250){
 			if($topstoryposition==1){
 				$rotatorimages .= "
-					<li class=\"show\"><a href=\"$clickthru\"><img src=\"$topstory500x250\"></a></li>
+					<li class=\"show\"><a href=\"$clickthru\">$topstory500x250</a></li>
 				";
 				$rotatorclicks .= "
 					<li class=\"show\">
@@ -367,15 +370,17 @@ foreach($postarray3 as $thispost){
 					</li>
 				";
 
+				$topstory500x250 = str_replace("img src", "img class=\"on\" id=\"topstorythumb_$topstoryposition\" name=\"topstorythumb_$topstoryposition\" src", "$topstory500x250");
+
 				$featuredthumbrow .= "
 					<div class=\"topstory_scroll_cell\">
-						<a href=\"$clickthru\"><img id=\"topstorythumb_$topstoryposition\" name=\"topstorythumb_$topstoryposition\" src=\"$topstory500x250\" class=\"on\"></a>
+						<a href=\"$clickthru\">$topstory500x250</a>
 					</div>
 				";
 			}
 			else{
 				$rotatorimages .= "
-					<li><a href=\"$clickthru\"><img src=\"$topstory500x250\"></a></li>
+					<li><a href=\"$clickthru\">$topstory500x250</a></li>
 				";
 				$rotatorclicks .= "
 					<li>
@@ -387,9 +392,11 @@ foreach($postarray3 as $thispost){
 					</li>
 				";
 
+				$topstory500x250 = str_replace("img src", "img id=\"topstorythumb_$topstoryposition\" name=\"topstorythumb_$topstoryposition\" src", "$topstory500x250");
+
 				$featuredthumbrow .= "
-					<div class=\"topstory_scroll_cell \">
-						<a href=\"$clickthru\"><img id=\"topstorythumb_$topstoryposition\" name=\"topstorythumb_$topstoryposition\" src=\"$topstory500x250\"></a>
+					<div class=\"topstory_scroll_cell\">
+						<a href=\"$clickthru\">$topstory500x250</a>
 					</div>
 				";
 			}

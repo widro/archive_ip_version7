@@ -353,12 +353,20 @@ function listingcell($thistitle, $thisdate, $author, $clickthru, $thisexcerpt, $
 		$cssadd = "style=\"background:#eeeeee;\"";
 	}
 
+	if(!strstr($topstory120x120, "<img")){
+		$topstory120x120 = "<img src='$topstory120x120'>";
+	}
+
+	if(!strstr($topstory500x250, "<img")){
+		$topstory500x250 = "<img src='$topstory500x250'>";
+	}
+
 	$listing = "
 
 	<div class=\"listing_cell\" $cssadd>
 		<div class=\"listing_cell_left\">
 
-			<a href=\"$clickthru\"><img src=\"$topstory120x120\"></a>
+			<a href=\"$clickthru\">$topstory120x120</a>
 
 		</div>
 		<div class=\"listing_cell_right\">
@@ -1732,15 +1740,24 @@ function createsection($values, $area){
 		setup_postdata($post);
 		$do_not_duplicate = $post->ID;
 
-		$topstory120x120 = get_post_meta($post->ID, 'topstory120x120', true);
-		$topstory500x250 = get_post_meta($post->ID, 'topstory500x250', true);
-		if($topstory500x250==""){
-			$topstory500x250 = defaultimage("top-story", "topstory500x250");
-		}
+			$topstory120x120 = get_the_post_thumbnail( $post->ID, 'thumbnail' );
 
-		if($topstory120x120==""){
-			$topstory120x120 = defaultimage("top-story", "topstory120x120");
-		}
+			$topstory500x250 = get_the_post_thumbnail( $post->ID, 'large' );
+
+			if(!$topstory120x120){
+				$topstory120x120 = get_post_meta($post->ID, 'topstory120x120', true);
+				if(!$topstory120x120){
+					$topstory120x120 = "http://media.insidepulse.com/shared/images/v7/default120x120_.jpg";
+				}
+				$topstory120x120 = "<img src='$topstory120x120'>";
+			}
+			if(!$topstory500x250){
+				$topstory500x250 = get_post_meta($post->ID, 'topstory500x250', true);
+				if(!$topstory500x250){
+					$topstory500x250 = "http://media.insidepulse.com/shared/images/v7/default500x250_.jpg";
+				}
+				$topstory500x250 = "<img src='$topstory500x250'>";
+			}
 		$thispostid = $post->ID;
 		$thistitle = $post->post_title;
 		//$thistitle = strip_tags($thistitle);
@@ -1761,7 +1778,7 @@ function createsection($values, $area){
 			$output_body .= "
 						<div class=\"subtop_cell\">
 							<div class=\"subtop_cell_left\">
-								<a href=\"$clickthru\"><img src=\"$topstory120x120\"></a>
+								<a href=\"$clickthru\">$topstory120x120</a>
 							</div>
 							<div class=\"subtop_cell_right\">
 								<a href=\"$clickthru\" class=\"headline\">$thistitle</a>
@@ -1782,7 +1799,7 @@ function createsection($values, $area){
 			$output_body .= "
 					<div class=\"right_cell\">
 						<div class=\"right_cell_left\">
-							<a href=\"$clickthru\" alt=\"$thistitle\" title=\"$thistitle\"><img src=\"$topstory120x120\"></a>
+							<a href=\"$clickthru\" alt=\"$thistitle\" title=\"$thistitle\">$topstory120x120</a>
 						</div>
 						<div class=\"right_cell_right\">
 							<a href=\"$clickthru\" alt=\"$thistitle\" title=\"$thistitle\">$thistitle</a> <span class=\"date\">($thisdate)</span>
@@ -1805,14 +1822,14 @@ function createsection($values, $area){
 
 			$output_body .= "
 			<div class=\"article_box_cell $classadd\">
-				<a href=\"$clickthru\" alt=\"$thistitle\" title=\"$thistitle\"><img src=\"$topstory500x250\"><br>$thistitle</a>
+				<a href=\"$clickthru\" alt=\"$thistitle\" title=\"$thistitle\">$topstory500x250<br>$thistitle</a>
 			</div>
 			";
 		}
 		elseif($area=="narrowlinks"){
 			$output_body .= "
 				<div class=\"newsad_left_cell\">
-					<a href=\"$clickthru\" alt=\"$thistitle\" title=\"$thistitle\"><img src=\"$topstory120x120\"></a>
+					<a href=\"$clickthru\" alt=\"$thistitle\" title=\"$thistitle\">$topstory120x120</a>
 					<a href=\"$clickthru\" alt=\"$thistitle\" title=\"$thistitle\">$thistitle <span class=\"color1\">&raquo;</span></a>
 				</div>
 			";
@@ -1826,7 +1843,7 @@ function createsection($values, $area){
 		elseif($area=="authbox"){
 			$output_body .= "
 				<div class=\"article_authorbox_cell\">
-					<a href=\"$clickthru\" alt=\"$thistitle\" title=\"$thistitle\"><img src=\"$topstory120x120\"></a>
+					<a href=\"$clickthru\" alt=\"$thistitle\" title=\"$thistitle\">$topstory120x120</a>
 				</div>
 			";
 		}
