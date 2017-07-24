@@ -229,14 +229,25 @@ if($active_zone=="home"){
 	$left4x2values = array();
 	$left4x2values[] = array('zone', 'movies', 'Movies', '/movies');
 	$left4x2values[] = array('zone', 'tv', 'Television', '/tv');
-	$left4x2values[] = array('zone', 'sports', 'Sports', '/sports');
-	$left4x2values[] = array('rss', 'http://' . $wrestlingurl . '/feed/', 'Wrestling', 'http://wrestling.insidepulse.com/');
-	//$left4x2values[] = array('rss', 'http://' . $insidefightsurl . '/feed/', 'Inside Fights', 'http://insidefights.com/');
-	$left4x2values[] = array('rss', 'http://' . $diehardgamefanurl . '/feed/', 'Diehard Gamefan', 'http://diehardgamefan.com/');
 	$left4x2values[] = array('zone', 'comics-nexus', 'Comics Nexus', '/comics-nexus');
+	$left4x2values[] = array('zone', 'inside-fights', 'Inside Fights', '/inside-fights');
+	$left4x2values[] = array('rss', 'http://' . $wrestlingurl . '/feed/', 'Wrestling', 'http://wrestling.insidepulse.com/');
+	//$left4x2values[] = array('rss', 'http://' . $diehardgamefanurl . '/category/archive/feed/', 'Diehard Gamefan', 'http://diehardgamefan.com/');
+	$left4x2values[] = array('rss', 'http://' . $diehardgamefanurl . '/feed/', 'Diehard Gamefan', 'http://diehardgamefan.com/');
+	$left4x2values[] = array('tag', 'video-of-the-day', 'Daily Video', '/video-of-the-day');
+	$left4x2values[] = array('tag', 'this-day-in-pulse-history', 'Pulse Flashback', '/this-day-in-pulse-history');
+	$left4x2values[] = array('cat', 'news', 'news', '/news');
+
+	$left4x2values[] = array('zone', 'figures', 'Figures', '/figures');
+	$left4x2values[] = array('zone', 'sports', 'Sports', '/sports');
 	$left4x2values[] = array('zone', 'music', 'Music', '/music');
 	//$left4x2values[] = array('zonecat', 'movies|news', 'movie news', '/news');
-	$left4x2values[] = array('cat', 'news', 'news', '/news');
+
+
+
+
+
+
 
 	//rightfeatured
 	$rightfeaturedvalues = array();

@@ -662,25 +662,25 @@ color: #ff0000;
 /*** featured_tabs **/
 
 .featured_tabs{
-	background:url('mainsprite.png') -5px -159px;
+	background:url('mainsprite.png') -5px -159px no-repeat;
 	width:660px;
 	height:33px;
 }
 
 .featured_tabs1{
-	background:url('mainsprite.png') -5px -159px;
+	background:url('mainsprite.png') -5px -159px no-repeat;
 	width:660px;
 	height:33px;
 }
 
 .featured_tabs2{
-	background:url('mainsprite.png') -5px -191px;
+	background:url('mainsprite.png') -5px -191px no-repeat;
 	width:660px;
 	height:33px;
 }
 
 .featured_tabs3{
-	background:url('mainsprite.png') -5px -223px;
+	background:url('mainsprite.png') -5px -223px no-repeat;
 	width:660px;
 	height:33px;
 }
@@ -757,7 +757,6 @@ color: #ff0000;
 
 
 .left4x2_column img{
-	margin-top:5px;
 	margin-bottom:5px;
 	width:150px;
 	height:75px;
@@ -775,7 +774,7 @@ color: #ff0000;
 .greyline150{
 	height:4px;
 	width:150px;
-	background:#cccccc;
+	background:#eeeeee;
 	display:block;
 	font-size:3px;
 }

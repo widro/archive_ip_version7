@@ -333,7 +333,7 @@ jQuery(document).ready(function($){ //fire on DOM ready
 				<?php if(has_tag("This Day In Diehard Gamefan History", $post )){ echo "<div class='pollarticle'><img src='http://diehardgamefan.com/wp-content/uploads/2014/12/thisdaydhgfhistory1600.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("Game Collection Roundtable", $post )){ echo "<div class='pollarticle'><img src='http://diehardgamefan.com/wp-content/uploads/2014/12/collectionrt1600.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("Out Today on DVD", $post )){ echo "<div class='pollarticle'><img src='http://insidepulse.com/wp-content/uploads/2014/12/dvdrelease1600.jpg' style='padding:0px;width:660px;' />"; } ?>
-				<?php if(has_tag("In Theatres Today", $post )){ echo "<div class='pollarticle'><img src='http://insidepulse.com/wp-content/uploads/2014/12/template1600_movreleases.jpg' style='padding:0px;width:660px;' />"; } ?>
+				<?php if(has_tag("video of the day", $post )){ echo "<div class='pollarticle'><img src='http://insidepulse.net/vxwireframe2/images/video.jpg' style='padding:0px;width:660px;' />"; } ?>
 
 				<!-- content -->
 				<?php the_content(''); ?>
@@ -357,7 +357,7 @@ jQuery(document).ready(function($){ //fire on DOM ready
 				<?php if(has_tag("This Day In Diehard Gamefan History", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("Game Collection Roundtable", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("Out Today on DVD", $post )){ echo "</div>"; } ?>
-				<?php if(has_tag("In Theatres Today", $post )){ echo "</div>"; } ?>
+				<?php if(has_tag("video of the day", $post )){ echo "</div>"; } ?>
 				<br><br>
 				<?php
 				echo get_the_tag_list('<p>Tags: ',', ','</p>');

@@ -1,13 +1,13 @@
 <?php get_header(); ?>
-	<div class="content_left" style="width:980px;">
+	<div class="content_left" style="width:1050px;">
 
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
 
-		<div class="article_headline color1 bold">
+		<div class="article_headline color1 bold" style="width:1050px;">
 			<?php the_title(); ?>
 		</div>
-		<div class="article_body">
+		<div class="article_body" style="width:1050px;">
 				<!-- content -->
 <?
 if(is_page('tv-show-madness')){

@@ -1079,7 +1079,7 @@ function my_show_extra_profile_fields( $user ) { ?>
 			<th><label for="authortitle">Author Title</label></th>
 
 			<td>
-				<input type="text" name="authortitle" id="authortitle" value="<?php echo esc_attr( get_the_author_meta( 'authortitle', $user->ID ) ); ?>" class="regular-text" /><br />
+				<input type="text" name="authortitle" id="authortitle" value="<?php echo esc_attr( get_the_author_meta( 'authortitle', $user->ID ) ); ?>" class="regular-text" />
 				<span class="description">Please enter your title.</span>
 			</td>
 		</tr>
@@ -1088,7 +1088,7 @@ function my_show_extra_profile_fields( $user ) { ?>
 			<th><label for="twitter">Twitter</label></th>
 
 			<td>
-				<input type="text" name="twitter" id="twitter" value="<?php echo esc_attr( get_the_author_meta( 'twitter', $user->ID ) ); ?>" class="regular-text" /><br />
+				<input type="text" name="twitter" id="twitter" value="<?php echo esc_attr( get_the_author_meta( 'twitter', $user->ID ) ); ?>" class="regular-text" />
 				<span class="description">Please enter your Twitter username.</span>
 			</td>
 		</tr>
@@ -1097,7 +1097,7 @@ function my_show_extra_profile_fields( $user ) { ?>
 			<th><label for="twitterrss">Twitter RSS</label></th>
 
 			<td>
-				<input type="text" name="twitterrss" id="twitterrss" value="<?php echo esc_attr( get_the_author_meta( 'twitterrss', $user->ID ) ); ?>" class="regular-text" /><br />
+				<input type="text" name="twitterrss" id="twitterrss" value="<?php echo esc_attr( get_the_author_meta( 'twitterrss', $user->ID ) ); ?>" class="regular-text" />
 				<span class="description">Please enter your Twitter RSS URL (on your twitter profile, right side).</span>
 			</td>
 		</tr>
@@ -1106,7 +1106,7 @@ function my_show_extra_profile_fields( $user ) { ?>
 			<th><label for="facebook">Facebook</label></th>
 
 			<td>
-				<input type="text" name="facebook" id="facebook" value="<?php echo esc_attr( get_the_author_meta( 'facebook', $user->ID ) ); ?>" class="regular-text" /><br />
+				<input type="text" name="facebook" id="facebook" value="<?php echo esc_attr( get_the_author_meta( 'facebook', $user->ID ) ); ?>" class="regular-text" />
 				<span class="description">Please enter your Facebook url.</span>
 			</td>
 		</tr>
@@ -1115,7 +1115,7 @@ function my_show_extra_profile_fields( $user ) { ?>
 			<th><label for="youtube">You Tube</label></th>
 
 			<td>
-				<input type="text" name="youtube" id="youtube" value="<?php echo esc_attr( get_the_author_meta( 'youtube', $user->ID ) ); ?>" class="regular-text" /><br />
+				<input type="text" name="youtube" id="youtube" value="<?php echo esc_attr( get_the_author_meta( 'youtube', $user->ID ) ); ?>" class="regular-text" />
 				<span class="description">Please enter your You Tube url.</span>
 			</td>
 		</tr>
@@ -1124,7 +1124,7 @@ function my_show_extra_profile_fields( $user ) { ?>
 			<th><label for="rss1">RSS 1</label></th>
 
 			<td>
-				<input type="text" name="rss1" id="rss1" value="<?php echo esc_attr( get_the_author_meta( 'rss1', $user->ID ) ); ?>" class="regular-text" /><br />
+				<input type="text" name="rss1" id="rss1" value="<?php echo esc_attr( get_the_author_meta( 'rss1', $user->ID ) ); ?>" class="regular-text" />
 				<span class="description">Please enter your rss1 url.</span>
 			</td>
 		</tr>
@@ -1133,7 +1133,7 @@ function my_show_extra_profile_fields( $user ) { ?>
 			<th><label for="rss2">RSS 2</label></th>
 
 			<td>
-				<input type="text" name="rss2" id="rss2" value="<?php echo esc_attr( get_the_author_meta( 'rss2', $user->ID ) ); ?>" class="regular-text" /><br />
+				<input type="text" name="rss2" id="rss2" value="<?php echo esc_attr( get_the_author_meta( 'rss2', $user->ID ) ); ?>" class="regular-text" />
 				<span class="description">Please enter your rss2 url.</span>
 			</td>
 		</tr>
@@ -1142,7 +1142,7 @@ function my_show_extra_profile_fields( $user ) { ?>
 			<th><label for="rss3">RSS 3</label></th>
 
 			<td>
-				<input type="text" name="rss3" id="rss3" value="<?php echo esc_attr( get_the_author_meta( 'rss3', $user->ID ) ); ?>" class="regular-text" /><br />
+				<input type="text" name="rss3" id="rss3" value="<?php echo esc_attr( get_the_author_meta( 'rss3', $user->ID ) ); ?>" class="regular-text" />
 				<span class="description">Please enter your rss3 url.</span>
 			</td>
 		</tr>
@@ -1151,7 +1151,7 @@ function my_show_extra_profile_fields( $user ) { ?>
 			<th><label for="avatar120">Avatar 120 URL</label></th>
 
 			<td>
-				<input type="text" name="avatar120" id="avatar120" value="<?php echo esc_attr( get_the_author_meta( 'avatar120', $user->ID ) ); ?>" class="regular-text" /><br />
+				<input type="text" name="avatar120" id="avatar120" value="<?php echo esc_attr( get_the_author_meta( 'avatar120', $user->ID ) ); ?>" class="regular-text" />
 				<span class="description">Please enter your avatar 120 url.</span>
 			</td>
 		</tr>
@@ -1160,7 +1160,7 @@ function my_show_extra_profile_fields( $user ) { ?>
 			<th><label for="avatar500">Avatar 500 URL</label></th>
 
 			<td>
-				<input type="text" name="avatar500" id="avatar500" value="<?php echo esc_attr( get_the_author_meta( 'avatar500', $user->ID ) ); ?>" class="regular-text" /><br />
+				<input type="text" name="avatar500" id="avatar500" value="<?php echo esc_attr( get_the_author_meta( 'avatar500', $user->ID ) ); ?>" class="regular-text" />
 				<span class="description">Please enter your avatar 500 url.</span>
 			</td>
 		</tr>
@@ -1169,7 +1169,7 @@ function my_show_extra_profile_fields( $user ) { ?>
 			<th><label for="avatar500">Cover Image URL (650x325)</label></th>
 
 			<td>
-				<input type="text" name="coverimage" id="coverimage" value="<?php echo esc_attr( get_the_author_meta( 'coverimage', $user->ID ) ); ?>" class="regular-text" /><br />
+				<input type="text" name="coverimage" id="coverimage" value="<?php echo esc_attr( get_the_author_meta( 'coverimage', $user->ID ) ); ?>" class="regular-text" />
 				<span class="description">Please enter your Cover Image URL.</span>
 			</td>
 		</tr>
@@ -1178,7 +1178,7 @@ function my_show_extra_profile_fields( $user ) { ?>
 			<th><label for="ipemail">IP Email</label></th>
 
 			<td>
-				<input type="text" name="ipemail" id="ipemail" value="<?php echo esc_attr( get_the_author_meta( 'ipemail', $user->ID ) ); ?>" class="regular-text" /><br />
+				<input type="text" name="ipemail" id="ipemail" value="<?php echo esc_attr( get_the_author_meta( 'ipemail', $user->ID ) ); ?>" class="regular-text" />
 				<span class="description">Please enter your IP email username.</span>
 			</td>
 		</tr>
@@ -1187,7 +1187,7 @@ function my_show_extra_profile_fields( $user ) { ?>
 			<th><label for="ipforum">IP Forum</label></th>
 
 			<td>
-				<input type="text" name="ipforum" id="ipforum" value="<?php echo esc_attr( get_the_author_meta( 'ipforum', $user->ID ) ); ?>" class="regular-text" /><br />
+				<input type="text" name="ipforum" id="ipforum" value="<?php echo esc_attr( get_the_author_meta( 'ipforum', $user->ID ) ); ?>" class="regular-text" />
 				<span class="description">Please enter your IP Forum Name.</span>
 			</td>
 		</tr>
@@ -1196,7 +1196,7 @@ function my_show_extra_profile_fields( $user ) { ?>
 			<th><label for="quote">quote</label></th>
 
 			<td>
-				<input type="text" name="quote" id="quote" value="<?php echo esc_attr( get_the_author_meta( 'quote', $user->ID ) ); ?>" class="regular-text" /><br />
+				<input type="text" name="quote" id="quote" value="<?php echo esc_attr( get_the_author_meta( 'quote', $user->ID ) ); ?>" class="regular-text" />
 				<span class="description">Please enter your quote.</span>
 			</td>
 		</tr>
@@ -1205,7 +1205,7 @@ function my_show_extra_profile_fields( $user ) { ?>
 			<th><label for="row1">row1</label></th>
 
 			<td>
-				<input type="text" name="row1" id="row1" value="<?php echo esc_attr( get_the_author_meta( 'row1', $user->ID ) ); ?>" class="regular-text" /><br />
+				<input type="text" name="row1" id="row1" value="<?php echo esc_attr( get_the_author_meta( 'row1', $user->ID ) ); ?>" class="regular-text" />
 				<span class="description">Please enter your row1.</span>
 			</td>
 		</tr>
@@ -1214,7 +1214,7 @@ function my_show_extra_profile_fields( $user ) { ?>
 			<th><label for="row2">row2</label></th>
 
 			<td>
-				<input type="text" name="row2" id="row2" value="<?php echo esc_attr( get_the_author_meta( 'row2', $user->ID ) ); ?>" class="regular-text" /><br />
+				<input type="text" name="row2" id="row2" value="<?php echo esc_attr( get_the_author_meta( 'row2', $user->ID ) ); ?>" class="regular-text" />
 				<span class="description">Please enter your row2.</span>
 			</td>
 		</tr>
@@ -1223,7 +1223,7 @@ function my_show_extra_profile_fields( $user ) { ?>
 			<th><label for="row3">row3</label></th>
 
 			<td>
-				<input type="text" name="row3" id="row3" value="<?php echo esc_attr( get_the_author_meta( 'row3', $user->ID ) ); ?>" class="regular-text" /><br />
+				<input type="text" name="row3" id="row3" value="<?php echo esc_attr( get_the_author_meta( 'row3', $user->ID ) ); ?>" class="regular-text" />
 				<span class="description">Please enter your row3.</span>
 			</td>
 		</tr>
@@ -1232,7 +1232,7 @@ function my_show_extra_profile_fields( $user ) { ?>
 			<th><label for="row4">row4</label></th>
 
 			<td>
-				<input type="text" name="row4" id="row4" value="<?php echo esc_attr( get_the_author_meta( 'row4', $user->ID ) ); ?>" class="regular-text" /><br />
+				<input type="text" name="row4" id="row4" value="<?php echo esc_attr( get_the_author_meta( 'row4', $user->ID ) ); ?>" class="regular-text" />
 				<span class="description">Please enter your row4.</span>
 			</td>
 		</tr>
@@ -1241,7 +1241,7 @@ function my_show_extra_profile_fields( $user ) { ?>
 			<th><label for="row5">row5</label></th>
 
 			<td>
-				<input type="text" name="row5" id="row5" value="<?php echo esc_attr( get_the_author_meta( 'row5', $user->ID ) ); ?>" class="regular-text" /><br />
+				<input type="text" name="row5" id="row5" value="<?php echo esc_attr( get_the_author_meta( 'row5', $user->ID ) ); ?>" class="regular-text" />
 				<span class="description">Please enter your row5.</span>
 			</td>
 		</tr>
@@ -1250,7 +1250,7 @@ function my_show_extra_profile_fields( $user ) { ?>
 			<th><label for="zonesuser">zonesuser</label></th>
 
 			<td>
-				<input type="text" name="zonesuser" id="zonesuser" value="<?php echo esc_attr( get_the_author_meta( 'zonesuser', $user->ID ) ); ?>" class="regular-text" /><br />
+				<input type="text" name="zonesuser" id="zonesuser" value="<?php echo esc_attr( get_the_author_meta( 'zonesuser', $user->ID ) ); ?>" class="regular-text" />
 				<span class="description">Please enter your zonesuser.</span>
 			</td>
 		</tr>
@@ -1315,7 +1315,7 @@ function IPiframe_options_page() {
 
 echo "
 <div class=\"wrap\">
-	<div id=\"icon-index\" class=\"icon32\"><br /></div>
+	<div id=\"icon-index\" class=\"icon32\"></div>
 <h2>Inside Pulse 120x120 and 500x250 images
 
 <a href=http://insidepulse.com/images target=images_iframe>ALL</a> |
@@ -1336,7 +1336,7 @@ function IPiframe_options_page_staffxls() {
 
 echo "
 <div class=\"wrap\">
-	<div id=\"icon-index\" class=\"icon32\"><br /></div>
+	<div id=\"icon-index\" class=\"icon32\"></div>
 <h2>Inside Pulse staffxls
 
 <a href=http://insidepulse.com/staffxls target=images_iframe>ALL</a> |
@@ -1359,7 +1359,7 @@ function IPiframe_admin_page() {
 
 echo "
 <div class=\"wrap\">
-	<div id=\"icon-index\" class=\"icon32\"><br /></div>
+	<div id=\"icon-index\" class=\"icon32\"></div>
 <h2>Admin</h2>
 
 <iframe name=images_iframe src=http://insidepulse.com/admin width=1000 height=1500 frameborder=0 scrolling=no></iframe>
@@ -1374,7 +1374,7 @@ function IPiframe_email_page() {
 
 echo "
 <div class=\"wrap\">
-	<div id=\"icon-index\" class=\"icon32\"><br /></div>
+	<div id=\"icon-index\" class=\"icon32\"></div>
 <h2>Inside Pulse Email</h2>
 
 <iframe name=email_iframe src=http://mail.google.com/a/insidepulse.com/#inbox width=1000 height=700 frameborder=0 scrolling=no></iframe>
@@ -1391,7 +1391,7 @@ function IPiframe_staffforum_page() {
 
 echo "
 <div class=\"wrap\">
-	<div id=\"icon-index\" class=\"icon32\"><br /></div>
+	<div id=\"icon-index\" class=\"icon32\"></div>
 <h2>Staff Forum</h2>
 
 <iframe name=staff_iframe src=http://forum.insidepulse.com/ubbthreads/ubbthreads.php?ubb=cfrm&c=10 width=1000 height=700 frameborder=0></iframe>
@@ -1445,13 +1445,13 @@ function getrsslinks($rssurl, $overalltitle, $limit, $view){
 
 			$desc = str_replace( array("\n", "\r"), ' ', esc_attr( strip_tags( @html_entity_decode( $item->get_description(), ENT_QUOTES, get_option('blog_charset') ) ) ) );
 
-			$desc = $item->get_content();
+			$contentitem = $item->get_content();
+			//echo $contentitem;
 			// go thru and get 120 and 500
-			$descriptiona = explode("<topstory120x120>", $desc);
-
+			$descriptiona = explode("topstory120x120-", $contentitem);
 			if($descriptiona[1]){
 				$reexplode = $descriptiona[1];
-				$descriptionb = explode("</topstory120x120>", $reexplode);
+				$descriptionb = explode("|topstory120x120", $reexplode);
 				if(strlen($descriptionb[1])>3){
 					$topstory120x120 = str_replace("&#215;", "x", $descriptionb[0]);
 				}
@@ -1460,11 +1460,11 @@ function getrsslinks($rssurl, $overalltitle, $limit, $view){
 				}
 			}
 
-			$descriptiona2 = explode("<topstory500x250>", $desc);
+			$descriptiona2 = explode("topstory500x250-", $contentitem);
 
 			if($descriptiona2[1]){
 				$reexplode2 = $descriptiona2[1];
-				$descriptionb2 = explode("</topstory500x250>", $reexplode2);
+				$descriptionb2 = explode("|topstory500x250", $reexplode2);
 				if(strlen($descriptionb2[1])>3){
 					$topstory500x250 = str_replace("&#215;", "x", $descriptionb2[0]);
 				}

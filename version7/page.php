@@ -22,14 +22,20 @@ elseif(is_page('dvd-review-archive')){
 	include('page_masterarchive.php');
 }
 
-
-
-//authors
-elseif(is_page('widro')){
-	include('author.php');
+//dvd-release-dates
+elseif(is_page('forum')||is_page('forums')){
+	include('page_full.php');
 }
 
-
+elseif(strpos($_SERVER['REQUEST_URI'], "forums")){
+	if(is_user_logged_in()){
+		include('page_full.php');
+	}
+	else{
+		echo "You need to be logged into the dashboard! <a href=\"/wp-login.php?redirect_to=%2Fforums%2F&reauth=1\">click here to go to the login page</a>";
+		exit();
+	}
+}
 
 //slides
 elseif(is_page('advertising')){
