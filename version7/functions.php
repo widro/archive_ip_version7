@@ -1428,8 +1428,8 @@ function getrsslinks($rssurl, $overalltitle, $limit, $view){
 	$rss = fetch_feed($rssurl);
 
 	//print_r($rss);
-	//$overalltitle =  $rss->get_title();
-	//$overalllink =  $rss->get_link();
+	$overalltitle =  $rss->get_title();
+	$overalllink =  $rss->get_link();
 	$topstorycheck = true;
 	$subtopoutput = "";
 	$rowcounter=0;

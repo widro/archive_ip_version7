@@ -1,5 +1,5 @@
 <?php
-if(is_home()&&$_SERVER['HTTP_HOST']!="press.insidepulse.com"){
+if(is_home()){
 	include_once('page_zone.php');
 	exit();
 }

@@ -80,57 +80,75 @@ elseif(is_page('title-history')){
 		$displayText .= $yup;
 	}
 
+
+
+
+
+
+
+
+
 	$displayText .= "
-	<b>WWE Smackdown Titles:</b><br>
-	<a class=wrestling href=/title-history/?titlecode=7>World Heavyweight Title</a> |
-	<a class=wrestling href=/title-history/?titlecode=2>WWE Intercontinental Title </a> |
-	<a class=wrestling href=/title-history/?titlecode=17>WWE Tag Team Titles</a> |
-	<a class=wrestling href=/title-history/?titlecode=16>WWE Woman's Title </a><br><br>
+<h2>Active Titles</h2>
+<p>Titles that are still actively defended</p>
 
-	<b>WWE Raw Titles:</b><br>
-	<a class=wrestling href=/title-history/?titlecode=1>WWE Heavyweight Title</a> |
-	<a class=wrestling href=/title-history/?titlecode=8>WWE United States Title </a> |
-	<a class=wrestling href=/title-history/?titlecode=4>World Tag Team Titles </a> |
-	<a class=wrestling href=/title-history/?titlecode=26>WWE Divas Title</a><br><br>
+<h3>WWE</h3>
+<a class=wrestling href=/title-history/?titlecode=1>WWE Title</a> |
+<a class=wrestling href=/title-history/?titlecode=7>World Title</a> |
+<a class=wrestling href=/title-history/?titlecode=8>WWE United States Title</a> |
+<a class=wrestling href=/title-history/?titlecode=2>WWE Intercontinental Title</a> |
+<a class=wrestling href=/title-history/?titlecode=4>World Tag Team Titles</a> |
+<a class=wrestling href=/title-history/?titlecode=16>WWE Woman's Title</a> |
+<a class=wrestling href=/title-history/?titlecode=17>WWE Tag Team Titles</a> |
+<a class=wrestling href=/title-history/?titlecode=26>WWE Diva's Championship</a> |
 
-	<b>ECW Titles:</b><br>
-	<a class=wrestling href=/title-history/?titlecode=13>ECW World Title</a><br><br>
-
-	<br>
-
-	<b>TNA Titles:</b><br>
-	<a class=wrestling href=/title-history/?titlecode=18>TNA World Title </a> |
-	<a class=wrestling href=/title-history/?titlecode=19>TNA World X Division Title </a> |
-	<a class=wrestling href=/title-history/?titlecode=20>TNA Tag Team Titles </a> |
-	<a class=wrestling href=/title-history/?titlecode=21>TNA Knockout Title </a>
-	<a class=wrestling href=/title-history/?titlecode=27>TNA Global Title </a>
-	<a class=wrestling href=/title-history/?titlecode=28>TNA Knockout Tag Team Titles </a>
-	<br><br>
-	<br>
-
-	<b>ROH Titles:</b><br>
-	<a class=wrestling href=/title-history/?titlecode=22>ROH World Title </a> |
-	<a class=wrestling href=/title-history/?titlecode=23>ROH Tag Team Titles </a> |
-	<a class=wrestling href=/title-history/?titlecode=29>ROH TV Title</a> |
-	<br><br>
-
-	<b>NWA Titles:</b><br>
-	<a class=wrestling href=/title-history/?titlecode=24>NWA World Title </a> |
-	<br><br>
+<h3>TNA</h3>
+<a class=wrestling href=/title-history/?titlecode=18>TNA World Title</a> |
+<a class=wrestling href=/title-history/?titlecode=19>TNA X Division Title</a> |
+<a class=wrestling href=/title-history/?titlecode=20>TNA Tag Team Titles</a> |
+<a class=wrestling href=/title-history/?titlecode=21>TNA Knockout Title</a> |
+<a class=wrestling href=/title-history/?titlecode=27>TNA Global Title</a> |
+<a class=wrestling href=/title-history/?titlecode=28>TNA Knockout Tag Team Titles</a> |
 
 
+<h3>NWA</h3>
+<a class=wrestling href=/title-history/?titlecode=24>NWA World Title</a> |
+<a class=wrestling href=/title-history/?titlecode=33>NWA Tag Team</a> |
 
-	<b>Inactive Titles:</b><br>
-	<a class=wrestling href=/title-history/?titlecode=12>WWE Cruiserweight Title</a><br><br>
-	<a class=wrestling href=/title-history/?titlecode=6>WWE Hardcore Title </a> |
-	<a class=wrestling href=/title-history/?titlecode=3>WWE European Title </a> |
-	<a class=wrestling href=/title-history/?titlecode=5>WWE Light Heavyweight Title </a><br><br>
-	<a class=wrestling href=/title-history/?titlecode=9>WCW Television Title</a> |
-	<a class=wrestling href=/title-history/?titlecode=10>WCW Tag Team Titles </a> |
-	<a class=wrestling href=/title-history/?titlecode=11>WCW Hardcore Title </a> |
-	<a class=wrestling href=/title-history/?titlecode=14>ECW Television Title</a> |
-	<a class=wrestling href=/title-history/?titlecode=15>ECW Tag Team Titles </a> |
-	<a class=wrestling href=/title-history/?titlecode=25>ROH Pure Wrestling Title </a>
+
+<h3>ROH</h3>
+<a class=wrestling href=/title-history/?titlecode=22>ROH World Title</a> |
+<a class=wrestling href=/title-history/?titlecode=23>ROH Tag Team Titles</a> |
+<a class=wrestling href=/title-history/?titlecode=29>ROH Television Title</a> |
+
+<h3>Dragons Gate</h3>
+<a class=wrestling href=/title-history/?titlecode=30>Open the Freedom Gate</a> |
+<a class=wrestling href=/title-history/?titlecode=31>Open the United Gate</a> |
+
+<h2>Inactive Titles</h2>
+<p>Titles which have been retired or unified</p>
+
+<h3>WWE</h3>
+<a class=wrestling href=/title-history/?titlecode=3>WWE European Title</a> |
+<a class=wrestling href=/title-history/?titlecode=5>WWE Light Heavyweight Title</a> |
+<a class=wrestling href=/title-history/?titlecode=6>WWE Hardcore Title</a> |
+<a class=wrestling href=/title-history/?titlecode=12>WWE Cruiserweight Title</a> |
+
+<h3>WCW</h3>
+<a class=wrestling href=/title-history/?titlecode=32>WCW World Title</a> |
+<a class=wrestling href=/title-history/?titlecode=9>WCW Television Title</a> |
+<a class=wrestling href=/title-history/?titlecode=10>WCW Tag Team Titles</a> |
+<a class=wrestling href=/title-history/?titlecode=11>WCW Hardcore Title</a> |
+
+<h3>ECW</h3>
+<a class=wrestling href=/title-history/?titlecode=13>ECW World Title</a> |
+<a class=wrestling href=/title-history/?titlecode=14>ECW Television Title</a> |
+<a class=wrestling href=/title-history/?titlecode=15>ECW Tag Team Titles</a> |
+
+<h3>ROH</h3>
+<a class=wrestling href=/title-history/?titlecode=25>ROH Pure Wrestling Title</a> |
+
+
 	";
 	echo $displayText;
 
