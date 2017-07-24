@@ -1,0 +1,132 @@
+h3.icon1{
+	background:url('http://media.insidepulse.com/shared/images/v7/icon4x2.png') no-repeat top left;
+	height:20px;
+	padding-left:25px;
+	font-size:1.3em;
+	font-weight:normal;
+}
+
+/*** top nav **/
+.top{
+	background:url('http://media.insidepulse.com/shared/images/v7/top_bg_red.png') repeat-x;
+	height:40px;
+	width:100%;
+}
+
+/*** logo bar **/
+.bar{
+	background:url('http://media.insidepulse.com/shared/images/v7/bar.png') repeat-x;
+	height:110px;
+	width:100%;
+	z-index:99;
+}
+.content_left{
+	width:660px;
+	background:url('http://media.insidepulse.com/shared/images/v7/whitebg.png') bottom left no-repeat #ffffff;
+	float:left;
+}
+
+.tab_cell_nav_on .left{
+	background:url('http://media.insidepulse.com/shared/images/v7/tableftplus.png') no-repeat bottom left;
+	text-align:center;
+	color:#ffffff;
+	height:40px;
+	float:left;
+
+}
+
+.tab_cell_nav_on .right{
+	background:url('http://media.insidepulse.com/shared/images/v7/tabright.png') no-repeat bottom left;
+	height:40px;
+	width:26px;
+	float:left;
+}
+
+/*** featured_tabs **/
+
+.featured_tabs{
+	background:url('http://media.insidepulse.com/shared/images/v7/featured_tabs3_1.png') top left no-repeat;
+	width:660px;
+	height:33px;
+}
+
+.featured_tabs1{
+	background:url('http://media.insidepulse.com/shared/images/v7/featured_tabs3_1.png') top left no-repeat;
+	width:660px;
+	height:33px;
+}
+
+.featured_tabs2{
+	background:url('http://media.insidepulse.com/shared/images/v7/featured_tabs3_2.png') top left no-repeat;
+	width:660px;
+	height:33px;
+}
+
+.featured_tabs3{
+	background:url('http://media.insidepulse.com/shared/images/v7/featured_tabs3_3.png') top left no-repeat;
+	width:660px;
+	height:33px;
+}
+
+.left4x2_column li{
+	list-style: url("http://media.insidepulse.com/shared/images/v7/li4x2.png") outside;
+	font-size:.8em;
+	margin-bottom:5px;
+}
+
+/*** article_authorbox **/
+.article_authorbox_body{
+	width:660px;
+	min-height: 200px;
+	height: auto !important;
+	height: 200px;
+	background:#f4f4f4;
+	border-top:1px #d7d7d7 solid;
+	border-bottom:1px #d7d7d7 solid;
+	margin-top:10px;
+	margin-bottom:10px;
+	background:url('http://media.insidepulse.com/shared/images/v7/greybg.png') top right no-repeat #f4f4f4;
+	font-size:.825em;
+}
+
+/*** sidetabs **/
+
+.sidetabs_tabs, .sidetabs2_tabs{
+	background:url('http://media.insidepulse.com/shared/images/v7/featured_tabs2_1.png') top left no-repeat;
+	width:320px;
+	height:32px;
+}
+
+.sidetabs_tabs1, .sidetabs2_tabs1{
+	background:url('http://media.insidepulse.com/shared/images/v7/featured_tabs2_1.png') top left no-repeat;
+	width:320px;
+	height:32px;
+}
+
+.sidetabs_tabs2, .sidetabs2_tabs2{
+	background:url('http://media.insidepulse.com/shared/images/v7/featured_tabs2_2.png') top left no-repeat;
+	width:320px;
+	height:32px;
+}
+
+h3.icon1m{
+	background:url('http://media.insidepulse.com/shared/images/v7/rightgreyicon1.png') no-repeat top left;
+	padding-left:60px;
+	padding-top:15px;
+	padding-bottom:10px;
+	margin:0px;
+	font-size:1.5em;
+	color:#666666;
+	font-weight:bold;
+}
+
+h3.icon2m{
+	background:url('http://media.insidepulse.com/shared/images/v7/rightgreyicon2.png') no-repeat top left;
+	padding-left:60px;
+	padding-top:15px;
+	padding-bottom:10px;
+	margin:0px;
+	font-size:1.5em;
+	color:#666666;
+	font-weight:bold;
+}
