@@ -5,6 +5,61 @@ $autoimages_tags = array();
 $autoimages_topstory500x250 = array();
 $autoimages_topstory120x120 = array();
 
+$autoimages_cats[] = "global-force-wrestling";
+$autoimages_tags[] = "global-force-wrestling";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2015/05/globalforcewrestlinggwflogo650-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2015/05/globalforcewrestlinggwflogo650.jpg";
+
+$autoimages_cats[] = "samoa-joe";
+$autoimages_tags[] = "samoa-joe";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2015/02/Samoa_Joe2-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2015/02/Samoa_Joe2-500x281.jpg";
+
+$autoimages_cats[] = "vince-russo";
+$autoimages_tags[] = "vince-russo";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2015/06/vince-russo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2015/06/vince-russo-500x250.jpg";
+
+$autoimages_cats[] = "kevin-owens";
+$autoimages_tags[] = "kevin-owens";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2014/06/Kevin-Steen-500x250-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2014/06/Kevin-Steen-500x250.jpg";
+
+$autoimages_cats[] = "sami-zayn";
+$autoimages_tags[] = "sami-zayn";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2015/05/20150507-sami-zayn-john-cena-642-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2015/05/20150507-sami-zayn-john-cena-642-500x281.jpg";
+
+$autoimages_cats[] = "superstars";
+$autoimages_tags[] = "superstars";
+$autoimages_topstory120x120[] = "http://media.insidepulse.com/zones/wrestling/uploads/2009/06/superstars-120x120.png";
+$autoimages_topstory500x250[] = "http://media.insidepulse.com/zones/wrestling/uploads/2009/06/superstars.png";
+
+$autoimages_cats[] = "forever-heel";
+$autoimages_tags[] = "forever-heel";
+$autoimages_topstory120x120[] = "http://media.insidepulse.com/zones/wrestling/uploads/2013/11/Forever-Heel-120-Logo.jpg";
+$autoimages_topstory500x250[] = "http://media.insidepulse.com/zones/wrestling/uploads/2013/11/Forever-Heel-500-Logo.jpg";
+
+$autoimages_cats[] = "tough-enough-2015";
+$autoimages_tags[] = "tough-enough-2015";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2015/04/wwetoughenoughlogo2015-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2015/04/wwetoughenoughlogo2015-500x250.jpg";
+
+$autoimages_cats[] = "aj-styles";
+$autoimages_tags[] = "aj-styles";
+$autoimages_topstory120x120[] = "http://media.insidepulse.com/zones/wrestling/uploads/2013/10/AJ-Styles-120x120.jpg";
+$autoimages_topstory500x250[] = "http://media.insidepulse.com/zones/wrestling/uploads/2013/10/AJ-Styles-500x250.jpg";
+
+$autoimages_cats[] = "jr-blog";
+$autoimages_tags[] = "jr-blog";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2015/02/jimrossblog2015_120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2015/02/jimrossblog2015-500x250.jpg";
+
+$autoimages_cats[] = "wwe-network";
+$autoimages_tags[] = "wwe-network";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2015/01/WWE-logo-icon-sans-network-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2014/06/WWE-Network-500x250.jpg";
+
 $autoimages_cats[] = "smark-wwe-network-snme-rant";
 $autoimages_tags[] = "smark-wwe-network-snme-rant";
 $autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wp-content/uploads/2014/08/smark_wwenetwork_raw_thumb-120x120.jpg";

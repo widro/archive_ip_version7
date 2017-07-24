@@ -424,14 +424,14 @@ jQuery(document).ready(function($){ //fire on DOM ready
 
 
 		<?php
-		$authorboxfile = $overallpath.'generate/author/l-author-' . $insider_userid . '.html';
-		if(file_exists ($authorboxfile)){
-			include($authorboxfile);
-		}
-		else{
-			$create_singleauthbox = create_authbox($insider_userid, "singleauthbox", $authorslug);
-			echo $create_singleauthbox;
-		}
+		//$authorboxfile = $overallpath.'generate/author/l-author-' . $insider_userid . '.html';
+		//if(file_exists ($authorboxfile)){
+		//	include($authorboxfile);
+		//}
+		//else{
+		//	$create_singleauthbox = create_authbox($insider_userid, "singleauthbox", $authorslug);
+		//	echo $create_singleauthbox;
+		//}
 		?>
 		<div class="clear" style="height:30px;"></div>
 

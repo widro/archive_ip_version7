@@ -40,6 +40,7 @@ $formimagetype = "topstory120x120";
 $imageclass = "img90";
 $offset = $limit * ($currentpage-1);
 
+$contentoutput = "";
 
 $sqlimages1 = "
 SELECT DISTINCT meta_value, post_id
@@ -51,15 +52,16 @@ LIMIT $limit OFFSET $offset
 ";
 
 
-$resultimages1 = mysql_query($sqlimages1) or die($sqlimages1);
+//$resultimages1 = mysql_query($sqlimages1) or die($sqlimages1);
+	$resultimages1 = $wpdb->get_results($sqlimages1);
 
 $totalimages = mysql_num_rows($resultimages1);
 
 $totalpages = ceil($totalimages/$limit);
-for($i=0;$i<$totalimages;$i++){
-	$rowimages1 = mysql_fetch_array($resultimages1);
-	$meta_value = $rowimages1['meta_value'];
-	$post_id = $rowimages1['post_id'];
+foreach ( $resultimages1 as $resultimages1aa ) {
+
+	$meta_value = $resultimages1aa->meta_value;
+	$post_id = $resultimages1aa->post_id;
 
 
 	$sqlimages2 = "
@@ -71,9 +73,10 @@ for($i=0;$i<$totalimages;$i++){
 	";
 
 	$meta_value2 = "";
-	$resultimages2 = mysql_query($sqlimages2) or die($sqlimages2);
-	while($rowimages2 = mysql_fetch_array($resultimages2)){
-		$meta_value2 = $rowimages2['meta_value'];
+	//$resultimages2 = mysql_query($sqlimages2) or die($sqlimages2);
+	$resultimages2 = $wpdb->get_results($sqlimages2);
+	foreach ( $resultimages2 as $resultimages2aa ) {
+		$meta_value2 = $resultimages2aa->meta_value;
 	}
 
 
@@ -130,7 +133,7 @@ for($i=0;$i<$totalimages;$i++){
 	$meta_value = trim($meta_value);
 	$meta_value2 = trim($meta_value2);
 
-	$build = "
+	$build .= "
 	<div style=\"width:96px; font-size:9px; height:200px;background:#ffffff;float:left;\">
 		<a href=$meta_value target=_blank><img src=$meta_value border=0 style=\"width:90px; height:90px;\"></a>
 		<br>
@@ -192,7 +195,7 @@ else{
 	Filter: <input type=text name=filter id=filter> <input type=submit>
 	</div></form>
 
-	<?php echo $content ?>
+	<?php echo $build ?>
 
 </div>
 
