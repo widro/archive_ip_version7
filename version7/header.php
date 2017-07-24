@@ -339,8 +339,9 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 	$left4x2values[] = array('zonecat', 'comics-nexus|spoilers', 'spoilers', '/latest-updates/?zone=comics-nexus&cat=spoilers');
 	$left4x2values[] = array('zonecat', 'comics-nexus|reviews', 'reviews', '/latest-updates/?zone=comics-nexus&cat=reviews');
 	$left4x2values[] = array('zonecat', 'comics-nexus|columns', 'features', '/latest-updates/?zone=comics-nexus&cat=features');
+	$left4x2values[] = array('tag', 'marvel-now', 'Marvel NOW!', '/tag/marvel-now');
 	$left4x2values[] = array('zonecat', 'comics-nexus|interviews', 'interviews', '/latest-updates/?zone=comics-nexus&cat=interviews');
-	$left4x2values[] = array('tag', 'dc-comics-relaunch', 'DC Relaunch', '/tag/dc-comics-relaunch');
+	$left4x2values[] = array('tag', 'dc-comics-relaunch|new-52', 'DC Relaunch', '/latest-updates/?zone=comics-nexus&tag=new-52,dc-comics-relaunch');
 	$left4x2values[] = array('zonetag', 'figures|dc-comics', 'DC Figures', '/latest-updates/?zone=figures&tag=dc-comics/');
 	$left4x2values[] = array('zonetag', 'figures|marvel', 'Marvel Figures', '/latest-updates/?zone=figures&tag=marvel/');
 	$left4x2values[] = array('tag', 'marvel', 'marvel', '/tag/marvel');
@@ -1184,14 +1185,28 @@ $subnavcount = count($subnavarray);
 		</div>
 		<div class="bar_ad">
 			<!--<a href="#"><img src="http://media.insidepulse.com/shared/images/v7/ad728.png"></a>-->
+<?php
+if($active_zone=="insidefights"){
+?>
+
+<iframe src="http://localsear.ch/ls_ip.php" width="728" height="90" frameBorder="0" scrolling="no">Browser not compatible.</iframe>
 
 
-
-
+<?php
+}
+else{
+?>
 
 <!-- BEGIN UAT - 728x90 - InsidePulse: InsidePulse - DO NOT MODIFY -->
 <script type="text/javascript" src="http://ad-cdn.technoratimedia.com/00/35/09/uat_10935.js?ad_size=728x90"></script>
 <!-- END TAG -->
+
+<?php
+}
+?>
+
+
+
 
 
 		</div>
