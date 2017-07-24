@@ -324,8 +324,14 @@ jQuery(document).ready(function($){ //fire on DOM ready
 				<?php if(has_tag("SmarK WWE Network Raw Rant", $post )){ echo "<div class='pollarticle'><img src='http://wrestling.insidepulse.com/wp-content/uploads/2014/08/smark_wwenetwork_raw.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("SmarK WWE Network Nitro Rant", $post )){ echo "<div class='pollarticle'><img src='http://wrestling.insidepulse.com/wp-content/uploads/2014/09/smark_wwenetwork_nitro.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("SmarK WWE Network SNME Rant", $post )){ echo "<div class='pollarticle'><img src='http://wrestling.insidepulse.com/wp-content/uploads/2014/09/smarkrantsnme1600.jpg' style='padding:0px;width:660px;' />"; } ?>
+				<?php if(has_tag("SmarK WWE Network Rant", $post )){ echo "<div class='pollarticle'><img src='http://wrestling.insidepulse.com/wp-content/uploads/2014/12/smarkwwenetwork1600.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("Tuesday Raw Roundtable", $post )){ echo "<div class='pollarticle'><img src='http://wrestling.insidepulse.com/wp-content/uploads/2014/08/tuesdayraw1600.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("10 Thoughts on NXT", $post )){ echo "<div class='pollarticle'><img src='http://wrestling.insidepulse.com/wp-content/uploads/2014/08/10thoughtsnxt.jpg' style='padding:0px;width:660px;' />"; } ?>
+				<?php if(has_tag("Pull List Roundtable", $post )){ echo "<div class='pollarticle'><img src='http://insidepulse.com/wp-content/uploads/2014/12/roundtable_comics1600.jpg' style='padding:0px;width:660px;' />"; } ?>
+				<?php if(has_tag("This Day In Pulse History", $post )){ echo "<div class='pollarticle'><img src='http://insidepulse.net/wp-content/themes/insidepulsex/images/thisdaypulse.jpg' style='padding:0px;width:660px;' />"; } ?>
+				<?php if(has_tag("This Day In Comics Nexus History", $post )){ echo "<div class='pollarticle'><img src='http://insidepulse.com/wp-content/uploads/2014/12/thisdaycnhistory1600.jpg' style='padding:0px;width:660px;' />"; } ?>
+				<?php if(has_tag("This Day In Diehard Gamefan History", $post )){ echo "<div class='pollarticle'><img src='http://diehardgamefan.com/wp-content/uploads/2014/12/thisdaydhgfhistory1600.jpg' style='padding:0px;width:660px;' />"; } ?>
+				<?php if(has_tag("Game Collection Roundtable", $post )){ echo "<div class='pollarticle'><img src='http://diehardgamefan.com/wp-content/uploads/2014/12/collectionrt1600.jpg' style='padding:0px;width:660px;' />"; } ?>
 
 				<!-- content -->
 				<?php the_content(''); ?>
@@ -340,8 +346,14 @@ jQuery(document).ready(function($){ //fire on DOM ready
 				<?php if(has_tag("SmarK WWE Network Raw Rant", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("SmarK WWE Network Nitro Rant", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("SmarK WWE Network SNME Rant", $post )){ echo "</div>"; } ?>
+				<?php if(has_tag("SmarK WWE Network Rant", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("Tuesday Raw Roundtable", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("10 Thoughts on NXT", $post )){ echo "</div>"; } ?>
+				<?php if(has_tag("Pull List Roundtable", $post )){ echo "</div>"; } ?>
+				<?php if(has_tag("This Day In Pulse History", $post )){ echo "</div>"; } ?>
+				<?php if(has_tag("This Day In Comics Nexus History", $post )){ echo "</div>"; } ?>
+				<?php if(has_tag("This Day In Diehard Gamefan History", $post )){ echo "</div>"; } ?>
+				<?php if(has_tag("Game Collection Roundtable", $post )){ echo "</div>"; } ?>
 				<br><br>
 				<?php
 				echo get_the_tag_list('<p>Tags: ',', ','</p>');

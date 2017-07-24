@@ -79,6 +79,8 @@ $diehardgamefanurl = "diehardgamefan.com";
 $wrestlingurl = "wrestling.insidepulse.com";
 $homeurl = "insidepulse.com";
 
+global $activepolls;
+global $zonepoll;
 
 
 if($thisurl==$insidefightsurl){
@@ -305,6 +307,8 @@ elseif($active_zone=="tv"){
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\"://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");</script>
 	";
 
+	$zonepoll = "130";
+
 }
 
 
@@ -364,6 +368,8 @@ elseif($active_zone=="movies"){
 <a class=\"twitter-timeline\" href=\"https://twitter.com/ip_movies\" data-widget-id=\"425397062520172544\">Tweets by @ip_movies</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\"://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");</script>
 	";
+
+	$zonepoll = "129";
 
 }
 
@@ -429,6 +435,7 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\"://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");</script>
 	";
 
+	$zonepoll = "131";
 }
 
 elseif($active_zone=="pulsecasts"){
@@ -831,8 +838,6 @@ elseif($active_zone=="insidefights"){
 $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/images/v7/insidefightslogo.png\" class=\"bar_logo_insidefights\"></a>";
 	$insidefights_tabcss = "tab_cell_nav_on";
 
-	$disqusslug = "insidefights";
-
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
 
@@ -888,6 +893,7 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\"://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");</script>
 	";
 
+	$zonepoll = "132";
 }
 
 

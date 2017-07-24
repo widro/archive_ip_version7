@@ -28,16 +28,26 @@
 
 		<div class="right_container">
 			<h3 class="icon2m bold">Featured <span class="color1">Poll</span></h3>
+			<?php
+			// diehardgamefan
+			if($thisurl==$diehardgamefanurl){
+				get_poll();
+			}
 
-			<?php get_poll();?>
+			// wrestling
+			elseif($thisurl==$wrestlingurl){
+				get_poll();
+			}
+			else{
+				if($zonepoll){
+					get_poll($zonepoll);
+				}
+				else{
+					get_poll();
+				}
+			}
 
-
-
-
-
-
-
-
+			?>
 
 
 		</div>
