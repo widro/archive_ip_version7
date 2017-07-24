@@ -320,6 +320,7 @@ jQuery(document).ready(function($){ //fire on DOM ready
 				<?php if(has_tag("MLB Daily Schedule", $post )){ echo "<div class='mlbdaily'><img src='http://media.insidepulse.com/shared/images/vx/template1600_todaymlb.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("MLB Daily Scoreboard", $post )){ echo "<div class='mlbdaily'><img src='http://media.insidepulse.com/shared/images/vx/wwenetworkdaily.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("poll of the week", $post )){ echo "<div class='pollarticle'><img src='http://media.insidepulse.com/shared/images/vx/polloftheweek1600_pulse.jpg' style='padding:0px;width:660px;' />"; } ?>
+				<?php if(has_tag("poll of the week d", $post )){ echo "<div class='pollarticle'><img src='http://diehardgamefan.com/wp-content/uploads/2015/01/dhgfpolloftheweek1600.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("weekend poll", $post )){ echo "<div class='pollarticle'><img src='http://media.insidepulse.com/shared/images/vx/weekendpoll1600_pulse.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("SmarK WWE Network Raw Rant", $post )){ echo "<div class='pollarticle'><img src='http://wrestling.insidepulse.com/wp-content/uploads/2014/08/smark_wwenetwork_raw.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("SmarK WWE Network Nitro Rant", $post )){ echo "<div class='pollarticle'><img src='http://wrestling.insidepulse.com/wp-content/uploads/2014/09/smark_wwenetwork_nitro.jpg' style='padding:0px;width:660px;' />"; } ?>
@@ -333,6 +334,7 @@ jQuery(document).ready(function($){ //fire on DOM ready
 				<?php if(has_tag("This Day In Diehard Gamefan History", $post )){ echo "<div class='pollarticle'><img src='http://diehardgamefan.com/wp-content/uploads/2014/12/thisdaydhgfhistory1600.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("Game Collection Roundtable", $post )){ echo "<div class='pollarticle'><img src='http://diehardgamefan.com/wp-content/uploads/2014/12/collectionrt1600.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("Out Today on DVD", $post )){ echo "<div class='pollarticle'><img src='http://insidepulse.com/wp-content/uploads/2014/12/dvdrelease1600.jpg' style='padding:0px;width:660px;' />"; } ?>
+				<?php if(has_tag("In Theatres Today", $post )){ echo "<div class='pollarticle'><img src='http://insidepulse.com/wp-content/uploads/2014/12/template1600_movreleases.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("video of the day", $post )){ echo "<div class='pollarticle'><img src='http://insidepulse.net/vxwireframe2/images/video.jpg' style='padding:0px;width:660px;' />"; } ?>
 
 				<!-- content -->
@@ -344,6 +346,7 @@ jQuery(document).ready(function($){ //fire on DOM ready
 				<?php if(has_tag("MLB Daily Schedule", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("MLB Daily Scoreboard", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("poll of the week", $post )){ echo "</div>"; } ?>
+				<?php if(has_tag("poll of the week d", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("weekend poll", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("SmarK WWE Network Raw Rant", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("SmarK WWE Network Nitro Rant", $post )){ echo "</div>"; } ?>
@@ -357,6 +360,7 @@ jQuery(document).ready(function($){ //fire on DOM ready
 				<?php if(has_tag("This Day In Diehard Gamefan History", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("Game Collection Roundtable", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("Out Today on DVD", $post )){ echo "</div>"; } ?>
+				<?php if(has_tag("In Theatres Today", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("video of the day", $post )){ echo "</div>"; } ?>
 				<br><br>
 				<?php
@@ -432,6 +436,21 @@ jQuery(document).ready(function($){ //fire on DOM ready
 		<!-- include comments -->
 		<?php comments_template(); ?>
 
+
+<!-- MarketGidNews Start -->
+<div id="MarketGidScriptRootN6121" class="news-block-magick">
+    <div id="MarketGidPreloadN6121">
+        <a id="mg_add6121" href="http://mgid.com/advertisers/?utm_source=widget&utm_medium=text&utm_campaign=add" target="_blank">Place your ad here</a><br>        <a href="http://mgid.com/" target="_blank">Loading...</a>
+    </div>
+    <script>
+                (function(){
+            var D=new Date(),d=document,b='body',ce='createElement',ac='appendChild',st='style',ds='display',n='none',gi='getElementById';
+            var i=d[ce]('iframe');i[st][ds]=n;d[gi]("MarketGidScriptRootN6121")[ac](i);try{var iw=i.contentWindow.document;iw.open();iw.writeln("<ht"+"ml><bo"+"dy></bo"+"dy></ht"+"ml>");iw.close();var c=iw[b];}
+            catch(e){var iw=d;var c=d[gi]("MarketGidScriptRootN6121");}var dv=iw[ce]('div');dv.id="MG_ID";dv[st][ds]=n;dv.innerHTML=6121;c[ac](dv);
+            var s=iw[ce]('script');s.async='async';s.defer='defer';s.charset='utf-8';s.src="//jsn.mgid.com/i/n/insidepulse.com.6121.js?t="+D.getYear()+D.getMonth()+D.getDate()+D.getHours();c[ac](s);})();
+    </script>
+</div>
+<!-- MarketGidNews End -->
 
 
 <script type="text/javascript">

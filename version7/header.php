@@ -269,7 +269,7 @@ elseif($active_zone=="tv"){
 
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
-	$featuredauthors = "2|110|172|874";
+	$featuredauthors = "2|172|1";
 
 	//subnav
 	$subnavarray = array();
@@ -318,7 +318,7 @@ elseif($active_zone=="tv"){
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\"://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");</script>
 	";
 
-	$zonepoll = "141";
+	$zonepoll = "146";
 
 }
 
@@ -380,7 +380,7 @@ elseif($active_zone=="movies"){
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\"://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");</script>
 	";
 
-	$zonepoll = "140";
+	$zonepoll = "147";
 
 }
 
@@ -446,7 +446,7 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\"://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");</script>
 	";
 
-	$zonepoll = "142";
+	$zonepoll = "145";
 }
 
 elseif($active_zone=="pulsecasts"){
@@ -904,7 +904,7 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\"://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");</script>
 	";
 
-	$zonepoll = "143";
+	$zonepoll = "144";
 }
 
 

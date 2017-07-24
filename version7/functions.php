@@ -1,6 +1,6 @@
 <?php
 add_filter( 'manage_posts_columns', 'govid_columns' ); //Filter out Post Columns with 2 custom columns
-
+add_filter( 'publicize_checkbox_default', '__return_false' );
 function extrastats_count($uid, $sortby){
 
 	if($sortby=="month"){

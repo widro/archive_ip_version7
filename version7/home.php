@@ -53,7 +53,7 @@
 	endwhile;
 
 
-if($active_zone=="home"){
+if($active_zone=="111home"){
 $wrestlingposts = getrsslinks('http://wrestling.insidepulse.com/category/top-story/feed/', 'Wrestling', 1, "array");
 $diehardgamefanposts = getrsslinks('http://diehardgamefan.com/category/top-story/feed/', 'diehardgamefan', 1, "array");
 
