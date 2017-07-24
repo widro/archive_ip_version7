@@ -6,6 +6,11 @@ $autoimages_topstory500x250 = array();
 $autoimages_topstory120x120 = array();
 
 
+$autoimages_cats[] = "smark-wwe-network-raw-rant";
+$autoimages_tags[] = "smark-wwe-network-raw-rant";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wp-content/uploads/2014/08/smark_wwenetwork_raw_thumb-120x120.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wp-content/uploads/2014/08/smark_wwenetwork_raw-500x250.jpg";
+
 $autoimages_cats[] = "raw";
 $autoimages_tags[] = "raw";
 $autoimages_topstory120x120[] = "http://media.insidepulse.com/zones/wrestling/uploads/2012/07/WWE-Raw-Logo-2012-120x120.jpg";
@@ -54,8 +59,8 @@ $autoimages_topstory500x250[] = "http://media.insidepulse.com/zones/wrestling/up
 
 $autoimages_cats[] = "big-show";
 $autoimages_tags[] = "big-show";
-$autoimages_topstory120x120[] = "http://media.insidepulse.com/zones/wrestling/uploads/2012/03/Big-Show-120x120.jpg ::http://media.insidepulse.com/zones/wrestling/uploads/2012/03/Big-Show-500x250.jpg";
-$autoimages_topstory500x250[] = "";
+$autoimages_topstory120x120[] = "http://media.insidepulse.com/zones/wrestling/uploads/2012/03/Big-Show-120x120.jpg";
+$autoimages_topstory500x250[] = "http://media.insidepulse.com/zones/wrestling/uploads/2012/03/Big-Show-500x250.jpg";
 
 $autoimages_cats[] = "bobby-roode";
 $autoimages_tags[] = "bobby-roode";
@@ -179,13 +184,13 @@ $autoimages_topstory500x250[] = "http://media.insidepulse.com/zones/wrestling/up
 
 $autoimages_cats[] = "daniel-bryan";
 $autoimages_tags[] = "daniel-bryan";
-$autoimages_topstory120x120[] = "http://media.insidepulse.com/zones/wrestling/uploads/2012/03/Daniel-Bryan-120.jpg";
-$autoimages_topstory500x250[] = "http://media.insidepulse.com/zones/wrestling/uploads/2012/03/Daniel-Bryan-500.jpg";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wp-content/uploads/2014/07/danielbryan500-120x120.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wp-content/uploads/2014/07/danielbryan500.jpg";
 
 $autoimages_cats[] = "daniel-bryan-v2";
 $autoimages_tags[] = "daniel-bryan-v2";
-$autoimages_topstory120x120[] = "http://media.insidepulse.com/zones/wrestling/uploads/2012/09/Daniel-Bryan-v2-120x120.jpg";
-$autoimages_topstory500x250[] = "http://media.insidepulse.com/zones/wrestling/uploads/2012/09/Daniel-Bryan-v2-500x250.jpg";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wp-content/uploads/2014/07/danielbryan500-120x120.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wp-content/uploads/2014/07/danielbryan500.jpg";
 
 $autoimages_cats[] = "david-otunga";
 $autoimages_tags[] = "david-otunga";
@@ -690,8 +695,8 @@ $autoimages_topstory500x250[] = "http://media.insidepulse.com/zones/wrestling/up
 
 $autoimages_cats[] = "daniel-bryan";
 $autoimages_tags[] = "daniel-bryan";
-$autoimages_topstory120x120[] = "http://media.insidepulse.com/zones/wrestling/uploads/2012/03/Daniel-Bryan-120.jpg";
-$autoimages_topstory500x250[] = "http://media.insidepulse.com/zones/wrestling/uploads/2012/03/Daniel-Bryan-500.jpg";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wp-content/uploads/2014/07/danielbryan500-120x120.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wp-content/uploads/2014/07/danielbryan500.jpg\n";
 
 $autoimages_cats[] = "ddp";
 $autoimages_tags[] = "ddp";

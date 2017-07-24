@@ -65,9 +65,6 @@ if(is_page('movies')){
 if(is_page('tv')){
 	$zone = "tv";
 }
-if(is_page('figures')){
-	$zone = "figures";
-}
 if(is_page('comics-nexus')){
 	$zone = "comics-nexus";
 }
@@ -151,26 +148,33 @@ if($tagname){
 $sqladd .= "&showposts=" . $limit;
 
 //build nav
-if($currentpage>1){
+$offset = (int)$page*(int)$limit+1;
+for($i=0;$i<$totalpages; $i++){
+	$thispage = $i+1;
+
+	if($currentpage==$thispage){
+		$numberlinks .= "<b>$thispage</b> | ";
+	}
+	else{
+		$numberlinks .= "<a href=?page=$thispage>$thispage</a> | ";
+	}
+
 }
 
 if($currentpage==1){
 	$nextpage = $currentpage+1;
-	$nextlink = "<a href=?currentpage=$nextpage>Previous</a>";
+	$nextlink = "<a href=?currentpage=$nextpage>Next</a>";
 }
 elseif($currentpage==$totalpages){
 	$prevpage = $currentpage-1;
-	$prevlink = "<a href=?currentpage=$prevpage>Next</a>";
-	$offset = ($currentpage-1)*(int)$limit;
-	$sqladd .= "&offset=" . $offset;
+	$prevlink = "<a href=?currentpage=$prevpage>Previous</a>";
 }
 else{
 	$nextpage = $currentpage+1;
 	$prevpage = $currentpage-1;
-	$nextlink = "<a href=?currentpage=$nextpage>Previous</a>";
-	$prevlink = "<a href=?currentpage=$prevpage>Next</a>";
-	$offset = ($currentpage-1)*(int)$limit;
-	$sqladd .= "&offset=" . $offset;
+	$nextlink = "<a href=?currentpage=$nextpage>Next</a>";
+	$prevlink = "<a href=?currentpage=$prevpage>Previous</a>";
+
 }
 
 
@@ -298,9 +302,9 @@ if(!$_SERVER['QUERY_STRING']){
 	}
 
 	$thistitle = $post->post_title;
-	//$thistitle = strip_tags($thistitle);
+	$thistitle = strip_tags($thistitle);
 	$thistitle = str_replace("\"", "", $thistitle);
-	//$thistitle = substr($thistitle, 0, 100);
+	$thistitle = substr($thistitle, 0, 100);
 
 	$thisexcerpt = makeexcerpt($post->post_content, $post->post_excerpt, "default");
 

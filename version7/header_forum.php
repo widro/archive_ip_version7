@@ -255,7 +255,7 @@ elseif($active_zone=="tv"){
 
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
-	$featuredauthors = "2|110|172|874";
+	$featuredauthors = "2|172|874";
 
 	//subnav
 	$subnavarray = array();
@@ -310,7 +310,7 @@ elseif($active_zone=="tv"){
 elseif($active_zone=="movies"){
 
 	$movies_tabcss = "tab_cell_nav_on";
-	$featuredauthors = "7|220|198|221|131|222";
+	$featuredauthors = "7|220|198|131|132";
 
 
 	//format
@@ -1359,17 +1359,6 @@ $subnavcount = count($subnavarray);
 			<?php echo $logoimageurl; ?>
 		</div>
 		<div class="bar_ad">
-			<!--<a href="#"><img src="http://media.insidepulse.com/shared/images/v7/ad728.png"></a>-->
-			<!--- start of insidepulse.sportsfanlive.com/default_companion_x06_(728x90.1) --->
-			<script LANGUAGE="JavaScript1.1">
-			document.write('<script LANGUAGE="JavaScript1.1" SRC="http://oascentral.sportsfanlive.com/RealMedia/ads/adstream_jx.ads/insidepulse.sportsfanlive.com/default/jx/comp/1'+OAS_rns+'@Position2,Left,x06!x06?XE&Partner=insidepulse&PartnerUnit=insidepulse.728x90.1.default/jx/comp&XE" type="text/javascript"><\/script>');
-			</script>
-			<NOSCRIPT>
-			<A HREF="http://oascentral.sportsfanlive.com/RealMedia/ads/click_nx.ads/insidepulse.sportsfanlive.com/default/nx/comp@Position2,Left,x06!x06?x?XE&Partner=insidepulse&PartnerUnit=insidepulse.728x90.1.default/nx/comp&XE" target="_blank">
-			<IMG SRC="http://oascentral.sportsfanlive.com/RealMedia/ads/adstream_nx.ads/insidepulse.sportsfanlive.com/default/nx/comp@Position2,Left,x06!x06?x?XE&Partner=insidepulse&PartnerUnit=insidepulse.728x90.1.default/nx/comp&XE" border=0>
-			</A>
-			</NOSCRIPT>
-			<!--- end of insidepulse.sportsfanlive.com/default_companion_x06_(728x90.1) --->
 
 		</div>
 	</div>
@@ -1380,3 +1369,17 @@ $subnavcount = count($subnavarray);
 <div class="clear"></div>
 <div class="inner content">
 
+<style>
+#subscription-toggle{
+	float:right;
+}
+
+div.bbp-the-content-wrapper textarea{
+	border:1px;
+}
+
+.inner{
+	height:auto;
+}
+
+</style>
