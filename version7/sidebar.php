@@ -131,7 +131,7 @@ if($thisurl==$insidefightsurl){
 ?>
 		<div class="clear" style="height:30px;"></div>
 
-		<a href="http://mmatycoon.com" target=_blank><img src="http://media.insidepulse.com/shared/images/ads/mmatycoon.jpg"></a>
+		<a href="http://mmatycoon.com/index.php?Ref=58104" target=_blank><img src="http://www.mmatycoon.com/images/mma_pics/mmatycoon250x250.jpg" alt="MMA Tycoon - MMA Sim Game"border="0"></a>
 
 <?php
 }

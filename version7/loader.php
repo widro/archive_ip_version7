@@ -151,33 +151,26 @@ if($tagname){
 $sqladd .= "&showposts=" . $limit;
 
 //build nav
-$offset = (int)$page*(int)$limit+1;
-for($i=0;$i<$totalpages; $i++){
-	$thispage = $i+1;
-
-	if($currentpage==$thispage){
-		$numberlinks .= "<b>$thispage</b> | ";
-	}
-	else{
-		$numberlinks .= "<a href=?page=$thispage>$thispage</a> | ";
-	}
-
+if($currentpage>1){
 }
 
 if($currentpage==1){
 	$nextpage = $currentpage+1;
-	$nextlink = "<a href=?currentpage=$nextpage>Next</a>";
+	$nextlink = "<a href=?currentpage=$nextpage>Previous</a>";
 }
 elseif($currentpage==$totalpages){
 	$prevpage = $currentpage-1;
-	$prevlink = "<a href=?currentpage=$prevpage>Previous</a>";
+	$prevlink = "<a href=?currentpage=$prevpage>Next</a>";
+	$offset = ($currentpage-1)*(int)$limit;
+	$sqladd .= "&offset=" . $offset;
 }
 else{
 	$nextpage = $currentpage+1;
 	$prevpage = $currentpage-1;
-	$nextlink = "<a href=?currentpage=$nextpage>Next</a>";
-	$prevlink = "<a href=?currentpage=$prevpage>Previous</a>";
-
+	$nextlink = "<a href=?currentpage=$nextpage>Previous</a>";
+	$prevlink = "<a href=?currentpage=$prevpage>Next</a>";
+	$offset = ($currentpage-1)*(int)$limit;
+	$sqladd .= "&offset=" . $offset;
 }
 
 
