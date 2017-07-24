@@ -175,7 +175,7 @@ foreach($postarray as $key => $outsidepost){
 	$thiscontent = substr(strip_tags($thiscontent), 0, 300);
 	$thistitle = $outsidepost['title'];
 	$thistitle = str_replace("\"", "", $thistitle);
-//	$thistitle = substr($thistitle, 0, 100);
+//	//$thistitle = substr($thistitle, 0, 100);
 
 	$clickthru = $outsidepost['clickthru'];
 

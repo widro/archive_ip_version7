@@ -52,6 +52,12 @@
 
 		<div class="clear" style="height:30px;"></div>
 
+		<div class="right_container" style="margin-top:20px;">
+			<a href="http://www.smashwords.com/books/view/274523"><img src="http://media.insidepulse.com/shared/images/mattybook.jpg" width=200 border=0></a>
+		</div>
+
+		<div class="clear" style="height:30px;"></div>
+
 		<div id="recentcomments" class="right_container dsq-widget">
 			<h3 class="icon2m bold">Recent <span class="color1">Comments</span></h3>
 

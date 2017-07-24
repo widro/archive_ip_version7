@@ -20,7 +20,7 @@ global $disqusslug;
 $disqusslug = "inside-pulse";
 
 global $featuredauthors;
-$featuredauthors = "36|4|7|61|1";
+$featuredauthors = "36|4|7|61|1|874";
 
 global $overallpath;
 $overallpath = $_SERVER['DOCUMENT_ROOT'] . "/";
@@ -106,6 +106,23 @@ else{
 		$active_zone = "pulsecasts";
 	}
 
+	elseif(is_page("movies")){
+		$active_zone = "movies";
+	}
+
+	elseif(is_page("tv")){
+		$active_zone = "tv";
+	}
+
+	elseif(is_page("figures")){
+		$active_zone = "figures";
+	}
+
+	elseif(is_page("comics-nexus")||is_page("comics")){
+		$active_zone = "comics-nexus";
+	}
+
+
 	elseif(in_zone("movies")||is_page("movies")){
 		$active_zone = "movies";
 	}
@@ -180,7 +197,7 @@ if($active_zone=="home"){
 
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
-	$featuredauthors = "2|7|178|177|220|172";
+	$featuredauthors = "2|7|178|177|220|172|874";
 
 
 	//featured
@@ -218,7 +235,7 @@ elseif($active_zone=="tv"){
 
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
-	$featuredauthors = "2|110|122|172|169";
+	$featuredauthors = "2|110|122|172|169|874";
 
 	//subnav
 	$subnavarray = array();

@@ -26,7 +26,7 @@
 	}
 
 	$thistitle = $post->post_title;
-	$thistitle = strip_tags($thistitle);
+	//$thistitle = strip_tags($thistitle);
 	$thistitle = str_replace("\"", "", $thistitle);
 
 	$thisexcerpt = makeexcerpt($post->post_content, $post->post_excerpt, "default");
@@ -119,7 +119,7 @@ foreach($postarray3 as $thispost){
 		$thisexcerpt = $thispost['excerpt'];
 		$thistitle = $thispost['title'];
 		$thisexcerpt = substr($thisexcerpt, 0, 150);
-		$thistitle = substr($thistitle, 0, 100);
+		//$thistitle = substr($thistitle, 0, 100);
 
 
 		//build top story rotator
@@ -244,7 +244,7 @@ for($i=0;$i<$left4x2count;$i++){
 			$topstory120x120 = $postsarray['topstory120x120'];
 			$topstory500x250 = $postsarray['topstory500x250'];
 			$thistitle = $postsarray['title'];
-			$thistitle = strip_tags($thistitle);
+			//$thistitle = strip_tags($thistitle);
 			$thisexcerpt = $postsarray['excerpt'];
 			$clickthru = $postsarray['clickthru'];
 			$post_date = $postsarray['post_date'];
@@ -284,9 +284,9 @@ for($i=0;$i<$left4x2count;$i++){
 				$topstory120x120 = defaultimage($active_zone, "topstory120x120");
 			}
 			$thistitle = $post->post_title;
-			$thistitle = strip_tags($thistitle);
+			//$thistitle = strip_tags($thistitle);
 			$thistitle = str_replace("\"", "", $thistitle);
-			$thistitle = substr($thistitle, 0, 100);
+			//$thistitle = substr($thistitle, 0, 100);
 
 			$thisexcerpt = makeexcerpt($post->post_content, $post->post_excerpt, "default");
 

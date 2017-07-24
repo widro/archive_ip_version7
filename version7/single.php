@@ -428,13 +428,16 @@ jQuery(document).ready(function($){ //fire on DOM ready
 		<!-- include comments -->
 		<?php comments_template(); ?>
 
-
-
-<?php
-$thisrand = rand(1,3);
-
-if($thisrand==1){
-?>
+	<?php
+	if($active_zone == "insidefights"){
+	?>
+<style> 
+#widget_table_28077 {background:none repeat scroll 0 0 #F4F4F4!important;border-bottom:1px solid #D7D7D7;border-collapse:separate;border-spacing:4px;border-top:1px solid #D7D7D7;margin-bottom:10px!important;margin-top:10px!important;width:660px;}
+#widget_table_28077 img{border:medium none;margin-bottom:3px!important;}
+#widget_table_28077 a{font-family:Arial;text-decoration:none;}
+#widget_table_28077 td:hover a{font-family:Arial;text-decoration:underline;}
+#widget_table_28077 td{padding-bottom:5px!important;padding-top:5px!important;text-align:center;}
+</style> 
 <script type='text/javascript'>
 var _CI = _CI || {};
 (function() {
@@ -444,11 +447,97 @@ _CI.counter = (_CI.counter) ? _CI.counter + 1 : 1;
 document.write('<div id="_CI_widget_');
 document.write(_CI.counter+'"></div>');
 script.type = 'text/javascript';
-script.src = 'http://widget.crowdignite.com/widgets/1599?_ci_wid=_CI_widget_'+_CI.counter;
+script.src = 'http://widget.crowdignite.com/widgets/28077?_ci_wid=_CI_widget_'+_CI.counter;
 script.async = true;
 ref.parentNode.insertBefore(script, ref);
 })(); </script>
-<div style='width: 300px; background-color: #FFFFFF'><a href='http://crowdignite.com/account/1203' style='font: Arial; color:#000000;' target=_blank>Blowing Up Blogs</a></div>
+
+	<?php
+	}
+	else{
+$thisrand = rand(1,3);
+//echo "zone - " . $active_zone;
+
+if($thisrand==1){
+	if(($active_zone == "tv")||($active_zone == "movies")){
+	?>
+<style> 
+#widget_table_28055 {background:none repeat scroll 0 0 #F4F4F4!important;border-bottom:1px solid #D7D7D7;border-collapse:separate;border-spacing:4px;border-top:1px solid #D7D7D7;margin-bottom:10px!important;margin-top:10px!important;width:660px;}
+#widget_table_28055 img{border:medium none;margin-bottom:3px!important;}
+#widget_table_28055 a{font-family:Arial;text-decoration:none;}
+#widget_table_28055 td:hover a{font-family:Arial;text-decoration:underline;}
+#widget_table_28055 td{padding-bottom:5px!important;padding-top:5px!important;text-align:center;}
+</style> 
+<script type='text/javascript'>
+var _CI = _CI || {};
+(function() {
+var script = document.createElement('script');
+ref = document.getElementsByTagName('script')[0];
+_CI.counter = (_CI.counter) ? _CI.counter + 1 : 1;
+document.write('<div id="_CI_widget_');
+document.write(_CI.counter+'"></div>');
+script.type = 'text/javascript';
+script.src = 'http://widget.crowdignite.com/widgets/28055?_ci_wid=_CI_widget_'+_CI.counter;
+script.async = true;
+ref.parentNode.insertBefore(script, ref);
+})(); </script>
+
+	<?php
+	}
+	elseif(($active_zone == "comics-nexus")||($active_zone == "diehardgamefan")){
+	?>
+<style> 
+#widget_table_28075 {background:none repeat scroll 0 0 #F4F4F4!important;border-bottom:1px solid #D7D7D7;border-collapse:separate;border-spacing:4px;border-top:1px solid #D7D7D7;margin-bottom:10px!important;margin-top:10px!important;width:660px;}
+#widget_table_28075 img{border:medium none;margin-bottom:3px!important;}
+#widget_table_28075 a{font-family:Arial;text-decoration:none;}
+#widget_table_28075 td:hover a{font-family:Arial;text-decoration:underline;}
+#widget_table_28075 td{padding-bottom:5px!important;padding-top:5px!important;text-align:center;}
+</style> 
+<script type='text/javascript'>
+var _CI = _CI || {};
+(function() {
+var script = document.createElement('script');
+ref = document.getElementsByTagName('script')[0];
+_CI.counter = (_CI.counter) ? _CI.counter + 1 : 1;
+document.write('<div id="_CI_widget_');
+document.write(_CI.counter+'"></div>');
+script.type = 'text/javascript';
+script.src = 'http://widget.crowdignite.com/widgets/28075?_ci_wid=_CI_widget_'+_CI.counter;
+script.async = true;
+ref.parentNode.insertBefore(script, ref);
+})(); </script>
+
+	<?php
+	}
+	else{
+	?>
+<style> 
+#widget_table_28055 {background:none repeat scroll 0 0 #F4F4F4!important;border-bottom:1px solid #D7D7D7;border-collapse:separate;border-spacing:4px;border-top:1px solid #D7D7D7;margin-bottom:10px!important;margin-top:10px!important;width:660px;}
+#widget_table_28055 img{border:medium none;margin-bottom:3px!important;}
+#widget_table_28055 a{font-family:Arial;text-decoration:none;}
+#widget_table_28055 td:hover a{font-family:Arial;text-decoration:underline;}
+#widget_table_28055 td{padding-bottom:5px!important;padding-top:5px!important;text-align:center;}
+</style> 
+<script type='text/javascript'>
+var _CI = _CI || {};
+(function() {
+var script = document.createElement('script');
+ref = document.getElementsByTagName('script')[0];
+_CI.counter = (_CI.counter) ? _CI.counter + 1 : 1;
+document.write('<div id="_CI_widget_');
+document.write(_CI.counter+'"></div>');
+script.type = 'text/javascript';
+script.src = 'http://widget.crowdignite.com/widgets/28055?_ci_wid=_CI_widget_'+_CI.counter;
+script.async = true;
+ref.parentNode.insertBefore(script, ref);
+})(); </script>
+
+	<?php
+	}
+	?>
+
+
+
 
 <?php
 }elseif($thisrand==2){
@@ -489,6 +578,7 @@ Scribol.frames.push('945219');</script>
 
 
 <?php
+}
 }
 ?>
 

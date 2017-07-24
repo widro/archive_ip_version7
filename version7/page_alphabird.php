@@ -66,7 +66,7 @@ elseif(is_page('dell2')){
 
 	$thistitle = $post->post_title;
 	$thistitle = str_replace("\"", "", $thistitle);
-	$thistitle = substr($thistitle, 0, 100);
+	//$thistitle = substr($thistitle, 0, 100);
 
 	$thisexcerpt = makeexcerpt($post->post_content, $post->post_excerpt, "default");
 

@@ -1744,9 +1744,9 @@ function createsection($values, $area){
 		}
 		$thispostid = $post->ID;
 		$thistitle = $post->post_title;
-		$thistitle = strip_tags($thistitle);
+		//$thistitle = strip_tags($thistitle);
 		$thistitle = str_replace("\"", "", $thistitle);
-		$thistitle = substr($thistitle, 0, 100);
+		//$thistitle = substr($thistitle, 0, 100);
 
 		$thisexcerpt = makeexcerpt($post->post_content, $post->post_excerpt, "default");
 
@@ -1819,7 +1819,7 @@ function createsection($values, $area){
 			";
 		}
 		elseif($area=="featuredauthor"){
-			$thistitle = substr($thistitle, 0, 75);
+			//$thistitle = substr($thistitle, 0, 75);
 			$output_body .= "
 				<li><a href=\"$clickthru\" alt=\"$thistitle\" title=\"$thistitle\">&raquo; $thistitle</a></li>
 			";
@@ -2010,9 +2010,9 @@ function create_authbox($insider_userid, $area, $authorslug = "insider"){
 				</div>
 				<div class=\"right_greybox_authorright\">
 					$createsection_body
-				<div class=\"clear\"></div>
 				</div>
 			</div>
+				<div class=\"clear\"></div>
 
 
 		";

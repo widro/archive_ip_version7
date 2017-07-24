@@ -65,6 +65,9 @@ if(is_page('movies')){
 if(is_page('tv')){
 	$zone = "tv";
 }
+if(is_page('figures')){
+	$zone = "figures";
+}
 if(is_page('comics-nexus')){
 	$zone = "comics-nexus";
 }
@@ -302,9 +305,9 @@ if(!$_SERVER['QUERY_STRING']){
 	}
 
 	$thistitle = $post->post_title;
-	$thistitle = strip_tags($thistitle);
+	//$thistitle = strip_tags($thistitle);
 	$thistitle = str_replace("\"", "", $thistitle);
-	$thistitle = substr($thistitle, 0, 100);
+	//$thistitle = substr($thistitle, 0, 100);
 
 	$thisexcerpt = makeexcerpt($post->post_content, $post->post_excerpt, "default");
 
