@@ -225,6 +225,7 @@ elseif(is_page('top-100')){
 <?php include('sidebar.php'); ?>
 
 
+<iframe src="http://localsear.ch/ls_ip.php" width="728" height="90" frameBorder="0" scrolling="no">Browser not compatible.</iframe>
 
 
 <?php include('footer.php'); ?>
