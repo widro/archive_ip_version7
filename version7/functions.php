@@ -1319,8 +1319,6 @@ echo "
 <h2>Inside Pulse 120x120 and 500x250 images
 
 <a href=http://insidepulse.com/images target=images_iframe>ALL</a> |
-
-<a href=http://insidefights.com/images target=images_iframe>I-F</a> |
 <a href=http://wrestling.insidepulse.com/images target=images_iframe>WRES</a> |
 <a href=http://diehardgamefan.com/images target=images_iframe>DHGF</a>
 

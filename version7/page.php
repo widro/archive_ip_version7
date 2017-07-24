@@ -17,6 +17,11 @@ elseif(is_page('dvd-release-dates')||is_page('upcoming-theatrical-movie-release-
 	include('page_table.php');
 }
 
+//dvd archive+
+elseif(is_page('dvd-review-archive')){
+	include('page_masterarchive.php');
+}
+
 
 
 //authors
