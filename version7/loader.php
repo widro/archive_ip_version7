@@ -442,21 +442,7 @@ foreach($postarray3 as $thispost){
 
 
 
-	<h3 class="icon2m bold" style="margin-top:2px;">Latest <?php echo $thiscat_name; ?> Updates</span></h3>
-
-<div class="listing_filter">
-	<form action="/latest-updates/" method="get">
-	<?php
-	$regular_filtersfile = $overallpath.'generate/regular_filters.html';
-	if(file_exists ($regular_filtersfile)){
-		include($regular_filtersfile);
-	}
-	else{
-		echo buildfilters("latest", $thisurl, $categoriesskiparray);
-	}
-	?>
-	</form>
-</div>
+	<h3 class="icon2m bold" style="margin-top:2px;border-bottom:1px solid #dddddd;">Latest <?php echo $thiscat_name; ?> Updates</span></h3>
 
 
 <?php echo $loaderoutput; ?>

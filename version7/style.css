@@ -1403,7 +1403,7 @@ h3.icon1m{
 }
 
 h3.icon2m{
-	background:url('mainsprite.png') 0px -260px;
+	background:url('mainsprite.png') 0px -260px no-repeat;
 	padding-left:60px;
 	padding-top:15px;
 	padding-bottom:10px;

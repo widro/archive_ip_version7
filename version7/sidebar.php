@@ -84,7 +84,7 @@
 			<h3 class="icon2m bold">Recent <span class="color1">Comments</span></h3>
 
 			<script type="text/javascript" src="http://<?php echo $disqusslug ?>.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=1&avatar_size=32&excerpt_length=100"></script>
-
+			<a href="/more-comments">&raquo; more comments</a>
 		</div>
 
 		<div class="clear" style="height:30px;"></div>

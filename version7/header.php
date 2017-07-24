@@ -216,7 +216,7 @@ if($active_zone=="home"){
 
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
-	$featuredauthors = "2|7|178|177|220|172|874";
+	$featuredauthors = "2|7|178|220|179|1";
 
 
 	//featured

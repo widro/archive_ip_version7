@@ -393,6 +393,14 @@ jQuery(document).ready(function($){ //fire on DOM ready
 
 		<?php
 		$relatedcat = $relatedvalues[0][1];
+		if($relatedcat=="archive"){
+			$relatedcat = $relatedvalues[1][1];
+		}
+
+		if($relatedvalues[0][1]=="archive"&&$relatedvalues[1][1]){
+			$relatedvalues[0] = $relatedvalues[1];
+		}
+
 		$relatedfile = $overallpath.'generate/category/l-cat-' . $relatedcat . '.html';
 		if(file_exists ($relatedfile)){
 			include($relatedfile);

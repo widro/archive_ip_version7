@@ -22,6 +22,11 @@ elseif(is_page('dvd-review-archive')){
 	include('page_masterarchive.php');
 }
 
+//comments
+elseif(is_page('more-comments')){
+	include('page_comments.php');
+}
+
 //dvd-release-dates
 elseif(is_page('forum')||is_page('forums')){
 	include('page_full.php');

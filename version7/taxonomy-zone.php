@@ -147,37 +147,8 @@ foreach($postarray3 as $thispost){
 
 
 
+	<h3 class="icon2m bold" style="margin-top:2px;border-bottom:1px solid #dddddd;">Full Listing</span></h3>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<h3 class="icon2m bold" style="margin-top:2px;">Full Listing</span></h3>
-<div class="listing_filter">
-	<form action="/latest-updates/" method="get">
-	<?php //echo buildfilters("latest", $thisurl, $categoriesskiparray); ?>
-	<?php include($overallpath.'generate/regular_filters.html'); ?>
-	</form>
-</div>
 <?php if (have_posts()) : ?>
 <?php
 

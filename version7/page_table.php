@@ -15,8 +15,8 @@
 		</div>
 		<div class="article_body">
 				<!-- content -->
-				<?php //if(has_tag("Game Collection Roundtable", $post )){ echo "<div class='pollarticle'><img src='http://diehardgamefan.com/wp-content/uploads/2014/12/collectionrt1600.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(is_page('dvd-release-dates')){ echo "<img src='http://insidepulse.com/wp-content/uploads/2014/12/dvdrelease1600.jpg' style='padding:0px;width:660px;' />"; } ?>
+				<?php if(is_page('upcoming-theatrical-movie-release-calendar')){ echo "<img src='http://insidepulse.com/wp-content/uploads/2014/12/template1600_movreleases.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php the_content(''); ?>
 				<!-- content end -->
 
