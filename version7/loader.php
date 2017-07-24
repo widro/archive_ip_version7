@@ -228,16 +228,13 @@ if($topstory120x120==""){
 $thistitle = $post->post_title;
 $thisdate = $post->post_date;
 $clickthru=get_permalink($thispostid);
-$thisexcerpt = $post->post_excerpt;
-$thisexcerpt = substr($thisexcerpt, 0, 180);
+
 //$author = $post->post_author;
 $author = get_the_author();
 
 
-if(!$thisexcerpt){
-	$thisexcerpt = $post->post_content;
-	$thisexcerpt = substr(strip_tags($thisexcerpt), 0, 300);
-}
+$thisexcerpt = makeexcerpt($post->post_content, $post->post_excerpt, "default");
+
 
 
 if(!$topstory500x250){
@@ -288,17 +285,11 @@ if(!$_SERVER['QUERY_STRING']){
 
 	$thistitle = $post->post_title;
 	$thistitle = strip_tags($thistitle);
-	$thisexcerpt = $post->post_excerpt;
-	$thisexcerpt = $post->post_excerpt;
-
-	if(!$thisexcerpt){
-		$thisexcerpt = $post->post_content;
-
-	}
-	$thisexcerpt = strip_tags($thisexcerpt);
-	$thisexcerpt = substr($thisexcerpt, 0, 180);
 	$thistitle = str_replace("\"", "", $thistitle);
 	$thistitle = substr($thistitle, 0, 100);
+
+	$thisexcerpt = makeexcerpt($post->post_content, $post->post_excerpt, "default");
+
 	$clickthru=get_permalink($thispostid);
 
 	//outputs date in wacky format

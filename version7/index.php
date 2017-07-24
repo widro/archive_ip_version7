@@ -28,6 +28,10 @@ if(is_home()){
 <?php if (have_posts()) : ?>
 <?php
 
+
+
+
+
 $i=0;
 while (have_posts()) : the_post();
 	$topstory120x120 = get_post_meta($post->ID, 'topstory120x120', true);
@@ -40,16 +44,11 @@ while (have_posts()) : the_post();
 		$topstory120x120 = defaultimage($thiscat_name, "topstory120x120");
 	}
 	$thistitle = $post->post_title;
-	$thisexcerpt = $post->post_excerpt;
-	$thisexcerpt = substr($thisexcerpt, 0, 180);
-	if(!$thisexcerpt){
-		$thisexcerpt = $post->post_content;
-	}
-
-	$thisexcerpt = strip_tags($thisexcerpt);
-	$thisexcerpt = substr($thisexcerpt, 0, 100);
 	$thistitle = str_replace("\"", "", $thistitle);
 	$thistitle = substr($thistitle, 0, 100);
+
+	$thisexcerpt = makeexcerpt($post->post_content, $post->post_excerpt, "default");
+
 	$clickthru=get_permalink($thispostid);
 	$thisdate = mysql2date('m.d.y', $post->post_date);
 	$author = get_the_author();

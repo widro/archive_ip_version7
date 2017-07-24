@@ -27,15 +27,10 @@
 
 	$thistitle = $post->post_title;
 	$thistitle = strip_tags($thistitle);
-	$thisexcerpt = $post->post_excerpt;
-	$thisexcerpt = $post->post_excerpt;
-
-	if(!$thisexcerpt){
-		$thisexcerpt = $post->post_content;
-
-	}
-	$thisexcerpt = strip_tags($thisexcerpt);
 	$thistitle = str_replace("\"", "", $thistitle);
+
+	$thisexcerpt = makeexcerpt($post->post_content, $post->post_excerpt, "default");
+
 	$clickthru=get_permalink($thispostid);
 
 	//outputs date in wacky format
@@ -290,16 +285,11 @@ for($i=0;$i<$left4x2count;$i++){
 			}
 			$thistitle = $post->post_title;
 			$thistitle = strip_tags($thistitle);
-			$thisexcerpt = $post->post_excerpt;
-
-			if(!$thisexcerpt){
-				$thisexcerpt = $post->post_content;
-			}
-
-			$thisexcerpt = strip_tags($thisexcerpt);
-			$thisexcerpt = substr($thisexcerpt, 0, 180);
 			$thistitle = str_replace("\"", "", $thistitle);
 			$thistitle = substr($thistitle, 0, 100);
+
+			$thisexcerpt = makeexcerpt($post->post_content, $post->post_excerpt, "default");
+
 			$clickthru=get_permalink($thispostid);
 
 			if($zonecounter==0){

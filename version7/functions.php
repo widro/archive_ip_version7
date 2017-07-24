@@ -629,6 +629,24 @@ function getzones($zoneslug){
 
 
 
+function makeexcerpt($content, $excerpt, $type){
+	$yo = 1;
+	if(!$excerpt){
+		$yo = 2;
+
+		$content_exploded = explode("<!--more-->", $content);
+		$excerpt = $content_exploded[0];
+
+		if(!$content_exploded[1]){
+			$yo = 3;
+			$excerpt = substr(strip_tags($content), 0, 250);
+		}
+	}
+
+	return $excerpt;
+
+}
+
 
 
 
@@ -640,8 +658,6 @@ function getzones($zoneslug){
 function my_wp_dashboard_test() {
 	echo '
 
-	<font color=#ff0000><b>NEW!!!</b></font> - <a href=https://insidepulsecom.campfirenow.com/>CAMPFIRE STAFF CHAT</a>
-	<br><br>
 	<a href=https://mail.google.com/a/insidepulse.com>https://mail.google.com/a/insidepulse.com</a>
 	<br><br>
 	Check your IP email! <a href=https://mail.google.com/a/insidepulse.com>https://mail.google.com/a/insidepulse.com</a>
@@ -1706,17 +1722,11 @@ function createsection($values, $area){
 		$thispostid = $post->ID;
 		$thistitle = $post->post_title;
 		$thistitle = strip_tags($thistitle);
-		$thisexcerpt = $post->post_excerpt;
-		$thisexcerpt = $post->post_excerpt;
-
-		if(!$thisexcerpt){
-			$thisexcerpt = $post->post_content;
-
-		}
-		$thisexcerpt = strip_tags($thisexcerpt);
-		$thisexcerpt = substr($thisexcerpt, 0, 180);
 		$thistitle = str_replace("\"", "", $thistitle);
 		$thistitle = substr($thistitle, 0, 100);
+
+		$thisexcerpt = makeexcerpt($post->post_content, $post->post_excerpt, "default");
+
 		$clickthru=get_permalink($thispostid);
 
 		$thisdate = mysql2date('m.d.y', $post->post_date);

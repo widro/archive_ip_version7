@@ -85,7 +85,7 @@ while (have_posts()) : the_post();
 	}
 
 	$thistitle = $post->post_title;
-	$thisexcerpt = $post->post_excerpt;
+	$thisexcerpt = makeexcerpt($post->post_content, $post->post_excerpt, "default");
 
 	$thiscontent = $post->post_content;
 
