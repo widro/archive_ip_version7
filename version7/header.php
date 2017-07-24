@@ -754,7 +754,6 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
       xmlns:og="http://ogp.me/ns#"
       xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
-<script type="text/javascript" src="//js.sopablackout.org/sopablackout.js"></script>
 
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <title>
