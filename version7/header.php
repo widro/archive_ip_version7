@@ -235,7 +235,7 @@ elseif($active_zone=="tv"){
 	$left4x2values[] = array('zonecat', 'tv|features', 'features', '/category/features');
 	$left4x2values[] = array('zonecat', 'tv|interviews', 'interviews', '/category/interviews');
 	$left4x2values[] = array('tag', 'the-x-factor,x-factor', 'The X Factor', '/latest-updates/?tag=the-x-factor,x-factor');
-	$left4x2values[] = array('zonetag', 'tv|survivor,survivor-south-pacific,survivor-redemption-island', 'survivor', '/tag/survivor/');
+	$left4x2values[] = array('zonetag', 'tv|ben-flajnik,the-bachelor', 'the bachelor', '/tag/the-bachelor/');
 	$left4x2values[] = array('zonetag', 'tv|glee', 'glee', '/tag/glee/');
 
 	//topstory sql add
