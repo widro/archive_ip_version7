@@ -34,6 +34,13 @@ elseif(is_page('about')){
 elseif(is_page('media-kit')){
 	include('page_slide.php');
 }
+elseif(is_page('tv-show-madness')){
+	include('page_full.php');
+}
+elseif(is_page('tv-show-madness-brackets')){
+	include('page_full.php');
+}
+
 
 
 else{

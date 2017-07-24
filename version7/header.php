@@ -339,8 +339,9 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 	$left4x2values[] = array('zonecat', 'comics-nexus|spoilers', 'spoilers', '/latest-updates/?zone=comics-nexus&cat=spoilers');
 	$left4x2values[] = array('zonecat', 'comics-nexus|reviews', 'reviews', '/latest-updates/?zone=comics-nexus&cat=reviews');
 	$left4x2values[] = array('zonecat', 'comics-nexus|columns', 'features', '/latest-updates/?zone=comics-nexus&cat=features');
+	$left4x2values[] = array('tag', 'marvel-now', 'Marvel NOW!', '/tag/marvel-now');
 	$left4x2values[] = array('zonecat', 'comics-nexus|interviews', 'interviews', '/latest-updates/?zone=comics-nexus&cat=interviews');
-	$left4x2values[] = array('tag', 'dc-comics-relaunch', 'DC Relaunch', '/tag/dc-comics-relaunch');
+	$left4x2values[] = array('tag', 'dc-comics-relaunch|new-52', 'DC Relaunch', '/latest-updates/?zone=comics-nexus&tag=new-52,dc-comics-relaunch');
 	$left4x2values[] = array('zonetag', 'figures|dc-comics', 'DC Figures', '/latest-updates/?zone=figures&tag=dc-comics/');
 	$left4x2values[] = array('zonetag', 'figures|marvel', 'Marvel Figures', '/latest-updates/?zone=figures&tag=marvel/');
 	$left4x2values[] = array('tag', 'marvel', 'marvel', '/tag/marvel');
@@ -1184,14 +1185,17 @@ $subnavcount = count($subnavarray);
 		</div>
 		<div class="bar_ad">
 			<!--<a href="#"><img src="http://media.insidepulse.com/shared/images/v7/ad728.png"></a>-->
+			<!--- start of insidepulse.sportsfanlive.com/default_companion_x06_(728x90.1) --->
+			<script LANGUAGE="JavaScript1.1">
+			document.write('<script LANGUAGE="JavaScript1.1" SRC="http://oascentral.sportsfanlive.com/RealMedia/ads/adstream_jx.ads/insidepulse.sportsfanlive.com/default/jx/comp/1'+OAS_rns+'@Position2,Left,x06!x06?XE&Partner=insidepulse&PartnerUnit=insidepulse.728x90.1.default/jx/comp&XE" type="text/javascript"><\/script>');
+			</script>
+			<NOSCRIPT>
+			<A HREF="http://oascentral.sportsfanlive.com/RealMedia/ads/click_nx.ads/insidepulse.sportsfanlive.com/default/nx/comp@Position2,Left,x06!x06?x?XE&Partner=insidepulse&PartnerUnit=insidepulse.728x90.1.default/nx/comp&XE" target="_blank">
+			<IMG SRC="http://oascentral.sportsfanlive.com/RealMedia/ads/adstream_nx.ads/insidepulse.sportsfanlive.com/default/nx/comp@Position2,Left,x06!x06?x?XE&Partner=insidepulse&PartnerUnit=insidepulse.728x90.1.default/nx/comp&XE" border=0>
+			</A>
+			</NOSCRIPT>
+			<!--- end of insidepulse.sportsfanlive.com/default_companion_x06_(728x90.1) --->
 
-
-
-
-
-<!-- BEGIN UAT - 728x90 - InsidePulse: InsidePulse - DO NOT MODIFY -->
-<script type="text/javascript" src="http://ad-cdn.technoratimedia.com/00/35/09/uat_10935.js?ad_size=728x90"></script>
-<!-- END TAG -->
 
 
 		</div>
