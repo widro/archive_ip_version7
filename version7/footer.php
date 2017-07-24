@@ -131,9 +131,9 @@
 			<br><br>
 			<br><br>
 			Dashboards: <a href="http://<?php echo $homeurl; ?>/wp-admin/">Combined</a> &middot;
-			<a href="http://<?php echo $wrestlingurl; ?>/wordpress/wp-admin/">Wrestling</a> &middot;
-			<a href="http://<?php echo $insidefightsurl; ?>/wordpress/wp-admin/">Fights</a> &middot;
-			<a href="http://<?php echo $diehardgamefanurl; ?>/wordpress/wp-admin/">Diehard</a>
+			<a href="http://<?php echo $wrestlingurl; ?>/wp-admin/">Wrestling</a> &middot;
+			<a href="http://<?php echo $insidefightsurl; ?>/wp-admin/">Fights</a> &middot;
+			<a href="http://<?php echo $diehardgamefanurl; ?>/wp-admin/">Diehard</a>
 
 		</div>
 		<div class="footer_column3b ac">

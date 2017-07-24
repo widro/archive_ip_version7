@@ -1,6 +1,20 @@
 <?php get_header(); ?>
 	<div class="content_left">
 <?php
+if(is_author()){
+if(get_query_var('author_name')) :
+    $curauth = get_user_by('slug', get_query_var('author_name'));
+else :
+    $curauth = get_userdata(get_query_var('author'));
+endif;
+
+	echo "<h3>Archive for " . $curauth->display_name. "</h3>";
+}
+?>
+
+
+
+<?php
 if(is_home()){
 	//top story vars
 	$showcheck = false;

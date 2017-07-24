@@ -114,15 +114,14 @@ else{
 		$active_zone = "tv";
 	}
 
-	//figures
-	elseif(in_zone("figures")||is_page("figures")){
-		$active_zone = "figures";
-	}
-
 	elseif(is_page("comics-nexus")||is_page("comics")){
 		$active_zone = "comics-nexus";
 	}
 
+	//figures
+	elseif(in_zone("figures")||is_page("figures")){
+		$active_zone = "figures";
+	}
 
 	elseif(in_zone("movies")||is_page("movies")){
 		$active_zone = "movies";
@@ -248,7 +247,7 @@ elseif($active_zone=="tv"){
 
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
-	$featuredauthors = "2|110|122|172|874";
+	$featuredauthors = "2|110|172|874";
 
 	//subnav
 	$subnavarray = array();
@@ -767,8 +766,8 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 	//subnav
 	$subnavarray = array();
 	$subnavarray[] = array('Nintendo Reviews', '/latest-updates/?cat=nintendo-3ds-2,nintendo_wii,nintendo_ds,nintendo-wiiu/');
-	$subnavarray[] = array('Sony Reviews', '/latest-updates/?cat=sony_ps3,sony_psp,sony-ps-vita');
-	$subnavarray[] = array('Xbox Reviews', '/latest-updates/?cat=xbox_360/');
+	$subnavarray[] = array('Sony Reviews', '/latest-updates/?cat=sony-playstation-4,sony_ps3,sony_psp,sony-ps-vita');
+	$subnavarray[] = array('Xbox Reviews', '/latest-updates/?cat=microsoft-xbox-one,xbox_360');
 	$subnavarray[] = array('Tabletop Gaming', '/category/tabletop-gaming/');
 	$subnavarray[] = array('Full Listing', '/latest-updates/');
 
@@ -781,8 +780,8 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 	//left4x2
 	$left4x2values = array();
 	$left4x2values[] = array('cat', 'nintendo-3ds-2,nintendo_wii,nintendo_ds,nintendo-wiiu', 'Nintendo', '/latest-updates/?cat=nintendo-3ds-2,nintendo_wii,nintendo_ds,nintendo-wiiu');
-	$left4x2values[] = array('cat', 'sony_ps3,sony_psp,sony-ps-vita', 'sony', '/latest-updates/?cat=sony_ps3,sony_psp,sony-ps-vita');
-	$left4x2values[] = array('cat', 'xbox_360', 'xbox', '/latest-updates/?cat=xbox_360');
+	$left4x2values[] = array('cat', 'sony-playstation-4,sony_ps3,sony_psp,sony-ps-vita', 'sony', '/latest-updates/?cat=sony-playstation-4,sony_ps3,sony_psp,sony-ps-vita');
+	$left4x2values[] = array('cat', 'microsoft-xbox-one,xbox_360', 'xbox', '/latest-updates/?cat=microsoft-xbox-one,xbox_360');
 	$left4x2values[] = array('cat', 'pc_games', 'pc games', '/category/pc_games');
 	$left4x2values[] = array('cat', 'tabletop-gaming', 'tabletop gaming', '/category/tabletop-gaming');
 	$left4x2values[] = array('cat', 'reviews', 'reviews', '/category/reviews');
