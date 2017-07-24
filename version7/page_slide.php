@@ -8,7 +8,21 @@
 }
 </style>
 
+<script>
 
+
+function hiringform(){
+
+	var name = $("#hiring_name").val();
+	alert(name);
+
+	$("#hiringerror").html('error goes here sucka');
+
+}
+
+
+
+</script>
 
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
@@ -125,7 +139,7 @@
 
 		<div class="slide_footer">
 			<div class="slide_footer_left">
-				&copy; 2011 Inside Pulse
+				&copy; <?php echo date("Y"); ?> Inside Pulse
 			</div>
 			<div id="slide" name="slide5" class="slide_tabs">
 				<div id="slide_n" class="tab font2 slidetab fl cp">&laquo; </div>
@@ -278,7 +292,7 @@
 
 		<div class="slide_footer">
 			<div class="slide_footer_left">
-				&copy; 2011 Inside Pulse
+				&copy; <?php echo date("Y"); ?> Inside Pulse
 			</div>
 			<div id="slide" name="slide6" class="slide_tabs">
 				<div id="slide_n" class="tab font2 slidetab fl cp">&laquo; </div>
@@ -401,7 +415,7 @@
 
 		<div class="slide_footer">
 			<div class="slide_footer_left">
-				&copy; 2011 Inside Pulse
+				&copy; <?php echo date("Y"); ?> Inside Pulse
 			</div>
 			<div id="slide" name="slide5" class="slide_tabs">
 				<div id="slide_n" class="tab font2 slidetab fl cp">&laquo; </div>
@@ -525,29 +539,35 @@
 
 
 			</div>
+			<form id="hiringform" name="hiringform" method="post">
 			<div class="slide_container_wide fr" style="padding-top:50px;">
 				<h2 class="">Join the Inside Pulse Team!</h2>
 
-				Name: <input type="text">
+				Name: <input type="text" id="hiring_name" name="hiring_name">
 				<br><br>
-				Email: <input type="text">
+				Email: <input type="text" id="hiring_email" name="hiring_email">
 				<br><br>
-				Subject Interested in: <input type="text">
+				Intro/Subject: <input type="text" id="hiring_subject" name="hiring_subject">
 				<br><br>
+				Writing Sample/Message: <textarea id="hiring_body" name="hiring_body"></textarea>
+				<br><br>
+				<div id="hiringerror" name="hiringerror" stylee="color;#ff0000"></div>
+
+				<input type="button" onClick="hiringform()" value="Submit">
 
 
 
 
 
 			</div>
-
+			</form>
 		</div>
 
 
 
 		<div class="slide_footer">
 			<div class="slide_footer_left">
-				&copy; 2011 Inside Pulse
+				&copy; <?php echo date("Y"); ?> Inside Pulse
 			</div>
 			<div id="slide" name="slide6" class="slide_tabs">
 				<div id="slide_n" class="tab font2 slidetab fl cp">&laquo; </div>

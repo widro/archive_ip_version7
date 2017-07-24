@@ -344,6 +344,69 @@ for($i=0;$i<$left4x2count;$i++){
 
 		</div>
 
+		<div class="clear" style="height:20px;"></div>
+<?php
+if($thisurl==$insidefightsurl){
+?>
+
+<script src="http://www.bellator.com/mediaPortal/scripts/inline.js" language="javascript"></script>
+<script type="text/javascript">
+var iptv_direction = "right";
+</script>
+</head>
+<body>
+
+<!-- begin player embed code -->
+<style type="text/css">
+<!--
+.poweredby {
+	font-size: 13px;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: trebuchet ms;
+}
+.bellator {
+	font-size: 20px;
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: trebuchet ms;
+}
+-->
+</style>
+
+<table width="400" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="400" height="24"bgcolor="#000000" align="right"><a href="http://www.bellator.com/" target="_blank"><span class="poweredby">Powered by </span><span class="bellator">Bellator.com</span></a>&nbsp;</td>
+  </tr>
+<tr><td>
+<object width="400" height="374" id="iptvsyndicated" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000">
+	<param name="movie" value="http://www.bellator.com/mediaPortal/inline.swf" />
+	<param name="flashVars" value="playerId=33707&server=http://www.bellator.com/XML/titanv3/&pageurl=http://www.bellator.com/mediaPortal/&sitename=aff.bellator.insidefights&locimage=http://image.cdnl3.xosnetwork.com/mediaPortal/&jtv=23600&skin=23600&gaa=UA-851411-5&companion=true&htmlid=iptvsyndicated&brandTextColor=0xCCCCCC&brandTextSelectedColor=0xFFFFFF&autostart=true&mute=true" />
+	<param name="quality" value="high" />
+	<param name="allowFullScreen" value="true" />
+	<param name="allowScriptAccess" value="always" />
+	<embed name="iptvsyndicated" pluginspage="http://www.adobe.com/go/getflashplayer" src="http://www.bellator.com/mediaPortal/inline.swf" type="application/x-shockwave-flash" width="400" height="374" quality="high" allowFullScreen="true" allowScriptAccess="always" flashVars="playerId=33707&server=http://www.bellator.com/XML/titanv3/&pageurl=http://www.bellator.com/mediaPortal/&sitename=aff.bellator.insidefights&locimage=http://image.cdnl3.xosnetwork.com/mediaPortal/&jtv=23600&skin=23600&gaa=UA-851411-5&companion=true&htmlid=iptvsyndicated&brandTextColor=0xCCCCCC&brandTextSelectedColor=0xFFFFFF&autostart=true&mute=true"></embed>
+</object>
+</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+<?php
+}
+?>
+
+
+
+
+
 
 <?php
 

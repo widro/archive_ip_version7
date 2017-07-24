@@ -179,7 +179,7 @@ if(!is_single()){
 			<a href="http://<?php echo $homeurl; ?>/media-kit/">Media</a> &middot;
 -->
 			<br><br>
-			&copy; 2011 Inside Pulse
+			&copy; <?php echo date("Y"); ?> Inside Pulse
 			<br><br>
 			<br><br>
 			<br><br>
