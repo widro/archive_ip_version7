@@ -121,7 +121,7 @@ img{
 
 a{
 	text-decoration:none;
-	color:#000000;
+	color:#666666;
 }
 
 a:hover{
@@ -302,7 +302,6 @@ table,td,tdbody,tr,post-content{
 
 .bar_logo{
 	width:240px;
-	height:100px;
 	text-align:center;
 	float:left;
 }

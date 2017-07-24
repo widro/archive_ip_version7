@@ -125,7 +125,7 @@
 
 		<div class="slide_footer">
 			<div class="slide_footer_left">
-				&copy; 2012 Inside Pulse
+				&copy; 2011 Inside Pulse
 			</div>
 			<div id="slide" name="slide5" class="slide_tabs">
 				<div id="slide_n" class="tab font2 slidetab fl cp">&laquo; </div>
@@ -278,7 +278,7 @@
 
 		<div class="slide_footer">
 			<div class="slide_footer_left">
-				&copy; 2012 Inside Pulse
+				&copy; 2011 Inside Pulse
 			</div>
 			<div id="slide" name="slide6" class="slide_tabs">
 				<div id="slide_n" class="tab font2 slidetab fl cp">&laquo; </div>
@@ -401,7 +401,7 @@
 
 		<div class="slide_footer">
 			<div class="slide_footer_left">
-				&copy; 2012 Inside Pulse
+				&copy; 2011 Inside Pulse
 			</div>
 			<div id="slide" name="slide5" class="slide_tabs">
 				<div id="slide_n" class="tab font2 slidetab fl cp">&laquo; </div>
@@ -547,7 +547,7 @@
 
 		<div class="slide_footer">
 			<div class="slide_footer_left">
-				&copy; 2012 Inside Pulse
+				&copy; 2011 Inside Pulse
 			</div>
 			<div id="slide" name="slide6" class="slide_tabs">
 				<div id="slide_n" class="tab font2 slidetab fl cp">&laquo; </div>

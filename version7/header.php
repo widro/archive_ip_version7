@@ -754,6 +754,8 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
       xmlns:og="http://ogp.me/ns#"
       xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
+<script type="text/javascript" src="//js.sopablackout.org/sopablackout.js"></script>
+
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <title>
 
@@ -1153,29 +1155,8 @@ $subnavcount = count($subnavarray);
 
 <div class="bar">
 	<div class="inner">
-
-<?php
-if($active_zone=="tv"){
-?>
-
-<style>
-.bar_logo{
-
-	background:url('http://insidepulse.com/wp-content/uploads/2012/01/icons_tv.png') bottom right no-repeat;
-}
-
-</style>
-
-<?php
-}
-?>
-
-
 		<div class="bar_logo">
 			<?php echo $logoimageurl; ?>
-
-
-
 		</div>
 		<div class="bar_ad">
 			<!--<a href="#"><img src="http://media.insidepulse.com/shared/images/v7/ad728.png"></a>-->
