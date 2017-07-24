@@ -662,25 +662,25 @@ color: #ff0000;
 /*** featured_tabs **/
 
 .featured_tabs{
-	background:url('mainsprite.png') -5px -159px;
+	background:url('mainsprite.png') -5px -159px no-repeat;
 	width:660px;
 	height:33px;
 }
 
 .featured_tabs1{
-	background:url('mainsprite.png') -5px -159px;
+	background:url('mainsprite.png') -5px -159px no-repeat;
 	width:660px;
 	height:33px;
 }
 
 .featured_tabs2{
-	background:url('mainsprite.png') -5px -191px;
+	background:url('mainsprite.png') -5px -191px no-repeat;
 	width:660px;
 	height:33px;
 }
 
 .featured_tabs3{
-	background:url('mainsprite.png') -5px -223px;
+	background:url('mainsprite.png') -5px -223px no-repeat;
 	width:660px;
 	height:33px;
 }
@@ -893,9 +893,9 @@ color: #ff0000;
 }
 
 .footer h4{
-	font-size:1.125em;
+	font-size:1.5em;
 	font-weight:bold;
-	margin-bottom:20px;
+	margin-bottom:10px;
 	text-transform:uppercase;
 }
 
