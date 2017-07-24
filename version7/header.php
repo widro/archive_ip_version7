@@ -326,7 +326,7 @@ elseif($active_zone=="tv"){
 elseif($active_zone=="movies"){
 
 	$movies_tabcss = "tab_cell_nav_on";
-	$featuredauthors = "7|220|198|221|131|222";
+	$featuredauthors = "7|220|198|131|222";
 
 
 	//format
