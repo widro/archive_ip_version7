@@ -7,39 +7,6 @@
 
 <!-- subfooter -->
 
-
-<?php
-if($thisurl==$insidefightsurl){
-?>
-<!--JavaScript Tag // Tag for network 5353: AdExcite // Website: InsideFights.com // Page: ROS // Placement: ROS-video-1 x 1 (2280214) // created at: Nov 30, 2011 10:25:25 AM-->
-<script language="javascript"><!--
-document.write('<scr'+'ipt language="javascript1.1" src="http://adserver.adtechus.com/addyn/3.0/5353.1/2280214/0/16/ADTECH;loc=100;target=_blank;key=key1+key2+key3+key4;grp=[group];size=1x1;misc='+new Date().getTime()+'"></scri'+'pt>');
-//-->
-</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5353.1/2280214/0/16/ADTECH;loc=300;key=key1+key2+key3+key4;grp=[group]" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5353.1/2280214/0/16/ADTECH;loc=300;key=key1+key2+key3+key4;grp=[group]" border="0" width="1" height="1"></a></noscript>
-<!-- End of JavaScript Tag -->
-
-
-
-
-<?php
-}
-elseif($thisurl==$diehardgamefanurl1){
-
-}
-else{
-?>
-<!--JavaScript Tag // Tag for network 5353: AdExcite // Website: InsideFights.com // Page: ROS // Placement: ROS-video-1 x 1 (2280214) // created at: Nov 30, 2011 10:25:25 AM-->
-<script language="javascript"><!--
-document.write('<scr'+'ipt language="javascript1.1" src="http://adserver.adtechus.com/addyn/3.0/5353.1/2280214/0/16/ADTECH;loc=100;target=_blank;key=key1+key2+key3+key4;grp=[group];size=1x1;misc='+new Date().getTime()+'"></scri'+'pt>');
-//-->
-</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5353.1/2280214/0/16/ADTECH;loc=300;key=key1+key2+key3+key4;grp=[group]" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5353.1/2280214/0/16/ADTECH;loc=300;key=key1+key2+key3+key4;grp=[group]" border="0" width="1" height="1"></a></noscript>
-<!-- End of JavaScript Tag -->
-
-
-<?php
-}
-?>
-
 <div class="subfooter">
 	<div class="inner">
 		<div class="subfooter_column2a">
@@ -209,12 +176,6 @@ if(!is_single()){
 
 </div>
 <div class="clear"></div>
-<script type="text/javascript">
-  if(typeof(gnm_ord)=='undefined') gnm_ord=Math.random()*10000000000000000; if(typeof(gnm_tile) == 'undefined') gnm_tile=1;
-  document.write('<scr'+'ipt src="http://n4403ad.doubleclick.net/adj/gn.cr.insidepulse.com/ros;sect=ros;mtfInline=true;sz=728x90;tile='+(gnm_tile++)+';ord='+gnm_ord+'?" type="text/javascript"></scr'+'ipt>');
-</script>
-<!-- END AD TAG -->
-
 
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -239,11 +200,6 @@ function changetab(newtab, totaltabs, cssclass){
 		$("#"+newtabdiv).addClass(cssclass+"_on");
 
 }
-
-
-
-
-
 jQuery(document).ready(function($){ //fire on DOM ready
 
 	$(".tab_cell_nav_on,.tab_cell_nav_off").click(function(){
