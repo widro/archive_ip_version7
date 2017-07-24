@@ -34,7 +34,25 @@
 		<div class="clear"></div>
 
 
-		
+		<div class="right_container">
+			<h3 class="icon2m bold">Featured <span class="color1">Poll</span></h3>
+
+			<?php get_poll();?>
+
+
+
+
+
+
+
+
+
+
+		</div>
+		<div class="clear"></div>
+
+
+
 		<div class="clear" style="height:30px;"></div>
 
 		<div class="right_container greybox">
@@ -90,25 +108,67 @@
 		</div>
 
 
+		<div class="clear" style="height:40px;"></div>
+
+		<div class="right_container">
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- Inside Pulse 2014 300 -->
+			<ins class="adsbygoogle"
+				 style="display:inline-block;width:300px;height:250px"
+				 data-ad-client="ca-pub-9381773425456350"
+				 data-ad-slot="6175499002"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+
+
+
+		<div class="clear" style="height:40px;"></div>
+
+		<div class="right_container">
+			<!-- BEGIN TECHNORATI MEDIA AD TAGS FOR Section InsideFights, Ad Size: Medium Rectangle (300x250) -->
+			<script type="text/javascript">
+			   document.write('<scri' + 'pt type="text/javascript" src="'
+			   + (document.location.protocol == 'https:' ? 'https://uat-secure' : 'http://ad-cdn')
+			   + '.technoratimedia.com/00/45/11/uat_11145.js?ad_size=300x250"></scri' + 'pt>');
+			</script>
+			<!-- END TECHNORATI MEDIA TAGS FOR Section InsideFights, Ad Size: Medium Rectangle (300x250) -->
+
+		</div>
+
+
 
 
 		<div class="clear" style="height:40px;"></div>
 
 		<div class="right_container">
 			<?php
-			$narrowcat = $rightnarrowvalues[0][1];
-			$narrowfile = $overallpath.'generate/category/r-cat-narrow-' . $narrowcat . '.html';
-			if(file_exists ($narrowfile)){
-				include($narrowfile);
-			}
-			else{
-				$rightnarrowvalues = createsection($rightnarrowvalues, "narrowlinks");
-				$make_narrow = make_narrow($rightnarrowvalues);
-				echo $make_narrow;
-			}
+			//$narrowcat = $rightnarrowvalues[0][1];
+			//$narrowfile = $overallpath.'generate/category/r-cat-narrow-' . $narrowcat . '.html';
+			//if(file_exists ($narrowfile)){
+			//	include($narrowfile);
+			//}
+			//else{
+			//	$rightnarrowvalues = createsection($rightnarrowvalues, "narrowlinks");
+			//	$make_narrow = make_narrow($rightnarrowvalues);
+			//	echo $make_narrow;
+			//}
 			?>
+
+
+
+<!-- BEGIN TECHNORATI MEDIA AD TAGS FOR Section InsideFights, Ad Size: Skyscraper (160x600) -->
+<script type="text/javascript">
+   document.write('<scri' + 'pt type="text/javascript" src="'
+   + (document.location.protocol == 'https:' ? 'https://uat-secure' : 'http://ad-cdn')
+   + '.technoratimedia.com/00/45/11/uat_11145.js?ad_size=160x600"></scri' + 'pt>');
+</script>
+<!-- END TECHNORATI MEDIA TAGS FOR Section InsideFights, Ad Size: Skyscraper (160x600) -->
+
+
+
 			<div class="newsad_right">
-				<!--<a href="#"><img src="http://media.insidepulse.com/shared/images/v7/ad160.png"></a>-->
 
 				<!--- start of insidepulse.sportsfanlive.com/default_companion_Left_(160x600.1) --->
 				<script LANGUAGE="JavaScript1.1">

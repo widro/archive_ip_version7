@@ -164,6 +164,29 @@
 
 
 <script type="text/javascript">
+   document.write('<scri' + 'pt type="text/javascript" src="'
+   + (document.location.protocol == 'https:' ? 'https://uat-secure' : 'http://ad-cdn')
+   + '.technoratimedia.com/00/35/09/uat_10935.js?ad_size=728x90,954x250,970x250"></scri' + 'pt>');
+</script>
+<!-- END TECHNORATI MEDIA TAGS FOR Section InsidePulse, Ad Size: Leaderboard/Pushdown/Billboard (728x90/954x250/970x250) -->
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Inside Pulse 2014 728x90 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-9381773425456350"
+     data-ad-slot="4698765804"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+<script src='http://Q1MediaHydraPlatform.com/ads/video/unit_desktop_slider.php?eid=10378'></script>
+
+
+
+<script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 </script>
