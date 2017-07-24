@@ -336,6 +336,7 @@ jQuery(document).ready(function($){ //fire on DOM ready
 				<?php if(has_tag("Out Today on DVD", $post )){ echo "<div class='pollarticle'><img src='http://insidepulse.com/wp-content/uploads/2014/12/dvdrelease1600.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("In Theatres Today", $post )){ echo "<div class='pollarticle'><img src='http://insidepulse.com/wp-content/uploads/2014/12/template1600_movreleases.jpg' style='padding:0px;width:660px;' />"; } ?>
 				<?php if(has_tag("video of the day", $post )){ echo "<div class='pollarticle'><img src='http://insidepulse.net/vxwireframe2/images/video.jpg' style='padding:0px;width:660px;' />"; } ?>
+				<?php if(has_tag("IPX Hiring", $post )){ echo "<div class='pollarticle'><img src='http://wrestling.insidepulse.com/wp-content/uploads/2015/01/template1600_hiring.jpg' style='padding:0px;width:660px;' />"; } ?>
 
 				<!-- content -->
 				<?php the_content(''); ?>
@@ -362,12 +363,15 @@ jQuery(document).ready(function($){ //fire on DOM ready
 				<?php if(has_tag("Out Today on DVD", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("In Theatres Today", $post )){ echo "</div>"; } ?>
 				<?php if(has_tag("video of the day", $post )){ echo "</div>"; } ?>
+				<?php if(has_tag("IPX Hiring", $post )){ echo "</div>"; } ?>
 				<br><br>
 				<?php
 				echo get_the_tag_list('<p>Tags: ',', ','</p>');
 				?>
 
-
+				<div style="width:600px;height:140px;padding:20px;background:#000000;color:#ffffff;font-weight:bold;font-size:50px;line-height:40px;">
+					<a href="http://wrestling.insidepulse.com/2015/01/14/ever-wanted-to-write-about-wrestling-join-the-pulse-wrestling-crew/"><img src="http://wrestling.insidepulse.com/wp-content/uploads/2015/01/template120_hiring-120x120.png" width=120 align=left>Join the Pulse Wrestling Team!</a>
+				</div>
 
 				<?php if($creditlink){
 					echo "<br><br>Source: <a href=";
@@ -451,8 +455,6 @@ jQuery(document).ready(function($){ //fire on DOM ready
     </script>
 </div>
 <!-- MarketGidNews End -->
-
-
 <script type="text/javascript">
   if(typeof(gnm_ord)=='undefined') gnm_ord=Math.random()*10000000000000000; if(typeof(gnm_tile) == 'undefined') gnm_tile=1;
   document.write('<scr'+'ipt src="http://n4403ad.doubleclick.net/adj/gn.cr.insidepulse.com/ros;sect=ros;mtfInline=true;sz=300x250;tile='+(gnm_tile++)+';ord='+gnm_ord+'?" type="text/javascript"></scr'+'ipt>');

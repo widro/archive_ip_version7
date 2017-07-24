@@ -20,8 +20,8 @@ else{
 	$offset = 0;
 }
 
-if($_GET['page']){
-	$currentpage = $_GET['page'];
+if($_GET['pagepage']){
+	$currentpage = $_GET['pagepage'];
 }
 else{
 	$currentpage = 1;
@@ -165,18 +165,18 @@ for($i=0;$i<$totalpages; $i++){
 
 if($currentpage==1){
 	$nextpage = $currentpage+1;
-	$nextlink = "<a href=?formsubmit=formsubmit&formzone=$formzone&formimagetype=$formimagetype&page=$nextpage>Next</a>";
+	$nextlink = "<a href=?formsubmit=formsubmit&formzone=$formzone&formimagetype=$formimagetype&pagepage=$nextpage>Next</a>";
 }
 
 elseif($currentpage==$totalpages){
 	$prevpage = $currentpage-1;
-	$prevlink = "<a href=?formsubmit=formsubmit&formzone=$formzone&formimagetype=$formimagetype&page=$prevpage>Previous</a>";
+	$prevlink = "<a href=?formsubmit=formsubmit&formzone=$formzone&formimagetype=$formimagetype&pagepage=$prevpage>Previous</a>";
 }
 else{
 	$nextpage = $currentpage+1;
 	$prevpage = $currentpage-1;
-	$nextlink = "<a href=?formsubmit=formsubmit&formzone=$formzone&formimagetype=$formimagetype&page=$nextpage>Next</a>";
-	$prevlink = "<a href=?formsubmit=formsubmit&formzone=$formzone&formimagetype=$formimagetype&page=$prevpage>Previous</a>";
+	$nextlink = "<a href=?formsubmit=formsubmit&formzone=$formzone&formimagetype=$formimagetype&pagepage=$nextpage>Next</a>";
+	$prevlink = "<a href=?formsubmit=formsubmit&formzone=$formzone&formimagetype=$formimagetype&pagepage=$prevpage>Previous</a>";
 }
 
 ?>
