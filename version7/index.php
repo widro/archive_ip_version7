@@ -231,6 +231,7 @@ $i++;
 endwhile;
 ?>
 
+
 <div class="pagelinks">
 	<div class="pagelinks_left">
 		<?php next_posts_link('&laquo; Previous') ?>
@@ -239,6 +240,7 @@ endwhile;
 		<?php previous_posts_link('Next &raquo;') ?>
 	</div>
 </div>
+
 
 <?php endif; ?>
 

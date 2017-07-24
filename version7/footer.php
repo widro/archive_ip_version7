@@ -166,12 +166,6 @@
 <!-- END AD TAG -->
 
 
-<script type="text/javascript">
-   document.write('<scri' + 'pt type="text/javascript" src="'
-   + (document.location.protocol == 'https:' ? 'https://uat-secure' : 'http://ad-cdn')
-   + '.technoratimedia.com/00/35/09/uat_10935.js?ad_size=728x90,954x250,970x250"></scri' + 'pt>');
-</script>
-<!-- END TECHNORATI MEDIA TAGS FOR Section InsidePulse, Ad Size: Leaderboard/Pushdown/Billboard (728x90/954x250/970x250) -->
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Inside Pulse 2014 728x90 -->

@@ -82,13 +82,18 @@ $autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wp-content/upl
 
 $autoimages_cats[] = "raw";
 $autoimages_tags[] = "raw";
-$autoimages_topstory120x120[] = "http://media.insidepulse.com/zones/wrestling/uploads/2012/07/WWE-Raw-Logo-2012-120x120.jpg";
-$autoimages_topstory500x250[] = "http://media.insidepulse.com/zones/wrestling/uploads/2012/07/WWE-Raw-Logo-2012-500x250.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2015/06/wwemondaynightraw2015thumb.png";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2015/06/wwemondaynightraw2015-500x250.png";
 
 $autoimages_cats[] = "smackdown";
 $autoimages_tags[] = "smackdown";
-$autoimages_topstory120x120[] = "http://media.insidepulse.com/zones/wrestling/uploads/2013/03/smackdown-logo-120x120.jpg";
-$autoimages_topstory500x250[] = "http://media.insidepulse.com/zones/wrestling/uploads/2012/06/Smackdown-500x250.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2015/07/wwesmackdown2015thumb.png";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2015/07/wwesmackdown2015-500x250.png";
+
+$autoimages_cats[] = "main-event";
+$autoimages_tags[] = "main-event";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2015/07/wwemainevent2015thumb.png";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2015/07/wwemainevent2015-500x250.png";
 
 $autoimages_cats[] = "impact";
 $autoimages_tags[] = "impact";
@@ -630,16 +635,6 @@ $autoimages_cats[] = "wwe-films";
 $autoimages_tags[] = "wwe-films";
 $autoimages_topstory120x120[] = "http://media.insidepulse.com/zones/wrestling/uploads/2012/03/WWE-Films-120x120.jpg";
 $autoimages_topstory500x250[] = "http://media.insidepulse.com/zones/wrestling/uploads/2012/03/WWE-Films-500x250.jpg";
-
-$autoimages_cats[] = "wwe-main-event-logo";
-$autoimages_tags[] = "wwe-main-event-logo";
-$autoimages_topstory120x120[] = "http://media.insidepulse.com/zones/wrestling/uploads/2012/09/WWE-Main-Event-Logo-120x120.jpg";
-$autoimages_topstory500x250[] = "http://media.insidepulse.com/zones/wrestling/uploads/2012/09/WWE-Main-Event-Logo-500x250.jpg";
-
-$autoimages_cats[] = "wwe-raw-2012-logo";
-$autoimages_tags[] = "wwe-raw-2012-logo";
-$autoimages_topstory120x120[] = "http://media.insidepulse.com/zones/wrestling/uploads/2012/07/WWE-Raw-Logo-2012-120x120.jpg";
-$autoimages_topstory500x250[] = "http://media.insidepulse.com/zones/wrestling/uploads/2012/07/WWE-Raw-Logo-2012-500x250.jpg";
 
 $autoimages_cats[] = "wwe-title";
 $autoimages_tags[] = "wwe-title";

@@ -59,7 +59,9 @@
 
 
 		</div>
+
 		<div class="clear" style="height:30px;"></div>
+
 
 		<div id="recentcomments" class="right_container dsq-widget">
 			<h3 class="icon2m bold">Recent <span class="color1">Comments</span></h3>
@@ -110,13 +112,6 @@
 		<div class="clear" style="height:40px;"></div>
 
 		<div class="right_container">
-			<!-- BEGIN TECHNORATI MEDIA AD TAGS FOR Section InsideFights, Ad Size: Medium Rectangle (300x250) -->
-			<script type="text/javascript">
-			   document.write('<scri' + 'pt type="text/javascript" src="'
-			   + (document.location.protocol == 'https:' ? 'https://uat-secure' : 'http://ad-cdn')
-			   + '.technoratimedia.com/00/45/11/uat_11145.js?ad_size=300x250"></scri' + 'pt>');
-			</script>
-			<!-- END TECHNORATI MEDIA TAGS FOR Section InsideFights, Ad Size: Medium Rectangle (300x250) -->
 
 		</div>
 
@@ -141,13 +136,6 @@
 
 
 
-<!-- BEGIN TECHNORATI MEDIA AD TAGS FOR Section InsideFights, Ad Size: Skyscraper (160x600) -->
-<script type="text/javascript">
-   document.write('<scri' + 'pt type="text/javascript" src="'
-   + (document.location.protocol == 'https:' ? 'https://uat-secure' : 'http://ad-cdn')
-   + '.technoratimedia.com/00/45/11/uat_11145.js?ad_size=160x600"></scri' + 'pt>');
-</script>
-<!-- END TECHNORATI MEDIA TAGS FOR Section InsideFights, Ad Size: Skyscraper (160x600) -->
 
 
 
