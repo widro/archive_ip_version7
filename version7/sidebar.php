@@ -15,6 +15,23 @@
 			<script LANGUAGE="JavaScript1.1">OAS_rn = new String (Math.random());OAS_rns = OAS_rn.substring (2, 11);document.write('<script LANGUAGE="JavaScript1.1" SRC="http://oascentral.sportsfanlive.com/RealMedia/ads/adstream_jx.ads/insidepulse.sportsfanlive.com/jx/1'+OAS_rns+'@Middle?RM_HTML_CLICK=" type="text/javascript"><\/script>');</script><NOSCRIPT><A HREF="http://oascentral.sportsfanlive.com/RealMedia/ads/click_nx.ads/insidepulse.sportsfanlive.com@Middle?&?RM_HTML_CLICK=" target="_blank"><IMG SRC="http://oascentral.sportsfanlive.com/RealMedia/ads/adstream_nx.ads/insidepulse.sportsfanlive.com@Middle?&?RM_HTML_CLICK=" border=0></A></NOSCRIPT><!--- end of insidepulse.sportsfanlive.com_Middle_(300x250) --->
 		</div>
 
+			<?php
+			// diehardgamefan
+			if($zone=='wrestling'){
+			?>
+			
+		<a href="http://insidepulse.com/2015/07/07/ever-wanted-to-write-about-wrestling-join-the-pulse-wrestling-crew-2/"><img src="http://media.insidepulse.com/zones/wrestling/uploads/2015/01/template1600_hiring-500x250.jpg" width=300>
+		<h3 style="color:#ff0000;">Join our team of writers!</h1></a>
+
+			<?php
+			}
+
+			else{
+			}
+			?>
+
+
+
 		<div class="right_container">
 			<div class="fb-like-box" data-href="<?php echo $zonefacebookurl; ?>" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="true"></div>
 		</div>
