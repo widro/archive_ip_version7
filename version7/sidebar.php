@@ -8,10 +8,7 @@
 	</div>
 	<div class="content_right">
 
-
-
-
-		<div class="right_container" style="margin-top:20px;">
+		<div class="right_container" style="margin-top:20px;min-height:300px;">
 			<!--<a href="#"><img src="http://media.insidepulse.com/shared/images/v7/ad300.png"></a>-->
 
 			<!--- start of insidepulse.sportsfanlive.com/default_companion_Position2_(300x250.1) --->
@@ -26,48 +23,18 @@
 			<!--- end of insidepulse.sportsfanlive.com/default_companion_Position2_(300x250.1) --->
 		</div>
 
+		<div class="right_container">
+			<div class="fb-like-box" data-href="<?php echo $zonefacebookurl; ?>" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="true"></div>
+		</div>
+		<div class="clear"></div>
 
-<?php
-if($active_zone=="wrestling"){
-?>
-		<div class="clear" style="height:30px;"></div>
-		<div class="right_container greybox">
-			<h3 class="icon2m bold">Match of the <span class="color1">Week</span></h3>
-
-<?php
-	// top story sql
-	$the_query = new WP_Query('&showposts=1&tag=match-of-the-week&orderby=post_date&order=desc');
-
-	//top story loop
-	while ($the_query->have_posts()) : $the_query->the_post();
-	$do_not_duplicate = $post->ID;
-
-	$topstory120x120 = get_post_meta($post->ID, 'topstory120x120', true);
-	if($topstory120x120==""){
-		$topstory120x120 = defaultimage("top-story", "topstory120x120");
-	}
-
-	$thistitle = $post->post_title;
-	$thistitle = str_replace("\"", "", $thistitle);
-
-	$thisexcerpt = makeexcerpt($post->post_content, $post->post_excerpt, "default");
-
-	$clickthru=get_permalink($thispostid);
-
-	//outputs date in wacky format
-	$thisdate = mysql2date('h|m|s|m|d|Y', $post->post_date);
-
-	echo "
-	<img src=\"$topstory120x120\" align=\"left\" style=\"padding-right:10px;\"><a href=\"$clickthru\">$thistitle</a>
-	</div>
-	";
+		<div class="right_container">
+			<?php echo $zonetwitterwidget; ?>
+		</div>
+		<div class="clear"></div>
 
 
-	endwhile;
-}
-?>
-
-
+		
 		<div class="clear" style="height:30px;"></div>
 
 		<div class="right_container greybox">
@@ -125,16 +92,6 @@ if($active_zone=="wrestling"){
 
 
 
-		<div class="clear" style="height:30px;"></div>
-
-		<div id="sidetabs" name="sidetabs2" class="sidetabs_tabs">
-			<?php echo $sidelinks_tabs; ?>
-		</div>
-
-		<div class="right_container">
-			<?php echo $sidelinks ?>
-		</div>
-
 		<div class="clear" style="height:40px;"></div>
 
 		<div class="right_container">
@@ -166,13 +123,3 @@ if($active_zone=="wrestling"){
 
 			</div>
 		</div>
-<?php
-if($thisurl==$insidefightsurl){
-?>
-		<div class="clear" style="height:30px;"></div>
-
-		<a href="http://mmatycoon.com/index.php?Ref=58104" target=_blank><img src="http://www.mmatycoon.com/images/mma_pics/mmatycoon250x250.jpg" alt="MMA Tycoon - MMA Sim Game"border="0"></a>
-
-<?php
-}
-?>

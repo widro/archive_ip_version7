@@ -114,7 +114,8 @@ else{
 		$active_zone = "tv";
 	}
 
-	elseif(is_page("figures")){
+	//figures
+	elseif(in_zone("figures")||is_page("figures")){
 		$active_zone = "figures";
 	}
 
@@ -147,10 +148,6 @@ else{
 		$active_zone = "music";
 	}
 
-	//figures
-	elseif(in_zone("figures")||is_page("figures")){
-		$active_zone = "figures";
-	}
 
 	//commercials
 	elseif(in_zone("commercials")||is_page("commercials")){
@@ -182,6 +179,18 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 //new for gumgum ads
 global $ggv2id;
 $ggv2id = "8440e804";
+
+//social media urls
+global $zonetwitterurl;
+global $zonefacebookurl;
+global $zonetwitterwidget;
+$zonetwitterurl = "https://twitter.com/insidepulse";
+$zonefacebookurl = "https://www.facebook.com/insidepulse";
+$zonetwitterwidget = "
+<a class=\"twitter-timeline\" href=\"https://twitter.com/insidepulse\" data-widget-id=\"425390449147142144\">Tweets by @insidepulse</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\"://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");</script>
+";
+
 
 if($active_zone=="home"){
 
@@ -227,6 +236,10 @@ if($active_zone=="home"){
 	//rightnarrowvalues
 	$rightnarrowvalues = array();
 	$rightnarrowvalues[] = array('cat', 'news', 'news', '/category/news/');
+
+	//social media urls
+	$zonetwitterurl = "https://twitter.com/insidepulse";
+	$zonefacebookurl = "https://www.facebook.com/insidepulse";
 
 }
 elseif($active_zone=="tv"){
@@ -274,6 +287,15 @@ elseif($active_zone=="tv"){
 	$rightnarrowvalues[] = array('cat', 'news', 'news', '/category/news/');
 
 	$ggv2id = "dcd052bd";
+
+	//social media urls
+	$zonetwitterurl = "http://twitter.com/insidepulsetv";
+	$zonefacebookurl = "https://www.facebook.com/insidepulsetv";
+
+	$zonetwitterwidget = "
+<a class=\"twitter-timeline\" href=\"https://twitter.com/insidepulsetv\" data-widget-id=\"425394733502849024\">Tweets by @insidepulsetv</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\"://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");</script>
+	";
 
 }
 
@@ -325,6 +347,15 @@ elseif($active_zone=="movies"){
 	$rightnarrowvalues[] = array('cat', 'news', 'news', '/category/news/');
 
 	$ggv2id = "dcd052bd";
+
+	//social media urls
+	$zonetwitterurl = "http://twitter.com/ip_movies";
+	$zonefacebookurl = "https://www.facebook.com/insidepulsemovies";
+
+	$zonetwitterwidget = "
+<a class=\"twitter-timeline\" href=\"https://twitter.com/ip_movies\" data-widget-id=\"425397062520172544\">Tweets by @ip_movies</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\"://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");</script>
+	";
 
 }
 
@@ -381,6 +412,15 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 
 	$ggv2id = "dcd052bd";
 
+	//social media urls
+	$zonetwitterurl = "http://twitter.com/comicsnexus";
+	$zonefacebookurl = "https://www.facebook.com/comicsnexus";
+
+	$zonetwitterwidget = "
+<a class=\"twitter-timeline\" href=\"https://twitter.com/comicsnexus\" data-widget-id=\"425388811208495104\">Tweets by @comicsnexus</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\"://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");</script>
+	";
+
 }
 
 elseif($active_zone=="pulsecasts"){
@@ -422,6 +462,10 @@ elseif($active_zone=="pulsecasts"){
 	$rightnarrowvalues[] = array('cat', 'news', 'news', '/category/news/');
 
 
+	//social media urls
+	$zonetwitterurl = "";
+	$zonefacebookurl = "";
+
 }
 
 
@@ -461,6 +505,10 @@ elseif($active_zone=="games"){
 
 	$ggv2id = "65382d7a";
 
+	//social media urls
+	$zonetwitterurl = "http://twitter.com/insidepulsegame";
+	$zonefacebookurl = "https://www.facebook.com/insidepulsegames";
+
 }
 
 elseif($active_zone=="sports"){
@@ -499,6 +547,10 @@ elseif($active_zone=="sports"){
 	$rightnarrowvalues[] = array('cat', 'news', 'news', '/category/news/');
 
 	$ggv2id = "170e6fc1";
+
+	//social media urls
+	$zonetwitterurl = "http://twitter.com/ip_sports";
+	$zonefacebookurl = "https://www.facebook.com/insidepulsesports";
 
 }
 
@@ -546,6 +598,13 @@ elseif($active_zone=="figures"){
 	$rightnarrowvalues[] = array('cat', 'news', 'news', '/category/news/');
 
 
+	//social media urls
+	$zonetwitterurl = "http://twitter.com/pulsefigures";
+	$zonefacebookurl = "https://www.facebook.com/insidepulsefigures";
+
+	$zonetwitterwidget = "
+	";
+
 }
 
 elseif($active_zone=="music"){
@@ -585,6 +644,10 @@ elseif($active_zone=="music"){
 
 	$ggv2id = "dcd052bd";
 
+	//social media urls
+	$zonetwitterurl = "http://twitter.com/ip_music";
+	$zonefacebookurl = "https://www.facebook.com/pages/Inside-Pulse-Music/139360146110564";
+
 }
 
 elseif($active_zone=="celebrities"){
@@ -622,6 +685,10 @@ elseif($active_zone=="celebrities"){
 	$rightnarrowvalues[] = array('cat', 'news', 'news', '/category/news/');
 
 	$ggv2id = "dcd052bd";
+
+	//social media urls
+	$zonetwitterurl = "http://twitter.com/pulsecelebs";
+	$zonefacebookurl = "http://www.facebook.com/pages/Inside-Pulse-Celebrities/148912705150191";
 
 }
 
@@ -674,6 +741,15 @@ elseif($active_zone=="wrestling"){
 
 	$ggv2id = "170e6fc1";
 
+	//social media urls
+	$zonetwitterurl = "https://twitter.com/pulsewrestling";
+	$zonefacebookurl = "https://www.facebook.com/insidepulsewrestling";
+
+	$zonetwitterwidget = "
+<a class=\"twitter-timeline\" href=\"https://twitter.com/pulsewrestling\" data-widget-id=\"425391494002786304\">Tweets by @pulsewrestling</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\"://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");</script>
+	";
+
 }
 
 elseif($active_zone=="diehardgamefan"){
@@ -686,7 +762,7 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 
 	$authorslug = "diehard";
 	$disqusslug = "diehardgamefan";
-	$featuredauthors = "21|345|1367|605|884|47";
+	$featuredauthors = "21|345|1367|605|884|41|869|1382|1396|37";
 
 	//subnav
 	$subnavarray = array();
@@ -713,6 +789,11 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 	$left4x2values[] = array('cat', 'features', 'features', '/category/features');
 	$left4x2values[] = array('cat', 'columns', 'columns', '/category/columns');
 
+	$left4x2values[] = array('cat', 'news', 'news', '/category/news');
+	$left4x2values[] = array('tag', 'super-smash-bros', 'smash bros', '/tag/super-smash-bros');
+	$left4x2values[] = array('tag', 'bravely-default', 'bravely default', '/tag/bravely-default');
+	$left4x2values[] = array('tag', 'yoshi', 'yoshi', '/tag/yoshi');
+
 
 	//rightfeatured
 	$rightfeaturedvalues = array();
@@ -724,6 +805,15 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 	$rightnarrowvalues[] = array('cat', 'news', 'news', '/category/news/');
 
 	$ggv2id = "65382d7a";
+
+	//social media urls
+	$zonetwitterurl = "https://twitter.com/diehardgamefan";
+	$zonefacebookurl = "https://www.facebook.com/diehardgamefan";
+
+	$zonetwitterwidget = "
+<a class=\"twitter-timeline\" href=\"https://twitter.com/diehardgamefan\" data-widget-id=\"425392138537299968\">Tweets by @diehardgamefan</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\"://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");</script>
+	";
 
 }
 
@@ -777,6 +867,15 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 	$rightnarrowvalues[] = array('cat', 'boxing', 'boxing', '/boxing/boxing/');
 
 	$ggv2id = "170e6fc1";
+
+	//social media urls
+	$zonetwitterurl = "https://twitter.com/insidefights";
+	$zonefacebookurl = "https://www.facebook.com/InsideFights";
+
+	$zonetwitterwidget = "
+<a class=\"twitter-timeline\" href=\"https://twitter.com/insidefights\" data-widget-id=\"425392395300007936\">Tweets by @insidefights</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\"://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");</script>
+	";
 
 }
 
@@ -1058,6 +1157,15 @@ $(document).ready(function() {
 
 
 <body class="font1">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=374731519293179";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <div class="top">
 	<div class="inner">
 		<div class="top_tabs" id="t10" name="t10">
@@ -1168,8 +1276,8 @@ $(document).ready(function() {
 
 		</div>
 		<div class="top_search">
-			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(2) ) : ?>
-			<?php endif; ?>
+			<?php //if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(2) ) : ?>
+			<?php //endif; ?>
 
 
 		</div>
@@ -1223,8 +1331,6 @@ $subnavcount = count($subnavarray);
 			</A>
 			</NOSCRIPT>
 			<!--- end of insidepulse.sportsfanlive.com/default_companion_x06_(728x90.1) --->
-
-
 
 		</div>
 	</div>

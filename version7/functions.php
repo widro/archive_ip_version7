@@ -814,6 +814,9 @@ function example_remove_dashboard_widgets() {
 
 	// Remove the dashboard_secondary (wp news) links widget
 	unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_secondary']);
+
+	// Remove the dashboard_secondary (wp news) links widget
+	unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_stats']);
 }
 
 // Hoook into the 'wp_dashboard_setup' action to register our function

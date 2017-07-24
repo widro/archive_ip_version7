@@ -391,10 +391,10 @@ if($thisurl==$insidefightsurl){
 <?php
 
 	if(($active_zone!="home")&&(!is_home())){
-		include('sidebar_zone.php');
+		include('sidebar.php');
 	}
 	else{
-		include('sidebar_home.php');
+		include('sidebar.php');
 	}
 
 ?>

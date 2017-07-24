@@ -3105,10 +3105,7 @@ $autoimages_tags[] = "zzzzzzzzzzzzzzz";
 $autoimages_topstory500x250[] = "http://media.insidepulse.com/zones/sports/uploads/2010/05/viewdownhere500.jpg";
 $autoimages_topstory120x120[] = "http://media.insidepulse.com/zones/sports/uploads/2010/05/viewdownhere120.jpg";
 
-$autoimages_cats[] = "nhl";
-$autoimages_tags[] = "nhl";
-$autoimages_topstory500x250[] = "http://media.insidepulse.com/zones/sports/uploads/2010/05/nhlhockey.jpg";
-$autoimages_topstory120x120[] = "http://media.insidepulse.com/zones/sports/uploads/2010/05/nhlhockey120.jpg";
+
 
 $autoimages_cats[] = "soccer";
 $autoimages_tags[] = "soccer";
@@ -3286,16 +3283,34 @@ $autoimages_topstory120x120[] = "http://media.insidepulse.com/zones/movies/uploa
 
 
 
+//figures
 
 
+$autoimages_cats[] = "the-walking-dead";
+$autoimages_tags[] = "the-walking-dead";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2010/11/The-Walking-Dead-Top-Story.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2010/11/The-Walking-Dead-Top-Story-120x120.jpg";
+
+$autoimages_cats[] = "mcfarlane-sportspicks-nhl";
+$autoimages_tags[] = "mcfarlane-sportspicks-nhl";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/11/SportsPicks-NHL-500.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/03/McFarlane-Sportspicks-NHL-e1332306718421-120x120.jpg";
+
+$autoimages_cats[] = "neca";
+$autoimages_tags[] = "neca";
+
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/01/Neca-120x120.jpg";
+
+$autoimages_cats[] = "dc-collectibles";
+$autoimages_tags[] = "dc-collectibles";
+
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/04/dc-collectibles-500-e1334206020846-120x120.jpg";
 
 
+$autoimages_cats[] = "marvel-legends";
+$autoimages_tags[] = "marvel-legends";
 
-
-
-
-
-
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/07/Marvel-Legends-SDCC-500-e1342361238450-120x120.jpg";
 
 
 
