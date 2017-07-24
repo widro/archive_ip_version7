@@ -721,7 +721,7 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 	//$left4x2values = array($type, $slug, $name, $clickthru);
 
 	$authorslug = "insider";
-	$featuredauthors = "855|852|853";
+	$featuredauthors = "855|220|852";
 
 	//subnav
 	$subnavarray = array();
