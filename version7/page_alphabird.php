@@ -21,6 +21,12 @@ elseif(is_page('the-ride-season-3-the-game-ifeadi-odenigbo')){
 
 <iframe name=" insidepulse_hss_p1" src="http://cdn.alphabird.com/assets/iframes/insidepulse_hss_p1/frame_insidepulse_hss_p1.htm" width = "640" height="880" frameborder="0" scrolling="no"></iframe>
 
+<?php
+}
+elseif(is_page('dell2')){
+?>
+
+<iframe name="insidepulse_p2_dell" src="http://cdn.alphabird.com/assets/iframes/insidepulse_p2/frame_insidepulse_p2.htm" width = "640" height="880" frameborder="0" scrolling="no"></iframe>
 
 <?php
 } else{
@@ -31,11 +37,6 @@ elseif(is_page('the-ride-season-3-the-game-ifeadi-odenigbo')){
 <?php
 }
 ?>
-
-
-
-
-<br><br><br><br><br><br>
 
 
 
