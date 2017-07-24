@@ -14,7 +14,7 @@ elseif($thisurl=="insidepulse.net"){
 	require_once($currentpath.'/wp-load.php');
 }
 else{
-	require_once($currentpath.'/wp-load.php');
+	require_once($currentpath.'/wordpress/wp-load.php');
 }
 
 

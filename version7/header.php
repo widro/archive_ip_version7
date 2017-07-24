@@ -20,7 +20,7 @@ global $disqusslug;
 $disqusslug = "inside-pulse";
 
 global $featuredauthors;
-$featuredauthors = "4|7|2|1|874";
+$featuredauthors = "36|4|7|61|1|874";
 
 global $overallpath;
 $overallpath = $_SERVER['DOCUMENT_ROOT'] . "/";
@@ -116,14 +116,6 @@ else{
 
 	elseif(is_page("comics-nexus")||is_page("comics")){
 		$active_zone = "comics-nexus";
-	}
-
-	elseif(is_page("inside-fights")||is_page("insidefights")){
-		$active_zone = "insidefights";
-	}
-
-	elseif(in_zone("inside-fights")||is_page("inside-fights")){
-		$active_zone = "insidefights";
 	}
 
 	//figures
@@ -370,7 +362,7 @@ elseif($active_zone=="comics-nexus"){
 
 $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/images/v7/comicsnexuslogo.png\" class=\"bar_logo_comicsnexus\"></a>";
 	$comics_tabcss = "tab_cell_nav_on";
-	$featuredauthors = "178|177|179|842|182";
+	$featuredauthors = "178|177|179|842|182|867|11";
 
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
@@ -521,7 +513,7 @@ elseif($active_zone=="games"){
 elseif($active_zone=="sports"){
 
 	$sports_tabcss = "tab_cell_nav_on";
-	$featuredauthors = "1";
+	$featuredauthors = "61|64|65|69";
 
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
@@ -707,7 +699,7 @@ elseif($active_zone=="wrestling"){
 	//$left4x2values = array($type, $slug, $name, $clickthru);
 
 	$disqusslug = "pulsewrestling";
-	$featuredauthors = "8|207|896|842|885|888|889|917|1";
+	$featuredauthors = "8|207|896|842|886|885|888|889|917|1";
 
 	//subnav
 	$subnavarray = array();
@@ -796,10 +788,10 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 	$left4x2values[] = array('cat', 'features', 'features', '/category/features');
 	$left4x2values[] = array('cat', 'columns', 'columns', '/category/columns');
 
-	$left4x2values[] = array('tag', 'dungeons-dragons', 'dungeons&dragons', '/tag/dungeons-dragons');
 	$left4x2values[] = array('cat', 'news', 'news', '/category/news');
 	$left4x2values[] = array('tag', 'super-smash-bros', 'smash bros', '/tag/super-smash-bros');
-	$left4x2values[] = array('tag', 'nippon-ichi', 'nippon ichi', '/tag/nippon-ichi');
+	$left4x2values[] = array('tag', 'bravely-default', 'bravely default', '/tag/bravely-default');
+	$left4x2values[] = array('tag', 'yoshi', 'yoshi', '/tag/yoshi');
 
 
 	//rightfeatured
@@ -836,7 +828,7 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 	//$left4x2values = array($type, $slug, $name, $clickthru);
 
 	$authorslug = "insider";
-	$featuredauthors = "220|2";
+	$featuredauthors = "855|220|852|870|869|871";
 
 	//subnav
 	$subnavarray = array();
@@ -1155,41 +1147,9 @@ $(document).ready(function() {
 		$('.window').hide();
 	});
 
-
-	//instagram
-	$.each( $("div.pulseofinstagram p a img"), function() {
-		$(this).height(612).width(612);
-		var text = $(this).attr("alt");
-		$(this).parent().parent().append("<div class='caption'>"+text+"</div>")
-	});
-
-
-
-
-
-
 });
 
 </script>
-
-<style>
-div.pulseofinstagram{
-	font-size:24px;
-	font-weight:bold;
-	margin-bottom:20px;
-}
-
-div.pulseofinstagram div.caption{
-	font-size:12px;
-	font-weight:normal;
-	padding:10px;
-	border:1px solid #cccccc;
-	width:582px;
-	margin:5px;
-}
-
-
-</style>
 
 
 </head>

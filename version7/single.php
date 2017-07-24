@@ -298,12 +298,16 @@ jQuery(document).ready(function($){ //fire on DOM ready
 					}
 				?>
 
-				<?php if($movie_review){ ?>
+				<?php
 
-				<img src="<?php echo $topstory500x250; ?>" alt="" title="" width="620" height="348" style="padding-bottom:10px;"/>
+				if($movie_review){
 
-				<img src="http://media.insidepulse.com/shared/images/dvd_words_content.png" alt="" title="IP Movie Reviews Content" style="padding-right:5px;" /><img src="http://media.insidepulse.com/shared/images/dvd_numbers_<?php echo $content_rating; ?>.png" style="padding-right:13px;" /><img src="http://media.insidepulse.com/shared/images/dvd_words_extras.png" alt="" title="IP Movies Review Extras" style="padding-right:5px;" /><img src="http://media.insidepulse.com/shared/images/dvd_numbers_<?php echo $extras_rating; ?>.png" style="padding-right:13px;" /><img src="http://media.insidepulse.com/shared/images/dvd_words_replay.png" alt="" title="IP Movies Review Replay" style="padding-right:5px;" /><img src="http://media.insidepulse.com/shared/images/dvd_numbers_<?php echo $replay_rating; ?>.png" style="padding-right:13px;" /><img src="http://media.insidepulse.com/shared/images/dvd_words_overall.png" alt="" title="IP Movies Review Overall" style="padding-right:5px;" /><img src="http://media.insidepulse.com/shared/images/dvd_numbers_<?php echo $star_rating; ?>.png" style="padding-right:13px;" />
-				<br><br>
+				?>
+
+<img src="<?php echo $topstory500x250; ?>" alt="" title="the-hustler-original" width="620" height="348" style="padding-bottom:10px;"/>
+
+<img src="http://media.insidepulse.com/shared/images/dvd_words_content.png" alt="" title="IP Movie Reviews Content" style="padding-right:5px;" /><img src="http://media.insidepulse.com/shared/images/dvd_numbers_<?php echo $content_rating; ?>.png" style="padding-right:13px;" /><img src="http://media.insidepulse.com/shared/images/dvd_words_extras.png" alt="" title="IP Movies Review Extras" style="padding-right:5px;" /><img src="http://media.insidepulse.com/shared/images/dvd_numbers_<?php echo $extras_rating; ?>.png" style="padding-right:13px;" /><img src="http://media.insidepulse.com/shared/images/dvd_words_replay.png" alt="" title="IP Movies Review Replay" style="padding-right:5px;" /><img src="http://media.insidepulse.com/shared/images/dvd_numbers_<?php echo $replay_rating; ?>.png" style="padding-right:13px;" /><img src="http://media.insidepulse.com/shared/images/dvd_words_overall.png" alt="" title="IP Movies Review Overall" style="padding-right:5px;" /><img src="http://media.insidepulse.com/shared/images/dvd_numbers_<?php echo $star_rating; ?>.png" style="padding-right:13px;" />
+<br><br>
 
 				<?php
 				}
@@ -314,28 +318,9 @@ jQuery(document).ready(function($){ //fire on DOM ready
 				?>
 				</center>
 
-				<?php if(has_tag("Pulse of Instagram", $post )){ echo "<div class='pulseofinstagram'><img src='http://wrestling.insidepulse.com/wp-content/uploads/2014/07/pulseofinstagramtemp3.jpg' style='padding:0px;width:660px;' />"; } ?>
-				<?php if(has_tag("Smackdown Spoilers", $post )){ echo "<div class='smackdownspoilers'><img src='http://wrestling.insidepulse.com/wp-content/uploads/2014/07/template1600_smackdownspoil.jpg' style='padding:0px;width:660px;' />"; } ?>
-				<?php if(has_tag("wwe network schedule", $post )){ echo "<div class='wwenetworkschedule'><img src='http://media.insidepulse.com/shared/images/vx/wwenetworkdaily.jpg' style='padding:0px;width:660px;' />"; } ?>
-				<?php if(has_tag("MLB Daily Schedule", $post )){ echo "<div class='mlbdaily'><img src='http://media.insidepulse.com/shared/images/vx/template1600_todaymlb.jpg' style='padding:0px;width:660px;' />"; } ?>
-				<?php if(has_tag("MLB Daily Scoreboard", $post )){ echo "<div class='mlbdaily'><img src='http://media.insidepulse.com/shared/images/vx/wwenetworkdaily.jpg' style='padding:0px;width:660px;' />"; } ?>
-				<?php if(has_tag("poll of the week", $post )){ echo "<div class='pollarticle'><img src='http://media.insidepulse.com/shared/images/vx/polloftheweek1600_pulse.jpg' style='padding:0px;width:660px;' />"; } ?>
-				<?php if(has_tag("weekend poll", $post )){ echo "<div class='pollarticle'><img src='http://media.insidepulse.com/shared/images/vx/weekendpoll1600_pulse.jpg' style='padding:0px;width:660px;' />"; } ?>
-				<?php if(has_tag("SmarK WWE Network Raw Rant", $post )){ echo "<div class='pollarticle'><img src='http://wrestling.insidepulse.com/wp-content/uploads/2014/08/smark_wwenetwork_raw.jpg' style='padding:0px;width:660px;' />"; } ?>
-				<?php if(has_tag("Tuesday Raw Roundtable", $post )){ echo "<div class='pollarticle'><img src='http://wrestling.insidepulse.com/wp-content/uploads/2014/08/tuesdayraw1600.jpg' style='padding:0px;width:660px;' />"; } ?>
-
 				<!-- content -->
 				<?php the_content(''); ?>
 				<!-- content end -->
-				<?php if(has_tag("Pulse of Instagram", $post )){ echo "</div>"; } ?>
-				<?php if(has_tag("Smackdown Spoilers", $post )){ echo "</div>"; } ?>
-				<?php if(has_tag("wwe network schedule", $post )){ echo "</div>"; } ?>
-				<?php if(has_tag("MLB Daily Schedule", $post )){ echo "</div>"; } ?>
-				<?php if(has_tag("MLB Daily Scoreboard", $post )){ echo "</div>"; } ?>
-				<?php if(has_tag("poll of the week", $post )){ echo "</div>"; } ?>
-				<?php if(has_tag("weekend poll", $post )){ echo "</div>"; } ?>
-				<?php if(has_tag("SmarK WWE Network Raw Rant", $post )){ echo "</div>"; } ?>
-				<?php if(has_tag("Tuesday Raw Roundtable", $post )){ echo "</div>"; } ?>
 				<br><br>
 				<?php
 				echo get_the_tag_list('<p>Tags: ',', ','</p>');
