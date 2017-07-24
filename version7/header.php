@@ -816,6 +816,12 @@ if(is_single()){
 <?php
 if($active_zone=="insidefights"){
 	include_once('analytics/insidefights.txt');
+	echo "
+<script src=\"http://www.bellator.com/mediaPortal/scripts/inline.js\" language=\"javascript\"></script>
+<script type=\"text/javascript\">
+var iptv_direction = \"right\";
+</script>
+	";
 
 	echo "
 	<style>
@@ -1179,16 +1185,13 @@ $subnavcount = count($subnavarray);
 		<div class="bar_ad">
 			<!--<a href="#"><img src="http://media.insidepulse.com/shared/images/v7/ad728.png"></a>-->
 
-			<!--- start of insidepulse.sportsfanlive.com/default_companion_x06_(728x90.1) --->
-			<script LANGUAGE="JavaScript1.1">
-			document.write('<script LANGUAGE="JavaScript1.1" SRC="http://oascentral.sportsfanlive.com/RealMedia/ads/adstream_jx.ads/insidepulse.sportsfanlive.com/default/jx/comp/1'+OAS_rns+'@Position2,Left,x06!x06?XE&Partner=insidepulse&PartnerUnit=insidepulse.728x90.1.default/jx/comp&XE" type="text/javascript"><\/script>');
-			</script>
-			<NOSCRIPT>
-			<A HREF="http://oascentral.sportsfanlive.com/RealMedia/ads/click_nx.ads/insidepulse.sportsfanlive.com/default/nx/comp@Position2,Left,x06!x06?x?XE&Partner=insidepulse&PartnerUnit=insidepulse.728x90.1.default/nx/comp&XE" target="_blank">
-			<IMG SRC="http://oascentral.sportsfanlive.com/RealMedia/ads/adstream_nx.ads/insidepulse.sportsfanlive.com/default/nx/comp@Position2,Left,x06!x06?x?XE&Partner=insidepulse&PartnerUnit=insidepulse.728x90.1.default/nx/comp&XE" border=0>
-			</A>
-			</NOSCRIPT>
-			<!--- end of insidepulse.sportsfanlive.com/default_companion_x06_(728x90.1) --->
+
+
+
+
+<!-- BEGIN UAT - 728x90 - InsidePulse: InsidePulse - DO NOT MODIFY -->
+<script type="text/javascript" src="http://ad-cdn.technoratimedia.com/00/35/09/uat_10935.js?ad_size=728x90"></script>
+<!-- END TAG -->
 
 
 		</div>

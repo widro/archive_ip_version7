@@ -339,13 +339,6 @@ for($i=0;$i<$left4x2count;$i++){
 if($thisurl==$insidefightsurl){
 ?>
 
-<script src="http://www.bellator.com/mediaPortal/scripts/inline.js" language="javascript"></script>
-<script type="text/javascript">
-var iptv_direction = "right";
-</script>
-</head>
-<body>
-
 <!-- begin player embed code -->
 <style type="text/css">
 <!--
@@ -364,7 +357,6 @@ var iptv_direction = "right";
 }
 -->
 </style>
-
 <table width="400" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td width="400" height="24"bgcolor="#000000" align="right"><a href="http://www.bellator.com/" target="_blank"><span class="poweredby">Powered by </span><span class="bellator">Bellator.com</span></a>&nbsp;</td>
@@ -381,9 +373,7 @@ var iptv_direction = "right";
 </td>
 </tr>
 </table>
-
-
-
+<!-- end player embed code -->
 
 
 
