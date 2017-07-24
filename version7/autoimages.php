@@ -5,6 +5,137 @@ $autoimages_tags = array();
 $autoimages_topstory500x250 = array();
 $autoimages_topstory120x120 = array();
 
+$autoimages_cats[] = "alberto-del-rio";
+$autoimages_tags[] = "alberto-del-rio";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Alberto-Del-Rio-120x120.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Alberto-Del-Rio-500x250.jpg";
+
+$autoimages_cats[] = "Big Show";
+$autoimages_tags[] = "Big Show";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Big-Show-120x120.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Big-Show-500x250.jpg";
+
+$autoimages_cats[] = "brodus-clay";
+$autoimages_tags[] = "brodus-clay";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Brodus-Clay-120x120.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Brodus-Clay-500x250.jpg";
+
+$autoimages_cats[] = "chris-jericho";
+$autoimages_tags[] = "chris-jericho";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Chris-Jericho-120x120.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Chris-Jericho-500x250.jpg";
+
+$autoimages_cats[] = "christian";
+$autoimages_tags[] = "christian";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Christian-120x120.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Christian-500x250.jpg";
+
+$autoimages_cats[] = "cm-punk";
+$autoimages_tags[] = "cm-punk";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/CM-Punk-120x120.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/CM-Punk-500x250.jpg";
+
+$autoimages_cats[] = "cody-rhodes";
+$autoimages_tags[] = "cody-rhodes";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Cody-Rhodes-120x120.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Cody-Rhodes-500x250.jpg";
+
+$autoimages_cats[] = "daniel-bryan";
+$autoimages_tags[] = "daniel-bryan";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Daniel-Bryan-120.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Daniel-Bryan-500.jpg";
+
+$autoimages_cats[] = "ddp";
+$autoimages_tags[] = "ddp";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/DDP-120.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/DDP-500.jpg";
+
+$autoimages_cats[] = "dolph-ziggler";
+$autoimages_tags[] = "dolph-ziggler";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Dolph-Ziggler-120x120.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Dolph-Ziggler-500x250.jpg";
+
+$autoimages_cats[] = "james-storm";
+$autoimages_tags[] = "james-storm";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/James-Storm-120x120.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/James-Storm-500x250.jpg";
+
+$autoimages_cats[] = "jerry-lynn";
+$autoimages_tags[] = "jerry-lynn";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Jerry-Lynn-120.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Jerry-Lynn-500.jpg";
+
+$autoimages_cats[] = "john-cena";
+$autoimages_tags[] = "john-cena";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/John-Cena-120.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/John-Cena-500.jpg";
+
+$autoimages_cats[] = "kane";
+$autoimages_tags[] = "kane";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Kane-120x120.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Kane-500x250.jpg";
+
+$autoimages_cats[] = "mark-henry";
+$autoimages_tags[] = "mark-henry";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Mark-Henry-120x120.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Mark-Henry-500x250.jpg";
+
+$autoimages_cats[] = "miz";
+$autoimages_tags[] = "miz";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Miz-120x120.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Miz-500x250.jpg";
+
+$autoimages_cats[] = "randy-orton";
+$autoimages_tags[] = "randy-orton";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Randy-Orton-120x120.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Randy-Orton-500x250.jpg";
+
+$autoimages_cats[] = "sheamus";
+$autoimages_tags[] = "sheamus";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Sheamus-120x120.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Sheamus-500x250.jpg";
+
+$autoimages_cats[] = "sid-vicious";
+$autoimages_tags[] = "sid-vicious";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Sid-120.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Sid-500.jpg";
+
+$autoimages_cats[] = "triple-h";
+$autoimages_tags[] = "triple-h";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Triple-H-120x120.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Triple-H-500x250.jpg";
+
+$autoimages_cats[] = "undertaker";
+$autoimages_tags[] = "undertaker";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Undertaker-120x120.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Undertaker-500x250.jpg";
+
+$autoimages_cats[] = "wade-barrett";
+$autoimages_tags[] = "wade-barrett";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Wade-Barrett-120x120.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Wade-Barrett-500x250.jpg";
+
+$autoimages_cats[] = "wwe-logo";
+$autoimages_tags[] = "wwe-logo";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2009/09/wwelogo.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2011/07/wwe500.jpg";
+
+$autoimages_cats[] = "wwe-title";
+$autoimages_tags[] = "wwe-title";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/WWE-Title-120.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/WWE-Title-500.jpg";
+
+$autoimages_cats[] = "zack-ryder";
+$autoimages_tags[] = "zack-ryder";
+$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Zack-Ryder-120x120.jpg";
+$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wordpress/wp-content/uploads/2012/03/Zack-Ryder-500x250.jpg";
+
+
+
+
+
+
+
 
 $autoimages_cats[] = "dwight-howard";
 $autoimages_tags[] = "dwight-howard";

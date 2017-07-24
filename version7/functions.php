@@ -1296,12 +1296,15 @@ function my_save_extra_profile_fields( $user_id ) {
 
 function IPiframe_add_options_page() {
 	add_options_page("Images 120/500", "Images 120/500", "manage_media", __FILE__, "IPiframe_options_page");
+	//add_options_page("Staff XLS", "Staff XLS", "admin_users", __FILE__, "IPiframe_options_page_staffxls");
+	//add_options_page("Staff XLS", "Staff XLS", "manage_media", __FILE__, "IPiframe_options_page_staffxls");
 
 	//top level section
 	//add_menu_page('Page title', 'Inside Pulse', 'manage_options', 'inside-pulse-iframes', 'IPiframe_options_page');
 
 	//under other sections
 	add_submenu_page( 'upload.php', 'Images 120/500', 'Images 120/500', 'upload_files', 'iframes?frame=images', 'IPiframe_options_page');
+	add_submenu_page( 'users.php', 'Staff XLS', 'Staff XLS', 'upload_files', 'iframes?frame=staffxls', 'IPiframe_options_page_staffxls');
 	add_submenu_page( 'options-general.php', 'Widro Admin', 'Widro Admin', 'upload_files', 'iframes?frame=admin', 'IPiframe_admin_page');
 	add_submenu_page( 'index.php', 'IP Email', 'IP Email', 'upload_files', 'iframes?frame=email', 'IPiframe_email_page');
 	add_submenu_page( 'index.php', 'Staff Forum', 'Staff Forum', 'upload_files', 'iframes?frame=staffforum', 'IPiframe_staffforum_page');
@@ -1324,6 +1327,29 @@ echo "
 </h2>
 
 <iframe name=images_iframe src=http://insidepulse.com/images width=1000 height=1500 frameborder=0 scrolling=no></iframe>
+
+
+</div>
+";
+
+}
+
+function IPiframe_options_page_staffxls() {
+
+echo "
+<div class=\"wrap\">
+	<div id=\"icon-index\" class=\"icon32\"><br /></div>
+<h2>Inside Pulse staffxls
+
+<a href=http://insidepulse.com/staffxls target=images_iframe>ALL</a> |
+
+<a href=http://insidefights.com/staffxls target=images_iframe>I-F</a> |
+<a href=http://wrestling.insidepulse.com/staffxls target=images_iframe>WRES</a> |
+<a href=http://diehardgamefan.com/staffxls target=images_iframe>DHGF</a>
+
+</h2>
+
+<iframe name=images_iframe src=http://insidepulse.com/staffxls width=1000 height=1500 frameborder=0 scrolling=no></iframe>
 
 
 </div>
