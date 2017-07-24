@@ -1,3 +1,4 @@
+
 <?php
 add_filter( 'manage_posts_columns', 'govid_columns' ); //Filter out Post Columns with 2 custom columns
 add_filter( 'publicize_checkbox_default', '__return_false' );
@@ -1316,17 +1317,11 @@ function IPiframe_options_page() {
 echo "
 <div class=\"wrap\">
 	<div id=\"icon-index\" class=\"icon32\"></div>
-<h2>Inside Pulse 120x120 and 500x250 images
-
-<a href=http://insidepulse.com/images target=images_iframe>ALL</a> |
-<a href=http://wrestling.insidepulse.com/images target=images_iframe>WRES</a> |
-<a href=http://diehardgamefan.com/images target=images_iframe>DHGF</a>
-
-</h2>
-
-<iframe name=images_iframe src=http://insidepulse.com/images width=1000 height=1500 frameborder=0 scrolling=no></iframe>
-
-
+	<h2>Inside Pulse 120x120 and 500x250 images
+		<a href=http://insidepulse.com/images target=images_iframe>ALL</a> |
+		<a href=http://diehardgamefan.com/images target=images_iframe>DHGF</a>
+	</h2>
+	<iframe name=images_iframe src=http://insidepulse.com/images width=1000 height=1500 frameborder=0 scrolling=no></iframe>
 </div>
 ";
 

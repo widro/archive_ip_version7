@@ -34,10 +34,6 @@
 				get_poll();
 			}
 
-			// wrestling
-			elseif($thisurl==$wrestlingurl){
-				get_poll();
-			}
 			else{
 				if($zonepoll){
 					get_poll($zonepoll);

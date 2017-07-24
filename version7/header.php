@@ -324,7 +324,7 @@ $disqusslug = "inside-pulse";
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\"://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");</script>
 	";
 
-	$zonepoll = "146";
+	$zonepoll = "149";
 
 }
 
@@ -387,7 +387,7 @@ $disqusslug = "inside-pulse";
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\"://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");</script>
 	";
 
-	$zonepoll = "147";
+	$zonepoll = "151";
 
 }
 
@@ -454,7 +454,7 @@ $disqusslug = "inside-pulse";
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\"://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");</script>
 	";
 
-	$zonepoll = "145";
+	$zonepoll = "152";
 }
 
 elseif($active_zone=="pulsecasts"){
@@ -783,6 +783,7 @@ elseif($active_zone=="wrestling"){
 <a class=\"twitter-timeline\" href=\"https://twitter.com/pulsewrestling\" data-widget-id=\"425391494002786304\">Tweets by @pulsewrestling</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\"://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");</script>
 	";
+	$zonepoll = "148";
 
 }
 
@@ -912,7 +913,7 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\"://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");</script>
 	";
 
-	$zonepoll = "144";
+	$zonepoll = "150";
 }
 
 
