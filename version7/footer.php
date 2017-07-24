@@ -8,26 +8,7 @@
 <!-- subfooter -->
 
 
-<?php
-if($thisurl==$insidefightsurl){
-?>
-<script src="http://adexcite.com/ads/video/controller.php?eid=10378"></script>
 
-
-
-
-<?php
-}
-elseif($thisurl==$diehardgamefanurl1){
-
-}
-else{
-?>
-<script src="http://adexcite.com/ads/video/controller.php?eid=10378"></script>
-
-<?php
-}
-?>
 
 <div class="subfooter">
 	<div class="inner">
