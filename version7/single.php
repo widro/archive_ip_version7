@@ -428,9 +428,83 @@ jQuery(document).ready(function($){ //fire on DOM ready
 		<?php comments_template(); ?>
 
 
+
+<?php
+$thisrand = rand(1,2);
+
+if($thisrand==1){
+?>
+<script type='text/javascript'>
+var _CI = _CI || {};
+(function() {
+var script = document.createElement('script');
+ref = document.getElementsByTagName('script')[0];
+_CI.counter = (_CI.counter) ? _CI.counter + 1 : 1;
+document.write('<div id="_CI_widget_');
+document.write(_CI.counter+'"></div>');
+script.type = 'text/javascript';
+script.src = 'http://widget.crowdignite.com/widgets/1599?_ci_wid=_CI_widget_'+_CI.counter;
+script.async = true;
+ref.parentNode.insertBefore(script, ref);
+})(); </script>
+<div style='width: 300px; background-color: #FFFFFF'><a href='http://crowdignite.com/account/1203' style='font: Arial; color:#000000;' target=_blank>Blowing Up Blogs</a></div>
+
+<?php
+}else{
+?>
+
+<!-- MGID News Widget Start -->
+<div id="MarketGid863"><center>
+<a href="http://mgid.com/" target="_blank">Loading...</a>
+</center></div>
+<!-- MGID News Widget End -->
+<!-- before </body> tag -->
+<script type="text/javascript">
+    var MarketGidDate = new Date();
+    document.write('<scr'+'ipt type="text/javascript" '+'src="http://jsn.dt07.net/i/n/insidepulse.com.863.js?t='+MarketGidDate.getYear()+MarketGidDate.getMonth()+ '" charset="utf-8" ></scr'+'ipt>');
+    </script>
+
+
+<?php
+}
+?>
+
+
+
+
+<script type="text/javascript">
+  if(typeof(gnm_ord)=='undefined') gnm_ord=Math.random()*10000000000000000; if(typeof(gnm_tile) == 'undefined') gnm_tile=1;
+  document.write('<scr'+'ipt src="http://n4403ad.doubleclick.net/adj/gn.cr.insidepulse.com/ros;sect=ros;mtfInline=true;sz=300x250;tile='+(gnm_tile++)+';ord='+gnm_ord+'?" type="text/javascript"></scr'+'ipt>');
+</script>
+<!-- END AD TAG -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <?php endwhile; else: ?>
 	<p>Lost? Go back to the <a href="<?php echo get_option('home'); ?>/">home page</a>.</p>
 <?php endif; ?>
 
+
 <?php include('sidebar.php'); ?>
+
 <?php include('footer.php'); ?>

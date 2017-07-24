@@ -7,6 +7,23 @@
 
 	</div>
 	<div class="content_right">
+
+		<div class="right_container" style="margin-top:20px;">
+			<!--<a href="#"><img src="http://media.insidepulse.com/shared/images/v7/ad300.png"></a>-->
+			<!--- start of insidepulse.sportsfanlive.com/default_companion_Position2_(300x250.1) --->
+			<script LANGUAGE="JavaScript1.1">
+			document.write('<script LANGUAGE="JavaScript1.1" SRC="http://oascentral.sportsfanlive.com/RealMedia/ads/adstream_jx.ads/insidepulse.sportsfanlive.com/default/jx/comp/1'+OAS_rns+'@Position2,Left,x06!Position2?XE&Partner=insidepulse&PartnerUnit=insidepulse.300x250.1.default/jx/comp&XE" type="text/javascript"><\/script>');
+			</script>
+			<NOSCRIPT>
+			<A HREF="http://oascentral.sportsfanlive.com/RealMedia/ads/click_nx.ads/insidepulse.sportsfanlive.com/default/nx/comp@Position2,Left,x06!Position2?x?XE&Partner=insidepulse&PartnerUnit=insidepulse.300x250.1.default/nx/comp&XE" target="_blank">
+			<IMG SRC="http://oascentral.sportsfanlive.com/RealMedia/ads/adstream_nx.ads/insidepulse.sportsfanlive.com/default/nx/comp@Position2,Left,x06!Position2?x?XE&Partner=insidepulse&PartnerUnit=insidepulse.300x250.1.default/nx/comp&XE" border=0>
+			</A>
+			</NOSCRIPT>
+			<!--- end of insidepulse.sportsfanlive.com/default_companion_Position2_(300x250.1) --->
+
+		</div>
+
+
 		<div class="clear" style="height:30px;"></div>
 			<div class="right_container greybox">
 				<h3 class="icon2m bold">Featured <span class="color1">Writers</span></h3>
