@@ -602,7 +602,7 @@ elseif($active_zone=="wrestling"){
 	//$left4x2values = array($type, $slug, $name, $clickthru);
 
 	$disqusslug = "pulsewrestling";
-	$featuredauthors = "8|207|842|534|462|886|518|896";
+	$featuredauthors = "8|207|842|534|462|886|885|896";
 
 	//subnav
 	$subnavarray = array();
