@@ -8,22 +8,6 @@
 }
 </style>
 
-<script>
-
-
-function hiringform(){
-
-	var name = $("#hiring_name").val();
-	alert(name);
-
-	$("#hiringerror").html('error goes here sucka');
-
-}
-
-
-
-</script>
-
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
 
@@ -440,6 +424,37 @@ function hiringform(){
 
 
 <?php if(is_page('contribute')){ ?>
+
+<?php
+if($_POST['hiring_name']){
+$hiring_name = $_POST['hiring_name'];
+$hiring_subject = $_POST['hiring_subject'];
+$hiring_email = $_POST['hiring_email'];
+$hiring_body = $_POST['hiring_body'];
+$hiring_date = date("Y-m-d");
+
+$hiringins = "
+INSERT INTO  db56814_insidepulsenet_wp.hiring(hiring_id, title, body, email, name, date)
+VALUES (NULL , '$hiring_subject', '$hiring_body', '$hiring_email', '$hiring_name', '$hiring_date')
+";
+
+$hiringresult = mysql_query($hiringins);
+
+
+?>
+<div class="inner" id="slides" name="slides5">
+	<div id="slide_content1" name="slides_content1" class="slide_container">
+		<h2>Thank you for your interest in joining Inside Pulse! One of our editors will return your message within 1 week.</h2>
+		<br><br>
+		<a href="/">Return Home</a>
+	</div>
+</div>
+
+<?php
+}
+else{
+?>
+
 <div class="inner" id="slides" name="slides5">
 		<div id="slide_content1" name="slides_content1" class="slide_container">
 
@@ -539,6 +554,34 @@ function hiringform(){
 
 
 			</div>
+<script>
+
+$(document).ready(function() {
+	$('#hiringbtn').click(function () {
+		alert('submit');
+
+		if(!$("#hiring_name").val()){
+			$("#hiringerror").html('Name is required');
+		}
+		else if(!$("#hiring_email").val()){
+			$("#hiringerror").html('Email is required');
+		}
+		else if(!$("#hiring_subject").val()){
+			$("#hiringerror").html('Intro is required');
+		}
+		else if(!$("#hiring_body").val()){
+			$("#hiringerror").html('Writing Sample is required');
+		}
+		else{
+			$("#hiringform").submit();
+		}
+
+	});
+});
+
+</script>
+
+
 			<form id="hiringform" name="hiringform" method="post">
 			<div class="slide_container_wide fr" style="padding-top:50px;">
 				<h2 class="">Join the Inside Pulse Team!</h2>
@@ -549,11 +592,11 @@ function hiringform(){
 				<br><br>
 				Intro/Subject: <input type="text" id="hiring_subject" name="hiring_subject">
 				<br><br>
-				Writing Sample/Message: <textarea id="hiring_body" name="hiring_body"></textarea>
+				Writing Sample/Message: <textarea id="hiring_body" name="hiring_body" style="width:300px; height:200px;"></textarea>
 				<br><br>
-				<div id="hiringerror" name="hiringerror" stylee="color;#ff0000"></div>
+				<div id="hiringerror" name="hiringerror" stylee="color:#ff0000"></div>
 
-				<input type="button" onClick="hiringform()" value="Submit">
+				<input type="button" id="hiringbtn" name="hiringbtn" value="Submit">
 
 
 
@@ -583,6 +626,9 @@ function hiringform(){
 				Inside Pulse Contributor &middot; (<a href="#" class="color1">pdf</a>)
 			</div>
 		</div>
+<?php
+}
+?>
 
 <?php } ?>
 
