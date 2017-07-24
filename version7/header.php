@@ -490,14 +490,18 @@ elseif($active_zone=="figures"){
 
 	//left4x2
 	$left4x2values = array();
-	$left4x2values[] = array('zonetag', 'figures|mattel', 'mattel', '/tag/mattel/');
-	$left4x2values[] = array('zonetag', 'figures|hasbro', 'hasbro', '/tag/hasbro/');
-	$left4x2values[] = array('zonetag', 'figures|mcfarlane-toys', 'mcfarlane', '/tag/mcfarlane-toys/');
-	$left4x2values[] = array('zonetag', 'figures|other-toys', 'other', '/tag/other-toys/');
 	$left4x2values[] = array('zonetag', 'figures|wwe-figures', 'wwe figures', '/tag/wwe-figures/');
 	$left4x2values[] = array('zonetag', 'figures|dc-comics', 'dc-comics', '/tag/dc-comics/');
 	$left4x2values[] = array('zonetag', 'figures|marvel', 'marvel', '/tag/marvel/');
+	$left4x2values[] = array('zonetag', 'figures|mcfarlane-toys', 'mcfarlane', '/tag/mcfarlane-toys/');
+	$left4x2values[] = array('zonetag', 'figures|gi-joe', 'G.I. Joe', '/tag/gi-joe/');
+	$left4x2values[] = array('zonetag', 'figures|star-wars', 'Star Wars', '/tag/star-wars/');
 	$left4x2values[] = array('zonetag', 'figures|transformers', 'transformers', '/tag/transformers/');
+	$left4x2values[] = array('zonetag', 'figures|neca', 'neca', '/tag/neca/');
+	$left4x2values[] = array('zonetag', 'figures|mattel', 'mattel', '/tag/mattel/');
+	$left4x2values[] = array('zonetag', 'figures|hasbro', 'hasbro', '/tag/hasbro/');
+	$left4x2values[] = array('zonetag', 'figures|lego', 'lego', '/tag/lego/');
+	$left4x2values[] = array('zonetag', 'figures|other-toys', 'other', '/tag/other-toys/');
 
 	//topstory sql add
 	$topstorysqladd = "&zone=figures";
