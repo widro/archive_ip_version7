@@ -235,7 +235,7 @@ elseif($active_zone=="tv"){
 
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
-	$featuredauthors = "2|110|122|172|169|874";
+	$featuredauthors = "2|110|122|172|874";
 
 	//subnav
 	$subnavarray = array();

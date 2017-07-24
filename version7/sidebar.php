@@ -27,6 +27,46 @@
 		</div>
 
 
+<?php
+if($active_zone=="wrestling"){
+?>
+		<div class="clear" style="height:30px;"></div>
+		<div class="right_container greybox">
+			<h3 class="icon2m bold">Match of the <span class="color1">Week</span></h3>
+
+<?php
+	// top story sql
+	$the_query = new WP_Query('&showposts=1&tag=match-of-the-week&orderby=post_date&order=desc');
+
+	//top story loop
+	while ($the_query->have_posts()) : $the_query->the_post();
+	$do_not_duplicate = $post->ID;
+
+	$topstory120x120 = get_post_meta($post->ID, 'topstory120x120', true);
+	if($topstory120x120==""){
+		$topstory120x120 = defaultimage("top-story", "topstory120x120");
+	}
+
+	$thistitle = $post->post_title;
+	$thistitle = str_replace("\"", "", $thistitle);
+
+	$thisexcerpt = makeexcerpt($post->post_content, $post->post_excerpt, "default");
+
+	$clickthru=get_permalink($thispostid);
+
+	//outputs date in wacky format
+	$thisdate = mysql2date('h|m|s|m|d|Y', $post->post_date);
+
+	echo "
+	<img src=\"$topstory120x120\" align=\"left\" style=\"padding-right:10px;\"><a href=\"$clickthru\">$thistitle</a>
+	</div>
+	";
+
+
+	endwhile;
+}
+?>
+
 
 		<div class="clear" style="height:30px;"></div>
 
