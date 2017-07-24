@@ -11,7 +11,7 @@
 		<div class="clear"></div>
 
 <?php
-	$insider_avatar120 = "http://insidepulse.com/wp-content/uploads/2011/10/thenewgirl-120x120.jpg";
+	$insider_avatar120 = "http://insidepulse.com/wp-content/uploads/2012/10/thenewgirl-120x120.jpg";
 ?>
 
 <?php if ( have_comments() ) : ?>

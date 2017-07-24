@@ -11,7 +11,7 @@
 <?php
 if($thisurl==$insidefightsurl){
 ?>
-<!--JavaScript Tag // Tag for network 5353: AdExcite // Website: InsideFights.com // Page: ROS // Placement: ROS-video-1 x 1 (2280214) // created at: Nov 30, 2011 10:25:25 AM-->
+<!--JavaScript Tag // Tag for network 5353: AdExcite // Website: InsideFights.com // Page: ROS // Placement: ROS-video-1 x 1 (2280214) // created at: Nov 30, 2012 10:25:25 AM-->
 <script language="javascript"><!--
 document.write('<scr'+'ipt language="javascript1.1" src="http://adserver.adtechus.com/addyn/3.0/5353.1/2280214/0/16/ADTECH;loc=100;target=_blank;key=key1+key2+key3+key4;grp=[group];size=1x1;misc='+new Date().getTime()+'"></scri'+'pt>');
 //-->
@@ -28,7 +28,7 @@ elseif($thisurl==$diehardgamefanurl){
 }
 else{
 ?>
-<!--JavaScript Tag // Tag for network 5353: AdExcite // Website: InsidePulse.com // Page: ROS // Placement: ROS-video-1 x 1 (2274149) // created at: Nov 17, 2011 4:20:18 PM-->
+<!--JavaScript Tag // Tag for network 5353: AdExcite // Website: InsidePulse.com // Page: ROS // Placement: ROS-video-1 x 1 (2274149) // created at: Nov 17, 2012 4:20:18 PM-->
 <script language="javascript"><!--
 document.write('<scr'+'ipt language="javascript1.1" src="http://adserver.adtechus.com/addyn/3.0/5353.1/2274149/0/16/ADTECH;loc=100;target=_blank;key=key1+key2+key3+key4;grp=[group];size=1x1;misc='+new Date().getTime()+'"></scri'+'pt>');
 //-->
@@ -178,7 +178,7 @@ if(!is_single()){
 			<a href="http://<?php echo $homeurl; ?>/media-kit/">Media</a> &middot;
 -->
 			<br><br>
-			&copy; 2011 Inside Pulse
+			&copy; 2012 Inside Pulse
 			<br><br>
 			<br><br>
 			<br><br>

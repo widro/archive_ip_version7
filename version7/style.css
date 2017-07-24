@@ -302,6 +302,7 @@ table,td,tdbody,tr,post-content{
 
 .bar_logo{
 	width:240px;
+	height:100px;
 	text-align:center;
 	float:left;
 }

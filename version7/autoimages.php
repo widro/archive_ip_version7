@@ -8,333 +8,333 @@ $autoimages_topstory120x120 = array();
 
 $autoimages_cats[] = "dwight-howard";
 $autoimages_tags[] = "dwight-howard";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/dwight-howard-dunk-wallpaper_1024x768_57746.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/dwight-howard-dunk-wallpaper_1024x768_57746-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/dwight-howard-dunk-wallpaper_1024x768_57746.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/dwight-howard-dunk-wallpaper_1024x768_57746-120x120.jpg";
 
 $autoimages_cats[] = "lebron-james";
 $autoimages_tags[] = "lebron-james";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Lebron-James.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Lebron-James-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/Lebron-James.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/Lebron-James-120x120.jpg";
 
 $autoimages_cats[] = "dwyane-wade";
 $autoimages_tags[] = "dwyane-wade";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Wade.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Wade-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/Wade.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/Wade-120x120.jpg";
 
 $autoimages_cats[] = "chris-bosh";
 $autoimages_tags[] = "chris-bosh";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Chris-Bosh.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Chris-Bosh-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/Chris-Bosh.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/Chris-Bosh-120x120.jpg";
 
 $autoimages_cats[] = "carmelo-anthony";
 $autoimages_tags[] = "carmelo-anthony";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Carmelo-Anthony.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Carmelo-Anthony-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/Carmelo-Anthony.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/Carmelo-Anthony-120x120.jpg";
 
 $autoimages_cats[] = "amare-stoudamire";
 $autoimages_tags[] = "amare-stoudamire";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Amare-Stautemire.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Amare-Stautemire-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/Amare-Stautemire.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/Amare-Stautemire-120x120.jpg";
 
 $autoimages_cats[] = "amare-stoudemire";
 $autoimages_tags[] = "amare-stoudemire";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Amare-Stautemire.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Amare-Stautemire-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/Amare-Stautemire.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/Amare-Stautemire-120x120.jpg";
 
 $autoimages_cats[] = "amare-stautemire";
 $autoimages_tags[] = "amare-stautemire";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Amare-Stautemire.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Amare-Stautemire-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/Amare-Stautemire.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/Amare-Stautemire-120x120.jpg";
 
 $autoimages_cats[] = "dirk-nowitzki";
 $autoimages_tags[] = "dirk-nowitzki";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/dirk.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/dirk-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/dirk.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/dirk-120x120.jpg";
 
 $autoimages_cats[] = "deron-williams";
 $autoimages_tags[] = "deron-williams";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/deron-williams-stand.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/deron-williams-stand-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/deron-williams-stand.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/deron-williams-stand-120x120.jpg";
 
 $autoimages_cats[] = "blake-griffin";
 $autoimages_tags[] = "blake-griffin";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Blake-Griffin.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Blake-Griffin-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/Blake-Griffin.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/Blake-Griffin-120x120.jpg";
 
 $autoimages_cats[] = "kobe-bryant";
 $autoimages_tags[] = "kobe-bryant";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/kobe_bryant1.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/kobe_bryant1-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/kobe_bryant1.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/kobe_bryant1-120x120.jpg";
 
 $autoimages_cats[] = "pau-gasol";
 $autoimages_tags[] = "pau-gasol";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/pau-gasol3.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/pau-gasol3-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/pau-gasol3.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/pau-gasol3-120x120.jpg";
 
 $autoimages_cats[] = "derrick-rose";
 $autoimages_tags[] = "derrick-rose";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/derrick-rose.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/derrick-rose-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/derrick-rose.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/derrick-rose-120x120.jpg";
 
 $autoimages_cats[] = "joe-johnson";
 $autoimages_tags[] = "joe-johnson";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/joe_johnson1.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/joe_johnson1-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/joe_johnson1.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/joe_johnson1-120x120.jpg";
 
 $autoimages_cats[] = "andrew-bogut";
 $autoimages_tags[] = "andrew-bogut";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Andrew-Bogut.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Andrew-Bogut-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/Andrew-Bogut.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/Andrew-Bogut-120x120.jpg";
 
 $autoimages_cats[] = "danny-granger";
 $autoimages_tags[] = "danny-granger";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Danny-Granger.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Danny-Granger-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/Danny-Granger.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/Danny-Granger-120x120.jpg";
 
 $autoimages_cats[] = "andre-iguodala";
 $autoimages_tags[] = "andre-iguodala";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Andre-Iguodala.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Andre-Iguodala-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/Andre-Iguodala.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/Andre-Iguodala-120x120.jpg";
 
 $autoimages_cats[] = "kevin-durant";
 $autoimages_tags[] = "kevin-durant";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/kevin-durant-car.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/kevin-durant-car-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/kevin-durant-car.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/kevin-durant-car-120x120.jpg";
 
 $autoimages_cats[] = "russell-westbrook";
 $autoimages_tags[] = "russell-westbrook";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Russell-Westbrook.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Russell-Westbrook-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/Russell-Westbrook.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/Russell-Westbrook-120x120.jpg";
 
 $autoimages_cats[] = "kevin-love";
 $autoimages_tags[] = "kevin-love";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Kevin-Love.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Kevin-Love-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/Kevin-Love.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/Kevin-Love-120x120.jpg";
 
 $autoimages_cats[] = "stephon-curry";
 $autoimages_tags[] = "stephon-curry";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Stephon-Curry.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Stephon-Curry-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/Stephon-Curry.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/Stephon-Curry-120x120.jpg";
 
 $autoimages_cats[] = "rajon-rondo";
 $autoimages_tags[] = "rajon-rondo";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Rajon-Rondo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Rajon-Rondo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/Rajon-Rondo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/Rajon-Rondo-120x120.jpg";
 
 $autoimages_cats[] = "john-wall";
 $autoimages_tags[] = "john-wall";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/John-Wall.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/John-Wall-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/John-Wall.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/John-Wall-120x120.jpg";
 
 $autoimages_cats[] = "steve-nash";
 $autoimages_tags[] = "steve-nash";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Steve-Nash.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Steve-Nash-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/Steve-Nash.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/Steve-Nash-120x120.jpg";
 
 $autoimages_cats[] = "nene";
 $autoimages_tags[] = "nene";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/nene.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/nene-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/nene.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/nene-120x120.jpg";
 
 $autoimages_cats[] = "tim-duncan";
 $autoimages_tags[] = "tim-duncan";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Tim-Duncan.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Tim-Duncan-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/Tim-Duncan.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/Tim-Duncan-120x120.jpg";
 
 $autoimages_cats[] = "manu-ginobli";
 $autoimages_tags[] = "manu-ginobli";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Manu-Ginobli.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Manu-Ginobli-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/Manu-Ginobli.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/Manu-Ginobli-120x120.jpg";
 
 $autoimages_cats[] = "lamarcus-aldridge";
 $autoimages_tags[] = "lamarcus-aldridge";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/lamarcus-aldridge.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/lamarcus-aldridge-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/lamarcus-aldridge.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/lamarcus-aldridge-120x120.jpg";
 
 $autoimages_cats[] = "kevin-garnett";
 $autoimages_tags[] = "kevin-garnett";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Kevin-Garnett.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Kevin-Garnett-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/Kevin-Garnett.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/Kevin-Garnett-120x120.jpg";
 
 $autoimages_cats[] = "zach-randolph";
 $autoimages_tags[] = "zach-randolph";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/Zach-Randolph.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/Zach-Randolph-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/Zach-Randolph.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/Zach-Randolph-120x120.jpg";
 
 $autoimages_cats[] = "atlanta-hawks";
 $autoimages_tags[] = "atlanta-hawks";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Atlanta_Hawks_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Atlanta_Hawks_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Atlanta_Hawks_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Atlanta_Hawks_Logo-120x120.jpg";
 
 $autoimages_cats[] = "boston-celtics";
 $autoimages_tags[] = "boston-celtics";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Boston_Celtics_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Boston_Celtics_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Boston_Celtics_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Boston_Celtics_Logo-120x120.jpg";
 
 $autoimages_cats[] = "charlotte-bobcats";
 $autoimages_tags[] = "charlotte-bobcats";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Charlotte_Bobcats_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Charlotte_Bobcats_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Charlotte_Bobcats_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Charlotte_Bobcats_Logo-120x120.jpg";
 
 $autoimages_cats[] = "chicago-bulls";
 $autoimages_tags[] = "chicago-bulls";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Chicago_Bulls_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Chicago_Bulls_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Chicago_Bulls_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Chicago_Bulls_Logo-120x120.jpg";
 
 $autoimages_cats[] = "new-york-knicks";
 $autoimages_tags[] = "new-york-knicks";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_New_York_Knicks_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_New_York_Knicks_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_New_York_Knicks_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_New_York_Knicks_Logo-120x120.jpg";
 
 $autoimages_cats[] = "nj-nets";
 $autoimages_tags[] = "nj-nets";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_New_Jersey_Nets_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_New_Jersey_Nets_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_New_Jersey_Nets_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_New_Jersey_Nets_Logo-120x120.jpg";
 
 $autoimages_cats[] = "brooklyn-nets";
 $autoimages_tags[] = "brooklyn-nets";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_New_Jersey_Nets_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_New_Jersey_Nets_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_New_Jersey_Nets_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_New_Jersey_Nets_Logo-120x120.jpg";
 
 $autoimages_cats[] = "la-lakers";
 $autoimages_tags[] = "la-lakers";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Los_Angeles_Lakers_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Los_Angeles_Lakers_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Los_Angeles_Lakers_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Los_Angeles_Lakers_Logo-120x120.jpg";
 
 $autoimages_cats[] = "los-angeles-lakers";
 $autoimages_tags[] = "los-angeles-lakers";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Los_Angeles_Lakers_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Los_Angeles_Lakers_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Los_Angeles_Lakers_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Los_Angeles_Lakers_Logo-120x120.jpg";
 
 $autoimages_cats[] = "l-a-lakers";
 $autoimages_tags[] = "l-a-lakers";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Los_Angeles_Lakers_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Los_Angeles_Lakers_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Los_Angeles_Lakers_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Los_Angeles_Lakers_Logo-120x120.jpg";
 
 $autoimages_cats[] = "lakers";
 $autoimages_tags[] = "lakers";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Los_Angeles_Lakers_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Los_Angeles_Lakers_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Los_Angeles_Lakers_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Los_Angeles_Lakers_Logo-120x120.jpg";
 
 $autoimages_cats[] = "la-clippers";
 $autoimages_tags[] = "la-clippers";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Los_Angeles_Clippers_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Los_Angeles_Clippers_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Los_Angeles_Clippers_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Los_Angeles_Clippers_Logo-120x120.jpg";
 
 $autoimages_cats[] = "los-angeles-clippers";
 $autoimages_tags[] = "los-angeles-clippers";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Los_Angeles_Clippers_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Los_Angeles_Clippers_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Los_Angeles_Clippers_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Los_Angeles_Clippers_Logo-120x120.jpg";
 
 $autoimages_cats[] = "miami-heat";
 $autoimages_tags[] = "miami-heat";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Miami_Heat_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Miami_Heat_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Miami_Heat_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Miami_Heat_Logo-120x120.jpg";
 
 $autoimages_cats[] = "utah-jazz";
 $autoimages_tags[] = "utah-jazz";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Utah_Jazz_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Utah_Jazz_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Utah_Jazz_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Utah_Jazz_Logo-120x120.jpg";
 
 $autoimages_cats[] = "detroit-pistons";
 $autoimages_tags[] = "detroit-pistons";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Detroit_Pistons_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Detroit_Pistons_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Detroit_Pistons_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Detroit_Pistons_Logo-120x120.jpg";
 
 $autoimages_cats[] = "milwaukee-bucks";
 $autoimages_tags[] = "milwaukee-bucks";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Milwaukee_Bucks_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Milwaukee_Bucks_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Milwaukee_Bucks_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Milwaukee_Bucks_Logo-120x120.jpg";
 
 $autoimages_cats[] = "toronto-raptors";
 $autoimages_tags[] = "toronto-raptors";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Toronto_Raptors_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Toronto_Raptors_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Toronto_Raptors_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Toronto_Raptors_Logo-120x120.jpg";
 
 $autoimages_cats[] = "memphis-grizzlies";
 $autoimages_tags[] = "memphis-grizzlies";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Memphis_Grizzlies_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Memphis_Grizzlies_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Memphis_Grizzlies_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Memphis_Grizzlies_Logo-120x120.jpg";
 
 $autoimages_cats[] = "denver-nuggets";
 $autoimages_tags[] = "denver-nuggets";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Denver_Nuggets_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Denver_Nuggets_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Denver_Nuggets_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Denver_Nuggets_Logo-120x120.jpg";
 
 $autoimages_cats[] = "golden-state-warriors";
 $autoimages_tags[] = "golden-state-warriors";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Golden_State_Warriors_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Golden_State_Warriors_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Golden_State_Warriors_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Golden_State_Warriors_Logo-120x120.jpg";
 
 $autoimages_cats[] = "sacramento-kings";
 $autoimages_tags[] = "sacramento-kings";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Sacramento_Kings_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Sacramento_Kings_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Sacramento_Kings_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Sacramento_Kings_Logo-120x120.jpg";
 
 $autoimages_cats[] = "washington-wizards";
 $autoimages_tags[] = "washington-wizards";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Washington_Wizards_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Washington_Wizards_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Washington_Wizards_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Washington_Wizards_Logo-120x120.jpg";
 
 $autoimages_cats[] = "dallas-mavericks";
 $autoimages_tags[] = "dallas-mavericks";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Dallas_Mavericks_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Dallas_Mavericks_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Dallas_Mavericks_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Dallas_Mavericks_Logo-120x120.jpg";
 
 $autoimages_cats[] = "san-antonio-spurs";
 $autoimages_tags[] = "san-antonio-spurs";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_San_Antonio_Spurs_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_San_Antonio_Spurs_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_San_Antonio_Spurs_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_San_Antonio_Spurs_Logo-120x120.jpg";
 
 $autoimages_cats[] = "phoenix-suns";
 $autoimages_tags[] = "phoenix-suns";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Phoenix_Suns_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Phoenix_Suns_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Phoenix_Suns_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Phoenix_Suns_Logo-120x120.jpg";
 
 $autoimages_cats[] = "cleveland-cavaliers";
 $autoimages_tags[] = "cleveland-cavaliers";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Cleveland_Cavaliers_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Cleveland_Cavaliers_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Cleveland_Cavaliers_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Cleveland_Cavaliers_Logo-120x120.jpg";
 
 $autoimages_cats[] = "indiana-pacers";
 $autoimages_tags[] = "indiana-pacers";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Indiana_Pacers_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Indiana_Pacers_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Indiana_Pacers_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Indiana_Pacers_Logo-120x120.jpg";
 
 $autoimages_cats[] = "houston-rockets";
 $autoimages_tags[] = "houston-rockets";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Houston_Rockets_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Houston_Rockets_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Houston_Rockets_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Houston_Rockets_Logo-120x120.jpg";
 
 $autoimages_cats[] = "minnesota-timberwolves";
 $autoimages_tags[] = "minnesota-timberwolves";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Minnesota_Timberwolves_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Minnesota_Timberwolves_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Minnesota_Timberwolves_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Minnesota_Timberwolves_Logo-120x120.jpg";
 
 $autoimages_cats[] = "orlando-magic";
 $autoimages_tags[] = "orlando-magic";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Orlando_Magic_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Orlando_Magic_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Orlando_Magic_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Orlando_Magic_Logo-120x120.jpg";
 
 $autoimages_cats[] = "portland-trailblazers";
 $autoimages_tags[] = "portland-trailblazers";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Portland_Trailblazers_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Portland_Trailblazers_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Portland_Trailblazers_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Portland_Trailblazers_Logo-120x120.jpg";
 
 $autoimages_cats[] = "new-orleans-hornets";
 $autoimages_tags[] = "new-orleans-hornets";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_New_Orleans_Hornets_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_New_Orleans_Hornets_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_New_Orleans_Hornets_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_New_Orleans_Hornets_Logo-120x120.jpg";
 
 $autoimages_cats[] = "philadelphia-sixers";
 $autoimages_tags[] = "philadelphia-sixers";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Philadelphia_Seventy_Sixers_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Philadelphia_Seventy_Sixers_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Philadelphia_Seventy_Sixers_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Philadelphia_Seventy_Sixers_Logo-120x120.jpg";
 
 $autoimages_cats[] = "philadelphia-76ers";
 $autoimages_tags[] = "philadelphia-76ers";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Philadelphia_Seventy_Sixers_Logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/12/NBA_Philadelphia_Seventy_Sixers_Logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Philadelphia_Seventy_Sixers_Logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/12/NBA_Philadelphia_Seventy_Sixers_Logo-120x120.jpg";
 
 $autoimages_cats[] = "oklahoma-city-thunder";
 $autoimages_tags[] = "oklahoma-city-thunder";
@@ -360,179 +360,179 @@ $autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/
 
 $autoimages_cats[] = "entourage";
 $autoimages_tags[] = "entourage";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/07/entourage.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/07/entourage-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/07/entourage.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/07/entourage-120x120.jpg";
 
 $autoimages_cats[] = "alphas";
 $autoimages_tags[] = "alphas";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/07/alphas.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/07/alphas-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/07/alphas.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/07/alphas-120x120.jpg";
 
 $autoimages_cats[] = "warehouse-13";
 $autoimages_tags[] = "warehouse-13";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/07/warehouse13.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/07/warehouse13-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/07/warehouse13.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/07/warehouse13-120x120.jpg";
 
 $autoimages_cats[] = "damages";
 $autoimages_tags[] = "damages";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/07/damages.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/07/damages-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/07/damages.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/07/damages-120x120.jpg";
 
 $autoimages_cats[] = "melissa-joey";
 $autoimages_tags[] = "melissa-joey";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/07/melissajoey.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/07/melissajoey-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/07/melissajoey.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/07/melissajoey-120x120.jpg";
 
 
 $autoimages_cats[] = "flashpoint";
 $autoimages_tags[] = "flashpoint";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/07/flashpoint1.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/07/flashpoint1-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/07/flashpoint1.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/07/flashpoint1-120x120.jpg";
 
 $autoimages_cats[] = "eli-manning";
 $autoimages_tags[] = "eli-manning";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/09/26giants.600.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/09/26giants.600-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/09/26giants.600.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/09/26giants.600-120x120.jpg";
 
 $autoimages_cats[] = "peyton-manning";
 $autoimages_tags[] = "peyton-manning";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/09/20081214_zaf_cr2_003-Peyton.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/09/20081214_zaf_cr2_003-Peyton-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/09/20081214_zaf_cr2_003-Peyton.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/09/20081214_zaf_cr2_003-Peyton-120x120.jpg";
 
 $autoimages_cats[] = "aaron-rodgers";
 $autoimages_tags[] = "aaron-rodgers";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/09/aaron_rodgers_wide.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/09/aaron_rodgers_wide-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/09/aaron_rodgers_wide.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/09/aaron_rodgers_wide-120x120.jpg";
 
 $autoimages_cats[] = "adrian-peterson";
 $autoimages_tags[] = "adrian-peterson";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/09/Adrian-Peterson.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/09/Adrian-Peterson-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/09/Adrian-Peterson.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/09/Adrian-Peterson-120x120.jpg";
 
 $autoimages_cats[] = "andre-johnson";
 $autoimages_tags[] = "andre-johnson";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/09/andre-johnson.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/09/andre-johnson-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/09/andre-johnson.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/09/andre-johnson-120x120.jpg";
 
 $autoimages_cats[] = "arian-foster";
 $autoimages_tags[] = "arian-foster";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/09/Arian-Foster1.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/09/Arian-Foster1-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/09/Arian-Foster1.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/09/Arian-Foster1-120x120.jpg";
 
 $autoimages_cats[] = "larry-fitzgerald";
 $autoimages_tags[] = "larry-fitzgerald";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/09/Arizona-v-St-Louis-Larry-Fi.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/09/Arizona-v-St-Louis-Larry-Fi-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/09/Arizona-v-St-Louis-Larry-Fi.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/09/Arizona-v-St-Louis-Larry-Fi-120x120.jpg";
 
 $autoimages_cats[] = "ben-roethlisberger";
 $autoimages_tags[] = "ben-roethlisberger";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/09/Ben-Roethlisberger.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/09/Ben-Roethlisberger-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/09/Ben-Roethlisberger.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/09/Ben-Roethlisberger-120x120.jpg";
 
 $autoimages_cats[] = "brian-urlacher";
 $autoimages_tags[] = "brian-urlacher";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/09/brian-urlacher.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/09/brian-urlacher-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/09/brian-urlacher.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/09/brian-urlacher-120x120.jpg";
 
 $autoimages_cats[] = "cam-newton";
 $autoimages_tags[] = "cam-newton";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/09/cam-newton-panthers.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/09/cam-newton-panthers-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/09/cam-newton-panthers.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/09/cam-newton-panthers-120x120.jpg";
 
 $autoimages_cats[] = "chris-johnson";
 $autoimages_tags[] = "chris-johnson";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/09/chris_johnson_tennessee_tit.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/09/chris_johnson_tennessee_tit-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/09/chris_johnson_tennessee_tit.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/09/chris_johnson_tennessee_tit-120x120.jpg";
 
 $autoimages_cats[] = "demarcus-ware";
 $autoimages_tags[] = "demarcus-ware";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/09/Demarcus-Ware.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/09/Demarcus-Ware-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/09/Demarcus-Ware.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/09/Demarcus-Ware-120x120.jpg";
 
 $autoimages_cats[] = "donovan-mcnabb";
 $autoimages_tags[] = "donovan-mcnabb";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/09/DonovanMcNabb3.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/09/DonovanMcNabb3-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/09/DonovanMcNabb3.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/09/DonovanMcNabb3-120x120.jpg";
 
 $autoimages_cats[] = "ed-reed";
 $autoimages_tags[] = "ed-reed";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/09/edreed.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/09/edreed-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/09/edreed.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/09/edreed-120x120.jpg";
 
 $autoimages_cats[] = "troy-polamalu";
 $autoimages_tags[] = "troy-polamalu";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/09/gty_troy_polamalu_jef_11072.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/09/gty_troy_polamalu_jef_11072-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/09/gty_troy_polamalu_jef_11072.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/09/gty_troy_polamalu_jef_11072-120x120.jpg";
 
 $autoimages_cats[] = "jake-long";
 $autoimages_tags[] = "jake-long";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/09/jakelong800_141122c.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/09/jakelong800_141122c-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/09/jakelong800_141122c.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/09/jakelong800_141122c-120x120.jpg";
 
 $autoimages_cats[] = "james-harrison";
 $autoimages_tags[] = "james-harrison";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/09/JamesHarrisonSteelers.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/09/JamesHarrisonSteelers-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/09/JamesHarrisonSteelers.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/09/JamesHarrisonSteelers-120x120.jpg";
 
 $autoimages_cats[] = "matt-ryan";
 $autoimages_tags[] = "matt-ryan";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/09/Matt_Ryan0183.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/09/Matt_Ryan0183-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/09/Matt_Ryan0183.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/09/Matt_Ryan0183-120x120.jpg";
 
 $autoimages_cats[] = "matthew-stafford";
 $autoimages_tags[] = "matthew-stafford";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/09/matthew_stafford_lions_brow.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/09/matthew_stafford_lions_brow-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/09/matthew_stafford_lions_brow.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/09/matthew_stafford_lions_brow-120x120.jpg";
 
 $autoimages_cats[] = "clay-matthews";
 $autoimages_tags[] = "clay-matthews";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/09/Matthews.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/09/Matthews-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/09/Matthews.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/09/Matthews-120x120.jpg";
 
 $autoimages_cats[] = "michael-vick";
 $autoimages_tags[] = "michael-vick";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/09/michaelvick.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/09/michaelvick-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/09/michaelvick.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/09/michaelvick-120x120.jpg";
 
 $autoimages_cats[] = "chad-ochocinco";
 $autoimages_tags[] = "chad-ochocinco";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/09/Ochocinco.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/09/Ochocinco-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/09/Ochocinco.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/09/Ochocinco-120x120.jpg";
 
 $autoimages_cats[] = "julius-peppers";
 $autoimages_tags[] = "julius-peppers";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/09/peppers-shh.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/09/peppers-shh-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/09/peppers-shh.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/09/peppers-shh-120x120.jpg";
 
 $autoimages_cats[] = "philip-rivers";
 $autoimages_tags[] = "philip-rivers";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/09/philip_rivers_of_san_diego-.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/09/philip_rivers_of_san_diego--120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/09/philip_rivers_of_san_diego-.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/09/philip_rivers_of_san_diego--120x120.jpg";
 
 $autoimages_cats[] = "rex-ryan";
 $autoimages_tags[] = "rex-ryan";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/09/rex_ryan.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/09/rex_ryan-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/09/rex_ryan.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/09/rex_ryan-120x120.jpg";
 
 $autoimages_cats[] = "drew-brees";
 $autoimages_tags[] = "drew-brees";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/09/Saints-QB-Drew-Brees.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/09/Saints-QB-Drew-Brees-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/09/Saints-QB-Drew-Brees.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/09/Saints-QB-Drew-Brees-120x120.jpg";
 
 $autoimages_cats[] = "darrelle-revis";
 $autoimages_tags[] = "darrelle-revis";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/09/themag_100630_Darrelle-Revi.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/09/themag_100630_Darrelle-Revi-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/09/themag_100630_Darrelle-Revi.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/09/themag_100630_Darrelle-Revi-120x120.jpg";
 
 $autoimages_cats[] = "tom-brady";
 $autoimages_tags[] = "tom-brady";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/09/tom-brady-quarterback-new-e.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/09/tom-brady-quarterback-new-e-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/09/tom-brady-quarterback-new-e.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/09/tom-brady-quarterback-new-e-120x120.jpg";
 
 $autoimages_cats[] = "tony-romo";
 $autoimages_tags[] = "tony-romo";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/09/tonyromo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/09/tonyromo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/09/tonyromo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/09/tonyromo-120x120.jpg";
 
 
 
@@ -545,68 +545,68 @@ $autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/
 
 $autoimages_cats[] = "the-x-files";
 $autoimages_tags[] = "the-x-files";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/07/xfiles.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/07/xfiles-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/07/xfiles.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/07/xfiles-120x120.jpg";
 
 $autoimages_cats[] = "x-files";
 $autoimages_tags[] = "x-files";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/07/xfiles.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/07/xfiles-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/07/xfiles.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/07/xfiles-120x120.jpg";
 
 $autoimages_cats[] = "franklin-bash";
 $autoimages_tags[] = "franklin-bash";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/07/franklinandbash.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/07/franklinandbash-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/07/franklinandbash.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/07/franklinandbash-120x120.jpg";
 
 $autoimages_cats[] = "expedition-impossible";
 $autoimages_tags[] = "expedition-impossible";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/07/expedition_impossible.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/07/expedition_impossible-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/07/expedition_impossible.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/07/expedition_impossible-120x120.jpg";
 
 $autoimages_cats[] = "combat-hospital";
 $autoimages_tags[] = "combat-hospital";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/07/combat_hospital.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/07/combat_hospital-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/07/combat_hospital.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/07/combat_hospital-120x120.jpg";
 
 $autoimages_cats[] = "wilfred";
 $autoimages_tags[] = "wilfred";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/07/wilfred.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/07/wilfred-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/07/wilfred.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/07/wilfred-120x120.jpg";
 
 $autoimages_cats[] = "next-food-network-star";
 $autoimages_tags[] = "next-food-network-star";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/07/nextfoodstar.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/07/nextfoodstar-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/07/nextfoodstar.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/07/nextfoodstar-120x120.jpg";
 
 $autoimages_cats[] = "breaking-bad";
 $autoimages_tags[] = "breaking-bad";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/07/breakingbad.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/07/breakingbad-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/07/breakingbad.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/07/breakingbad-120x120.jpg";
 
 $autoimages_cats[] = "suits";
 $autoimages_tags[] = "suits";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/07/suits.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/07/suits-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/07/suits.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/07/suits-120x120.jpg";
 
 $autoimages_cats[] = "falling-skies";
 $autoimages_tags[] = "falling-skies";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/07/fallingskies.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/07/fallingskies-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/07/fallingskies.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/07/fallingskies-120x120.jpg";
 
 $autoimages_cats[] = "covert-affairs";
 $autoimages_tags[] = "covert-affairs";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/07/covert_affairs.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/07/covert_affairs-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/07/covert_affairs.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/07/covert_affairs-120x120.jpg";
 
 $autoimages_cats[] = "white-collar";
 $autoimages_tags[] = "white-collar";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/07/whitecollar.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/07/whitecollar-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/07/whitecollar.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/07/whitecollar-120x120.jpg";
 
 $autoimages_cats[] = "necessary-roughness";
 $autoimages_tags[] = "necessary-roughness";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/07/necessary_roughness.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/07/necessary_roughness-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/07/necessary_roughness.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/07/necessary_roughness-120x120.jpg";
 
 
 
@@ -639,149 +639,149 @@ $autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/
 
 $autoimages_cats[] = "abc";
 $autoimages_tags[] = "abc";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/05/abc-logo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/05/abc-logo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/05/abc-logo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/05/abc-logo-120x120.jpg";
 
 $autoimages_cats[] = "cbs";
 $autoimages_tags[] = "cbs";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/05/cbs.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/05/cbs-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/05/cbs.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/05/cbs-120x120.jpg";
 
 $autoimages_cats[] = "the-cw";
 $autoimages_tags[] = "the-cw";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/05/cw-network.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/05/cw-network-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/05/cw-network.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/05/cw-network-120x120.jpg";
 
 $autoimages_cats[] = "cw";
 $autoimages_tags[] = "cw";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/05/cw-network.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/05/cw-network-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/05/cw-network.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/05/cw-network-120x120.jpg";
 
 $autoimages_cats[] = "fox";
 $autoimages_tags[] = "fox";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/05/fox-network.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/05/fox-network-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/05/fox-network.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/05/fox-network-120x120.jpg";
 
 $autoimages_cats[] = "nbc";
 $autoimages_tags[] = "nbc";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/05/nbc.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/05/nbc-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/05/nbc.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/05/nbc-120x120.jpg";
 
 $autoimages_cats[] = "the-voice";
 $autoimages_tags[] = "the-voice";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/05/thevoice.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/05/thevoice-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/05/thevoice.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/05/thevoice-120x120.jpg";
 
 $autoimages_cats[] = "americas-next-top-model";
 $autoimages_tags[] = "americas-next-top-model";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/05/Americas-Next-Top-Mode.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/05/Americas-Next-Top-Mode-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/05/Americas-Next-Top-Mode.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/05/Americas-Next-Top-Mode-120x120.jpg";
 
 $autoimages_cats[] = "the-bachelorette";
 $autoimages_tags[] = "the-bachelorette";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/05/the_bachelorette2011.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/05/the-bachelorette-ashley-hebert_120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/05/the_bachelorette2011.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/05/the-bachelorette-ashley-hebert_120.jpg";
 
 $autoimages_cats[] = "camelot";
 $autoimages_tags[] = "camelot";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/05/camelot-2011-starz-poster-0.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/05/camelot-2011-starz-poster-0-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/05/camelot-2012-starz-poster-0.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/05/camelot-2012-starz-poster-0-120x120.jpg";
 
 $autoimages_cats[] = "parks-recreation";
 $autoimages_tags[] = "parks-recreation";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/05/key_art_parks_and_recreatio.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/05/key_art_parks_and_recreatio-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/05/key_art_parks_and_recreatio.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/05/key_art_parks_and_recreatio-120x120.jpg";
 
 $autoimages_cats[] = "parks-and-recreation";
 $autoimages_tags[] = "parks-and-recreation";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/05/key_art_parks_and_recreatio.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/05/key_art_parks_and_recreatio-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/05/key_art_parks_and_recreatio.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/05/key_art_parks_and_recreatio-120x120.jpg";
 
 $autoimages_cats[] = "breaking-in";
 $autoimages_tags[] = "breaking-in";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/05/breaking-in.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/05/breaking-in-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/05/breaking-in.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/05/breaking-in-120x120.jpg";
 
 $autoimages_cats[] = "cougar-town";
 $autoimages_tags[] = "cougar-town";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/05/key_art_cougar_town-.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/05/key_art_cougar_town-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/05/key_art_cougar_town-.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/05/key_art_cougar_town-120x120.jpg";
 
 $autoimages_cats[] = "cougartown";
 $autoimages_tags[] = "cougartown";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/05/key_art_cougar_town-.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/05/key_art_cougar_town-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/05/key_art_cougar_town-.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/05/key_art_cougar_town-120x120.jpg";
 
 $autoimages_cats[] = "justified";
 $autoimages_tags[] = "justified";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/05/justified-fx-premiere.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/05/justified-fx-premiere-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/05/justified-fx-premiere.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/05/justified-fx-premiere-120x120.jpg";
 
 $autoimages_cats[] = "sanctuary";
 $autoimages_tags[] = "sanctuary";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/05/Sanctuary.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/05/Sanctuary-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/05/Sanctuary.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/05/Sanctuary-120x120.jpg";
 
 $autoimages_cats[] = "the-killing";
 $autoimages_tags[] = "the-killing";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/05/THE-KILLING-AMC-The-Cage-Ep.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/05/THE-KILLING-AMC-The-Cage-Ep-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/05/THE-KILLING-AMC-The-Cage-Ep.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/05/THE-KILLING-AMC-The-Cage-Ep-120x120.jpg";
 
 $autoimages_cats[] = "treme";
 $autoimages_tags[] = "treme";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/05/treme.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/05/treme-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/05/treme.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/05/treme-120x120.jpg";
 
 $autoimages_cats[] = "game-of-thrones";
 $autoimages_tags[] = "game-of-thrones";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/05/game-of-thrones-ned.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/05/game-of-thrones-ned-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/05/game-of-thrones-ned.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/05/game-of-thrones-ned-120x120.jpg";
 
 $autoimages_cats[] = "body-of-proof";
 $autoimages_tags[] = "body-of-proof";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/05/key_art_body_of_proof.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/05/key_art_body_of_proof-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/05/key_art_body_of_proof.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/05/key_art_body_of_proof-120x120.jpg";
 
 $autoimages_cats[] = "united-states-of-tara";
 $autoimages_tags[] = "united-states-of-tara";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/05/unitedstatestara.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/05/unitedstatestara-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/05/unitedstatestara.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/05/unitedstatestara-120x120.jpg";
 
 $autoimages_cats[] = "the-amazing-race";
 $autoimages_tags[] = "the-amazing-race";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/05/amazingraceunfinishedlogo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/05/amazingraceunfinishedlogo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/05/amazingraceunfinishedlogo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/05/amazingraceunfinishedlogo-120x120.jpg";
 
 $autoimages_cats[] = "the-amazing-race-unfinished-business";
 $autoimages_tags[] = "the-amazing-race-unfinished-business";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/05/amazingraceunfinishedlogo.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/05/amazingraceunfinishedlogo-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/05/amazingraceunfinishedlogo.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/05/amazingraceunfinishedlogo-120x120.jpg";
 
 $autoimages_cats[] = "breakout-kings";
 $autoimages_tags[] = "breakout-kings";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/05/breakout-kings.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/05/breakout-kings-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/05/breakout-kings.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/05/breakout-kings-120x120.jpg";
 
 $autoimages_cats[] = "mr-sunshine";
 $autoimages_tags[] = "mr-sunshine";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/05/key_art_mr_sunshine.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/05/key_art_mr_sunshine-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/05/key_art_mr_sunshine.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/05/key_art_mr_sunshine-120x120.jpg";
 
 $autoimages_cats[] = "being-human";
 $autoimages_tags[] = "being-human";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/05/wallpaper_sally_1920_129426.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/05/wallpaper_sally_1920_129426-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/05/wallpaper_sally_1920_129426.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/05/wallpaper_sally_1920_129426-120x120.jpg";
 
 $autoimages_cats[] = "nurse-jackie";
 $autoimages_tags[] = "nurse-jackie";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/05/tv_nurse_jackie01.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/05/tv_nurse_jackie01-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/05/tv_nurse_jackie01.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/05/tv_nurse_jackie01-120x120.jpg";
 
 
 $autoimages_cats[] = "tv-ratings";
 $autoimages_tags[] = "tv-ratings";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/05/tvratings.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/05/tvratings-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/05/tvratings.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/05/tvratings-120x120.jpg";
 
 
 
@@ -811,40 +811,40 @@ $autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/
 
 $autoimages_cats[] = "traffic-light";
 $autoimages_tags[] = "traffic-light";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/02/foxtrafficlight.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/02/foxtrafficlight-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/02/foxtrafficlight.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/02/foxtrafficlight-120x120.jpg";
 
 $autoimages_cats[] = "the-chicago-code";
 $autoimages_tags[] = "the-chicago-code";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/02/chicago-code-fox-tv-show.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/02/chicago-code-fox-tv-show-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/02/chicago-code-fox-tv-show.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/02/chicago-code-fox-tv-show-120x120.jpg";
 
 $autoimages_cats[] = "chicago-code";
 $autoimages_tags[] = "chicago-code";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/02/chicago-code-fox-tv-show.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/02/chicago-code-fox-tv-show-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/02/chicago-code-fox-tv-show.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/02/chicago-code-fox-tv-show-120x120.jpg";
 
 
 
 $autoimages_cats[] = "blue-bloods";
 $autoimages_tags[] = "blue-bloods";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/02/cbs_bluebloods_tom_sellick.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/02/cbs_bluebloods_tom_sellick-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/02/cbs_bluebloods_tom_sellick.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/02/cbs_bluebloods_tom_sellick-120x120.jpg";
 
 $autoimages_cats[] = "lights-out";
 $autoimages_tags[] = "lights-out";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/02/fx_lights_out.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/02/fx_lights_out-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/02/fx_lights_out.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/02/fx_lights_out-120x120.jpg";
 
 $autoimages_cats[] = "nikita";
 $autoimages_tags[] = "nikita";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/02/thecw_nikita.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/02/thecw_nikita-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/02/thecw_nikita.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/02/thecw_nikita-120x120.jpg";
 
 $autoimages_cats[] = "fairly-legal";
 $autoimages_tags[] = "fairly-legal";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/02/usa_fairly_legal.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/02/usa_fairly_legal-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/02/usa_fairly_legal.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/02/usa_fairly_legal-120x120.jpg";
 
 
 
@@ -853,72 +853,72 @@ $autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/
 
 $autoimages_cats[] = "off-the-map";
 $autoimages_tags[] = "off-the-map";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/01/off_the_map.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/01/off_the_map-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/01/off_the_map.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/01/off_the_map-120x120.jpg";
 
 
 $autoimages_cats[] = "shameless";
 $autoimages_tags[] = "shameless";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/01/william-h-macy-showtime-shameless-e1294770365340.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/01/william-h-macy-showtime-shameless-e1294770365340-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/01/william-h-macy-showtime-shameless-e1294770365340.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/01/william-h-macy-showtime-shameless-e1294770365340-120x120.jpg";
 
 
 $autoimages_cats[] = "southland";
 $autoimages_tags[] = "southland";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/01/southland.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/01/southland-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/01/southland.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/01/southland-120x120.jpg";
 
 $autoimages_cats[] = "v";
 $autoimages_tags[] = "v";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/01/v.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/01/v-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/01/v.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/01/v-120x120.jpg";
 
 $autoimages_cats[] = "caprica";
 $autoimages_tags[] = "caprica";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/01/caprica.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/01/caprica-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/01/caprica.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/01/caprica-120x120.jpg";
 
 $autoimages_cats[] = "the-closer";
 $autoimages_tags[] = "the-closer";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/01/thecloser.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/01/thecloser-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/01/thecloser.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/01/thecloser-120x120.jpg";
 
 $autoimages_cats[] = "hawaii-five-0";
 $autoimages_tags[] = "hawaii-five-0";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/01/Hawaii-Five-0.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/01/Hawaii-Five-0-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/01/Hawaii-Five-0.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/01/Hawaii-Five-0-120x120.jpg";
 
 $autoimages_cats[] = "hawaii-five-o";
 $autoimages_tags[] = "hawaii-five-o";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/01/Hawaii-Five-0.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/01/Hawaii-Five-0-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/01/Hawaii-Five-0.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/01/Hawaii-Five-0-120x120.jpg";
 
 $autoimages_cats[] = "psych";
 $autoimages_tags[] = "psych";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/01/psych.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/01/psych-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/01/psych.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/01/psych-120x120.jpg";
 
 $autoimages_cats[] = "leverage";
 $autoimages_tags[] = "leverage";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/01/leverage.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/01/leverage-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/01/leverage.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/01/leverage-120x120.jpg";
 
 $autoimages_cats[] = "perfect-couples";
 $autoimages_tags[] = "perfect-couples";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/01/perfect_couples.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/01/perfect_couples-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/01/perfect_couples.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/01/perfect_couples-120x120.jpg";
 
 $autoimages_cats[] = "ncis";
 $autoimages_tags[] = "ncis";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/01/ncis.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/01/ncis-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/01/ncis.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/01/ncis-120x120.jpg";
 
 
 
 $autoimages_cats[] = "survivor-redemption-island";
 $autoimages_tags[] = "survivor-redemption-island";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/01/survivor_redemption.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/01/survivor_redemption-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/01/survivor_redemption.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/01/survivor_redemption-120x120.jpg";
 
 
 
@@ -927,23 +927,23 @@ $autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/
 
 
 
-$autoimages_cats[] = "the-bachelor-2011";
-$autoimages_tags[] = "the-bachelor-2011";
-		$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/02/brad-womack-the-bachelor.jpg";
-		$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/02/brad-womack-the-bachelor-120x120.jpg";
+$autoimages_cats[] = "the-bachelor-2012";
+$autoimages_tags[] = "the-bachelor-2012";
+		$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/02/brad-womack-the-bachelor.jpg";
+		$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/02/brad-womack-the-bachelor-120x120.jpg";
 
 
 
 $autoimages_cats[] = "the-cape";
 $autoimages_tags[] = "the-cape";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/01/key_art_the_cape.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/01/key_art_the_cape-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/01/key_art_the_cape.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/01/key_art_the_cape-120x120.jpg";
 
 
 $autoimages_cats[] = "episodes";
 $autoimages_tags[] = "episodes";
-$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/01/matt-leblanc-episodes-showtime.jpg";
-$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/01/matt-leblanc-episodes-showtime-120x120.jpg";
+$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/01/matt-leblanc-episodes-showtime.jpg";
+$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/01/matt-leblanc-episodes-showtime-120x120.jpg";
 
 
 
@@ -1358,8 +1358,8 @@ $autoimages_topstory500x250[] = "http://media.insidepulse.com/zones/comicsnexus/
 		$autoimages_cats[] = "glee";
 		$autoimages_tags[] = "glee";
 		$autoimages_urls[] = "<a href=http://www.sirlinksalot.net/glee.html target=_blank>Sir Linksalot: Glee</a>";
-		$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/02/gleefeb.jpg";
-		$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/02/gleefeb-120x120.jpg";
+		$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/02/gleefeb.jpg";
+		$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/02/gleefeb-120x120.jpg";
 
 		$autoimages_cats[] = "the-good-wife";
 		$autoimages_tags[] = "the-good-wife";
@@ -1436,8 +1436,8 @@ $autoimages_topstory500x250[] = "http://media.insidepulse.com/zones/comicsnexus/
 		$autoimages_cats[] = "the_bachelor";
 		$autoimages_tags[] = "the-bachelor";
 		$autoimages_urls[] = "<a href=http://www.sirlinksalot.net/thebachelor.html target=_blank>Sir Linksalot: The Bachelor</a>";
-		$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2011/02/brad-womack-the-bachelor.jpg";
-		$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2011/02/brad-womack-the-bachelor-120x120.jpg";
+		$autoimages_topstory500x250[] = "http://insidepulse.com/wp-content/uploads/2012/02/brad-womack-the-bachelor.jpg";
+		$autoimages_topstory120x120[] = "http://insidepulse.com/wp-content/uploads/2012/02/brad-womack-the-bachelor-120x120.jpg";
 
 		$autoimages_cats[] = "zzzzzzzzzzzzz";
 		$autoimages_tags[] = "extreme-makeover-home-edition";

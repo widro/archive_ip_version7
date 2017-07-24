@@ -1153,8 +1153,29 @@ $subnavcount = count($subnavarray);
 
 <div class="bar">
 	<div class="inner">
+
+<?php
+if($active_zone=="tv"){
+?>
+
+<style>
+.bar_logo{
+
+	background:url('http://insidepulse.com/wp-content/uploads/2012/01/icons_tv.png') bottom right no-repeat;
+}
+
+</style>
+
+<?php
+}
+?>
+
+
 		<div class="bar_logo">
 			<?php echo $logoimageurl; ?>
+
+
+
 		</div>
 		<div class="bar_ad">
 			<!--<a href="#"><img src="http://media.insidepulse.com/shared/images/v7/ad728.png"></a>-->
