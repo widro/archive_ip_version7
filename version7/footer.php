@@ -266,5 +266,11 @@ jQuery(document).ready(function($){ //fire on DOM ready
 </div>
 <!-- boxes -->
 
+
+
+<!--gum gum ads-->
+<script type="text/javascript">ggv2id='<?php echo $ggv2id; ?>';</script>
+<script type="text/javascript" src="http://g2.gumgum.com/javascripts/ggv2.js"></script>
+
 </body>
 </html>

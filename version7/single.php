@@ -362,6 +362,7 @@ jQuery(document).ready(function($){ //fire on DOM ready
 				<!-- content -->
 				<?php the_content(''); ?>
 				<!-- content end -->
+				<br><br>
 				<?php
 				echo get_the_tag_list('<p>Tags: ',', ','</p>');
 				?>

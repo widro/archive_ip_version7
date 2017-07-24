@@ -161,6 +161,11 @@ else{
 
 $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/images/v7/logo.png\" class=\"bar_logo_insidepulse\"></a>";
 
+
+//new for gumgum ads
+global $ggv2id;
+$ggv2id = "8440e804";
+
 if($active_zone=="home"){
 
 	//subnav
@@ -250,6 +255,7 @@ elseif($active_zone=="tv"){
 	$rightnarrowvalues = array();
 	$rightnarrowvalues[] = array('cat', 'news', 'news', '/category/news/');
 
+	$ggv2id = "dcd052bd";
 
 }
 
@@ -300,6 +306,7 @@ elseif($active_zone=="movies"){
 	$rightnarrowvalues = array();
 	$rightnarrowvalues[] = array('cat', 'news', 'news', '/category/news/');
 
+	$ggv2id = "dcd052bd";
 
 }
 
@@ -353,6 +360,7 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 	$rightnarrowvalues = array();
 	$rightnarrowvalues[] = array('zonecat', 'comics-nexus|news', 'news', '/latest-updates/?zone=comics-nexus&cat=news');
 
+	$ggv2id = "dcd052bd";
 
 }
 
@@ -432,6 +440,7 @@ elseif($active_zone=="games"){
 	$rightnarrowvalues = array();
 	$rightnarrowvalues[] = array('cat', 'news', 'news', '/category/news/');
 
+	$ggv2id = "65382d7a";
 
 }
 
@@ -470,6 +479,7 @@ elseif($active_zone=="sports"){
 	$rightnarrowvalues = array();
 	$rightnarrowvalues[] = array('cat', 'news', 'news', '/category/news/');
 
+	$ggv2id = "170e6fc1";
 
 }
 
@@ -554,6 +564,7 @@ elseif($active_zone=="music"){
 	$rightnarrowvalues = array();
 	$rightnarrowvalues[] = array('cat', 'news', 'news', '/category/news/');
 
+	$ggv2id = "dcd052bd";
 
 }
 
@@ -591,6 +602,7 @@ elseif($active_zone=="celebrities"){
 	$rightnarrowvalues = array();
 	$rightnarrowvalues[] = array('cat', 'news', 'news', '/category/news/');
 
+	$ggv2id = "dcd052bd";
 
 }
 
@@ -641,6 +653,7 @@ elseif($active_zone=="wrestling"){
 	$rightnarrowvalues = array();
 	$rightnarrowvalues[] = array('cat', 'news', 'news', '/category/news/');
 
+	$ggv2id = "170e6fc1";
 
 }
 
@@ -691,6 +704,7 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 	$rightnarrowvalues = array();
 	$rightnarrowvalues[] = array('cat', 'news', 'news', '/category/news/');
 
+	$ggv2id = "65382d7a";
 
 }
 
@@ -743,6 +757,7 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 	$rightnarrowvalues = array();
 	$rightnarrowvalues[] = array('cat', 'boxing', 'boxing', '/boxing/boxing/');
 
+	$ggv2id = "170e6fc1";
 
 }
 
