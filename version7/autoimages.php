@@ -5,25 +5,11 @@ $autoimages_tags = array();
 $autoimages_topstory500x250 = array();
 $autoimages_topstory120x120 = array();
 
-$autoimages_cats[] = "smark-wwe-network-snme-rant";
-$autoimages_tags[] = "smark-wwe-network-snme-rant";
-$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wp-content/uploads/2014/08/smark_wwenetwork_raw_thumb-120x120.jpg";
-$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wp-content/uploads/2014/08/smark_wwenetwork_raw-500x250.jpg";
-
-$autoimages_cats[] = "smark-wwe-network-nitro-rant";
-$autoimages_tags[] = "smark-wwe-network-nitro-rant";
-$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wp-content/uploads/2014/09/smark_wwenetwork_nitro_thumb-120x120.jpg";
-$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wp-content/uploads/2014/09/smark_wwenetwork_nitro-500x250.jpg";
 
 $autoimages_cats[] = "smark-wwe-network-raw-rant";
 $autoimages_tags[] = "smark-wwe-network-raw-rant";
 $autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wp-content/uploads/2014/08/smark_wwenetwork_raw_thumb-120x120.jpg";
 $autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wp-content/uploads/2014/08/smark_wwenetwork_raw-500x250.jpg";
-
-$autoimages_cats[] = "10-thoughts-on-nxt";
-$autoimages_tags[] = "10-thoughts-on-nxt";
-$autoimages_topstory120x120[] = "http://wrestling.insidepulse.com/wp-content/uploads/2014/08/10thoughtsnxtthumb-120x120.jpg";
-$autoimages_topstory500x250[] = "http://wrestling.insidepulse.com/wp-content/uploads/2014/08/10thoughtsnxt-500x250.jpg";
 
 $autoimages_cats[] = "raw";
 $autoimages_tags[] = "raw";

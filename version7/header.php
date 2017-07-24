@@ -74,7 +74,6 @@ $wrestlingurl = "gamepaint.com";
 $homeurl = "insidepulse.net";
 
 $insidefightsurl = "insidefights.com";
-$insidefightsurl = "insidepulse.com/inside-fights";
 $diehardgamefanurl = "diehardgamefan.com";
 $wrestlingurl = "wrestling.insidepulse.com";
 $homeurl = "insidepulse.com";
@@ -256,7 +255,7 @@ elseif($active_zone=="tv"){
 
 	//format
 	//$left4x2values = array($type, $slug, $name, $clickthru);
-	$featuredauthors = "2|110|172|874";
+	$featuredauthors = "2|172|874";
 
 	//subnav
 	$subnavarray = array();
@@ -311,7 +310,7 @@ elseif($active_zone=="tv"){
 elseif($active_zone=="movies"){
 
 	$movies_tabcss = "tab_cell_nav_on";
-	$featuredauthors = "7|220|198|221|131|222";
+	$featuredauthors = "7|220|198|131|132";
 
 
 	//format
@@ -865,9 +864,6 @@ $logoimageurl = "<a href=\"/\"><img src=\"http://media.insidepulse.com/shared/im
 	$left4x2values[] = array('cat', 'boxing-results', 'boxing results', '/category/boxing-results/');
 
 
-	//topstory sql add
-	$topstorysqladd = "&zone=inside-fights";
-
 	//rightfeatured
 	$rightfeaturedvalues = array();
 	$rightfeaturedvalues[] = array('cat', 'mma-news', 'mma news', '/category/mma-news/');
@@ -1097,6 +1093,16 @@ elseif($active_zone){
 }
 
 ?>
+
+
+
+<!--- PLACE BEFORE FIRST OAS AD UNIT IN PAGE CODE, i.e. near opening <body> tag --->
+<!--- begin oas cache-busting script --->
+<script LANGUAGE="JavaScript1.1">
+OAS_rn = '001234567890'; OAS_rns = '1234567890';
+OAS_rn = new String (Math.random()); OAS_rns = OAS_rn.substring (2, 11);
+</script>
+<!--- end oas cache-busting script --->
 
 <script>
 
@@ -1354,8 +1360,16 @@ $subnavcount = count($subnavarray);
 		</div>
 		<div class="bar_ad">
 			<!--<a href="#"><img src="http://media.insidepulse.com/shared/images/v7/ad728.png"></a>-->
-			<!--- start of insidepulse.sportsfanlive.com_x06_(728x90) --->
-			<script LANGUAGE="JavaScript1.1">OAS_rn = new String (Math.random());OAS_rns = OAS_rn.substring (2, 11);document.write('<script LANGUAGE="JavaScript1.1" SRC="http://oascentral.sportsfanlive.com/RealMedia/ads/adstream_jx.ads/insidepulse.sportsfanlive.com/jx/1'+OAS_rns+'@x06?RM_HTML_CLICK=" type="text/javascript"><\/script>');</script><NOSCRIPT><A HREF="http://oascentral.sportsfanlive.com/RealMedia/ads/click_nx.ads/insidepulse.sportsfanlive.com@x06?&?RM_HTML_CLICK=" target="_blank"><IMG SRC="http://oascentral.sportsfanlive.com/RealMedia/ads/adstream_nx.ads/insidepulse.sportsfanlive.com@x06?&?RM_HTML_CLICK=" border=0></A></NOSCRIPT><!--- end of insidepulse.sportsfanlive.com_x06_(728x90) --->
+			<!--- start of insidepulse.sportsfanlive.com/default_companion_x06_(728x90.1) --->
+			<script LANGUAGE="JavaScript1.1">
+			document.write('<script LANGUAGE="JavaScript1.1" SRC="http://oascentral.sportsfanlive.com/RealMedia/ads/adstream_jx.ads/insidepulse.sportsfanlive.com/default/jx/comp/1'+OAS_rns+'@Position2,Left,x06!x06?XE&Partner=insidepulse&PartnerUnit=insidepulse.728x90.1.default/jx/comp&XE" type="text/javascript"><\/script>');
+			</script>
+			<NOSCRIPT>
+			<A HREF="http://oascentral.sportsfanlive.com/RealMedia/ads/click_nx.ads/insidepulse.sportsfanlive.com/default/nx/comp@Position2,Left,x06!x06?x?XE&Partner=insidepulse&PartnerUnit=insidepulse.728x90.1.default/nx/comp&XE" target="_blank">
+			<IMG SRC="http://oascentral.sportsfanlive.com/RealMedia/ads/adstream_nx.ads/insidepulse.sportsfanlive.com/default/nx/comp@Position2,Left,x06!x06?x?XE&Partner=insidepulse&PartnerUnit=insidepulse.728x90.1.default/nx/comp&XE" border=0>
+			</A>
+			</NOSCRIPT>
+			<!--- end of insidepulse.sportsfanlive.com/default_companion_x06_(728x90.1) --->
 
 		</div>
 	</div>

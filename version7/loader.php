@@ -83,12 +83,6 @@ if(is_page('figures')){
 if(is_page('music')){
 	$zone = "music";
 }
-if(is_page('inside-fights')){
-	$zone = "inside-fights";
-}
-if(is_page('insidefights')){
-	$zone = "inside-fights";
-}
 
 if($zone){
 	$browselinkadd .= "&zone=$zone";

@@ -893,9 +893,9 @@ color: #ff0000;
 }
 
 .footer h4{
-	font-size:1.5em;
+	font-size:1.125em;
 	font-weight:bold;
-	margin-bottom:10px;
+	margin-bottom:20px;
 	text-transform:uppercase;
 }
 
@@ -1514,7 +1514,7 @@ p.listing_cell_byline{
 
 .listing_cell_byline a{
 	color:#000000;
-	font-size:1em;
+	font-size:.75em;
 }
 
 
@@ -1692,12 +1692,3 @@ p.listing_cell_byline{
 
 
 }
-
-
-
-
-div.wrap div.error{
-visibility:hidden;
-display:none;
-}
-
