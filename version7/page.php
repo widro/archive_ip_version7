@@ -41,7 +41,9 @@ elseif(is_page('tv-show-madness')){
 elseif(is_page('tv-show-madness-brackets')){
 	include('page_full.php');
 }
-
+elseif(is_page('2013-inside-pulse-best-television-show-couple-tournament')){
+	include('page_full.php');
+}
 
 
 else{
